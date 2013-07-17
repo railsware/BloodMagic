@@ -1,0 +1,7 @@
+.idea
+Podfile.lock
+Pods
+*xcuserdata
+*xcuserdatad
+.DS_Store
+DerivedData
