@@ -3,9 +3,10 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-
 #import <objc/runtime.h>
 #import "RDProperty.h"
+#import "RDInternalProperty.h"
+#import "RDInternalPropertyFactory.h"
 
 @implementation RDProperty
 {
@@ -17,19 +18,39 @@
     BOOL _isCopy;
     BOOL _isNonatomic;
     BOOL _isRetain;
+
+    RDInternalProperty *_internalProperty;
 }
 
 - (instancetype)initWithProperty:(objc_property_t)property
 {
     self = [super init];
     if (self) {
+        _internalProperty = NULL;
+
         const char *name = property_getName(property);
         _name = @(name);
         [self parseProperty:property];
         [self setDefaultAccessor];
         [self setDefaultMutator];
+        if (_internalProperty != NULL) {
+            _internalProperty->setPropertyName([_name UTF8String]);
+            _internalProperty->setAssociationPolicy([self associationPolicy]);
+        }
     }
     return self;
+}
+
+- (RDInternalProperty *)internalProperty
+{
+    return _internalProperty;
+}
+
+- (void)dealloc
+{
+    if (_internalProperty != NULL) {
+        delete _internalProperty;
+    }
 }
 
 - (NSString *)name
@@ -46,6 +67,23 @@
 {
     return _mutator;
 }
+
+- (IMP)accessorImplementation
+{
+    if (_internalProperty == NULL) {
+        return NULL;
+    }
+    return _internalProperty->accessorImplementation();
+}
+
+- (IMP)mutatorImplementation
+{
+    if (_internalProperty == NULL) {
+        return NULL;
+    }
+    return _internalProperty->mutatorImplementation();
+}
+
 
 - (BOOL)isDynamic
 {
@@ -72,6 +110,28 @@
     return !_isRetain && !_isCopy;
 }
 
+- (objc_AssociationPolicy)associationPolicy {
+    objc_AssociationPolicy policy;
+    if (_isNonatomic) {
+        if (_isCopy) {
+            policy = OBJC_ASSOCIATION_COPY_NONATOMIC;
+        } else if (_isRetain) {
+            policy = OBJC_ASSOCIATION_RETAIN_NONATOMIC;
+        } else {
+            policy = OBJC_ASSOCIATION_ASSIGN;
+        }
+    } else {
+        if (_isCopy) {
+            policy = OBJC_ASSOCIATION_COPY;
+        } else if (_isRetain) {
+            policy = OBJC_ASSOCIATION_RETAIN;
+        } else {
+            policy = OBJC_ASSOCIATION_ASSIGN;
+        }
+    }
+
+    return policy;
+}
 
 #pragma mark - Property parsing
 
@@ -109,6 +169,9 @@
         } break;
         case 'D': {
             _isDynamic = YES;
+        } break;
+        case 'T':{
+            _internalProperty = [RDInternalPropertyFactory newInternalPropertyFromType:attribute.value];
         } break;
         default: {
             NSLog(@"Unused attribute: '%s' with value '%s'", attribute.name, attribute.value);

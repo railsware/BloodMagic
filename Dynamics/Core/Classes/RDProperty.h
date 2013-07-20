@@ -14,6 +14,9 @@
 - (NSString *)accessor;
 - (NSString *)mutator;
 
+- (IMP)accessorImplementation;
+- (IMP)mutatorImplementation;
+
 - (BOOL)isDynamic;
 - (BOOL)isCopy;
 - (BOOL)isNonatomic;

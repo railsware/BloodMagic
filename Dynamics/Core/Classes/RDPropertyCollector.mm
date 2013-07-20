@@ -7,11 +7,17 @@
 #import <objc/runtime.h>
 #import "RDPropertyCollector.h"
 #import "RDProperty.h"
+#import "RDProperty_Private.h"
+#import "RDDefinitions.h"
 
 @implementation RDPropertyCollector
 
 - (NSArray *)collectForClass:(Class)klass
 {
+    NSArray *cachedProperties = objc_getAssociatedObject(klass, kCachedPropertiesKey);
+    if (cachedProperties != nil) {
+        return cachedProperties;
+    }
     objc_property_t *objcProperties;
     uint propertyCount = 0;
     objcProperties = class_copyPropertyList(klass, &propertyCount);
@@ -24,6 +30,7 @@
         }
     }
     free(objcProperties);
+    objc_setAssociatedObject(klass, kCachedPropertiesKey, [NSArray arrayWithArray:properties], OBJC_ASSOCIATION_RETAIN);
     return properties;
 }
 
