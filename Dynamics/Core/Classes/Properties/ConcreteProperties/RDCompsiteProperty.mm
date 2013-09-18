@@ -13,3 +13,4 @@ __strong id RDCompositeProperty::unbox(id value) {
 id RDCompositeProperty::box(id value) {
     return value;
 }
+

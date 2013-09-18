@@ -12,11 +12,13 @@
 #import <objc/runtime.h>
 
 #include <iostream>
+
 using namespace std;
 
 template <class Type>
 class RDInternalPropertyTemplate : public RDInternalProperty
 {
+
     static Type accessorIMP(id self, SEL _cmd)
     {
         NSArray *properties = objc_getAssociatedObject([self class], kCachedPropertiesKey);
@@ -29,6 +31,7 @@ class RDInternalPropertyTemplate : public RDInternalProperty
             }
         }
         id value = objc_getAssociatedObject(self, internal->propertyName().c_str());
+        RDInternalProperty::beforeUnboxHook(&value, internal->propertyClassName());
         return internal->unbox(value);
     }
 
@@ -44,6 +47,7 @@ class RDInternalPropertyTemplate : public RDInternalProperty
             }
         }
         id boxedValue = internal->box(value);
+        RDInternalProperty::afterBoxHook(&boxedValue, internal->propertyClassName());
         objc_setAssociatedObject(self, internal->propertyName().c_str(), boxedValue, internal->associationPolicy());
     }
 

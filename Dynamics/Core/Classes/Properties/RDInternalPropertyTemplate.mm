@@ -5,3 +5,5 @@
 
 
 #include "RDInternalPropertyTemplate.h"
+#import "RDClassCollector.h"
+#import "RDHook.h"

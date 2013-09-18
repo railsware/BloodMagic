@@ -3,10 +3,10 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
+#include <objc/runtime.h>
+
 #import "RDInternalPropertyFactory.h"
 #import "RDInternalProperty.h"
-#import "RDInternalPropertyTemplate.h"
-
 #import "RDCompsiteProperty.h"
 #import "RDPrimitiveCharProperty.h"
 #import "RDPrimitiveUnsignedCharProperty.h"
@@ -26,14 +26,19 @@
 + (RDInternalProperty *)newInternalPropertyFromType:(const char *)type
 {
     if (type[0] == '@') {
-        return [self compositeProperty];
+        return [self compositeProperty:type];
     }
     return [self primitivePropertyFromType:type];
 }
 
-+ (RDInternalProperty *)compositeProperty
++ (RDInternalProperty *)compositeProperty:(const char *)type
 {
-    return new RDCompositeProperty;
+    std::string className(type);
+    className = className.substr(2, className.length() - 3);
+
+    RDCompositeProperty *compositeProperty = new RDCompositeProperty;
+    compositeProperty->setPropertyClassName(className);
+    return compositeProperty;
 }
 
 + (RDInternalProperty *)primitivePropertyFromType:(const char *)type
