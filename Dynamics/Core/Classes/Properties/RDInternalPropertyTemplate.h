@@ -11,10 +11,6 @@
 #import "RDPropertyFinder.h"
 #import <objc/runtime.h>
 
-#include <iostream>
-
-using namespace std;
-
 template <class Type>
 class RDInternalPropertyTemplate : public RDInternalProperty
 {
