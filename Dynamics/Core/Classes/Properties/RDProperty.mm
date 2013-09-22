@@ -38,6 +38,7 @@
             _internalProperty->setAssociationPolicy([self associationPolicy]);
         }
     }
+
     return self;
 }
 
@@ -68,11 +69,18 @@
     return _mutator;
 }
 
+- (NSString *)propertyClassName
+{
+    return @(_internalProperty->propertyClassName().c_str());
+}
+
+
 - (IMP)accessorImplementation
 {
     if (_internalProperty == NULL) {
         return NULL;
     }
+
     return _internalProperty->accessorImplementation();
 }
 
@@ -81,6 +89,7 @@
     if (_internalProperty == NULL) {
         return NULL;
     }
+
     return _internalProperty->mutatorImplementation();
 }
 
@@ -172,6 +181,9 @@
         } break;
         case 'T':{
             _internalProperty = [RDInternalPropertyFactory newInternalPropertyFromType:attribute.value];
+            if (_internalProperty != NULL) {
+                _internalProperty->setProperty(self);
+            }
         } break;
         default: {
             NSLog(@"Unused attribute: '%s' with value '%s'", attribute.name, attribute.value);
@@ -208,3 +220,4 @@
 }
 
 @end
+

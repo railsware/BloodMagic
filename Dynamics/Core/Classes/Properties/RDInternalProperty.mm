@@ -7,6 +7,7 @@
 #include "RDInternalProperty.h"
 #import "RDClassCollector.h"
 #import "RDHook.h"
+#import "RDProperty.h"
 
 RDInternalProperty::~RDInternalProperty()
 {
@@ -17,24 +18,33 @@ void RDInternalProperty::setAssociationPolicy(objc_AssociationPolicy policy)
     _associationPolicy = policy;
 }
 
-void RDInternalProperty::afterBoxHook(id *value, const std::string &className)
+void RDInternalProperty::setProperty(RDProperty *property)
+{
+    _property = property;
+}
+
+void RDInternalProperty::mutatorHook(id *value, const RDInternalProperty *internal)
 {
     RDClassCollector *collector = [RDClassCollector new];
     NSArray *hooks = [collector collectForProtocol:@protocol(RDHook)];
 
     for (Class<RDHook> hook in hooks) {
-        [hook afterBoxingValue:value ofClass:objc_getClass(className.c_str())];
+        [hook mutatorHook:value withProperty:internal->property()];
     }
 }
 
-void RDInternalProperty::beforeUnboxHook(id *value, const std::string &className)
+void RDInternalProperty::accessorHook(id *value, const RDInternalProperty *internal)
 {
     RDClassCollector *collector = [RDClassCollector new];
     NSArray *hooks = [collector collectForProtocol:@protocol(RDHook)];
 
     for (Class<RDHook> hook in hooks) {
-        [hook beforeBoxingValue:value ofClass:objc_getClass(className.c_str())];
+        [hook accessorHook:value withProperty:internal->property()];
     }
+}
+
+const RDProperty *RDInternalProperty::property() const {
+    return _property;
 }
 
 const std::string &RDInternalProperty::propertyClassName() const
@@ -56,6 +66,7 @@ const std::string& RDInternalProperty::propertyName() const
 {
     return _propertyName;
 }
+
 
 objc_AssociationPolicy RDInternalProperty::associationPolicy() const
 {

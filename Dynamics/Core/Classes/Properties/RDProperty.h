@@ -13,6 +13,7 @@
 - (NSString *)name;
 - (NSString *)accessor;
 - (NSString *)mutator;
+- (NSString *)propertyClassName;
 
 - (IMP)accessorImplementation;
 - (IMP)mutatorImplementation;

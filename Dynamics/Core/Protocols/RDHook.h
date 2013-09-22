@@ -6,10 +6,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class RDProperty;
+
 @protocol RDHook
     <NSObject>
 
-+ (void)afterBoxingValue:(id *)value ofClass:(Class)klass;
-+ (void)beforeBoxingValue:(id *)value ofClass:(Class)klass;
+@optional
+
++ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property;
++ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property;
 
 @end

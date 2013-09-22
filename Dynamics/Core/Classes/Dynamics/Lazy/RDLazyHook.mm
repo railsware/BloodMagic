@@ -4,20 +4,19 @@
 //
 
 #import "RDLazyHook.h"
+#import "RDProperty.h"
 
 @implementation RDLazyHook
 
-+ (void)afterBoxingValue:(id *)value ofClass:(Class)klass
-{
-}
-
-+ (void)beforeBoxingValue:(id *)value ofClass:(Class)klass
++ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property
 {
     if (*value == nil) {
-        NSLog(@"%@ %@", *value, NSStringFromClass(klass));
-        *value = [klass new];
-        NSLog(@"%@ %@", *value, NSStringFromClass(klass));
+        *value = [NSClassFromString(property.propertyClassName) new];
     }
+}
+
++ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property
+{
 }
 
 @end

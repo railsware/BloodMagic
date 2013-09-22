@@ -8,7 +8,7 @@
 #import "RDInternalProperty.h"
 #import "RDProperty.h"
 #import "RDProperty_Private.h"
-#import "RDDefinitions.h"
+#import "RDPropertyFinder.h"
 #import <objc/runtime.h>
 
 #include <iostream>
@@ -21,34 +21,28 @@ class RDInternalPropertyTemplate : public RDInternalProperty
 
     static Type accessorIMP(id self, SEL _cmd)
     {
-        NSArray *properties = objc_getAssociatedObject([self class], kCachedPropertiesKey);
-        RDInternalPropertyTemplate<Type> *internal = NULL;
-        NSString *accessorName = NSStringFromSelector(_cmd);
-        for (RDProperty *p in properties) {
-            if ([p.accessor isEqualToString:accessorName]) {
-                internal = dynamic_cast<RDInternalPropertyTemplate<Type> *>(p.internalProperty);
-                break;
-            }
-        }
-        id value = objc_getAssociatedObject(self, internal->propertyName().c_str());
-        RDInternalProperty::beforeUnboxHook(&value, internal->propertyClassName());
-        return internal->unbox(value);
+        RDPropertyFinder finder(self);
+
+        RDInternalPropertyTemplate<Type> *property = NULL;
+
+        property = dynamic_cast<RDInternalPropertyTemplate<Type> *>(finder.findByAccessor(_cmd));
+
+        id value = objc_getAssociatedObject(self, property->propertyName().c_str());
+        RDInternalProperty::accessorHook(&value, property);
+        return property->unbox(value);
     }
 
     static void mutatorIMP(id self, SEL _cmd, Type value)
     {
-        NSArray *properties = objc_getAssociatedObject([self class], kCachedPropertiesKey);
-        RDInternalPropertyTemplate<Type> *internal = NULL;
-        NSString *mutatorName = NSStringFromSelector(_cmd);
-        for (RDProperty *p in properties) {
-            if ([p.mutator isEqualToString:mutatorName]) {
-                internal = dynamic_cast<RDInternalPropertyTemplate<Type> *>(p.internalProperty);
-                break;
-            }
-        }
-        id boxedValue = internal->box(value);
-        RDInternalProperty::afterBoxHook(&boxedValue, internal->propertyClassName());
-        objc_setAssociatedObject(self, internal->propertyName().c_str(), boxedValue, internal->associationPolicy());
+        RDPropertyFinder finder(self);
+
+        RDInternalPropertyTemplate<Type> *property = NULL;
+
+        property = dynamic_cast<RDInternalPropertyTemplate<Type> *>(finder.findByMutator(_cmd));
+
+        id boxedValue = property->box(value);
+        RDInternalProperty::mutatorHook(&boxedValue, property);
+        objc_setAssociatedObject(self, property->propertyName().c_str(), boxedValue, property->associationPolicy());
     }
 
 public:

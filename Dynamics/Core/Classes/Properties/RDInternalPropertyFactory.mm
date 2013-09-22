@@ -43,48 +43,53 @@
 
 + (RDInternalProperty *)primitivePropertyFromType:(const char *)type
 {
+    RDInternalProperty *property = NULL;
     switch (type[0]) {
         case _C_CHR:{
-            return new RDPrimitiveCharProperty;
+            property = new RDPrimitiveCharProperty;
         } break;
         case _C_UCHR:{
-            return new RDPrimitiveUnsignedCharProperty;
+            property = new RDPrimitiveUnsignedCharProperty;
         } break;
         case _C_SHT:{
-            return new RDPrimitiveShortProperty;
+            property = new RDPrimitiveShortProperty;
         } break;
         case _C_USHT:{
             return new RDPrimitiveUnsignedShortProperty;
         } break;
         case _C_INT:{
-            return new RDPrimitiveIntProperty;
+            property = new RDPrimitiveIntProperty;
         } break;
         case _C_UINT:{
-            return new RDPrimitiveUnsignedIntProperty;
+            property = new RDPrimitiveUnsignedIntProperty;
         } break;
         case _C_LNG:{
-            return new RDPrimitiveLongProperty;
+            property = new RDPrimitiveLongProperty;
         } break;
         case _C_ULNG:{
-            return new RDPrimitiveUnsignedLongProperty;
+            property = new RDPrimitiveUnsignedLongProperty;
         } break;
         case _C_LNG_LNG:{
-            return new RDPrimitiveLongLongProperty;
+            property = new RDPrimitiveLongLongProperty;
         } break;
         case _C_ULNG_LNG:{
-            return new RDPrimitiveUnsignedLongLongProperty;
+            property = new RDPrimitiveUnsignedLongLongProperty;
         } break;
         case _C_FLT:{
-            return new RDPrimitiveFloatProperty;
+            property = new RDPrimitiveFloatProperty;
         } break;
         case _C_DBL:{
-            return new RDPrimitiveDoubleProperty;
+            property = new RDPrimitiveDoubleProperty;
         } break;
         default:{
             NSLog(@"Unknown property type '%s", type);
         };
     };
-    return NULL;
+    if (property != NULL) {
+        property->setPropertyClassName("NSNumber");
+    }
+
+    return property;
 }
 
 @end
