@@ -8,14 +8,16 @@
 
 @implementation RDLazyHook
 
-+ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property
++ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property sender:(id)sender
 {
-    if (*value == nil) {
-        *value = [NSClassFromString(property.propertyClassName) new];
+    if (*value != nil) {
+        return;
     }
+
+    *value = [NSClassFromString(property.propertyClassName) new];
 }
 
-+ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property
++ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property sender:(id)sender
 {
 }
 

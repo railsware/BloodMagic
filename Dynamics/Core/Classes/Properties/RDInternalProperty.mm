@@ -23,23 +23,23 @@ void RDInternalProperty::setProperty(RDProperty *property)
     _property = property;
 }
 
-void RDInternalProperty::mutatorHook(id *value, const RDInternalProperty *internal)
+void RDInternalProperty::mutatorHook(id *value, const RDInternalProperty *internal, id sender)
 {
     RDClassCollector *collector = [RDClassCollector new];
     NSArray *hooks = [collector collectForProtocol:@protocol(RDHook)];
 
     for (Class<RDHook> hook in hooks) {
-        [hook mutatorHook:value withProperty:internal->property()];
+        [hook mutatorHook:value withProperty:internal->property() sender:sender];
     }
 }
 
-void RDInternalProperty::accessorHook(id *value, const RDInternalProperty *internal)
+void RDInternalProperty::accessorHook(id *value, const RDInternalProperty *internal, id sender)
 {
     RDClassCollector *collector = [RDClassCollector new];
     NSArray *hooks = [collector collectForProtocol:@protocol(RDHook)];
 
     for (Class<RDHook> hook in hooks) {
-        [hook accessorHook:value withProperty:internal->property()];
+        [hook accessorHook:value withProperty:internal->property() sender:sender];
     }
 }
 

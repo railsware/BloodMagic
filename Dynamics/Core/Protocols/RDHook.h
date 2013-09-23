@@ -13,7 +13,7 @@
 
 @optional
 
-+ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property;
-+ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property;
++ (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property sender:(id)sender;
++ (void)accessorHook:(id *)value withProperty:(const RDProperty *)property sender:(id)sender;
 
 @end

@@ -24,7 +24,7 @@ class RDInternalPropertyTemplate : public RDInternalProperty
         property = dynamic_cast<RDInternalPropertyTemplate<Type> *>(finder.findByAccessor(_cmd));
 
         id value = objc_getAssociatedObject(self, property->propertyName().c_str());
-        RDInternalProperty::accessorHook(&value, property);
+        RDInternalProperty::accessorHook(&value, property, self);
         return property->unbox(value);
     }
 
@@ -37,7 +37,7 @@ class RDInternalPropertyTemplate : public RDInternalProperty
         property = dynamic_cast<RDInternalPropertyTemplate<Type> *>(finder.findByMutator(_cmd));
 
         id boxedValue = property->box(value);
-        RDInternalProperty::mutatorHook(&boxedValue, property);
+        RDInternalProperty::mutatorHook(&boxedValue, property, self);
         objc_setAssociatedObject(self, property->propertyName().c_str(), boxedValue, property->associationPolicy());
     }
 

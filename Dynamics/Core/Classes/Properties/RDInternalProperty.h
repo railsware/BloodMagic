@@ -32,7 +32,7 @@ public:
     virtual IMP mutatorImplementation() = 0;
     virtual IMP accessorImplementation() = 0;
 
-    static void mutatorHook(id *value, const RDInternalProperty *internal);
-    static void accessorHook(id *value, const RDInternalProperty *internal);
+    static void mutatorHook(id *value, const RDInternalProperty *internal, id sender);
+    static void accessorHook(id *value, const RDInternalProperty *internal, id sender);
 
 };
