@@ -88,36 +88,36 @@ Tsuga<RDDynamicsInjector>::runInstance(^{
 
         it(@"unsigned int", ^{
             ^{
-                model.unsignedIntProperty = 12312311;
-                model.unsignedIntProperty should equal(12312311);
+                model.unsignedIntProperty = 12312311U;
+                model.unsignedIntProperty should equal(12312311U);
             } should_not raise_exception;
         });
 
         it(@"long", ^{
             ^{
-                model.longProperty = -1123123123;
-                model.longProperty should equal(-1123123123);
+                model.longProperty = -1123123123L;
+                model.longProperty should equal(-1123123123L);
             } should_not raise_exception;
         });
 
         it(@"unsigned long", ^{
             ^{
-                model.unsignedLongProperty = 1231231231;
-                model.unsignedLongProperty should equal(1231231231);
+                model.unsignedLongProperty = 1231231231UL;
+                model.unsignedLongProperty should equal(1231231231UL);
             } should_not raise_exception;
         });
 
         it(@"long long", ^{
             ^{
-                model.longLongProperty = -1231231231;
-                model.longLongProperty should equal(-1231231231);
+                model.longLongProperty = -1231231231LL;
+                model.longLongProperty should equal(-1231231231LL);
             } should_not raise_exception;
         });
 
         it(@"unsigned long long", ^{
             ^{
-                model.unsignedLongLongProperty = 1231231313;
-                model.unsignedLongLongProperty should equal(1231231313);
+                model.unsignedLongLongProperty = 1231231313ULL;
+                model.unsignedLongLongProperty should equal(1231231313ULL);
             } should_not raise_exception;
         });
 

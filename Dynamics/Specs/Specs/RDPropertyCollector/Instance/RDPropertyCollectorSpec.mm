@@ -21,7 +21,7 @@ Tsuga<RDPropertyCollector>::runInstance(^{
             Protocol *protocol = @protocol(RDTestProtocol);
 
             beforeEach(^{
-                RDClassCollector *classCollector = [RDClassCollector new];
+                RDClassCollector *classCollector = [[RDClassCollector new] autorelease];
                 klass = [classCollector collectForProtocol:protocol][0];
                 properties = [subject() collectForClass:klass];
             });
