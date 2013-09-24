@@ -19,4 +19,5 @@ public:
     RDPropertyFinder(id self);
     RDInternalProperty *findByAccessor(SEL cmd) const;
     RDInternalProperty *findByMutator(SEL cmd) const;
+    RDInternalProperty *findByName(NSString *name) const;
 };

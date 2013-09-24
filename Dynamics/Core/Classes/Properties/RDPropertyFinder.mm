@@ -30,6 +30,17 @@ RDInternalProperty *RDPropertyFinder::findByAccessor(SEL cmd) const
     return NULL;
 }
 
+RDInternalProperty *RDPropertyFinder::findByName(NSString *name) const
+{
+    for (RDProperty *p in this->properties()) {
+        if ([p.name isEqualToString:name]) {
+            return p.internalProperty;
+        }
+    }
+
+    return NULL;
+}
+
 RDInternalProperty *RDPropertyFinder::findByMutator(SEL cmd) const
 {
     NSString *mutatorName = NSStringFromSelector(cmd);

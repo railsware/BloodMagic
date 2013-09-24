@@ -23,6 +23,10 @@ Tsuga<RDDynamicsInjector>::runInstance(^{
             model = [RDFatDynamicModel new];
         });
 
+        afterEach(^{
+            [model release];
+        });
+
         it(@"nonatomic copy", ^{
             ^{
                 model.nonatomicCopyObject = testObject;
@@ -140,6 +144,54 @@ Tsuga<RDDynamicsInjector>::runInstance(^{
                 model.boolProperty = YES;
                 model.boolProperty should equal(YES);
             } should_not raise_exception;
+        });
+
+    });
+
+    describe(@"KVC injected", ^{
+        __block RDFatDynamicModel *model = nil;
+        NSString *testObject = @"Hello, Dynamics";
+
+        beforeEach(^{
+            model = [RDFatDynamicModel new];
+        });
+
+        afterEach(^{
+            [model release];
+        });
+
+        context(@"property exists", ^{
+
+            it(@"setValue:forUndefinedKey:", ^{
+                ^{
+                    [model setValue:testObject forKey:@"nonatomicCopyObject"];
+                    model.nonatomicCopyObject should equal(testObject);
+                } should_not raise_exception;
+            });
+
+            it(@"valueForUndefinedKey:", ^{
+                ^{
+                    model.nonatomicCopyObject = testObject;
+                    [model valueForKey:@"nonatomicCopyObject"] should equal(testObject);
+                } should_not raise_exception;
+            });
+
+        });
+
+        context(@"property doesn't exists", ^{
+
+            it(@"setValue:forUndefinedKey:", ^{
+                ^{
+                    [model setValue:testObject forKey:@"some_property"];
+                } should raise_exception;
+            });
+
+            it(@"valueForUndefinedKey:", ^{
+                ^{
+                    [model valueForKey:@"some_property"];
+                } should raise_exception;
+            });
+
         });
 
     });
