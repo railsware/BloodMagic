@@ -7,28 +7,39 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-CDR_EXT
-Tsuga<RDClassCollector>::runInstance(^{
-    responds(^{
-        to(@selector(collectForProtocol:));
+SPEC_BEGIN(RDClassCollectorSpec)
+
+context(@"instance", ^{
+
+    __block RDClassCollector *subject;
+
+    beforeEach(^{
+        subject = [RDClassCollector new];
     });
 
-    context(@"collect", ^{
+    afterEach(^{
+        [subject release];
+    });
+
+    describe(@"responds to", ^{
+
+        it(@"collectForProtocol:", ^{
+            subject should responds_to(@selector(collectForProtocol:));
+        });
+
+    });
+
+    describe(@"collect", ^{
 
         describe(@"only classes that conforms protocol", ^{
-            __block RDClassCollector *collector = nil;
             __block Protocol *protocol = @protocol(RDTestProtocol);
 
-            beforeEach(^{
-                collector = subject();
+            it(^{
+                [subject collectForProtocol:protocol] should contain([RDUser class]);
             });
 
             it(^{
-                [collector collectForProtocol:protocol] should contain([RDUser class]);
-            });
-
-            it(^{
-                [collector collectForProtocol:protocol] should_not contain([RDEntityWithoutProtocols class]);
+                [subject collectForProtocol:protocol] should_not contain([RDEntityWithoutProtocols class]);
             });
 
         });
@@ -36,3 +47,5 @@ Tsuga<RDClassCollector>::runInstance(^{
     });
 
 });
+
+SPEC_END
