@@ -14,10 +14,26 @@ describe(@"LazySpec", ^{
         subject = [RDLazyModel new];
     });
 
+    afterEach(^{
+        [subject release];
+    });
+
     context(@"default values", ^{
 
-        it(@"Foundation objects", ^{
-            subject.stringProperty should_not be_nil;
+        context(@"direct access", ^{
+
+            it(@"Foundation objects", ^{
+                subject.stringProperty should_not be_nil;
+            });
+
+        });
+
+        context(@"KVC", ^{
+
+            it(@"Foundation objects", ^{
+                [subject valueForKey:@"stringProperty"] should_not be_nil;
+            });
+
         });
 
     });

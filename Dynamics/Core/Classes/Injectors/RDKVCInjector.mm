@@ -39,7 +39,7 @@
     Method dynamics = class_getInstanceMethod([RDPropertyKVCHandler class], dynamicsMutatorSelector);
 
     if (class_addMethod(klass, originalMutatorSelector, method_getImplementation(dynamics), method_getTypeEncoding(dynamics))) {
-        class_replaceMethod(klass, originalMutatorSelector, method_getImplementation(original), method_getTypeEncoding(original));
+        class_replaceMethod(klass, dynamicsMutatorSelector, method_getImplementation(original), method_getTypeEncoding(original));
     } else {
         method_exchangeImplementations(original, dynamics);
     }
