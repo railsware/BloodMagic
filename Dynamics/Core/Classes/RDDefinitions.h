@@ -9,3 +9,6 @@
 #pragma once
 
 static const char *kCachedPropertiesKey = "kCachedPropertiesKey";
+
+typedef id (^dynamics_initializer_t)(id sender);
+

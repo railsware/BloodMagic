@@ -6,11 +6,15 @@
 #import <Foundation/Foundation.h>
 #import "RDTestProtocol.h"
 
+@class RDLazyModel;
+
 @interface RDUser : NSObject
     <RDTestProtocol>
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *fullName;
 @property (nonatomic, retain) NSNumber *age;
+
+@property (nonatomic, weak) RDLazyModel *lazyModel;
 
 @end

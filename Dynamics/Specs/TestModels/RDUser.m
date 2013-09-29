@@ -4,6 +4,7 @@
 //
 
 #import "RDUser.h"
+#import "RDLazyModel.h"
 
 @implementation RDUser
 

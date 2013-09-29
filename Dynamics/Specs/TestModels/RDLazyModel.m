@@ -4,9 +4,12 @@
 //
 
 #import "RDLazyModel.h"
+#import "RDUser.h"
 
 @implementation RDLazyModel
 
 @dynamic stringProperty;
+@dynamic someTitle;
+@dynamic user;
 
 @end

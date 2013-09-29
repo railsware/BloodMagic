@@ -5,6 +5,8 @@
 
 #import "RDLazyHook.h"
 #import "RDProperty.h"
+#import "RDInitializerRegistry.h"
+#import "RDInitializerRegistry+LazyRegistry.h"
 
 @implementation RDLazyHook
 
@@ -14,7 +16,13 @@
         return;
     }
 
-    *value = [NSClassFromString(property.propertyClassName) new];
+    RDInitializerRegistry *registry = [RDInitializerRegistry lazyRegistry];
+    dynamics_initializer_t initializer_t = [registry initializerForKey:property.propertyClassName];
+    if (initializer_t) {
+        *value = initializer_t(sender);
+    } else {
+        *value = [NSClassFromString(property.propertyClassName) new];
+    }
 }
 
 + (void)mutatorHook:(id *)value withProperty:(const RDProperty *)property sender:(id)sender
