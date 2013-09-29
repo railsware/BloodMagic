@@ -5,7 +5,7 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-SPEC_BEGIN(LazySpecSpec)
+SPEC_BEGIN(LazySpec)
 
 describe(@"LazySpec", ^{
     __block RDLazyModel *subject = nil;

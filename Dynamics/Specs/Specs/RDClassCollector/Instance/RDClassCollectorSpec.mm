@@ -24,7 +24,7 @@ context(@"instance", ^{
     describe(@"responds to", ^{
 
         it(@"collectForProtocol:", ^{
-            subject should responds_to(@selector(collectForProtocol:));
+            [subject respondsToSelector:@selector(collectForProtocol:)] should be_truthy;
         });
 
     });
@@ -34,11 +34,11 @@ context(@"instance", ^{
         describe(@"only classes that conforms protocol", ^{
             __block Protocol *protocol = @protocol(RDTestProtocol);
 
-            it(^{
+            it(@"should pass", ^{
                 [subject collectForProtocol:protocol] should contain([RDUser class]);
             });
 
-            it(^{
+            it(@"should pass", ^{
                 [subject collectForProtocol:protocol] should_not contain([RDEntityWithoutProtocols class]);
             });
 

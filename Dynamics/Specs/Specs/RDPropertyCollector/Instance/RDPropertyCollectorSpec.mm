@@ -6,10 +6,25 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-CDR_EXT
-Tsuga<RDPropertyCollector>::runInstance(^{
-    responds(^{
-        to(@selector(collectForClass:));
+SPEC_BEGIN(RDPropertyCollectorSpec)
+
+context(@"instance", ^{
+
+    __block RDPropertyCollector *subject = nil;
+    beforeEach(^{
+        subject = [RDPropertyCollector new];
+    });
+
+    afterEach(^{
+        [subject release];
+    });
+
+    context(@"responds to", ^{
+
+        it(@"collectorForClass:", ^{
+            [subject respondsToSelector:@selector(collectForClass:)] should be_truthy;
+        });
+
     });
 
     context(@"collect", ^{
@@ -23,15 +38,17 @@ Tsuga<RDPropertyCollector>::runInstance(^{
             beforeEach(^{
                 RDClassCollector *classCollector = [[RDClassCollector new] autorelease];
                 klass = [classCollector collectForProtocol:protocol][0];
-                properties = [subject() collectForClass:klass];
+                properties = [subject collectForClass:klass];
             });
 
-            it(^{
+            it(@"should pass", ^{
                 properties.count should equal(2);
             });
 
         });
 
     });
+
 });
 
+SPEC_END

@@ -5,14 +5,19 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-CDR_EXT
-Tsuga<RDDynamicsInjector>::runInstance(^{
+SPEC_BEGIN(RDDynamicsInjectorSpec)
+
+context(@"instance", ^{
     __block RDDynamicsInjector *injector = nil;
 
     beforeEach(^{
-        injector = subject();
+        injector = [RDDynamicsInjector new];
 
         [injector injectDynamicsInto:@protocol(RDFatTestProtocol)];
+    });
+
+    afterEach(^{
+        [injector release];
     });
 
     describe(@"accessors/mutators injected", ^{
@@ -198,3 +203,4 @@ Tsuga<RDDynamicsInjector>::runInstance(^{
 
 });
 
+SPEC_END

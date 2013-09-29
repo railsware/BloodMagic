@@ -46,7 +46,7 @@
 		5898AE4A4B22742AC125B9C3 /* RDFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC19F85BB236C5A894E5 /* RDFatDynamicModel.m */; };
 		5898AE6C39D0F250703A831C /* RDLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A92903DB5CB3790E6F78 /* RDLazyModel.m */; };
 		5898AF5EA273AC305CE31077 /* RDKVCInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A56DCAF66BA91EF8266D /* RDKVCInjector.mm */; };
-		5898AF900FBFDD25DEBF6C6C /* LazySpecSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD60F708846586D8111D /* LazySpecSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5898AF900FBFDD25DEBF6C6C /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD60F708846586D8111D /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898AF9D7B53E5A789E40909 /* RDPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A83A761F2D690D4EDBEE /* RDPrimitiveShortProperty.mm */; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
@@ -120,7 +120,7 @@
 		5898ACC00FCEE85EDA615ED7 /* RDInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		5898ACEC60971BB851904002 /* RDPrimitiveUnsignedLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveUnsignedLongProperty.h; sourceTree = "<group>"; };
 		5898AD113859B74E1B1D875B /* RDPropertyCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPropertyCollector.mm; sourceTree = "<group>"; };
-		5898AD60F708846586D8111D /* LazySpecSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazySpecSpec.mm; sourceTree = "<group>"; };
+		5898AD60F708846586D8111D /* LazySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazySpec.mm; sourceTree = "<group>"; };
 		5898AD61268DF0115447EB76 /* RDPrimitiveUnsignedIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveUnsignedIntProperty.mm; sourceTree = "<group>"; };
 		5898AD7938843780BBCDC106 /* RDDynamicsInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDDynamicsInjector.m; sourceTree = "<group>"; };
 		5898ADE14019B16262002D23 /* RDDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDefinitions.h; sourceTree = "<group>"; };
@@ -357,7 +357,7 @@
 		5898A9F176875CE79E0EDEE1 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
-				5898AD60F708846586D8111D /* LazySpecSpec.mm */,
+				5898AD60F708846586D8111D /* LazySpec.mm */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -605,7 +605,7 @@
 				5898AD41ECD762A614BA6DA3 /* RDPropertyCollector.mm in Sources */,
 				5898A1C2609F3028F6333563 /* RDLazyHook.mm in Sources */,
 				5898AE6C39D0F250703A831C /* RDLazyModel.m in Sources */,
-				5898AF900FBFDD25DEBF6C6C /* LazySpecSpec.mm in Sources */,
+				5898AF900FBFDD25DEBF6C6C /* LazySpec.mm in Sources */,
 				5898A3333419DA804CB0BB1C /* RDLazyInitializer.mm in Sources */,
 				5898ACFAA47F2944095C5B87 /* RDPropertyFinder.mm in Sources */,
 				5898AAC59967843A217DAD2C /* RDPropertyKVCHandler.mm in Sources */,

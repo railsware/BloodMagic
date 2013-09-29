@@ -4,5 +4,4 @@
 //
 
 #import <Cedar-iOS/SpecHelper.h>
-#import <Tsuga.h>
 
