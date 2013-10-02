@@ -4,7 +4,8 @@
 #import "RDUser.h"
 #import "RDInitializerRegistry.h"
 #import "RDInitializer.h"
-#import "RDInitializerRegistry+LazyRegistry.h"
+#import "RDInitializer+LazyInitializer.h"
+#import "RDAnotherLazyModel.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -53,19 +54,29 @@ describe(@"LazySpec", ^{
     context(@"custom values", ^{
 
         beforeEach(^{
-            RDInitializer *initializer = [[[RDInitializer alloc] initWithPropertyClass:[RDUser class]] autorelease];
-            initializer.registry = [RDInitializerRegistry lazyRegistry];
-            [initializer registerInitializer:^id(id sender) {
+            RDInitializer *initializer = [RDInitializer lazyInitializer];
+            initializer.propertyClass = [RDUser class];
+            initializer.containerClass = [RDLazyModel class];
+            initializer.initializer = ^id(id sender){
                 RDUser *user = [[RDUser new] autorelease];
                 user.name = @"Alex";
                 user.lazyModel = sender;
                 return user;
-            }];
+            };
+            [initializer registerInitializer];
         });
 
-        it(@"custom objects", ^{
+        it(@"should load custom objects", ^{
             subject.user.name should equal(@"Alex");
+        });
+
+        it(@"should have sender", ^{
             subject.user.lazyModel should equal(subject);
+        });
+
+        it(@"should consider container class", ^{
+            RDAnotherLazyModel *anotherLazyModel = [[RDAnotherLazyModel new] autorelease];
+            anotherLazyModel.user.name should be_nil;
         });
 
     });

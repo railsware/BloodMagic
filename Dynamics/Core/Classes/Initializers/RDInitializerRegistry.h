@@ -6,9 +6,12 @@
 #import <Foundation/Foundation.h>
 #import "RDDefinitions.h"
 
+@class RDInitializer;
+@class RDProperty;
+
 @interface RDInitializerRegistry : NSObject
 
-- (void)setInitializer:(dynamics_initializer_t)initializer forKey:(NSString *)key;
-- (dynamics_initializer_t)initializerForKey:(NSString *)key;
+- (void)addInitializer:(RDInitializer *)initializer;
+- (RDInitializer *)initializerForProperty:(const RDProperty *)property;
 
 @end

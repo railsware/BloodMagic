@@ -7,6 +7,7 @@
 #import "RDProperty.h"
 #import "RDInitializerRegistry.h"
 #import "RDInitializerRegistry+LazyRegistry.h"
+#import "RDInitializer.h"
 
 @implementation RDLazyHook
 
@@ -17,7 +18,8 @@
     }
 
     RDInitializerRegistry *registry = [RDInitializerRegistry lazyRegistry];
-    dynamics_initializer_t initializer_t = [registry initializerForKey:property.propertyClassName];
+    RDInitializer *initializer = [registry initializerForProperty:property];
+    dynamics_initializer_t initializer_t = initializer.initializer;
     if (initializer_t) {
         *value = initializer_t(sender);
     } else {

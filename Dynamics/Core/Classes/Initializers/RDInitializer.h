@@ -11,8 +11,11 @@
 @interface RDInitializer : NSObject
 
 @property (nonatomic, strong) RDInitializerRegistry *registry;
+@property (nonatomic, strong) Class propertyClass;
+@property (nonatomic, strong) Class containerClass;
 
-- (instancetype)initWithPropertyClass:(Class)klass;
-- (void)registerInitializer:(dynamics_initializer_t)initializer;
+@property (nonatomic, copy) dynamics_initializer_t initializer;
+
+- (void)registerInitializer;
 
 @end

@@ -30,7 +30,11 @@
 		5898A62F46F768AD5B6D6B7C /* RDPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD61268DF0115447EB76 /* RDPrimitiveUnsignedIntProperty.mm */; };
 		5898A6C9A4141AC4B3C71178 /* RDClassCollectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AFE676B233452322195D /* RDClassCollectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A6FE217BA052CCDA3BBF /* RDPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4954BCF97705A5C74F5 /* RDPrimitiveUnsignedCharProperty.mm */; };
+		5898A7572CC094498A015D14 /* RDInitializer+LazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AA90F17909416A48FD90 /* RDInitializer+LazyInitializer.mm */; };
+		5898A7BA1B185B8009A29A86 /* RDAnotherLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AE68393D2FA383B6E0E3 /* RDAnotherLazyModel.m */; };
 		5898A8150F85EE2968FDC145 /* RDPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A93EFE0573D113AE19E6 /* RDPrimitiveUnsignedLongProperty.mm */; };
+		5898A816C8BEE721E0EEAB98 /* RDInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A52C165E3508C5DCEC1B /* RDInitializerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5898A823498F8761546A0C4A /* RDLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4A1810763453463D20B /* RDLazyModel.m */; };
 		5898A8741F5E6A53D2ED3899 /* RDEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2916C0B285BCC6D8D22 /* RDEntityWithoutProtocols.m */; };
 		5898AA02F2787BCFCD573A61 /* RDInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB685B8FB27D9137D5A0 /* RDInternalProperty.mm */; };
 		5898AA70A774F7DF8E909999 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5898A814D657DD9212874C36 /* Default-568h@2x.png */; };
@@ -47,7 +51,6 @@
 		5898ADD12D519D1B4C3F6118 /* RDPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A6078F8E687089B134F4 /* RDPrimitiveFloatProperty.mm */; };
 		5898AE0624618629F4BE430A /* RDDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7AE1842AE0E6111C659 /* RDDynamicPropertyInjector.mm */; };
 		5898AE4A4B22742AC125B9C3 /* RDFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC19F85BB236C5A894E5 /* RDFatDynamicModel.m */; };
-		5898AE6C39D0F250703A831C /* RDLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A92903DB5CB3790E6F78 /* RDLazyModel.m */; };
 		5898AF5EA273AC305CE31077 /* RDKVCInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A56DCAF66BA91EF8266D /* RDKVCInjector.mm */; };
 		5898AF900FBFDD25DEBF6C6C /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD60F708846586D8111D /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898AF9D7B53E5A789E40909 /* RDPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A83A761F2D690D4EDBEE /* RDPrimitiveShortProperty.mm */; };
@@ -75,10 +78,13 @@
 		5898A2916C0B285BCC6D8D22 /* RDEntityWithoutProtocols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDEntityWithoutProtocols.m; sourceTree = "<group>"; };
 		5898A2CCAF723554E60CC328 /* RDPrimitiveCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveCharProperty.mm; sourceTree = "<group>"; };
 		5898A2E5D6EB7B20CBF2B10C /* RDProperty_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDProperty_Private.h; sourceTree = "<group>"; };
+		5898A321DF9ABB57D72B132A /* RDInitializer+LazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDInitializer+LazyInitializer.h"; sourceTree = "<group>"; };
 		5898A37077080DE62EE2A9FB /* RDInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInitializer.mm; sourceTree = "<group>"; };
 		5898A492A8E485C0CA798229 /* RDPrimitiveDoubleProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveDoubleProperty.mm; sourceTree = "<group>"; };
 		5898A4954BCF97705A5C74F5 /* RDPrimitiveUnsignedCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveUnsignedCharProperty.mm; sourceTree = "<group>"; };
+		5898A4A1810763453463D20B /* RDLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLazyModel.m; sourceTree = "<group>"; };
 		5898A4B8E04F8A8DAEABBF06 /* RDPrimitiveUnsignedIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveUnsignedIntProperty.h; sourceTree = "<group>"; };
+		5898A52C165E3508C5DCEC1B /* RDInitializerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInitializerSpec.mm; sourceTree = "<group>"; };
 		5898A543863BC96921329060 /* RDPrimitiveLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveLongLongProperty.h; sourceTree = "<group>"; };
 		5898A55E23865776377A723C /* RDCompsiteProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDCompsiteProperty.mm; sourceTree = "<group>"; };
 		5898A56DCAF66BA91EF8266D /* RDKVCInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDKVCInjector.mm; sourceTree = "<group>"; };
@@ -97,18 +103,18 @@
 		5898A82CFD1F53CD71F7941B /* Dynamics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dynamics-Prefix.pch"; sourceTree = "<group>"; };
 		5898A8368CE2E3C020F672B3 /* RDFatDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDFatDynamicModel.h; sourceTree = "<group>"; };
 		5898A83A761F2D690D4EDBEE /* RDPrimitiveShortProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveShortProperty.mm; sourceTree = "<group>"; };
-		5898A851E45DD0AAA6F2898D /* RDLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazyModel.h; sourceTree = "<group>"; };
 		5898A869AC914D49E613AA37 /* RDLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazy.h; sourceTree = "<group>"; };
 		5898A880105DD7D8D0851F24 /* RDPrimitiveIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveIntProperty.h; sourceTree = "<group>"; };
 		5898A88756EDCF536E406003 /* RDInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDInitializer.h; sourceTree = "<group>"; };
 		5898A8B055CB5986D7B93686 /* RDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHook.h; sourceTree = "<group>"; };
 		5898A8F78549687DE7712A71 /* RDDynamicsInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDynamicsInjector.h; sourceTree = "<group>"; };
-		5898A92903DB5CB3790E6F78 /* RDLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLazyModel.m; sourceTree = "<group>"; };
 		5898A92AEB267BE29748769B /* RDPrimitiveIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveIntProperty.mm; sourceTree = "<group>"; };
 		5898A93EFE0573D113AE19E6 /* RDPrimitiveUnsignedLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveUnsignedLongProperty.mm; sourceTree = "<group>"; };
 		5898A9BAD0D9549E0853B015 /* RDPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPropertyFinder.mm; sourceTree = "<group>"; };
 		5898A9F38ADC660890FD6031 /* RDPrimitiveUnsignedLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveUnsignedLongLongProperty.h; sourceTree = "<group>"; };
 		5898A9FAAB962C1D268A4798 /* RDPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
+		5898AA637DFC1677DFC4475C /* RDLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazyModel.h; sourceTree = "<group>"; };
+		5898AA90F17909416A48FD90 /* RDInitializer+LazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "RDInitializer+LazyInitializer.mm"; sourceTree = "<group>"; };
 		5898AA9AD6EDFAF45996777E /* RDClassCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDClassCollector.h; sourceTree = "<group>"; };
 		5898AAB85F5383A2158BDE14 /* RDInitializerRegistry+LazyRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "RDInitializerRegistry+LazyRegistry.mm"; sourceTree = "<group>"; };
 		5898AABA7037B137E9DFF9B3 /* RDProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDProperty.mm; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		5898AC9391252A65FE3DFDF6 /* RDPrimitiveShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveShortProperty.h; sourceTree = "<group>"; };
 		5898ACA5069B5D47DFF23D88 /* RDFatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDFatModel.h; sourceTree = "<group>"; };
 		5898ACA7EBA73742C818FA7E /* RDPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveFloatProperty.h; sourceTree = "<group>"; };
+		5898ACB33534C6A20FB372C7 /* RDAnotherLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDAnotherLazyModel.h; sourceTree = "<group>"; };
 		5898ACB657BA24774521E52F /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		5898ACC00FCEE85EDA615ED7 /* RDInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		5898ACEC60971BB851904002 /* RDPrimitiveUnsignedLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveUnsignedLongProperty.h; sourceTree = "<group>"; };
@@ -134,6 +141,7 @@
 		5898ADFF83A693E5A54D53C4 /* RDInternalPropertyTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDInternalPropertyTemplate.h; sourceTree = "<group>"; };
 		5898AE4943FFA8AEB08CDE33 /* RDPrimitiveLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPrimitiveLongProperty.h; sourceTree = "<group>"; };
 		5898AE605A7D3CABD3B50A78 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Dynamics/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		5898AE68393D2FA383B6E0E3 /* RDAnotherLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDAnotherLazyModel.m; sourceTree = "<group>"; };
 		5898AE6EA641915F31FD4BBB /* RDInitializerRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInitializerRegistry.mm; sourceTree = "<group>"; };
 		5898AE7A52631570AF1CB669 /* RDPropertyCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPropertyCollectorSpec.mm; sourceTree = "<group>"; };
 		5898AEC01F18125240CFEA4F /* RDInitializerRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDInitializerRegistry.h; sourceTree = "<group>"; };
@@ -196,6 +204,17 @@
 			path = RDPropertyCollector;
 			sourceTree = "<group>";
 		};
+		5898A0EE123F78A40C1169BB /* LazySpecs */ = {
+			isa = PBXGroup;
+			children = (
+				5898AA637DFC1677DFC4475C /* RDLazyModel.h */,
+				5898A4A1810763453463D20B /* RDLazyModel.m */,
+				5898AE68393D2FA383B6E0E3 /* RDAnotherLazyModel.m */,
+				5898ACB33534C6A20FB372C7 /* RDAnotherLazyModel.h */,
+			);
+			path = LazySpecs;
+			sourceTree = "<group>";
+		};
 		5898A0FBE5EE0D919D7F6B89 /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +266,7 @@
 				5898A8368CE2E3C020F672B3 /* RDFatDynamicModel.h */,
 				5898AC19F85BB236C5A894E5 /* RDFatDynamicModel.m */,
 				5898AFE76C9AAEDBB60AC0A4 /* RDFatTestProtocol.h */,
-				5898A92903DB5CB3790E6F78 /* RDLazyModel.m */,
-				5898A851E45DD0AAA6F2898D /* RDLazyModel.h */,
+				5898A0EE123F78A40C1169BB /* LazySpecs */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -344,6 +362,8 @@
 				5898A67A55A4C89E19EC645B /* RDLazyInitializer.mm */,
 				5898AAB85F5383A2158BDE14 /* RDInitializerRegistry+LazyRegistry.mm */,
 				5898AD35E7256BE21A40AB69 /* RDInitializerRegistry+LazyRegistry.h */,
+				5898AA90F17909416A48FD90 /* RDInitializer+LazyInitializer.mm */,
+				5898A321DF9ABB57D72B132A /* RDInitializer+LazyInitializer.h */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -370,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				5898AD60F708846586D8111D /* LazySpec.mm */,
+				5898A52C165E3508C5DCEC1B /* RDInitializerSpec.mm */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -627,7 +648,6 @@
 				5898A1F1426967A299536EF4 /* RDClassCollector.m in Sources */,
 				5898AD41ECD762A614BA6DA3 /* RDPropertyCollector.mm in Sources */,
 				5898A1C2609F3028F6333563 /* RDLazyHook.mm in Sources */,
-				5898AE6C39D0F250703A831C /* RDLazyModel.m in Sources */,
 				5898AF900FBFDD25DEBF6C6C /* LazySpec.mm in Sources */,
 				5898A3333419DA804CB0BB1C /* RDLazyInitializer.mm in Sources */,
 				5898ACFAA47F2944095C5B87 /* RDPropertyFinder.mm in Sources */,
@@ -638,6 +658,10 @@
 				5898A34E9758EC1D1475C5DC /* RDInitializerRegistry.mm in Sources */,
 				5898A58566ABAD7478266038 /* RDInitializer.mm in Sources */,
 				5898A4CFEB83B4286B9CC6D3 /* RDInitializerRegistry+LazyRegistry.mm in Sources */,
+				5898A7572CC094498A015D14 /* RDInitializer+LazyInitializer.mm in Sources */,
+				5898A816C8BEE721E0EEAB98 /* RDInitializerSpec.mm in Sources */,
+				5898A823498F8761546A0C4A /* RDLazyModel.m in Sources */,
+				5898A7BA1B185B8009A29A86 /* RDAnotherLazyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

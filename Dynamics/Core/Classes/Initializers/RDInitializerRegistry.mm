@@ -4,30 +4,47 @@
 //
 
 #import "RDInitializerRegistry.h"
+#import "RDInitializer.h"
+#import "RDProperty.h"
 
 @implementation RDInitializerRegistry
 {
-    NSMutableDictionary *_initializers;
+    NSMutableArray *_initializers;
 }
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        _initializers = [NSMutableDictionary new];
+        _initializers = [NSMutableArray new];
     }
 
     return self;
 }
 
-- (void)setInitializer:(dynamics_initializer_t)initializer forKey:(NSString *)key
+- (void)addInitializer:(RDInitializer *)initializer
 {
-    _initializers[key] = [initializer copy];
+    [_initializers addObject:initializer];
 }
 
-- (dynamics_initializer_t)initializerForKey:(NSString *)key
+- (RDInitializer *)initializerForProperty:(const RDProperty *)property
 {
-    dynamics_initializer_t initializer = _initializers[key];
+    RDInitializer *initializer = nil;
+    for (RDInitializer *init in _initializers) {
+        Class propertyClass = NSClassFromString(property.propertyClassName);
+        if (init.propertyClass != propertyClass) {
+            continue;
+        }
+
+        Class containerClass = NSClassFromString(property.containerClassName);
+        if (init.containerClass != containerClass) {
+            continue;
+        }
+
+        initializer = init;
+        break;
+    }
+
     return initializer;
 }
 

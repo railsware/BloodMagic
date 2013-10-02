@@ -24,7 +24,7 @@
     NSMutableArray *properties = [NSMutableArray arrayWithCapacity:propertyCount];
     for (int propertyIndex = 0; propertyIndex < propertyCount; propertyIndex++) {
         objc_property_t objcProperty = objcProperties[propertyIndex];
-        RDProperty *property = [[RDProperty alloc] initWithProperty:objcProperty];
+        RDProperty *property = [[RDProperty alloc] initWithProperty:objcProperty ofClass:klass];
         if (property.isDynamic) {
             [properties addObject:property];
         }

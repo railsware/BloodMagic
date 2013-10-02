@@ -7,24 +7,10 @@
 #import "RDInitializerRegistry.h"
 
 @implementation RDInitializer
+
+- (void)registerInitializer
 {
-    Class _propertyClass;
+    [self.registry addInitializer:self];
 }
-
-- (instancetype)initWithPropertyClass:(Class)klass
-{
-    self = [super init];
-    if (self) {
-        _propertyClass = klass;
-    }
-
-    return self;
-}
-
-- (void)registerInitializer:(dynamics_initializer_t)initializer
-{
-    [self.registry setInitializer:initializer forKey:NSStringFromClass(_propertyClass)];
-}
-
 
 @end

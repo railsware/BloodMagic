@@ -13,6 +13,7 @@
     NSString *_name;
     NSString *_accessor;
     NSString *_mutator;
+    NSString *_containerClassName;
 
     BOOL _isDynamic;
     BOOL _isCopy;
@@ -22,10 +23,11 @@
     RDInternalProperty *_internalProperty;
 }
 
-- (instancetype)initWithProperty:(objc_property_t)property
+- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass
 {
     self = [super init];
     if (self) {
+        _containerClassName = NSStringFromClass(containerClass);
         _internalProperty = NULL;
 
         const char *name = property_getName(property);
@@ -41,6 +43,7 @@
 
     return self;
 }
+
 
 - (RDInternalProperty *)internalProperty
 {
@@ -74,6 +77,10 @@
     return @(_internalProperty->propertyClassName().c_str());
 }
 
+- (NSString *)containerClassName
+{
+    return _containerClassName;
+}
 
 - (IMP)accessorImplementation
 {

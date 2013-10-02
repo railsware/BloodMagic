@@ -8,12 +8,13 @@
 
 @interface RDProperty : NSObject
 
-- (instancetype)initWithProperty:(objc_property_t)property;
+- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass;
 
 - (NSString *)name;
 - (NSString *)accessor;
 - (NSString *)mutator;
 - (NSString *)propertyClassName;
+- (NSString *)containerClassName;
 
 - (IMP)accessorImplementation;
 - (IMP)mutatorImplementation;

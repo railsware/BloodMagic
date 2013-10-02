@@ -12,7 +12,7 @@ SPEC_BEGIN(RDPropertySpec)
 context(@"instance", ^{
     PropertyBlock propertyWithName = ^RDProperty *(const char *propertyName){
         objc_property_t property_t = class_getProperty([RDFatModel class], propertyName);
-        RDProperty *property = [[[RDProperty alloc] initWithProperty:property_t] autorelease];
+        RDProperty *property = [[[RDProperty alloc] initWithProperty:property_t ofClass:Nil] autorelease];
         return property;
     };
 
