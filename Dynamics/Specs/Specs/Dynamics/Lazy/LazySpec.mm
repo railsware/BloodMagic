@@ -21,6 +21,7 @@ describe(@"LazySpec", ^{
 
     afterEach(^{
         [subject release];
+        subject = nil;
     });
 
     context(@"default values", ^{
@@ -77,6 +78,20 @@ describe(@"LazySpec", ^{
         it(@"should consider container class", ^{
             RDAnotherLazyModel *anotherLazyModel = [[RDAnotherLazyModel new] autorelease];
             anotherLazyModel.user.name should be_nil;
+        });
+
+        it(@"should have NSObject container by default", ^{
+            RDInitializer *initializer = [RDInitializer lazyInitializer];
+            initializer.propertyClass = [RDUser class];
+            initializer.initializer = ^id(id sender){
+                RDUser *user = [[RDUser new] autorelease];
+                user.name = @"Alex";
+                return user;
+            };
+            [initializer registerInitializer];
+
+            RDAnotherLazyModel *anotherLazyModel = [[RDAnotherLazyModel new] autorelease];
+            anotherLazyModel.user.name should equal(@"Alex");
         });
 
     });

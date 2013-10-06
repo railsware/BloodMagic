@@ -36,6 +36,11 @@
             continue;
         }
 
+        if (init.containerClass == [NSObject class]) {
+            initializer = init;
+            break;
+        }
+
         Class containerClass = NSClassFromString(property.containerClassName);
         if (init.containerClass != containerClass) {
             continue;

@@ -8,6 +8,14 @@
 
 @implementation RDInitializer
 
+- (instancetype)init
+{
+    self = [super init];
+    self.containerClass = [NSObject class];
+
+    return self;
+}
+
 - (void)registerInitializer
 {
     [self.registry addInitializer:self];
