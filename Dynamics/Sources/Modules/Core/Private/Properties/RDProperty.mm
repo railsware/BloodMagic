@@ -193,7 +193,7 @@
             }
         } break;
         default: {
-            NSLog(@"Unused attribute: '%s' with value '%s'", attribute.name, attribute.value);
+//            NSLog(@"Unused attribute: '%s' with value '%s'", attribute.name, attribute.value);
         }
     }
 }

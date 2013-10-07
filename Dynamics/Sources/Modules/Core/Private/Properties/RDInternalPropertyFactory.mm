@@ -82,7 +82,7 @@
             property = new RDPrimitiveDoubleProperty;
         } break;
         default:{
-            NSLog(@"Unknown property type '%s", type);
+//            NSLog(@"Unknown property type '%s", type);
         };
     };
     if (property != NULL) {

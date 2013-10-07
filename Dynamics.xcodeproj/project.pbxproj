@@ -24,6 +24,7 @@
 		5898A563F84AC7463D8DDC35 /* RDInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5CD525AC6AE9B392FC4 /* RDInitializerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A5B7E6C5E94E2FA6F615 /* RDInitializerRegistry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* RDInitializerRegistry.mm */; };
 		5898A5B9EFAB5AC3C8C65191 /* RDPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAE844425D720AA0CED4 /* RDPropertyFinder.mm */; };
+		5898A5D0BC3F831DDE32C388 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5898AC10B28C12F4824ED56E /* Podfile */; };
 		5898A61EC3D55D4B81954F8B /* RDClassCollectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AA4D3CDC443AF363BD44 /* RDClassCollectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A651A77CDB32E60D64C5 /* RDInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AFEDFC0917CBBD32A3FF /* RDInternalPropertyTemplate.mm */; };
 		5898A65B63ACA3AEBDDB271C /* RDInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* RDInitializer.mm */; };
@@ -128,6 +129,7 @@
 		5898AB3C749E2FE8F70D82A4 /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
 		5898AB9F4613E1ECA2E75711 /* RDInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
 		5898ABA54CB1FDD879918252 /* RDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDUser.m; sourceTree = "<group>"; };
+		5898AC10B28C12F4824ED56E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5898AC19F85BB236C5A894E5 /* RDFatDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDFatDynamicModel.m; sourceTree = "<group>"; };
 		5898AC5D06D970807E136F41 /* RDInitializerRegistry+LazyRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "RDInitializerRegistry+LazyRegistry.mm"; sourceTree = "<group>"; };
 		5898ACA257539D36AC542B5C /* RDPrimitiveLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveLongProperty.mm; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 				CADB6AF3178FFE330060E11D /* Frameworks */,
 				CADB6AF2178FFE330060E11D /* Products */,
 				E0923875F301408CA184BE42 /* Pods.xcconfig */,
+				5898AC10B28C12F4824ED56E /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -610,6 +613,7 @@
 				5898AA70A774F7DF8E909999 /* Default-568h@2x.png in Resources */,
 				5898A2C8207D7781F57F24EA /* Default@2x.png in Resources */,
 				5898AB9C4CB354AE02C69D96 /* Default.png in Resources */,
+				5898A5D0BC3F831DDE32C388 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
