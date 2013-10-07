@@ -6,7 +6,7 @@
 #import "Core.h"
 #import "Lazy.h"
 
-rd_initializer _lazyInitializer()
+rd_module_initializer _lazyInitializer()
 {
     RDDynamicsInjector *injector = [RDDynamicsInjector new];
     [injector injectDynamicsInto:@protocol(RDLazy)];
