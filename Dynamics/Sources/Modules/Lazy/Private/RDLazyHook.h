@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RDHook.h"
+#import "API.h"
 #import "RDLazy.h"
 
 @interface RDLazyHook : NSObject

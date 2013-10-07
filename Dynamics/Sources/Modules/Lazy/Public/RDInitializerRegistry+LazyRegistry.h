@@ -3,9 +3,8 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
-#import "RDInitializerRegistry.h"
+#import "Initializers.h"
 
 @interface RDInitializerRegistry (LazyRegistry)
 

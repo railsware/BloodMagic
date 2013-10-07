@@ -29,6 +29,7 @@
 
 - (RDInitializer *)initializerForProperty:(const RDProperty *)property
 {
+    /// TODO: move to RDInitializerFinder
     RDInitializer *initializer = nil;
     for (RDInitializer *init in _initializers) {
         Class propertyClass = NSClassFromString(property.propertyClassName);

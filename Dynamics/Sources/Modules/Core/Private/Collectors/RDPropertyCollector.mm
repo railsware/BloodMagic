@@ -7,8 +7,7 @@
 #import <objc/runtime.h>
 #import "RDPropertyCollector.h"
 #import "RDProperty.h"
-#import "RDProperty_Private.h"
-#import "RDDefinitions.h"
+#import "RDPrivateCoreDefinitions.h"
 
 @implementation RDPropertyCollector
 

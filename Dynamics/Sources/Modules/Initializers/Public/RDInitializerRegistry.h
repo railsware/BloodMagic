@@ -4,7 +4,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RDDefinitions.h"
 
 @class RDInitializer;
 @class RDProperty;

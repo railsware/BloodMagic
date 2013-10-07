@@ -5,7 +5,7 @@
 
 #include "RDPropertyFinder.h"
 #include "RDProperty_Private.h"
-#include "RDDefinitions.h"
+#include "RDPrivateCoreDefinitions.h"
 
 RDPropertyFinder::RDPropertyFinder(id self) : _self(self)
 {

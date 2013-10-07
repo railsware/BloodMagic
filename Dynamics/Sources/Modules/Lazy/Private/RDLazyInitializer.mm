@@ -3,10 +3,10 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import "RDDynamicsInjector.h"
-#import "RDLazy.h"
+#import "Core.h"
+#import "Lazy.h"
 
-__attribute__((constructor)) static void _lazyInitializer()
+rd_initializer _lazyInitializer()
 {
     RDDynamicsInjector *injector = [RDDynamicsInjector new];
     [injector injectDynamicsInto:@protocol(RDLazy)];
