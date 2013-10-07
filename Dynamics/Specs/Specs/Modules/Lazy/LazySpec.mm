@@ -1,10 +1,8 @@
 #import "SpecHelper.h"
 
+#import "Lazy.h"
 #import "RDLazyModel.h"
 #import "RDUser.h"
-#import "RDInitializerRegistry.h"
-#import "RDInitializer.h"
-#import "RDInitializer+LazyInitializer.h"
 #import "RDAnotherLazyModel.h"
 
 using namespace Cedar::Matchers;
@@ -81,14 +79,11 @@ describe(@"LazySpec", ^{
         });
 
         it(@"should have NSObject container by default", ^{
-            RDInitializer *initializer = [RDInitializer lazyInitializer];
-            initializer.propertyClass = [RDUser class];
-            initializer.initializer = ^id(id sender){
+            RDLazyInitializer<RDUser>::registerInitializer(^RDUser *(NSObject *sender) {
                 RDUser *user = [[RDUser new] autorelease];
                 user.name = @"Alex";
                 return user;
-            };
-            [initializer registerInitializer];
+            });
 
             RDAnotherLazyModel *anotherLazyModel = [[RDAnotherLazyModel new] autorelease];
             anotherLazyModel.user.name should equal(@"Alex");

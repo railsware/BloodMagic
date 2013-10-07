@@ -41,6 +41,7 @@
 		5898A8741F5E6A53D2ED3899 /* RDEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2916C0B285BCC6D8D22 /* RDEntityWithoutProtocols.m */; };
 		5898A8ED9D434EF755D75136 /* RDPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AE86E34292B96D05DAA4 /* RDPrimitiveUnsignedLongProperty.mm */; };
 		5898A8FEFD44EB7E5C18D61B /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A87ABE5DDCA021D4B972 /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5898A903B59101E921FA69C1 /* RDLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A11B24572E4ECA67D7B8 /* RDLazyInitializer.mm */; };
 		5898A906CC8ECD6E99A13CF9 /* RDPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898ACA257539D36AC542B5C /* RDPrimitiveLongProperty.mm */; };
 		5898AA70A774F7DF8E909999 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5898A814D657DD9212874C36 /* Default-568h@2x.png */; };
 		5898AA834CBABF16303FEB52 /* RDPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A465F93827E7DBF72E82 /* RDPrimitiveIntProperty.mm */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		5898A00A6BF6E6793CD7D67F /* RDPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
+		5898A051417D6A776C149055 /* RDLazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazyInitializer.h; sourceTree = "<group>"; };
+		5898A11B24572E4ECA67D7B8 /* RDLazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDLazyInitializer.mm; sourceTree = "<group>"; };
 		5898A133A66D70A440474897 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5898A137D9E0D2ADD672538E /* RDKVCInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDKVCInjector.h; sourceTree = "<group>"; };
 		5898A13A7F388FAEFCFB1FA3 /* RDCompsiteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCompsiteProperty.h; sourceTree = "<group>"; };
@@ -430,6 +433,8 @@
 				5898AB9F4613E1ECA2E75711 /* RDInitializerRegistry+LazyRegistry.h */,
 				5898AC5D06D970807E136F41 /* RDInitializerRegistry+LazyRegistry.mm */,
 				5898AEF8CAA0DB0BBB750EA0 /* RDLazy.h */,
+				5898A11B24572E4ECA67D7B8 /* RDLazyInitializer.mm */,
+				5898A051417D6A776C149055 /* RDLazyInitializer.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -700,6 +705,7 @@
 				5898A3FD3F85991506BCC251 /* RDInitializerRegistry+LazyRegistry.mm in Sources */,
 				5898ABF44B746E7583646C13 /* RDLazyHook.mm in Sources */,
 				5898A549C2D879A7DE35A0C3 /* RDLazyInitializer.mm in Sources */,
+				5898A903B59101E921FA69C1 /* RDLazyInitializer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
