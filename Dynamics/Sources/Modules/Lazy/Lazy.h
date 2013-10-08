@@ -8,4 +8,3 @@
 #import "RDLazy.h"
 #import "RDInitializer+LazyInitializer.h"
 #import "RDInitializerRegistry+LazyRegistry.h"
-#import "RDCXXLazyInitializer.h"

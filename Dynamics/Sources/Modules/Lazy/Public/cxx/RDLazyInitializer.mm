@@ -4,4 +4,4 @@
 //
 
 
-#include "RDCXXLazyInitializer.h"
+#include "RDLazyInitializer.h"

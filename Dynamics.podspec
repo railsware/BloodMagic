@@ -22,10 +22,9 @@ Pod::Spec.new do |podspec|
     lazy.dependency 'Dynamics/Initializers'
   end
 
-  podspec.libraries = 'c++'
-
   podspec.xcconfig = {
-    'OTHER_LDFLAGS' => '-lstdc++'
+    'OTHER_LDFLAGS' => '-lstdc++',
+    'CLANG_CXX_LIBRARY' => 'libstdc++'
   }
 
 end
