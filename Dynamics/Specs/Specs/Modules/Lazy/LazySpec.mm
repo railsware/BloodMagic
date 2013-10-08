@@ -1,6 +1,7 @@
 #import "SpecHelper.h"
 
 #import "Lazy.h"
+#import "Lazy_cxx.h"
 #import "RDLazyModel.h"
 #import "RDUser.h"
 #import "RDAnotherLazyModel.h"

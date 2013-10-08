@@ -62,6 +62,13 @@ context(@"instance", ^{
             property.isAssign should be_truthy;
         });
 
+        describe(@"weak attributes", ^{
+            property = propertyWithName("weakProperty");
+            property.isRetain should_not be_truthy;
+            property.isCopy should_not be_truthy;
+            property.isAssign should be_truthy;
+        });
+        
         describe(@"default accessor", ^{
             property = propertyWithName("assignProperty");
             property.accessor should equal(@"assignProperty");

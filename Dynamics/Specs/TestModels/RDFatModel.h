@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *strongProperty;
 @property (nonatomic, assign) NSString *assignProperty;
 @property (nonatomic, copy) NSString *dynamicProperty;
+@property (nonatomic, weak) NSMutableArray *weakProperty;
 
 @property (nonatomic, copy, getter = firstName, setter = setFirstName:) NSString *name;
 
