@@ -57,6 +57,7 @@
 		5898AFDE4DD1390DE717B55F /* RDPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* RDPrimitiveCharProperty.mm */; };
 		5898AFFD9D64A3A7C5FE7A2C /* RDPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAA1520BC6CEEB4844F5 /* RDPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
+		CA0D845E1803BF8B0068D8F9 /* RDLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* RDLazyModuleLoader.m */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
 		CADB6AF7178FFE330060E11D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF6178FFE330060E11D /* Foundation.framework */; };
 		CADB6AF9178FFE330060E11D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF8178FFE330060E11D /* CoreGraphics.framework */; };
@@ -163,6 +164,8 @@
 		5898AFE76C9AAEDBB60AC0A4 /* RDFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* RDInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0D845C1803BF8B0068D8F9 /* RDLazyModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazyModuleLoader.h; sourceTree = "<group>"; };
+		CA0D845D1803BF8B0068D8F9 /* RDLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLazyModuleLoader.m; sourceTree = "<group>"; };
 		CADB6AF1178FFE330060E11D /* Dynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADB6AF4178FFE330060E11D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CADB6AF6178FFE330060E11D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -260,6 +263,8 @@
 				5898A80630FF05327FC75DF8 /* RDLazyHook.mm */,
 				5898AF9AACB883F35A58A4D0 /* RDLazyInitializer.mm */,
 				5898A76A19A37C4A1B6A850B /* RDLazyHook.h */,
+				CA0D845C1803BF8B0068D8F9 /* RDLazyModuleLoader.h */,
+				CA0D845D1803BF8B0068D8F9 /* RDLazyModuleLoader.m */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -706,6 +711,7 @@
 				5898ABF44B746E7583646C13 /* RDLazyHook.mm in Sources */,
 				5898A549C2D879A7DE35A0C3 /* RDLazyInitializer.mm in Sources */,
 				5898A903B59101E921FA69C1 /* RDCXXLazyInitializer.mm in Sources */,
+				CA0D845E1803BF8B0068D8F9 /* RDLazyModuleLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

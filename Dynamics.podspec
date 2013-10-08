@@ -5,7 +5,7 @@ Pod::Spec.new do |podspec|
   podspec.summary = 'Hello'
   podspec.homepage = 'http://okolodev.org'
   podspec.author = 'AlexDenisov'
-  podspec.source = { :git => 'git@git.okolodev.org:AlexDenisov/dynamics.git', :branch => 'master' }
+  podspec.source = { :git => 'git@git.okolodev.org:AlexDenisov/dynamics.git', :branch => 'cocoapods' }
   podspec.requires_arc = true
 
   podspec.subspec 'Core' do |core|
@@ -19,9 +19,10 @@ Pod::Spec.new do |podspec|
 
   podspec.subspec 'Lazy' do |lazy|
     lazy.source_files = 'Dynamics/Sources/Modules/Lazy/**/*.{h,m,mm}'
-    lazy.dependency 'Dynamics/Core'
     lazy.dependency 'Dynamics/Initializers'
   end
+
+  podspec.libraries = 'c++'
 
   podspec.xcconfig = {
     'OTHER_LDFLAGS' => '-lstdc++'
