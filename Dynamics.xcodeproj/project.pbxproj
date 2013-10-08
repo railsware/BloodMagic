@@ -155,6 +155,7 @@
 		5898AE605A7D3CABD3B50A78 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Dynamics/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5898AE68393D2FA383B6E0E3 /* RDAnotherLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDAnotherLazyModel.m; sourceTree = "<group>"; };
 		5898AE86E34292B96D05DAA4 /* RDPrimitiveUnsignedLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPrimitiveUnsignedLongProperty.mm; sourceTree = "<group>"; };
+		5898AEB1DF36EF33AFE5A21B /* RDLazyDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazyDefinitions.h; sourceTree = "<group>"; };
 		5898AEF8CAA0DB0BBB750EA0 /* RDLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLazy.h; sourceTree = "<group>"; };
 		5898AF0FA6CF74B0A05389D4 /* RDPropertyKVCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPropertyKVCHandler.h; sourceTree = "<group>"; };
 		5898AF26F9ED8167F06562E9 /* RDInternalProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDInternalProperty.mm; sourceTree = "<group>"; };
@@ -447,6 +448,7 @@
 				5898AC5D06D970807E136F41 /* RDInitializerRegistry+LazyRegistry.mm */,
 				5898AEF8CAA0DB0BBB750EA0 /* RDLazy.h */,
 				5898A19E3E1505FD50FF5637 /* cxx */,
+				5898AEB1DF36EF33AFE5A21B /* RDLazyDefinitions.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
