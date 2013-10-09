@@ -7,7 +7,7 @@
 
 #import "BMInternalPropertyTemplate.h"
 
-class RDPrimitiveLongProperty : public BMInternalPropertyTemplate<long>
+class BMPrimitiveLongProperty : public BMInternalPropertyTemplate<long>
 {
 public:
     long unbox(id value) override;

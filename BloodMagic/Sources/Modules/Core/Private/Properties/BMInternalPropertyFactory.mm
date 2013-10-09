@@ -7,19 +7,19 @@
 
 #import "BMInternalPropertyFactory.h"
 #import "BMInternalProperty.h"
-#import "RDCompsiteProperty.h"
-#import "RDPrimitiveCharProperty.h"
-#import "RDPrimitiveUnsignedCharProperty.h"
-#import "RDPrimitiveShortProperty.h"
-#import "RDPrimitiveUnsignedShortProperty.h"
-#import "RDPrimitiveIntProperty.h"
-#import "RDPrimitiveUnsignedIntProperty.h"
-#import "RDPrimitiveLongProperty.h"
-#import "RDPrimitiveUnsignedLongProperty.h"
-#import "RDPrimitiveLongLongProperty.h"
-#import "RDPrimitiveUnsignedLongLongProperty.h"
-#import "RDPrimitiveFloatProperty.h"
-#import "RDPrimitiveDoubleProperty.h"
+#import "BMCompsiteProperty.h"
+#import "BMPrimitiveCharProperty.h"
+#import "BMPrimitiveUnsignedCharProperty.h"
+#import "BMPrimitiveShortProperty.h"
+#import "BMPrimitiveUnsignedShortProperty.h"
+#import "BMPrimitiveIntProperty.h"
+#import "BMPrimitiveUnsignedIntProperty.h"
+#import "BMPrimitiveLongProperty.h"
+#import "BMPrimitiveUnsignedLongProperty.h"
+#import "BMPrimitiveLongLongProperty.h"
+#import "BMPrimitiveUnsignedLongLongProperty.h"
+#import "BMPrimitiveFloatProperty.h"
+#import "BMPrimitiveDoubleProperty.h"
 
 @implementation BMInternalPropertyFactory
 
@@ -36,7 +36,7 @@
     std::string className(type);
     className = className.substr(2, className.length() - 3);
 
-    RDCompositeProperty *compositeProperty = new RDCompositeProperty;
+    BMCompositeProperty *compositeProperty = new BMCompositeProperty;
     compositeProperty->setPropertyClassName(className);
     return compositeProperty;
 }
@@ -46,40 +46,40 @@
     BMInternalProperty *property = NULL;
     switch (type[0]) {
         case _C_CHR:{
-            property = new RDPrimitiveCharProperty;
+            property = new BMPrimitiveCharProperty;
         } break;
         case _C_UCHR:{
-            property = new RDPrimitiveUnsignedCharProperty;
+            property = new BMPrimitiveUnsignedCharProperty;
         } break;
         case _C_SHT:{
-            property = new RDPrimitiveShortProperty;
+            property = new BMPrimitiveShortProperty;
         } break;
         case _C_USHT:{
-            return new RDPrimitiveUnsignedShortProperty;
+            return new BMPrimitiveUnsignedShortProperty;
         } break;
         case _C_INT:{
-            property = new RDPrimitiveIntProperty;
+            property = new BMPrimitiveIntProperty;
         } break;
         case _C_UINT:{
-            property = new RDPrimitiveUnsignedIntProperty;
+            property = new BMPrimitiveUnsignedIntProperty;
         } break;
         case _C_LNG:{
-            property = new RDPrimitiveLongProperty;
+            property = new BMPrimitiveLongProperty;
         } break;
         case _C_ULNG:{
-            property = new RDPrimitiveUnsignedLongProperty;
+            property = new BMPrimitiveUnsignedLongProperty;
         } break;
         case _C_LNG_LNG:{
-            property = new RDPrimitiveLongLongProperty;
+            property = new BMPrimitiveLongLongProperty;
         } break;
         case _C_ULNG_LNG:{
-            property = new RDPrimitiveUnsignedLongLongProperty;
+            property = new BMPrimitiveUnsignedLongLongProperty;
         } break;
         case _C_FLT:{
-            property = new RDPrimitiveFloatProperty;
+            property = new BMPrimitiveFloatProperty;
         } break;
         case _C_DBL:{
-            property = new RDPrimitiveDoubleProperty;
+            property = new BMPrimitiveDoubleProperty;
         } break;
         default:{
 //            NSLog(@"Unknown property type '%s", type);

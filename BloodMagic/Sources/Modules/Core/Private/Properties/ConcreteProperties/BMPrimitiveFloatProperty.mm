@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveFloatProperty.h"
+#include "BMPrimitiveFloatProperty.h"
 
-float RDPrimitiveFloatProperty::unbox(id value) {
+float BMPrimitiveFloatProperty::unbox(id value) {
     return [value floatValue];
 }
 
-id RDPrimitiveFloatProperty::box(float value) {
+id BMPrimitiveFloatProperty::box(float value) {
     return @(value);
 }

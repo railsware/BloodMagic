@@ -7,9 +7,9 @@
 
 #import "BMInternalPropertyTemplate.h"
 
-class RDPrimitiveLongLongProperty : public BMInternalPropertyTemplate<long long>
+class BMPrimitiveCharProperty : public BMInternalPropertyTemplate<char>
 {
 public:
-    long long unbox(id value) override;
-    id box(long long value) override;
+    char unbox(id value) override;
+    id box(char value) override;
 };

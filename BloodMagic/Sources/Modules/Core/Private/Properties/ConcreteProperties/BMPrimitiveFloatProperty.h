@@ -7,7 +7,7 @@
 
 #import "BMInternalPropertyTemplate.h"
 
-class RDPrimitiveFloatProperty : public BMInternalPropertyTemplate<float>
+class BMPrimitiveFloatProperty : public BMInternalPropertyTemplate<float>
 {
 public:
     float unbox(id value) override;

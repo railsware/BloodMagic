@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveDoubleProperty.h"
+#include "BMPrimitiveDoubleProperty.h"
 
-id RDPrimitiveDoubleProperty::box(double value) {
+id BMPrimitiveDoubleProperty::box(double value) {
     return @(value);
 }
 
-double RDPrimitiveDoubleProperty::unbox(id value) {
+double BMPrimitiveDoubleProperty::unbox(id value) {
     return [value doubleValue];
 }

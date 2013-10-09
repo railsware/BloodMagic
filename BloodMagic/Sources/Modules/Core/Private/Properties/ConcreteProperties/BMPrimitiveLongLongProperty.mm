@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveLongLongProperty.h"
+#include "BMPrimitiveLongLongProperty.h"
 
-long long RDPrimitiveLongLongProperty::unbox(id value) {
+long long BMPrimitiveLongLongProperty::unbox(id value) {
     return [value longLongValue];
 }
 
-id RDPrimitiveLongLongProperty::box(long long value) {
+id BMPrimitiveLongLongProperty::box(long long value) {
     return @(value);
 }

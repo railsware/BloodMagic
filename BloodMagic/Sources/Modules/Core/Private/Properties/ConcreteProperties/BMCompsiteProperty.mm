@@ -4,13 +4,13 @@
 //
 
 
-#include "RDCompsiteProperty.h"
+#include "BMCompsiteProperty.h"
 
-__strong id RDCompositeProperty::unbox(id value) {
+__strong id BMCompositeProperty::unbox(id value) {
     return value;
 }
 
-id RDCompositeProperty::box(id value) {
+id BMCompositeProperty::box(id value) {
     return value;
 }
 

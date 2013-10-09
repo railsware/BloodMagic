@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveShortProperty.h"
+#include "BMPrimitiveShortProperty.h"
 
-short RDPrimitiveShortProperty::unbox(id value) {
+short BMPrimitiveShortProperty::unbox(id value) {
     return [value shortValue];
 }
 
-id RDPrimitiveShortProperty::box(short value) {
+id BMPrimitiveShortProperty::box(short value) {
     return @(value);
 }

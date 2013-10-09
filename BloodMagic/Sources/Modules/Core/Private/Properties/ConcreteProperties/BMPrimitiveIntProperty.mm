@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveIntProperty.h"
+#include "BMPrimitiveIntProperty.h"
 
-int RDPrimitiveIntProperty::unbox(id value) {
+int BMPrimitiveIntProperty::unbox(id value) {
     return [value intValue];
 }
 
-id RDPrimitiveIntProperty::box(int value) {
+id BMPrimitiveIntProperty::box(int value) {
     return @(value);
 }

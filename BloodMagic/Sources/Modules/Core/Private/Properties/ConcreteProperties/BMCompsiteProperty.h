@@ -7,7 +7,7 @@
 
 #import "BMInternalPropertyTemplate.h"
 
-class RDCompositeProperty : public BMInternalPropertyTemplate<id>
+class BMCompositeProperty : public BMInternalPropertyTemplate<id>
 {
 public:
     __strong id unbox(id value) override;

@@ -4,12 +4,12 @@
 //
 
 
-#include "RDPrimitiveCharProperty.h"
+#include "BMPrimitiveCharProperty.h"
 
-char RDPrimitiveCharProperty::unbox(id value) {
+char BMPrimitiveCharProperty::unbox(id value) {
     return [value charValue];
 }
 
-id RDPrimitiveCharProperty::box(char value) {
+id BMPrimitiveCharProperty::box(char value) {
     return @(value);
 }

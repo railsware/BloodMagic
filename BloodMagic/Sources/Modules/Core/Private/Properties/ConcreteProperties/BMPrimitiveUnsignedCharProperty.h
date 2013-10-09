@@ -7,7 +7,7 @@
 
 #import "BMInternalPropertyTemplate.h"
 
-class RDPrimitiveUnsignedCharProperty : public BMInternalPropertyTemplate<unsigned char>
+class BMPrimitiveUnsignedCharProperty : public BMInternalPropertyTemplate<unsigned char>
 {
 public:
     unsigned char unbox(id value) override;
