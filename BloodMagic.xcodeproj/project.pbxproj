@@ -23,7 +23,7 @@
 		5898A55C5D70026099999F20 /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */; };
 		5898A563F84AC7463D8DDC35 /* BMInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5CD525AC6AE9B392FC4 /* BMInitializerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A5B7E6C5E94E2FA6F615 /* BMInitializerRegistry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.mm */; };
-		5898A5B9EFAB5AC3C8C65191 /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAE844425D720AA0CED4 /* BMPropertyFinder.mm */; };
+		5898A5B8898AB5C3BB60B7D7 /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */; };
 		5898A5D0BC3F831DDE32C388 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5898AC10B28C12F4824ED56E /* Podfile */; };
 		5898A61EC3D55D4B81954F8B /* BMClassCollectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AA4D3CDC443AF363BD44 /* BMClassCollectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A651A77CDB32E60D64C5 /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */; };
@@ -63,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
+		5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
 		5898A133A66D70A440474897 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5898A137D9E0D2ADD672538E /* BMKVCInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVCInjector.h; sourceTree = "<group>"; };
 		5898A13A7F388FAEFCFB1FA3 /* BMCompsiteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCompsiteProperty.h; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		5898A32A7EDAB12E7D450DAB /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
 		5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInitializerRegistry.mm; sourceTree = "<group>"; };
 		5898A364FD70B97A294A963A /* BMDynamicPropertyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDynamicPropertyInjector.h; sourceTree = "<group>"; };
-		5898A3B727CD854694D13263 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
 		5898A3D04BB40BA7B8B877B1 /* BMPrimitiveUnsignedLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongLongProperty.h; sourceTree = "<group>"; };
 		5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveDoubleProperty.mm; sourceTree = "<group>"; };
 		5898A465F93827E7DBF72E82 /* BMPrimitiveIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveIntProperty.mm; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 		5898A966FB03512A9F26B718 /* BMPrimitiveUnsignedShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedShortProperty.h; sourceTree = "<group>"; };
 		5898A96D679982C27C309333 /* BMClassCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMClassCollector.m; sourceTree = "<group>"; };
 		5898A9919F65F14D0894DE4B /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
+		5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
 		5898AA4D3CDC443AF363BD44 /* BMClassCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollectorSpec.mm; sourceTree = "<group>"; };
 		5898AA637DFC1677DFC4475C /* BMLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyModel.h; sourceTree = "<group>"; };
 		5898AAA1520BC6CEEB4844F5 /* BMPropertySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertySpec.mm; sourceTree = "<group>"; };
 		5898AAD4E07E2D7B42B00A68 /* BMPrimitiveUnsignedCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedCharProperty.mm; sourceTree = "<group>"; };
-		5898AAE844425D720AA0CED4 /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
 		5898AB03D505BEEAA3C6642E /* BMPropertyCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyCollectorSpec.mm; sourceTree = "<group>"; };
 		5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BMInitializer+LazyInitializer.mm"; sourceTree = "<group>"; };
 		5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
@@ -249,6 +249,7 @@
 				5898A8B19DB7370E366DA6B7 /* Injectors */,
 				5898AF6B97CC502C5685416B /* BMPrivateCoreDefinitions.h */,
 				5898A6070D67A6F7CE9AC8CF /* API */,
+				5898AAD55AEDF682F4E8A33A /* Finders */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -339,8 +340,8 @@
 			children = (
 				5898A364FD70B97A294A963A /* BMDynamicPropertyInjector.h */,
 				5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */,
-				5898A4F5295E8136D4D4EB45 /* BMKVCInjector.mm */,
 				5898A137D9E0D2ADD672538E /* BMKVCInjector.h */,
+				5898A4F5295E8136D4D4EB45 /* BMKVCInjector.mm */,
 			);
 			path = Injectors;
 			sourceTree = "<group>";
@@ -417,6 +418,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5898AAD55AEDF682F4E8A33A /* Finders */ = {
+			isa = PBXGroup;
+			children = (
+				5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */,
+				5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */,
+			);
+			path = Finders;
+			sourceTree = "<group>";
+		};
 		5898ABE271A19E6FCCCE2BB8 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,8 +438,8 @@
 		5898ACDDE74F72748284D1BA /* Collectors */ = {
 			isa = PBXGroup;
 			children = (
-				5898A96D679982C27C309333 /* BMClassCollector.m */,
 				5898A71B8AF66DF557B67E7F /* BMClassCollector.h */,
+				5898A96D679982C27C309333 /* BMClassCollector.m */,
 				5898ADD2F19F769DC98274B7 /* BMPropertyCollector.h */,
 				5898A5E97EFA8A48AEA991F6 /* BMPropertyCollector.mm */,
 			);
@@ -496,18 +506,16 @@
 		5898AED98A660C0E042D643B /* Properties */ = {
 			isa = PBXGroup;
 			children = (
-				5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */,
 				5898AE28D8A20B0F07093014 /* BMInternalPropertyTemplate.h */,
+				5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */,
 				5898ADD960EF3DE3087A8D60 /* ConcreteProperties */,
-				5898A5EFD05DB9946C0D8116 /* BMProperty.mm */,
-				5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */,
 				5898A31B2260B06ADEA89C9B /* BMInternalPropertyFactory.h */,
+				5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */,
 				5898A58C0F3DA7769B0D19E9 /* BMInternalProperty.h */,
 				5898A1FB0B40C6C457870EE7 /* BMProperty_Private.h */,
-				5898A32A7EDAB12E7D450DAB /* BMProperty.h */,
 				5898AF26F9ED8167F06562E9 /* BMInternalProperty.mm */,
-				5898AAE844425D720AA0CED4 /* BMPropertyFinder.mm */,
-				5898A3B727CD854694D13263 /* BMPropertyFinder.h */,
+				5898A32A7EDAB12E7D450DAB /* BMProperty.h */,
+				5898A5EFD05DB9946C0D8116 /* BMProperty.mm */,
 				5898AF0FA6CF74B0A05389D4 /* BMPropertyKVCHandler.h */,
 				5898A28663DDF3F3BA7AFDD9 /* BMPropertyKVCHandler.mm */,
 			);
@@ -702,7 +710,6 @@
 				5898A42ECFF73C8D49CDE339 /* BMProperty.mm in Sources */,
 				5898A4179EA38C3AC9700FE6 /* BMInternalPropertyFactory.mm in Sources */,
 				5898AAE85D683A61FC4796E1 /* BMInternalProperty.mm in Sources */,
-				5898A5B9EFAB5AC3C8C65191 /* BMPropertyFinder.mm in Sources */,
 				5898A218C9410D8867560420 /* BMPropertyKVCHandler.mm in Sources */,
 				5898A76EC56F78D669E39538 /* BMClassCollector.m in Sources */,
 				5898A3F32A113286A329FB13 /* BMPropertyCollector.mm in Sources */,
@@ -716,6 +723,7 @@
 				5898ABF44B746E7583646C13 /* BMLazyHook.mm in Sources */,
 				CA0D845E1803BF8B0068D8F9 /* BMLazyModuleLoader.m in Sources */,
 				5898A234C8F98F32DEA0C427 /* BMLazyInitializer.mm in Sources */,
+				5898A5B8898AB5C3BB60B7D7 /* BMPropertyFinder.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

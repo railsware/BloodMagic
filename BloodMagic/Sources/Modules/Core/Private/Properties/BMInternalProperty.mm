@@ -4,7 +4,7 @@
 //
 
 #import <objc/runtime.h>
-#include "BMInternalProperty.h"
+#import "BMInternalProperty.h"
 #import "BMClassCollector.h"
 #import "BMHook.h"
 #import "BMProperty.h"

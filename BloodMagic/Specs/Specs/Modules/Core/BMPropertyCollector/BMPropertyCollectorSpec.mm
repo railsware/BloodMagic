@@ -19,7 +19,7 @@ context(@"instance", ^{
         [subject release];
     });
 
-    context(@"responds to", ^{
+    describe(@"responds to", ^{
 
         it(@"collectorForClass:", ^{
             [subject respondsToSelector:@selector(collectForClass:)] should be_truthy;
@@ -27,24 +27,20 @@ context(@"instance", ^{
 
     });
 
-    context(@"collect", ^{
+    describe(@"collect", ^{
+        __block Class klass = Nil;
+        __block NSArray *properties = nil;
 
-        describe(@"only dynamic properties", ^{
-            __block Class klass = Nil;
-            __block NSArray *properties = nil;
+        Protocol *protocol = @protocol(BMTestProtocol);
 
-            Protocol *protocol = @protocol(BMTestProtocol);
+        beforeEach(^{
+            BMClassCollector *classCollector = [[BMClassCollector new] autorelease];
+            klass = [classCollector collectForProtocol:protocol][0];
+            properties = [subject collectForClass:klass];
+        });
 
-            beforeEach(^{
-                BMClassCollector *classCollector = [[BMClassCollector new] autorelease];
-                klass = [classCollector collectForProtocol:protocol][0];
-                properties = [subject collectForClass:klass];
-            });
-
-            it(@"should pass", ^{
-                properties.count should equal(2);
-            });
-
+        it(@"only dynamic properties", ^{
+            properties.count should equal(2);
         });
 
     });

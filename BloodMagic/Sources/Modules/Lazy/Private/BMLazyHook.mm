@@ -17,6 +17,11 @@
         return;
     }
 
+    Class containerClass = NSClassFromString(property.containerClassName);
+    if (![containerClass conformsToProtocol:@protocol(BMLazy)]) {
+        return;
+    }
+
     BMInitializerRegistry *registry = [BMInitializerRegistry lazyRegistry];
     BMInitializer *initializer = [registry initializerForProperty:property];
     magic_initializer_t initializer_t = initializer.initializer;
