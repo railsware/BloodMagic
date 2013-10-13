@@ -26,7 +26,8 @@
     BMInitializer *initializer = [registry initializerForProperty:property];
     magic_initializer_t initializer_t = initializer.initializer;
     if (initializer_t) {
-        *value = initializer_t(sender);
+        __weak id weakSender = sender;
+        *value = initializer_t(weakSender);
     } else {
         *value = [NSClassFromString(property.propertyClassName) new];
     }
