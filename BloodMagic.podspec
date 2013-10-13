@@ -1,11 +1,11 @@
 Pod::Spec.new do |podspec|
   podspec.name = 'BloodMagic'
-  podspec.version = '0.0.1'
+  podspec.version = '0.1.0'
   podspec.platform = :ios, '5.0'
-  podspec.summary = 'BloodMagic'
-  podspec.homepage = 'http://railsware.com'
-  podspec.author = 'AlexDenisov'
-  podspec.source = { :git => 'git@git.okolodev.org:AlexDenisov/dynamics.git', :branch => 'master' }
+  podspec.summary = 'BloodMagic provides kind of custom property attributes'
+  podspec.homepage = 'https://github.com/railsware/bloodmagic'
+  podspec.author   = { 'Alex Denisov' => '1101.debian@gmail.com' }
+  podspec.source = { :git => 'https://github.com/railsware/bloodmagic', :tag => "#{podspec.version}" }
   podspec.requires_arc = true
 
   podspec.subspec 'Core' do |core|
