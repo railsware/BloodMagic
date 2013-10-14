@@ -9,9 +9,13 @@ Objective-C is powerful language, but sometimes are lacking of custom property a
 
 @property (nonatomic, strong, copyable) NSString *username;
 @property (nonatomic, strong, copyable) NSString *email;
+
+@property (nonatomic, strong, anything_you_want) AwesomeView *someAwesomeView;
 ```
 
 Fortunately, we're able to achieve these effects by means of BloodMagic' spells
+
+_Note: At this time implemented only `lazy` attribute, the rest attributes will come later_
 
 ### Embark on the Dark
 
@@ -23,13 +27,36 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 
 ### Available Spells
 
-BloodMagic was designed to be extensible (but not sure that this goal was achieved).
+BloodMagic has been designed to be extensible, so few more spells will be available soon.
 
 #### Lazy initialization
 
 Initializes object on demand.
 
-Pretty easy to use, just add `BMLazy` protocol to your class:
+If you use Objective-C, then you should be familiar with this code:
+
+```objectivec
+@interface ViewController : NSObject
+
+@property (nonatomic, strong) ProgressViewService *progressViewService;
+
+@end
+```
+
+```objectivec
+- (ProgressViewService *)progressViewService
+{
+    if (_progressViewService == nil) {
+      _progressViewService = [ProgressViewService new];
+    }
+  
+    return _progressViewService;
+}
+```
+
+But we are able to automate this routine!
+
+Just add `BMLazy` protocol to your class:
 
 ```objectivec
 @interface ViewController : NSObject
@@ -65,6 +92,10 @@ or when you try to get value for key
 [yourViewController valueForKey:@"progressViewService"]
 ```
 
+By default it creates an instance with the `+new` class' method.
+
+In this case `progressViewService` will be deallocated as a usual property.
+
 ##### Dependency Injection (kind of)
 
 During the creation of `Lazy Initialization` spell interesting side effect was found - kind of dependency injection.
@@ -76,7 +107,7 @@ BMInitializer *initializer = [BMInitializer lazyInitializer];
 initializer.propertyClass = [ProgressViewService class];
 initializer.containerClass = [ViewController class]; // this is optional, uses NSObject by default
 initializer.initializer = ^id (id sender){
-  return [[ProgressViewService alloc] initWithViewController:sender];
+    return [[ProgressViewService alloc] initWithViewController:sender];
 };
 [initializer registerInitializer];
 ```
@@ -87,12 +118,12 @@ This spell is very useful when dealing with the singleton
 BMInitializer *initializer = [BMInitializer lazyInitializer];
 initializer.propertyClass = [RequestManager class];
 initializer.initializer = ^id (id sender){
-  static id singleInstance = nil;
-  static dispatch_once_t once;
-  dispatch_once(&once, ^{
-    singleInstance = [RequestManager new];
-  });
-  return singleInstance;
+    static id singleInstance = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+      singleInstance = [RequestManager new];
+    });
+    return singleInstance;
 };
 [initializer registerInitializer];
 ```
