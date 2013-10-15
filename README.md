@@ -1,5 +1,7 @@
 ## BloodMagic
 
+Here is more details: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
+
 Objective-C is powerful language, but sometimes are lacking of custom property attributes, like these:
 
 ```objectivec
