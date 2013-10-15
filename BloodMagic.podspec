@@ -1,7 +1,8 @@
 Pod::Spec.new do |podspec|
   podspec.name = 'BloodMagic'
   podspec.version = '0.1.0'
-  podspec.platform = :ios, '5.0'
+  podspec.ios.deployment_target = '5.0'
+  podspec.osx.deployment_target = '10.7'
   podspec.license = { :type => 'MIT' }
   podspec.summary = 'BloodMagic provides kind of custom property attributes'
   podspec.homepage = 'https://github.com/railsware/bloodmagic'
