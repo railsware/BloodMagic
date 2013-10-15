@@ -1,8 +1,8 @@
 ## BloodMagic
 
-Here is more details: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
+More details here: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
 
-Objective-C is powerful language, but sometimes are lacking of custom property attributes, like these:
+Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
 
 ```objectivec
 @property (nonatomic, strong, lazy) NSMutableArray *resources;
@@ -17,7 +17,7 @@ Objective-C is powerful language, but sometimes are lacking of custom property a
 
 Fortunately, we're able to achieve these effects by means of BloodMagic' spells
 
-_Note: At this time implemented only `lazy` attribute, the rest attributes will come later_
+_Note: At this time only `lazy` attribute is implemented, the rest attributes will come later_
 
 ### Embark on the Dark
 
@@ -100,9 +100,9 @@ In this case `progressViewService` will be deallocated as a usual property.
 
 ##### Dependency Injection (kind of)
 
-During the creation of `Lazy Initialization` spell interesting side effect was found - kind of dependency injection.
+During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
 
-For example, if you need to initialize `progressViewService` in a special way, then might be created a special initializer:
+For example, if you need to initialize `progressViewService` in a special way, a special initializer might be created:
 
 ```objectivec
 BMInitializer *initializer = [BMInitializer lazyInitializer];
@@ -140,7 +140,6 @@ _TODO_
 
 ### Side effects (aka bugs)
 
-BloodMagic may have side effects, is you find one, please, open issue or send us a pull request.
+BloodMagic may have side effects, if you find one, please, open issue or send us a pull request.
 
-This actions will help us to protect you from mutilation.
-
+Those actions will help us to protect you from mutilation.
