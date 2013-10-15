@@ -5,9 +5,9 @@ Pod::Spec.new do |podspec|
   podspec.osx.deployment_target = '10.7'
   podspec.license = { :type => 'MIT' }
   podspec.summary = 'BloodMagic provides kind of custom property attributes'
-  podspec.homepage = 'https://github.com/railsware/bloodmagic'
+  podspec.homepage = 'https://github.com/railsware/BloodMagic'
   podspec.author   = { 'Alex Denisov' => '1101.debian@gmail.com' }
-  podspec.source = { :git => 'https://github.com/railsware/bloodmagic', :tag => "#{podspec.version}" }
+  podspec.source = { :git => 'https://github.com/railsware/BloodMagic.git', :tag => "#{podspec.version}" }
   podspec.requires_arc = true
 
   podspec.subspec 'Core' do |core|
