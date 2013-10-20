@@ -1,5 +1,7 @@
 ## BloodMagic
 
+![Build status](https://api.travis-ci.org/railsware/BloodMagic.png)
+
 More details here: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
 
 Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
