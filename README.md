@@ -40,7 +40,7 @@ Initializes object on demand.
 If you use Objective-C, then you should be familiar with this code:
 
 ```objectivec
-@interface ViewController : NSObject
+@interface ViewController : UIViewController
 
 @property (nonatomic, strong) ProgressViewService *progressViewService;
 
