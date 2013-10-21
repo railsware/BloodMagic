@@ -8,3 +8,6 @@ before_install:
 
 script: ios_ci cedar --source-root $TRAVIS_BUILD_DIR --workspace BloodMagic.xcworkspace --scheme BloodMagic --build-path build/Products
 
+notifications:
+  email:
+    - 1101.debian@gmail.com
