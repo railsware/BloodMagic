@@ -89,6 +89,11 @@ context(@"instance", ^{
             property.mutator should equal(@"setFirstName:");
         });
 
+        describe(@"unkwnown type (id)", ^{
+            property = propertyWithName("unknownType");
+            property.propertyClassName should equal(@"NSObject");
+        });
+
     });
 
 });

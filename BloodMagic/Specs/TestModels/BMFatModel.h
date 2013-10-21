@@ -18,4 +18,6 @@
 
 @property (nonatomic, copy, getter = firstName, setter = setFirstName:) NSString *name;
 
+@property (nonatomic, strong) id unknownType;
+
 @end

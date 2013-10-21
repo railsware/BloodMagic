@@ -34,7 +34,13 @@
 + (BMInternalProperty *)compositeProperty:(const char *)type
 {
     std::string className(type);
-    className = className.substr(2, className.length() - 3);
+    if (className.length() > 3) {
+        className = className.substr(2, className.length() - 3);
+    }
+    
+    if (className == "@") {
+        className = "NSObject";
+    }
 
     BMCompositeProperty *compositeProperty = new BMCompositeProperty;
     compositeProperty->setPropertyClassName(className);
