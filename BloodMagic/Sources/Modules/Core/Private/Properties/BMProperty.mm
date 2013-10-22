@@ -81,7 +81,7 @@
     return _containerClassName;
 }
 
-- (NSArray *)protocols
+- (NSSet *)protocols
 {
     return _internalProperty->protocols();
 }
@@ -103,7 +103,6 @@
 
     return _internalProperty->mutatorImplementation();
 }
-
 
 - (BOOL)isDynamic
 {

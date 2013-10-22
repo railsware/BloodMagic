@@ -22,14 +22,14 @@ void BMPropertyTypeParser::parse(const char *type)
         const std::sregex_token_iterator end;
         std::sregex_token_iterator start(protocols.cbegin(), protocols.cend(), protocolsRegex);
 
-        NSMutableArray *protocolsArray = [NSMutableArray new];
+        NSMutableSet *protocolsSet = [NSMutableSet new];
 
         for (start; start != end; start++) {
             std::string protocol = *start;
             protocol = protocol.substr(1, protocol.length() - 2);
-            [protocolsArray addObject:@(protocol.c_str())];
+            [protocolsSet addObject:@(protocol.c_str())];
         }
-        _protocols = [NSArray arrayWithArray:protocolsArray];
+        _protocols = [NSSet setWithSet:protocolsSet];
     }
 
     propertyTypeName.erase(std::remove(propertyTypeName.begin(), propertyTypeName.end(), '"'), propertyTypeName.end());
@@ -41,7 +41,7 @@ void BMPropertyTypeParser::parse(const char *type)
     _propertyClassName = @(propertyTypeName.c_str());
 }
 
-NSArray *BMPropertyTypeParser::protocols() const
+NSSet *BMPropertyTypeParser::protocols() const
 {
     return _protocols;
 }

@@ -15,7 +15,7 @@ class BMInternalProperty
     objc_AssociationPolicy _associationPolicy;
     std::string _propertyName;
     std::string _propertyClassName;
-    NSArray *_protocols;
+    NSSet *_protocols;
     __weak BMProperty *_property;
 public:
     objc_AssociationPolicy associationPolicy() const;
@@ -34,8 +34,8 @@ public:
     virtual IMP mutatorImplementation() = 0;
     virtual IMP accessorImplementation() = 0;
 
-    NSArray *protocols() const;
-    void setProtocols(NSArray *protocols);
+    NSSet *protocols() const;
+    void setProtocols(NSSet *protocols);
 
     static void mutatorHook(id *value, const BMInternalProperty *internal, id sender);
     static void accessorHook(id *value, const BMInternalProperty *internal, id sender);

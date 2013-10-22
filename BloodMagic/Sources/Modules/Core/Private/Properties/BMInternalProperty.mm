@@ -72,12 +72,12 @@ objc_AssociationPolicy BMInternalProperty::associationPolicy() const
     return _associationPolicy;
 }
 
-NSArray *BMInternalProperty::protocols() const
+NSSet *BMInternalProperty::protocols() const
 {
     return _protocols;
 }
 
-void BMInternalProperty::setProtocols(NSArray *protocols)
+void BMInternalProperty::setProtocols(NSSet *protocols)
 {
     _protocols = protocols;
 }

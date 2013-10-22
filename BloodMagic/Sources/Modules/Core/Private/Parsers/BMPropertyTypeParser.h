@@ -8,12 +8,12 @@
 class BMPropertyTypeParser
 {
 private:
-    NSArray *_protocols;
+    NSSet *_protocols;
     NSString *_propertyClassName;
 
 public:
     void parse(const char *type);
-    NSArray *protocols() const;
+    NSSet *protocols() const;
     NSString *propertyClassName() const;
 };
 

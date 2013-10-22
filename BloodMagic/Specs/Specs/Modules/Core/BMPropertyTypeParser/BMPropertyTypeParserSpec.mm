@@ -25,30 +25,30 @@ describe(@"BMPropertyTypeParser", ^{
             parser.parse("@\"NSString<NSCopying>\"");
             parser.propertyClassName() should equal(@"NSString");
             parser.protocols().count should equal(1);
-            parser.protocols()[0] should equal(@"NSCopying");
+            parser.protocols() should contain(@"NSCopying");
         });
 
         it(@"id with one protocol", ^{
             parser.parse("@\"<NSCopying>\"");
             parser.propertyClassName() should equal(@"NSObject");
             parser.protocols().count should equal(1);
-            parser.protocols()[0] should equal(@"NSCopying");
+            parser.protocols() should contain(@"NSCopying");
         });
 
         it(@"real class with few protocols", ^{
             parser.parse("@\"NSString<NSCopying><NSCoding>\"");
             parser.propertyClassName() should equal(@"NSString");
             parser.protocols().count should equal(2);
-            parser.protocols()[0] should equal(@"NSCopying");
-            parser.protocols()[1] should equal(@"NSCoding");
+            parser.protocols() should contain(@"NSCopying");
+            parser.protocols() should contain(@"NSCoding");
         });
 
         it(@"id with few protocols", ^{
             parser.parse("@\"<NSCopying><NSCoding>\"");
             parser.propertyClassName() should equal(@"NSObject");
             parser.protocols().count should equal(2);
-            parser.protocols()[0] should equal(@"NSCopying");
-            parser.protocols()[1] should equal(@"NSCoding");
+            parser.protocols() should contain(@"NSCopying");
+            parser.protocols() should contain(@"NSCoding");
         });
 
     });
