@@ -20,6 +20,7 @@
 #import "BMPrimitiveUnsignedLongLongProperty.h"
 #import "BMPrimitiveFloatProperty.h"
 #import "BMPrimitiveDoubleProperty.h"
+#import "BMPropertyTypeParser.h"
 
 @implementation BMInternalPropertyFactory
 
@@ -33,17 +34,12 @@
 
 + (BMInternalProperty *)compositeProperty:(const char *)type
 {
-    std::string className(type);
-    if (className.length() > 3) {
-        className = className.substr(2, className.length() - 3);
-    }
-    
-    if (className == "@") {
-        className = "NSObject";
-    }
+    BMPropertyTypeParser parser;
+    parser.parse(type);
 
     BMCompositeProperty *compositeProperty = new BMCompositeProperty;
-    compositeProperty->setPropertyClassName(className);
+    compositeProperty->setPropertyClassName(parser.propertyClassName().UTF8String);
+    compositeProperty->setProtocols(parser.protocols());
     return compositeProperty;
 }
 

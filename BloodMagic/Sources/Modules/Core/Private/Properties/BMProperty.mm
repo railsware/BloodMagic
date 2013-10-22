@@ -44,7 +44,6 @@
     return self;
 }
 
-
 - (BMInternalProperty *)internalProperty
 {
     return _internalProperty;
@@ -80,6 +79,11 @@
 - (NSString *)containerClassName
 {
     return _containerClassName;
+}
+
+- (NSArray *)protocols
+{
+    return _internalProperty->protocols();
 }
 
 - (IMP)accessorImplementation

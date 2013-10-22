@@ -16,6 +16,8 @@
 - (NSString *)propertyClassName;
 - (NSString *)containerClassName;
 
+- (NSArray *)protocols;
+
 - (IMP)accessorImplementation;
 - (IMP)mutatorImplementation;
 

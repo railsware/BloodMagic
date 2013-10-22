@@ -18,7 +18,7 @@ context(@"instance", ^{
 
     __block BMProperty *property = nil;
 
-    context(@"parse", ^{
+    context(@"should parse", ^{
 
         describe(@"nonatomic", ^{
             property = propertyWithName("nonatomicProperty");
@@ -92,6 +92,27 @@ context(@"instance", ^{
         describe(@"unkwnown type (id)", ^{
             property = propertyWithName("unknownType");
             property.propertyClassName should equal(@"NSObject");
+        });
+
+        describe(@"protocols", ^{
+
+            it(@"nil by default", ^{
+                property = propertyWithName("unknownType");
+                property.protocols should be_nil;
+            });
+
+            it(@"not nil if protocol exists", ^{
+                property = propertyWithName("propertyWithProtocols");
+                property.protocols should_not be_nil;
+            });
+
+            it(@"collect all protocols if they're exist", ^{
+                property = propertyWithName("propertyWithProtocols");
+                property.protocols.count should_not equal(0);
+                NSString *protocolName = property.protocols[0];
+                protocolName should equal(@"NSCoding");
+            });
+
         });
 
     });

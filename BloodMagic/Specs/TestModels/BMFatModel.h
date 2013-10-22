@@ -19,5 +19,6 @@
 @property (nonatomic, copy, getter = firstName, setter = setFirstName:) NSString *name;
 
 @property (nonatomic, strong) id unknownType;
+@property (nonatomic, strong) id<NSCoding, NSCopying> propertyWithProtocols;
 
 @end

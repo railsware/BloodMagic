@@ -67,8 +67,17 @@ const std::string& BMInternalProperty::propertyName() const
     return _propertyName;
 }
 
-
 objc_AssociationPolicy BMInternalProperty::associationPolicy() const
 {
     return _associationPolicy;
+}
+
+NSArray *BMInternalProperty::protocols() const
+{
+    return _protocols;
+}
+
+void BMInternalProperty::setProtocols(NSArray *protocols)
+{
+    _protocols = protocols;
 }
