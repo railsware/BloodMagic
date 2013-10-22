@@ -3,12 +3,18 @@
 //  Copyright (c) 2013 railsware. All rights reserved.
 //
 
+#import "BMLazyModuleLoader.h"
 #import "Core.h"
 #import "Lazy.h"
 
-__attribute__((constructor)) static void bmLazyModuleLoader()
+@implementation BMLazyModuleLoader
+
++ (void)load
 {
-    BMBloodMagicInjector *injector = [BMBloodMagicInjector new];
-    [injector injectBloodMagicInto:@protocol(BMLazy)];
+    @autoreleasepool {
+        BMBloodMagicInjector *injector = [BMBloodMagicInjector new];
+        [injector injectBloodMagicInto:@protocol(BMLazy)];
+    }
 }
 
+@end
