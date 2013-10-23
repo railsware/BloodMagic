@@ -4,12 +4,12 @@
 //
 
 #import "BMLazyModel.h"
-#import "BMUser.h"
 
 @implementation BMLazyModel
 
 @dynamic stringProperty;
 @dynamic someTitle;
 @dynamic user;
+@dynamic propertyWithProtocol;
 
 @end

@@ -54,6 +54,7 @@
 		5898AC739A2AC086C3D8C8E3 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD76894E8A32BAD57705 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
 		5898ACD9D84887129205F314 /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A6834D58538F8D843245 /* BMCompsiteProperty.mm */; };
 		5898AE4A4B22742AC125B9C3 /* BMFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC19F85BB236C5A894E5 /* BMFatDynamicModel.m */; };
+		5898AEFE4638A4A76E754D55 /* BMTestProtocolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB48E07B499415688C53 /* BMTestProtocolModel.m */; };
 		5898AFDE4DD1390DE717B55F /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* BMPrimitiveCharProperty.mm */; };
 		5898AFFD9D64A3A7C5FE7A2C /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAA1520BC6CEEB4844F5 /* BMPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
@@ -65,12 +66,15 @@
 
 /* Begin PBXFileReference section */
 		5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
+		5898A05C65B2C230BF4EEA30 /* BMLazyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyTestProtocol.h; sourceTree = "<group>"; };
 		5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
 		5898A133A66D70A440474897 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5898A137D9E0D2ADD672538E /* BMKVCInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVCInjector.h; sourceTree = "<group>"; };
 		5898A13A7F388FAEFCFB1FA3 /* BMCompsiteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCompsiteProperty.h; sourceTree = "<group>"; };
 		5898A13ABA2FAFB3C1BA2ECC /* BMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUser.h; sourceTree = "<group>"; };
 		5898A178B3D482F10A9BF874 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		5898A186DDB289E67E1B2E92 /* BMTestProtocolModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestProtocolModel.h; sourceTree = "<group>"; };
+		5898A1D35AEBE8E36E906CCA /* BMInitializer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializer_Private.h; sourceTree = "<group>"; };
 		5898A1FB0B40C6C457870EE7 /* BMProperty_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty_Private.h; sourceTree = "<group>"; };
 		5898A229D3D15A975412F930 /* BloodMagic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "BloodMagic-Info.plist"; sourceTree = "<group>"; };
 		5898A22B36B614509CC62C8A /* BMPropertyTypeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyTypeParser.h; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 		5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BMInitializer+LazyInitializer.mm"; sourceTree = "<group>"; };
 		5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
 		5898AB3C749E2FE8F70D82A4 /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
+		5898AB48E07B499415688C53 /* BMTestProtocolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestProtocolModel.m; sourceTree = "<group>"; };
 		5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
 		5898ABA54CB1FDD879918252 /* BMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMUser.m; sourceTree = "<group>"; };
 		5898AC10B28C12F4824ED56E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -223,6 +228,9 @@
 				5898A4A1810763453463D20B /* BMLazyModel.m */,
 				5898AE68393D2FA383B6E0E3 /* BMAnotherLazyModel.m */,
 				5898ACB33534C6A20FB372C7 /* BMAnotherLazyModel.h */,
+				5898A05C65B2C230BF4EEA30 /* BMLazyTestProtocol.h */,
+				5898AB48E07B499415688C53 /* BMTestProtocolModel.m */,
+				5898A186DDB289E67E1B2E92 /* BMTestProtocolModel.h */,
 			);
 			path = LazySpecs;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 				5898ADB350603FE30D34CF8A /* BMInitializer.h */,
 				5898A7DA60BD450A0CDFA120 /* BMInitializerRegistry.h */,
 				5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.mm */,
+				5898A1D35AEBE8E36E906CCA /* BMInitializer_Private.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -750,6 +759,7 @@
 				5898A5B8898AB5C3BB60B7D7 /* BMPropertyFinder.mm in Sources */,
 				5898A5D5376DD0CC1122BA2A /* BMPropertyTypeParser.mm in Sources */,
 				5898A440B7DF163D8A5829CB /* BMPropertyTypeParserSpec.mm in Sources */,
+				5898AEFE4638A4A76E754D55 /* BMTestProtocolModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

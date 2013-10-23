@@ -4,7 +4,7 @@
 //
 
 #import "BMInitializerRegistry.h"
-#import "BMInitializer.h"
+#import "BMInitializer_Private.h"
 #import "BMProperty.h"
 
 @implementation BMInitializerRegistry
@@ -32,19 +32,26 @@
     /// TODO: move to RDInitializerFinder
     BMInitializer *initializer = nil;
     for (BMInitializer *init in _initializers) {
-        Class propertyClass = NSClassFromString(property.propertyClassName);
-        if (init.propertyClass != propertyClass) {
-            continue;
+
+        if (property.protocols != nil) {
+            NSSet *protocols = [init protocolsSet];
+            if (![property.protocols isEqualToSet:protocols]) {
+                continue;
+            }
         }
 
-        if (init.containerClass == [NSObject class]) {
-            initializer = init;
-            break;
+        if (init.propertyClass != [NSObject class]) {
+            Class propertyClass = NSClassFromString(property.propertyClassName);
+            if (init.propertyClass != propertyClass) {
+                continue;
+            }
         }
 
-        Class containerClass = NSClassFromString(property.containerClassName);
-        if (init.containerClass != containerClass) {
-            continue;
+        if (init.containerClass != [NSObject class]) {
+            Class containerClass = NSClassFromString(property.containerClassName);
+            if (init.containerClass != containerClass) {
+                continue;
+            }
         }
 
         initializer = init;

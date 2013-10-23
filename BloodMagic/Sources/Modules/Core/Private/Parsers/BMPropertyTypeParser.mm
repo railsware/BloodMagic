@@ -5,6 +5,7 @@
 
 #include <string>
 #include <regex>
+#import <objc/runtime.h>
 #include "BMPropertyTypeParser.h"
 
 void BMPropertyTypeParser::parse(const char *type)
@@ -27,7 +28,7 @@ void BMPropertyTypeParser::parse(const char *type)
         for (start; start != end; start++) {
             std::string protocol = *start;
             protocol = protocol.substr(1, protocol.length() - 2);
-            [protocolsSet addObject:@(protocol.c_str())];
+            [protocolsSet addObject:objc_getProtocol(protocol.c_str())];
         }
         _protocols = [NSSet setWithSet:protocolsSet];
     }

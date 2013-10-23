@@ -109,7 +109,7 @@ context(@"instance", ^{
             it(@"collect all protocols if they're exist", ^{
                 property = propertyWithName("propertyWithProtocols");
                 property.protocols.count should_not equal(0);
-                property.protocols should contain(@"NSCoding");
+                property.protocols should contain(@protocol(NSCoding));
             });
 
         });

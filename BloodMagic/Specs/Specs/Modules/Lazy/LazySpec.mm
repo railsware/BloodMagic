@@ -5,6 +5,7 @@
 #import "BMLazyModel.h"
 #import "BMUser.h"
 #import "BMAnotherLazyModel.h"
+#import "BMTestProtocolModel.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -88,6 +89,39 @@ describe(@"LazySpec", ^{
 
             BMAnotherLazyModel *anotherLazyModel = [[BMAnotherLazyModel new] autorelease];
             anotherLazyModel.user.name should equal(@"Alex");
+        });
+
+        context(@"protocols", ^{
+
+            __block BMInitializer *initializer = nil;
+
+            describe(@"property with protocol", ^{
+
+                beforeEach(^{
+                    initializer = [BMInitializer lazyInitializer];
+                    initializer.protocols = @[@protocol(BMLazyTestProtocol)];
+                    initializer.initializer = ^id(id sender) {
+                        BMTestProtocolModel *model = [[BMTestProtocolModel new] autorelease];
+                        model.testString = @"Test";
+                        return model;
+                    };
+                    [initializer registerInitializer];
+                });
+
+                it(@"not nil", ^{
+                    subject.propertyWithProtocol should_not be_nil;
+                });
+
+                it(@"conforms to protocol", ^{
+                    [subject.propertyWithProtocol conformsToProtocol:@protocol(BMLazyTestProtocol)] should be_truthy;
+                });
+
+                it(@"initialized with actual value", ^{
+                    subject.propertyWithProtocol.testString should equal(@"Test");
+                });
+
+            });
+
         });
 
     });

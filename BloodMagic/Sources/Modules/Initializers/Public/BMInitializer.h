@@ -13,6 +13,7 @@
 @property (nonatomic, strong) BMInitializerRegistry *registry;
 @property (nonatomic, strong) Class propertyClass;
 @property (nonatomic, strong) Class containerClass;
+@property (nonatomic, strong) NSArray *protocols;
 
 @property (nonatomic, copy) magic_initializer_t initializer;
 
