@@ -6,7 +6,6 @@
 #import "BMUser.h"
 #import "BMAnotherLazyModel.h"
 #import "BMTestProtocolModel.h"
-#import "BMSubUser.h"
 #import "BMBaseModel.h"
 #import "BMDerivedModel.h"
 
