@@ -1,3 +1,7 @@
+## 0.2.1
+
+  - Fixed critical issue with derived dynamic properties
+
 ## 0.2.0
 
   - Lazy module supports `@protocol`s now
