@@ -6,6 +6,9 @@
 #import "BMUser.h"
 #import "BMAnotherLazyModel.h"
 #import "BMTestProtocolModel.h"
+#import "BMSubUser.h"
+#import "BMBaseModel.h"
+#import "BMDerivedModel.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -46,6 +49,18 @@ describe(@"LazySpec", ^{
 
             it(@"custom objects", ^{
                 [subject valueForKey:@"user"] should_not be_nil;
+            });
+
+        });
+
+        describe(@"subclasses", ^{
+
+            it(@"should inherit behavior", ^{
+//                BMBaseModel *base = [[BMBaseModel new] autorelease];
+//                base.test should_not be_nil;
+
+                BMDerivedModel *derived = [[BMDerivedModel new] autorelease];
+                derived.test should_not be_nil;
             });
 
         });

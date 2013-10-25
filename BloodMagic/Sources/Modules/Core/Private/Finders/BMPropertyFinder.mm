@@ -13,7 +13,15 @@ BMPropertyFinder::BMPropertyFinder(id self) : _self(self)
 
 NSArray *BMPropertyFinder::properties() const
 {
-    NSArray *properties = objc_getAssociatedObject([_self class], kCachedPropertiesKey);
+    NSArray *properties = nil;
+    Class klass = [_self class];
+    while (klass != [NSObject class]) {
+        properties = objc_getAssociatedObject(klass, kCachedPropertiesKey);
+        if (properties) {
+            break;
+        }
+        klass = [klass superclass];
+    }
 
     return properties;
 }
