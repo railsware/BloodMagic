@@ -14,7 +14,7 @@
 
 @property (nonatomic, copy) NSString *stringProperty;
 @property (nonatomic, copy) NSString *someTitle;
-@property (nonatomic, copy) BMUser *user;
+@property (nonatomic, strong) BMUser *user;
 @property (nonatomic, strong) id<BMLazyTestProtocol> propertyWithProtocol;
 
 @end
