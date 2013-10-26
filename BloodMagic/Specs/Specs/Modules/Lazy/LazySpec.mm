@@ -38,6 +38,10 @@ describe(@"LazySpec", ^{
                 subject.user should_not be_nil;
             });
 
+            fit(@"custom objects storing", ^{
+                subject.user should equal(subject.user);
+            });
+
         });
 
         context(@"KVC", ^{
