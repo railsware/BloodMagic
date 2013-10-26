@@ -38,7 +38,7 @@ describe(@"LazySpec", ^{
                 subject.user should_not be_nil;
             });
 
-            it(@"custom objects storing", ^{
+            fit(@"custom objects storing", ^{
                 subject.user should equal(subject.user);
             });
 
