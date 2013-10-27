@@ -4,7 +4,8 @@
 //
 
 #import "BMLazyHook.h"
-#import "BMProperty_Private.h"
+#import "BMProperty.h"
+#import "BMPropertyValueService.h"
 #import "BMInitializerRegistry.h"
 #import "BMInitializerRegistry+LazyRegistry.h"
 
@@ -30,8 +31,7 @@
     } else {
         *value = [NSClassFromString(property.propertyClassName) new];
     }
-    /// TODO: encapsulate this stuff
-    objc_setAssociatedObject(sender, property.internalProperty->propertyName().c_str(), *value, property.internalProperty->associationPolicy());
+    setValueForProperty(sender, property, *value);
 }
 
 + (void)mutatorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender

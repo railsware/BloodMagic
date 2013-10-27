@@ -6,10 +6,8 @@
 #pragma once
 
 #import "BMInternalProperty.h"
-#import "BMProperty.h"
-#import "BMProperty_Private.h"
 #import "BMPropertyFinder.h"
-#import <objc/runtime.h>
+#import "BMPropertyValueService.h"
 
 template <class Type>
 class BMInternalPropertyTemplate : public BMInternalProperty
@@ -23,7 +21,7 @@ class BMInternalPropertyTemplate : public BMInternalProperty
 
         property = dynamic_cast<BMInternalPropertyTemplate<Type> *>(finder.findByAccessor(_cmd));
 
-        id value = objc_getAssociatedObject(self, property->propertyName().c_str());
+        id value = getValueForProperty(self, property->property());
         BMInternalProperty::accessorHook(&value, property, self);
         return property->unbox(value);
     }
@@ -38,7 +36,7 @@ class BMInternalPropertyTemplate : public BMInternalProperty
 
         id boxedValue = property->box(value);
         BMInternalProperty::mutatorHook(&boxedValue, property, self);
-        objc_setAssociatedObject(self, property->propertyName().c_str(), boxedValue, property->associationPolicy());
+        setValueForProperty(self, property->property(), boxedValue);
     }
 
 public:

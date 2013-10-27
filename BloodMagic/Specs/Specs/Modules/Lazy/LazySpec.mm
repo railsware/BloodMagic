@@ -59,8 +59,8 @@ describe(@"LazySpec", ^{
         describe(@"subclasses", ^{
 
             it(@"should inherit behavior", ^{
-//                BMBaseModel *base = [[BMBaseModel new] autorelease];
-//                base.test should_not be_nil;
+                BMBaseModel *base = [[BMBaseModel new] autorelease];
+                base.test should_not be_nil;
 
                 BMDerivedModel *derived = [[BMDerivedModel new] autorelease];
                 derived.test should_not be_nil;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5898A017EC315B4F7ACA8ED4 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */; };
+		5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */; };
 		5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A29F077635D7ABE153A4 /* BMDerivedModel.mm */; };
 		5898A218C9410D8867560420 /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A28663DDF3F3BA7AFDD9 /* BMPropertyKVCHandler.mm */; };
 		5898A234C8F98F32DEA0C427 /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A77B21962B60BC691E1E /* BMLazyInitializer.mm */; };
@@ -129,8 +130,10 @@
 		5898A87A2F83073496E12690 /* BMBloodMagicInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBloodMagicInjector.m; sourceTree = "<group>"; };
 		5898A87ABE5DDCA021D4B972 /* LazySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazySpec.mm; sourceTree = "<group>"; };
 		5898A8AE9D2813476024CC65 /* BMPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveFloatProperty.h; sourceTree = "<group>"; };
+		5898A8BAFFC537024EE4C585 /* BMPropertyValueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyValueService.h; sourceTree = "<group>"; };
 		5898A8D7B73A7128D29ED58B /* BMPrimitiveShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveShortProperty.h; sourceTree = "<group>"; };
 		5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDynamicPropertyInjector.mm; sourceTree = "<group>"; };
+		5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyValueService.mm; sourceTree = "<group>"; };
 		5898A966FB03512A9F26B718 /* BMPrimitiveUnsignedShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedShortProperty.h; sourceTree = "<group>"; };
 		5898A96D679982C27C309333 /* BMClassCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMClassCollector.m; sourceTree = "<group>"; };
 		5898A9919F65F14D0894DE4B /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
@@ -561,6 +564,8 @@
 				5898A5EFD05DB9946C0D8116 /* BMProperty.mm */,
 				5898AF0FA6CF74B0A05389D4 /* BMPropertyKVCHandler.h */,
 				5898A28663DDF3F3BA7AFDD9 /* BMPropertyKVCHandler.mm */,
+				5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */,
+				5898A8BAFFC537024EE4C585 /* BMPropertyValueService.h */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 				5898AEFE4638A4A76E754D55 /* BMTestProtocolModel.m in Sources */,
 				5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */,
 				5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */,
+				5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

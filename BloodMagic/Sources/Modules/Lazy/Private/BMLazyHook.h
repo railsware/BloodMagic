@@ -9,6 +9,6 @@
 
 @interface BMLazyHook : NSObject
     <BMHook,
-        BMLazy>
+    BMLazy>
 
 @end
