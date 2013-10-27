@@ -17,7 +17,7 @@ Objective-C is a powerful language, but sometimes it lacks of custom property at
 @property (nonatomic, strong, anything_you_want) AwesomeView *someAwesomeView;
 ```
 
-Fortunately, we're able to achieve these effects by means of BloodMagic' spells
+We can't implement these attributes without hacking on `clang`, but fortunately, we're able to achieve these effects by means of BloodMagic' spells
 
 _Note: At this time only `lazy` attribute is implemented, the rest attributes will come later_
 
@@ -108,7 +108,7 @@ For example, if you need to initialize `progressViewService` in a special way, a
 
 ```objectivec
 BMInitializer *initializer = [BMInitializer lazyInitializer];
-initializer.propertyClass = [ProgressViewService class];
+initializer.propertyClass = [ProgressViewService class]; // this is optional, uses NSObject by default
 initializer.containerClass = [ViewController class]; // this is optional, uses NSObject by default
 initializer.initializer = ^id (id sender){
     return [[ProgressViewService alloc] initWithViewController:sender];
