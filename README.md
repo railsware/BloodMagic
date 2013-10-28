@@ -136,7 +136,7 @@ Thus, neither the `RequestManager` nor the class that uses it, will not be aware
 
 Adepts of [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) school must approve ;)
 
-Also, you're able to use `@protocol`s as weel
+Also, you're able to use `@protocol`s as well
 
 ```objectivec
 BMInitializer *initializer = [BMInitializer lazyInitializer];
