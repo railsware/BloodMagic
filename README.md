@@ -108,8 +108,8 @@ For example, if you need to initialize `progressViewService` in a special way, a
 
 ```objectivec
 BMInitializer *initializer = [BMInitializer lazyInitializer];
-initializer.propertyClass = [ProgressViewService class]; // this is optional, uses NSObject by default
-initializer.containerClass = [ViewController class]; // this is optional, uses NSObject by default
+initializer.propertyClass = [ProgressViewService class]; // optional, uses NSObject by default
+initializer.containerClass = [ViewController class]; // optional, uses NSObject by default
 initializer.initializer = ^id (id sender){
     return [[ProgressViewService alloc] initWithViewController:sender];
 };
@@ -135,6 +135,17 @@ initializer.initializer = ^id (id sender){
 Thus, neither the `RequestManager` nor the class that uses it, will not be aware about his singleton nature.
 
 Adepts of [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) school must approve ;)
+
+Also, you're able to use `@protocol`s as weel
+
+```objectivec
+BMInitializer *initializer = [BMInitializer lazyInitializer];
+initializer.protocols = @[ @protocol(ProgressViewServiceProtocol) ];
+initializer.initializer = ^id (id sender){
+    return [[ProgressViewService alloc] initWithViewController:sender];
+};
+[initializer registerInitializer];
+```
 
 ### Creation of new spells
 
