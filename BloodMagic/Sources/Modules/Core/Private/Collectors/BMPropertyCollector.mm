@@ -29,6 +29,13 @@
         }
     }
     free(objcProperties);
+
+    Class superklass = [klass superclass];
+    if (superklass != [NSObject class]) {
+        NSArray *superklassProperties = [self collectForClass:superklass];
+        [properties addObjectsFromArray:superklassProperties];
+    }
+
     objc_setAssociatedObject(klass, kCachedPropertiesKey, [NSArray arrayWithArray:properties], OBJC_ASSOCIATION_RETAIN);
     return properties;
 }
