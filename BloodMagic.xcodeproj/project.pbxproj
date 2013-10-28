@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */; };
 		5898A017EC315B4F7ACA8ED4 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */; };
 		5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */; };
 		5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A29F077635D7ABE153A4 /* BMDerivedModel.mm */; };
@@ -68,6 +69,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4665B8FC181DE41600E56A01 /* BMDerivedLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedLazyModel.h; sourceTree = "<group>"; };
+		4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
 		5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
 		5898A05C65B2C230BF4EEA30 /* BMLazyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyTestProtocol.h; sourceTree = "<group>"; };
 		5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				5898AAE84167173170C22605 /* BMBaseModel.h */,
 				5898A29F077635D7ABE153A4 /* BMDerivedModel.mm */,
 				5898AF33B270563953264AC2 /* BMDerivedModel.h */,
+				4665B8FC181DE41600E56A01 /* BMDerivedLazyModel.h */,
+				4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */,
 			);
 			path = LazySpecs;
 			sourceTree = "<group>";
@@ -740,6 +745,7 @@
 				5898AFFD9D64A3A7C5FE7A2C /* BMPropertySpec.mm in Sources */,
 				5898A85C94EC84E38CD0E755 /* BMBloodMagicInjectorSpec.mm in Sources */,
 				5898A563F84AC7463D8DDC35 /* BMInitializerSpec.mm in Sources */,
+				4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */,
 				5898A8FEFD44EB7E5C18D61B /* LazySpec.mm in Sources */,
 				5898A651A77CDB32E60D64C5 /* BMInternalPropertyTemplate.mm in Sources */,
 				5898ACD9D84887129205F314 /* BMCompsiteProperty.mm in Sources */,
