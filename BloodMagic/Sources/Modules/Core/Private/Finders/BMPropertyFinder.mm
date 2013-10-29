@@ -17,7 +17,7 @@ NSArray *BMPropertyFinder::properties() const
     Class klass = [_self class];
     while (klass != [NSObject class]) {
         properties = objc_getAssociatedObject(klass, kCachedPropertiesKey);
-        if ([properties count]) {
+        if (properties.count) {
             break;
         }
         klass = [klass superclass];
