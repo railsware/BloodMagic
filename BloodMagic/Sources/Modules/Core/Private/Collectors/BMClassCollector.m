@@ -24,10 +24,12 @@
         if (superClass == nil) {
             continue;
         }
-        if (!class_conformsToProtocol(classes[i], protocol)) {
+
+        Class klass = classes[i];
+        if (![klass conformsToProtocol:protocol]) {
             continue;
         }
-        [result addObject:classes[i]];
+        [result addObject:klass];
     }
     return result;
 }
