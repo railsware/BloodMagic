@@ -27,5 +27,6 @@
 - (BOOL)isRetain;
 - (BOOL)isAssign;
 
+- (BOOL)isEqualToProperty:(BMProperty *)property;
 
 @end
