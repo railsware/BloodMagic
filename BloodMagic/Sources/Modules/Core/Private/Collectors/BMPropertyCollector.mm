@@ -8,28 +8,39 @@
 #import "BMPropertyCollector.h"
 #import "BMProperty.h"
 #import "BMPrivateCoreDefinitions.h"
+#import "BMClass.h"
+
+@protocol BMLazy;
 
 @implementation BMPropertyCollector
 
-- (NSArray *)collectForClass:(Class)klass
+- (NSArray *)collectForClass:(Class)objcClass
 {
-    NSArray *cachedProperties = objc_getAssociatedObject(klass, kCachedPropertiesKey);
+    NSArray *cachedProperties = objc_getAssociatedObject(objcClass, kCachedPropertiesKey);
     if (cachedProperties != nil) {
         return cachedProperties;
     }
-    objc_property_t *objcProperties;
-    uint propertyCount = 0;
-    objcProperties = class_copyPropertyList(klass, &propertyCount);
-    NSMutableArray *properties = [NSMutableArray arrayWithCapacity:propertyCount];
-    for (int propertyIndex = 0; propertyIndex < propertyCount; propertyIndex++) {
-        objc_property_t objcProperty = objcProperties[propertyIndex];
-        BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:klass];
-        if (property.isDynamic) {
-            [properties addObject:property];
+
+    BMClass *klass = [[BMClass alloc] initWithClass:objcClass];
+    BOOL klassIsLazy = [[klass protocols] containsObject:@protocol(BMLazy)];
+
+    NSMutableArray *properties = [NSMutableArray array];
+    if (klassIsLazy) {
+        NSSet *klassProperties = [klass properties];
+        for (BMProperty *property in klassProperties) {
+            if (property.isDynamic) {
+                [properties addObject:property];
+            }
         }
     }
-    free(objcProperties);
-    objc_setAssociatedObject(klass, kCachedPropertiesKey, [NSArray arrayWithArray:properties], OBJC_ASSOCIATION_RETAIN);
+
+    Class superklass = [objcClass superclass];
+    if ([superklass conformsToProtocol:@protocol(BMLazy)]) {
+        NSArray *superklassProperties = [self collectForClass:superklass];
+        [properties addObjectsFromArray:superklassProperties];
+    }
+
+    objc_setAssociatedObject(objcClass, kCachedPropertiesKey, [NSArray arrayWithArray:properties], OBJC_ASSOCIATION_RETAIN);
     return properties;
 }
 

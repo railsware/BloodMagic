@@ -8,6 +8,8 @@
 #import "BMTestProtocolModel.h"
 #import "BMBaseModel.h"
 #import "BMDerivedModel.h"
+#import "BMDerivedLazyModel.h"
+#import "BMDerivedExtendedModel.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -38,7 +40,7 @@ describe(@"LazySpec", ^{
                 subject.user should_not be_nil;
             });
 
-            it(@"custom objects storing", ^{
+            fit(@"custom objects storing", ^{
                 subject.user should equal(subject.user);
             });
 
@@ -64,6 +66,17 @@ describe(@"LazySpec", ^{
 
                 BMDerivedModel *derived = [[BMDerivedModel new] autorelease];
                 derived.test should_not be_nil;
+            });
+
+            fit(@"should support lazy classes inherited from another lazy classes", ^{
+                BMDerivedLazyModel *derivedLazy = [[BMDerivedLazyModel new] autorelease];
+                derivedLazy.test should_not be_nil;
+            });
+
+            fit(@"should support lazy classes with added properties inherited from another lazy classes", ^{
+                BMDerivedExtendedModel *derivedExtended = [[BMDerivedExtendedModel new] autorelease];
+                derivedExtended.test should_not be_nil;
+                derivedExtended.user should_not be_nil;
             });
 
         });
