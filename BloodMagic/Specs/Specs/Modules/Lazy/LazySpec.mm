@@ -40,7 +40,7 @@ describe(@"LazySpec", ^{
                 subject.user should_not be_nil;
             });
 
-            fit(@"custom objects storing", ^{
+            it(@"custom objects storing", ^{
                 subject.user should equal(subject.user);
             });
 
@@ -68,12 +68,12 @@ describe(@"LazySpec", ^{
                 derived.test should_not be_nil;
             });
 
-            fit(@"should support lazy classes inherited from another lazy classes", ^{
+            it(@"should support lazy classes inherited from another lazy classes", ^{
                 BMDerivedLazyModel *derivedLazy = [[BMDerivedLazyModel new] autorelease];
                 derivedLazy.test should_not be_nil;
             });
 
-            fit(@"should support lazy classes with added properties inherited from another lazy classes", ^{
+            it(@"should support lazy classes with added properties inherited from another lazy classes", ^{
                 BMDerivedExtendedModel *derivedExtended = [[BMDerivedExtendedModel new] autorelease];
                 derivedExtended.test should_not be_nil;
                 derivedExtended.user should_not be_nil;

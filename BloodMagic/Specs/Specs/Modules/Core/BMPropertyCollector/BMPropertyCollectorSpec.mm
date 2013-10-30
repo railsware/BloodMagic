@@ -22,7 +22,7 @@ context(@"instance", ^{
     describe(@"responds to", ^{
 
         it(@"collectorForClass:", ^{
-            [subject respondsToSelector:@selector(collectForClass:)] should be_truthy;
+            [subject respondsToSelector:@selector(collectForClass:withProtocol:)] should be_truthy;
         });
 
     });
@@ -36,7 +36,7 @@ context(@"instance", ^{
         beforeEach(^{
             BMClassCollector *classCollector = [[BMClassCollector new] autorelease];
             klass = [classCollector collectForProtocol:protocol][0];
-            properties = [subject collectForClass:klass];
+            properties = [subject collectForClass:klass withProtocol:protocol];
         });
 
         it(@"only dynamic properties", ^{

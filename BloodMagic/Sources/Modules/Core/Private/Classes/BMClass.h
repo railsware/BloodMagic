@@ -14,5 +14,6 @@
 
 - (NSSet *)protocols;
 - (NSSet *)properties;
+- (NSSet *)dynamicProperties;
 
 @end

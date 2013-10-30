@@ -15,6 +15,7 @@
 
     NSSet *_protocols;
     NSSet *_properties;
+    NSSet *_dynamicProperties;
 }
 
 - (instancetype)initWithClass:(Class)objcClass {
@@ -54,6 +55,24 @@
         _properties = [NSSet setWithSet:mutableProperties];
     }
     return _properties;
+}
+
+- (NSSet *)dynamicProperties
+{
+    if (_dynamicProperties) {
+        return _dynamicProperties;
+    }
+
+    NSSet *properties = [self properties];
+    NSMutableSet *mutableProperties = [NSMutableSet setWithCapacity:properties.count];
+    for (BMProperty *property in properties) {
+        if (property.isDynamic) {
+            [mutableProperties addObject:property];
+        }
+    }
+    _dynamicProperties = [NSSet setWithSet:mutableProperties];
+
+    return _dynamicProperties;
 }
 
 @end

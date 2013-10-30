@@ -6,42 +6,31 @@
 
 #import <objc/runtime.h>
 #import "BMPropertyCollector.h"
-#import "BMProperty.h"
 #import "BMPrivateCoreDefinitions.h"
 #import "BMClass.h"
 
-@protocol BMLazy;
-
 @implementation BMPropertyCollector
 
-- (NSArray *)collectForClass:(Class)objcClass
+- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
 {
     NSArray *cachedProperties = objc_getAssociatedObject(objcClass, kCachedPropertiesKey);
     if (cachedProperties != nil) {
         return cachedProperties;
     }
 
-    BMClass *klass = [[BMClass alloc] initWithClass:objcClass];
-    BOOL klassIsLazy = [[klass protocols] containsObject:@protocol(BMLazy)];
+    NSMutableSet *properties = [NSMutableSet new];
+    Class superClass = objcClass;
+    while ([superClass conformsToProtocol:protocol]) {
+        BMClass *klass = [[BMClass alloc] initWithClass:superClass];
+        [properties unionSet:[klass dynamicProperties]];
 
-    NSMutableArray *properties = [NSMutableArray array];
-    if (klassIsLazy) {
-        NSSet *klassProperties = [klass properties];
-        for (BMProperty *property in klassProperties) {
-            if (property.isDynamic) {
-                [properties addObject:property];
-            }
-        }
+        superClass = [superClass superclass];
     }
 
-    Class superklass = [objcClass superclass];
-    if ([superklass conformsToProtocol:@protocol(BMLazy)]) {
-        NSArray *superklassProperties = [self collectForClass:superklass];
-        [properties addObjectsFromArray:superklassProperties];
-    }
+    NSArray *result = [properties allObjects];
+    objc_setAssociatedObject(objcClass, kCachedPropertiesKey, result, OBJC_ASSOCIATION_RETAIN);
 
-    objc_setAssociatedObject(objcClass, kCachedPropertiesKey, [NSArray arrayWithArray:properties], OBJC_ASSOCIATION_RETAIN);
-    return properties;
+    return result;
 }
 
 @end

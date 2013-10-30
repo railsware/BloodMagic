@@ -11,6 +11,6 @@
 
 @property (nonatomic, strong) BMPropertyCollector *propertyCollector;
 
-- (void)injectDynamicHandlersIntoClass:(Class)klass;
+- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol;
 
 @end
