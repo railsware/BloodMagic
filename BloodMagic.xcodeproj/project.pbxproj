@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46535A1518207993004A9DA4 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
 		4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */; };
 		4665B901181F167100E56A01 /* BMDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */; };
 		5898A017EC315B4F7ACA8ED4 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */; };
@@ -70,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46535A1318207993004A9DA4 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
+		46535A1418207993004A9DA4 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
 		4665B8FC181DE41600E56A01 /* BMDerivedLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedLazyModel.h; sourceTree = "<group>"; };
 		4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
 		4665B8FF181F167100E56A01 /* BMDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedExtendedModel.h; sourceTree = "<group>"; };
@@ -211,6 +214,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46535A1218207975004A9DA4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				46535A1318207993004A9DA4 /* BMClass.h */,
+				46535A1418207993004A9DA4 /* BMClass.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		5898A05DDFF3CB72918D36BE /* BMClassCollector */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +292,7 @@
 		5898A1DBE0363C078350D8AF /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				46535A1218207975004A9DA4 /* Classes */,
 				5898AED98A660C0E042D643B /* Properties */,
 				5898ACDDE74F72748284D1BA /* Collectors */,
 				5898A8B19DB7370E366DA6B7 /* Injectors */,
@@ -739,6 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5898A27BCE0B33AD1E8E4C66 /* main.m in Sources */,
+				46535A1518207993004A9DA4 /* BMClass.mm in Sources */,
 				5898A45B2A4DCE1A9AA65DCB /* BMUser.m in Sources */,
 				5898A8741F5E6A53D2ED3899 /* BMEntityWithoutProtocols.m in Sources */,
 				5898A3719A705BD6EC7C3E9D /* BMFatModel.m in Sources */,
