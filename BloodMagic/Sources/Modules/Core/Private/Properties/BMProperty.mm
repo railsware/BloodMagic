@@ -229,5 +229,20 @@
     _mutator = [NSString stringWithFormat:@"set%@:", capitalizedProperty];
 }
 
+- (BOOL)isEqual:(id)object
+{
+    if (![object isKindOfClass:[self class]]) {
+        return NO;
+    }
+
+    return [self isEqualToProperty:object];
+}
+
+- (BOOL)isEqualToProperty:(BMProperty *)property
+{
+    // initial implementation, should be replaced with something more intelligent
+    return [self.name isEqualToString:property.name];
+}
+
 @end
 

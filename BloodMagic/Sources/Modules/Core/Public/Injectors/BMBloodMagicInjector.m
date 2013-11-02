@@ -32,7 +32,7 @@
     NSArray *classes = [classCollector collectForProtocol:protocol];
     for (Class klass in classes) {
         [kvcInjector injectKVCHandlersIntoClass:klass];
-        [propertyInjector injectDynamicHandlersIntoClass:klass];
+        [propertyInjector injectDynamicHandlersIntoClass:klass withProtocol:protocol];
     }
 }
 
