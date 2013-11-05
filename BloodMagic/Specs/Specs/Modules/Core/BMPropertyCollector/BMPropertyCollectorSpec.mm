@@ -1,7 +1,8 @@
 #import "SpecHelper.h"
 #import "BMPropertyCollector.h"
-#import "BMClassCollector.h"
 #import "BMTestProtocol.h"
+#import "BMDerivedExtendedModel.h"
+#import "BMUser.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -28,18 +29,15 @@ context(@"instance", ^{
     });
 
     describe(@"collect", ^{
-        __block Class klass = Nil;
         __block NSArray *properties = nil;
 
-        Protocol *protocol = @protocol(BMTestProtocol);
-
-        beforeEach(^{
-            BMClassCollector *classCollector = [[BMClassCollector new] autorelease];
-            klass = [classCollector collectForProtocol:protocol][0];
-            properties = [subject collectForClass:klass withProtocol:protocol];
+        it(@"only dynamic properties", ^{
+            properties = [subject collectForClass:[BMUser class] withProtocol:@protocol(BMTestProtocol)];
+            properties.count should equal(2);
         });
 
-        it(@"only dynamic properties", ^{
+        it(@"including base class' properties", ^{
+            properties = [subject collectForClass:[BMDerivedExtendedModel class] withProtocol:@protocol(BMLazy)];
             properties.count should equal(2);
         });
 
