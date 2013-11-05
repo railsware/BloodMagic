@@ -6,8 +6,7 @@
 #import "BMLazyHook.h"
 #import "BMProperty.h"
 #import "BMPropertyValueService.h"
-#import "BMInitializerRegistry.h"
-#import "BMInitializerRegistry+LazyRegistry.h"
+#import "BMLazyInitializerFinder.h"
 
 @implementation BMLazyHook
 
@@ -22,15 +21,12 @@
         return;
     }
 
-    BMInitializerRegistry *registry = [BMInitializerRegistry lazyRegistry];
-    BMInitializer *initializer = [registry initializerForProperty:property];
-    magic_initializer_t initializer_t = initializer.initializer;
-    if (initializer_t) {
-        __weak id weakSender = sender;
-        *value = initializer_t(weakSender);
-    } else {
-        *value = [NSClassFromString(property.propertyClassName) new];
-    }
+    BMLazyInitializerFinder *finder = [BMLazyInitializerFinder new];
+    magic_initializer_t initializer = [finder initializerForProperty:property];
+
+    __weak id weakSender = sender;
+    *value = initializer(weakSender);
+
     setValueForProperty(sender, property, *value);
 }
 

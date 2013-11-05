@@ -59,6 +59,7 @@
 		5898AC739A2AC086C3D8C8E3 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD76894E8A32BAD57705 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
 		5898ACD9D84887129205F314 /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A6834D58538F8D843245 /* BMCompsiteProperty.mm */; };
 		5898AE4A4B22742AC125B9C3 /* BMFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC19F85BB236C5A894E5 /* BMFatDynamicModel.m */; };
+		5898AE69FBE7838F959AFD3B /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */; };
 		5898AEFE4638A4A76E754D55 /* BMTestProtocolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB48E07B499415688C53 /* BMTestProtocolModel.m */; };
 		5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A17D6FCF311A9623421E /* BMBaseModel.mm */; };
 		5898AFDE4DD1390DE717B55F /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* BMPrimitiveCharProperty.mm */; };
@@ -157,10 +158,12 @@
 		5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
 		5898AB3C749E2FE8F70D82A4 /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
 		5898AB48E07B499415688C53 /* BMTestProtocolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestProtocolModel.m; sourceTree = "<group>"; };
+		5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializerFinder.mm; sourceTree = "<group>"; };
 		5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
 		5898ABA54CB1FDD879918252 /* BMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMUser.m; sourceTree = "<group>"; };
 		5898AC10B28C12F4824ED56E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5898AC19F85BB236C5A894E5 /* BMFatDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFatDynamicModel.m; sourceTree = "<group>"; };
+		5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializerFinder.h; sourceTree = "<group>"; };
 		5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BMInitializerRegistry+LazyRegistry.mm"; sourceTree = "<group>"; };
 		5898ACA257539D36AC542B5C /* BMPrimitiveLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongProperty.mm; sourceTree = "<group>"; };
 		5898ACA5069B5D47DFF23D88 /* BMFatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatModel.h; sourceTree = "<group>"; };
@@ -323,6 +326,8 @@
 				5898A76A19A37C4A1B6A850B /* BMLazyHook.h */,
 				CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */,
 				5898A703E558929782CC712D /* BMLazyModuleLoader.h */,
+				5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */,
+				5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -804,6 +809,7 @@
 				5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */,
 				5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */,
 				5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */,
+				5898AE69FBE7838F959AFD3B /* BMLazyInitializerFinder.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
