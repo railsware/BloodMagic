@@ -27,12 +27,12 @@
     return self;
 }
 
-- (void)injectBloodMagicInto:(Protocol *)protocol
+- (void)injectBloodMagicInto:(Protocol *)protocol excluding:(Protocol *)excludingProtocol
 {
     NSArray *classes = [classCollector collectForProtocol:protocol];
     for (Class klass in classes) {
         [kvcInjector injectKVCHandlersIntoClass:klass];
-        [propertyInjector injectDynamicHandlersIntoClass:klass withProtocol:protocol];
+        [propertyInjector injectDynamicHandlersIntoClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];
     }
 }
 

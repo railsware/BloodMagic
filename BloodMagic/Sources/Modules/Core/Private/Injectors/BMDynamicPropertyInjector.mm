@@ -17,9 +17,9 @@
     return self;
 }
 
-- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol
+- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
-    NSArray *properties = [self.propertyCollector collectForClass:klass withProtocol:protocol];
+    NSArray *properties = [self.propertyCollector collectForClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];
     for (BMProperty *property in properties) {
         class_addMethod(klass,
                 NSSelectorFromString(property.accessor),

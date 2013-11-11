@@ -11,7 +11,7 @@
 
 @implementation BMPropertyCollector
 
-- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
+- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
     NSArray *cachedProperties = objc_getAssociatedObject(objcClass, kCachedPropertiesKey);
     if (cachedProperties != nil) {
@@ -22,7 +22,10 @@
     Class superClass = objcClass;
     while ([superClass conformsToProtocol:protocol]) {
         BMClass *klass = [[BMClass alloc] initWithClass:superClass];
-        [properties unionSet:[klass dynamicProperties]];
+        BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
+        if (!isExcludedClass) {
+            [properties unionSet:[klass dynamicProperties]];
+        }
 
         superClass = [superClass superclass];
     }

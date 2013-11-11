@@ -23,7 +23,7 @@ context(@"instance", ^{
     describe(@"responds to", ^{
 
         it(@"collectorForClass:", ^{
-            [subject respondsToSelector:@selector(collectForClass:withProtocol:)] should be_truthy;
+            [subject respondsToSelector:@selector(collectForClass:withProtocol:excludingProtocol:)] should be_truthy;
         });
 
     });
@@ -32,12 +32,12 @@ context(@"instance", ^{
         __block NSArray *properties = nil;
 
         it(@"only dynamic properties", ^{
-            properties = [subject collectForClass:[BMUser class] withProtocol:@protocol(BMTestProtocol)];
+            properties = [subject collectForClass:[BMUser class] withProtocol:@protocol(BMTestProtocol) excludingProtocol:nil];
             properties.count should equal(2);
         });
 
         it(@"including base class' properties", ^{
-            properties = [subject collectForClass:[BMDerivedExtendedModel class] withProtocol:@protocol(BMLazy)];
+            properties = [subject collectForClass:[BMDerivedExtendedModel class] withProtocol:@protocol(BMLazy) excludingProtocol:nil];
             properties.count should equal(2);
         });
 
