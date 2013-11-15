@@ -27,6 +27,10 @@
     return self;
 }
 
+- (void)injectBloodMagicInto:(Protocol *)protocol {
+    return [self injectBloodMagicInto:protocol excluding:nil];
+}
+
 - (void)injectBloodMagicInto:(Protocol *)protocol excluding:(Protocol *)excludingProtocol
 {
     NSArray *classes = [classCollector collectForProtocol:protocol];

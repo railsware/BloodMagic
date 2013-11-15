@@ -11,6 +11,10 @@
 
 @implementation BMPropertyCollector
 
+- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol {
+    return [self collectForClass:objcClass withProtocol:protocol excludingProtocol:nil];
+}
+
 - (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
     NSArray *cachedProperties = objc_getAssociatedObject(objcClass, kCachedPropertiesKey);

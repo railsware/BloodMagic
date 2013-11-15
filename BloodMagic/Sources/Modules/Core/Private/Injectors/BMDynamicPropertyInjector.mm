@@ -17,6 +17,10 @@
     return self;
 }
 
+- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol {
+    return [self injectDynamicHandlersIntoClass:klass withProtocol:protocol excludingProtocol:nil];
+}
+
 - (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
     NSArray *properties = [self.propertyCollector collectForClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];

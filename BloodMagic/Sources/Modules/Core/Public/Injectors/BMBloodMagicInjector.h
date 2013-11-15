@@ -7,6 +7,7 @@
 
 @interface BMBloodMagicInjector : NSObject
 
+- (void)injectBloodMagicInto:(Protocol *)protocol;
 - (void)injectBloodMagicInto:(Protocol *)protocol excluding:(Protocol *)excludingProtocol;
 
 @end
