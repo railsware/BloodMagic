@@ -1,6 +1,6 @@
 ## BloodMagic ![License MIT](https://go-shields.herokuapp.com/license-MIT-red.png)
 
-![Build status](https://api.travis-ci.org/railsware/BloodMagic.png) &nbsp; ![Version](https://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png) &nbsp; ![Platform](https://cocoapod-badges.herokuapp.com/p/BloodMagic/badge.png)
+![Build status](https://api.travis-ci.org/railsware/BloodMagic.png) &nbsp; ![Version](https://cocoapod-badges.herokuapp.com/v/BloodMagic/badge.png) &nbsp; ![Platform](https://cocoapod-badges.herokuapp.com/p/BloodMagic/badge.png)
 
 More details here: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
 
