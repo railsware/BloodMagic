@@ -3,7 +3,6 @@
 // Copyright (c) 2013 Railsware. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
 #import "BMPublicCoreDefnitions.h"
 

@@ -16,7 +16,7 @@
     BMInitializer *lazyInitializer = [registry initializerForProperty:property];
     magic_initializer_t initializer = lazyInitializer.initializer;
     if (initializer == nil) {
-        initializer = ^id(id sender) {
+        initializer = ^id(__unused id sender) {
             return [NSClassFromString(property.propertyClassName) new];
         };
     }
