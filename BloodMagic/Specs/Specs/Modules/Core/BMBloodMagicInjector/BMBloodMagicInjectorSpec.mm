@@ -13,7 +13,7 @@ context(@"instance", ^{
     beforeEach(^{
         injector = [BMBloodMagicInjector new];
 
-        [injector injectBloodMagicInto:@protocol(BMFatTestProtocol)];
+        [injector injectBloodMagicInto:@protocol(BMFatTestProtocol) excluding:nil];
     });
 
     afterEach(^{

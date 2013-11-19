@@ -6,6 +6,7 @@
 #pragma once
 
 #import "BMLazy.h"
+#import "BMLazyExclude.h"
 #import "BMInitializer+LazyInitializer.h"
 #import "BMInitializerRegistry+LazyRegistry.h"
 #import "BMLazyDefinitions.h"

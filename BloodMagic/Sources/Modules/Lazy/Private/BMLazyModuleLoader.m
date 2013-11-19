@@ -13,7 +13,7 @@
 {
     @autoreleasepool {
         BMBloodMagicInjector *injector = [BMBloodMagicInjector new];
-        [injector injectBloodMagicInto:@protocol(BMLazy)];
+        [injector injectBloodMagicInto:@protocol(BMLazy) excluding:@protocol(BMLazyExclude)];
     }
 }
 

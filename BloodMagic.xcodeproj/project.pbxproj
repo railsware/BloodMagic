@@ -10,6 +10,8 @@
 		46535A1518207993004A9DA4 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
 		4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */; };
 		4665B901181F167100E56A01 /* BMDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */; };
+		467029D7182D958E003EAFB0 /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 467029D6182D958E003EAFB0 /* BMInheritedModel.m */; };
+		467029DD182DA49D003EAFB0 /* BMInheritedExcludedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 467029DC182DA49D003EAFB0 /* BMInheritedExcludedModel.m */; };
 		5898A017EC315B4F7ACA8ED4 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */; };
 		5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */; };
 		5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A29F077635D7ABE153A4 /* BMDerivedModel.mm */; };
@@ -78,6 +80,11 @@
 		4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
 		4665B8FF181F167100E56A01 /* BMDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedExtendedModel.h; sourceTree = "<group>"; };
 		4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedExtendedModel.m; sourceTree = "<group>"; };
+		467029D4182D94CC003EAFB0 /* BMLazyExclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLazyExclude.h; sourceTree = "<group>"; };
+		467029D5182D958E003EAFB0 /* BMInheritedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedModel.h; sourceTree = "<group>"; };
+		467029D6182D958E003EAFB0 /* BMInheritedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedModel.m; sourceTree = "<group>"; };
+		467029DB182DA49D003EAFB0 /* BMInheritedExcludedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedExcludedModel.h; sourceTree = "<group>"; };
+		467029DC182DA49D003EAFB0 /* BMInheritedExcludedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedExcludedModel.m; sourceTree = "<group>"; };
 		5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
 		5898A05C65B2C230BF4EEA30 /* BMLazyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyTestProtocol.h; sourceTree = "<group>"; };
 		5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
@@ -269,6 +276,10 @@
 				4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */,
 				4665B8FF181F167100E56A01 /* BMDerivedExtendedModel.h */,
 				4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */,
+				467029D5182D958E003EAFB0 /* BMInheritedModel.h */,
+				467029D6182D958E003EAFB0 /* BMInheritedModel.m */,
+				467029DB182DA49D003EAFB0 /* BMInheritedExcludedModel.h */,
+				467029DC182DA49D003EAFB0 /* BMInheritedExcludedModel.m */,
 			);
 			path = LazySpecs;
 			sourceTree = "<group>";
@@ -528,6 +539,7 @@
 				5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */,
 				5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.mm */,
 				5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */,
+				467029D4182D94CC003EAFB0 /* BMLazyExclude.h */,
 				5898A19E3E1505FD50FF5637 /* cxx */,
 				5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */,
 			);
@@ -803,7 +815,9 @@
 				5898A234C8F98F32DEA0C427 /* BMLazyInitializer.mm in Sources */,
 				5898A5B8898AB5C3BB60B7D7 /* BMPropertyFinder.mm in Sources */,
 				5898A5D5376DD0CC1122BA2A /* BMPropertyTypeParser.mm in Sources */,
+				467029DD182DA49D003EAFB0 /* BMInheritedExcludedModel.m in Sources */,
 				5898A440B7DF163D8A5829CB /* BMPropertyTypeParserSpec.mm in Sources */,
+				467029D7182D958E003EAFB0 /* BMInheritedModel.m in Sources */,
 				4665B901181F167100E56A01 /* BMDerivedExtendedModel.m in Sources */,
 				5898AEFE4638A4A76E754D55 /* BMTestProtocolModel.m in Sources */,
 				5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */,

@@ -10,6 +10,8 @@
 #import "BMDerivedModel.h"
 #import "BMDerivedLazyModel.h"
 #import "BMDerivedExtendedModel.h"
+#import "BMInheritedModel.h"
+#import "BMInheritedExcludedModel.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -153,6 +155,45 @@ describe(@"LazySpec", ^{
 
             });
 
+        });
+
+        context(@"inheritance", ^{
+            __block BMInheritedModel *inheritedModel = nil;
+
+            describe(@"inherited lazyness", ^{
+                beforeEach(^{
+                    inheritedModel = [BMInheritedModel new];
+                });
+                afterEach(^{
+                    [inheritedModel release];
+                    inheritedModel = nil;
+                });
+
+                it(@"not nil", ^{
+                    inheritedModel.user should_not be_nil;
+                });
+            });
+        });
+
+        context(@"excluding", ^{
+            __block BMInheritedExcludedModel *excludedModel = nil;
+
+            describe(@"inherited lazyness", ^{
+                beforeEach(^{
+                    excludedModel = [BMInheritedExcludedModel new];
+                });
+                afterEach(^{
+                    [excludedModel release];
+                    excludedModel = nil;
+                });
+
+                it(@"super's property is not nil", ^{
+                    excludedModel.user should_not be_nil;
+                });
+                it(@"doesn't instntiate exluded property", ^{
+                    ^{[excludedModel admin];} should raise_exception([NSException class]);
+                });
+            });
         });
 
     });
