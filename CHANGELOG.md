@@ -1,3 +1,7 @@
+## 0.3.0
+
+  - Added ability to exclude class from magic hierarchy ([details](https://github.com/railsware/BloodMagic/pull/5)), thanks to [Eugene Solodovnykov](https://github.com/0xc010d)
+
 ## 0.2.3
 
   - Fixed issue with subclassing
