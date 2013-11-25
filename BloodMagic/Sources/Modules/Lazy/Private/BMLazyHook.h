@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "API.h"
+#import "BMHook.h"
 #import "BMLazy.h"
 
 @interface BMLazyHook : NSObject
