@@ -24,8 +24,10 @@
     BMLazyInitializerFinder *finder = [BMLazyInitializerFinder new];
     magic_initializer_t initializer = [finder initializerForProperty:property];
 
-    __weak id weakSender = sender;
-    *value = initializer(weakSender);
+    if (initializer) {
+        __weak id weakSender = sender;
+        *value = initializer(weakSender);
+    }
 
     setValueForProperty(sender, property, *value);
 }
