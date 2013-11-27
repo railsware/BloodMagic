@@ -10,6 +10,8 @@
 
 @interface BMInitializer : NSObject
 
++ (void)setDefaultInitializer:(magic_initializer_t)initializer;
+
 @property (nonatomic, strong) BMInitializerRegistry *registry;
 @property (nonatomic, strong) Class propertyClass;
 @property (nonatomic, strong) Class containerClass;

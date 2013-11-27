@@ -7,6 +7,7 @@
 #import "BMProperty.h"
 #import "BMInitializerRegistry.h"
 #import "BMInitializerRegistry+LazyRegistry.h"
+#import "BMInitializer_Private.h"
 
 @implementation BMLazyInitializerFinder
 
@@ -15,11 +16,19 @@
     BMInitializerRegistry *registry = [BMInitializerRegistry lazyRegistry];
     BMInitializer *lazyInitializer = [registry initializerForProperty:property];
     magic_initializer_t initializer = lazyInitializer.initializer;
-    if (initializer == nil) {
-        initializer = ^id(__unused id sender) {
-            return [NSClassFromString(property.propertyClassName) new];
-        };
+
+    if (initializer != nil) {
+        return initializer;
     }
+
+    if ([BMInitializer hasDefaultInitializer]) {
+        initializer = [BMInitializer defaultInitializer];
+        return initializer;
+    }
+
+    initializer = ^id(__unused id sender) {
+        return [NSClassFromString(property.propertyClassName) new];
+    };
 
     return initializer;
 }

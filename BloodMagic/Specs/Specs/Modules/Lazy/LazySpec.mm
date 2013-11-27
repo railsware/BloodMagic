@@ -12,6 +12,7 @@
 #import "BMDerivedExtendedModel.h"
 #import "BMInheritedModel.h"
 #import "BMInheritedExcludedModel.h"
+#import "BMInitializer_Private.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -197,6 +198,22 @@ describe(@"LazySpec", ^{
         });
 
     });
+
+    context(@"custom initializer", ^{
+        beforeEach(^{
+            [BMInitializer setDefaultInitializer:nil];
+        });
+
+        afterEach(^{
+            [BMInitializer restoreDefaultInitializer];
+        });
+
+        describe(@"should not instantiate objects", ^{
+            subject.stringProperty should be_nil;
+        });
+
+    });
+
 
 });
 

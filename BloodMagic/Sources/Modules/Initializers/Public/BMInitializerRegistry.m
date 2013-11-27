@@ -61,5 +61,4 @@
     return initializer;
 }
 
-
 @end
