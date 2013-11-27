@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46535A1518207993004A9DA4 /* BMClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.m */; };
+		46535A1518207993004A9DA4 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
 		4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */; };
 		4665B901181F167100E56A01 /* BMDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */; };
 		467029D7182D958E003EAFB0 /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 467029D6182D958E003EAFB0 /* BMInheritedModel.m */; };
@@ -24,7 +24,6 @@
 		5898A3F32A113286A329FB13 /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5E97EFA8A48AEA991F6 /* BMPropertyCollector.mm */; };
 		5898A3FD3F85991506BCC251 /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */; };
 		5898A4179EA38C3AC9700FE6 /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */; };
-		5898A42ECFF73C8D49CDE339 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5EFD05DB9946C0D8116 /* BMProperty.mm */; };
 		5898A440B7DF163D8A5829CB /* BMPropertyTypeParserSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4239B9E4000CFB3E695 /* BMPropertyTypeParserSpec.mm */; };
 		5898A45B2A4DCE1A9AA65DCB /* BMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898ABA54CB1FDD879918252 /* BMUser.m */; };
 		5898A4E69E7A24DE95E1E8A0 /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */; };
@@ -66,6 +65,7 @@
 		5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A17D6FCF311A9623421E /* BMBaseModel.mm */; };
 		5898AFDE4DD1390DE717B55F /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* BMPrimitiveCharProperty.mm */; };
 		5898AFFD9D64A3A7C5FE7A2C /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAA1520BC6CEEB4844F5 /* BMPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
 		CA0D845E1803BF8B0068D8F9 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
@@ -75,7 +75,7 @@
 
 /* Begin PBXFileReference section */
 		46535A1318207993004A9DA4 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
-		46535A1418207993004A9DA4 /* BMClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMClass.m; sourceTree = "<group>"; };
+		46535A1418207993004A9DA4 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
 		4665B8FC181DE41600E56A01 /* BMDerivedLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedLazyModel.h; sourceTree = "<group>"; };
 		4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
 		4665B8FF181F167100E56A01 /* BMDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedExtendedModel.h; sourceTree = "<group>"; };
@@ -110,7 +110,6 @@
 		5898A2EF09380095DD200671 /* BMPrimitiveLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveLongLongProperty.h; sourceTree = "<group>"; };
 		5898A30E2BBCADC9BCACC4BF /* BMPrimitiveUnsignedIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedIntProperty.mm; sourceTree = "<group>"; };
 		5898A31B2260B06ADEA89C9B /* BMInternalPropertyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyFactory.h; sourceTree = "<group>"; };
-		5898A32A7EDAB12E7D450DAB /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
 		5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializerRegistry.m; sourceTree = "<group>"; };
 		5898A364FD70B97A294A963A /* BMDynamicPropertyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDynamicPropertyInjector.h; sourceTree = "<group>"; };
 		5898A3D04BB40BA7B8B877B1 /* BMPrimitiveUnsignedLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongLongProperty.h; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 		5898A5CD525AC6AE9B392FC4 /* BMInitializerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInitializerSpec.mm; sourceTree = "<group>"; };
 		5898A5D2A99CE78B9AA7F571 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5898A5E97EFA8A48AEA991F6 /* BMPropertyCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyCollector.mm; sourceTree = "<group>"; };
-		5898A5EFD05DB9946C0D8116 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
 		5898A5F28E28BD625867B36B /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		5898A6668657BD77086EB963 /* BMTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestProtocol.h; sourceTree = "<group>"; };
 		5898A6834D58538F8D843245 /* BMCompsiteProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMCompsiteProperty.mm; sourceTree = "<group>"; };
@@ -199,6 +197,8 @@
 		5898AF6B97CC502C5685416B /* BMPrivateCoreDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrivateCoreDefinitions.h; sourceTree = "<group>"; };
 		5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
+		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
 		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
 		CADB6AF1178FFE330060E11D /* BloodMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				46535A1318207993004A9DA4 /* BMClass.h */,
-				46535A1418207993004A9DA4 /* BMClass.m */,
+				46535A1418207993004A9DA4 /* BMClass.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -587,10 +587,8 @@
 				5898A31B2260B06ADEA89C9B /* BMInternalPropertyFactory.h */,
 				5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */,
 				5898A58C0F3DA7769B0D19E9 /* BMInternalProperty.h */,
-				5898A1FB0B40C6C457870EE7 /* BMProperty_Private.h */,
 				5898AF26F9ED8167F06562E9 /* BMInternalProperty.mm */,
-				5898A32A7EDAB12E7D450DAB /* BMProperty.h */,
-				5898A5EFD05DB9946C0D8116 /* BMProperty.mm */,
+				5898A1FB0B40C6C457870EE7 /* BMProperty_Private.h */,
 				5898AF0FA6CF74B0A05389D4 /* BMPropertyKVCHandler.h */,
 				5898A28663DDF3F3BA7AFDD9 /* BMPropertyKVCHandler.mm */,
 				5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */,
@@ -605,6 +603,7 @@
 				5898A0A6FE808724133FD0EE /* Injectors */,
 				5898AD69F9108807AD109048 /* BMPublicCoreDefnitions.h */,
 				5898A149D312FC06A9484573 /* BMHook.h */,
+				6B8763ED63991E78BABAD301 /* Property */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -615,6 +614,15 @@
 				5898A24538965685603A3E94 /* BMBloodMagicInjectorSpec.mm */,
 			);
 			path = BMBloodMagicInjector;
+			sourceTree = "<group>";
+		};
+		6B8763ED63991E78BABAD301 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				6B876AFD1AAA3C414487B226 /* BMProperty.mm */,
+				6B876020B111F4C8A68A4059 /* BMProperty.h */,
+			);
+			path = Property;
 			sourceTree = "<group>";
 		};
 		CADB6AE8178FFE330060E11D = {
@@ -759,7 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5898A27BCE0B33AD1E8E4C66 /* main.m in Sources */,
-				46535A1518207993004A9DA4 /* BMClass.m in Sources */,
+				46535A1518207993004A9DA4 /* BMClass.mm in Sources */,
 				5898A45B2A4DCE1A9AA65DCB /* BMUser.m in Sources */,
 				5898A8741F5E6A53D2ED3899 /* BMEntityWithoutProtocols.m in Sources */,
 				5898A3719A705BD6EC7C3E9D /* BMFatModel.m in Sources */,
@@ -787,7 +795,6 @@
 				5898AC739A2AC086C3D8C8E3 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
 				5898A55C5D70026099999F20 /* BMPrimitiveFloatProperty.mm in Sources */,
 				5898A017EC315B4F7ACA8ED4 /* BMPrimitiveDoubleProperty.mm in Sources */,
-				5898A42ECFF73C8D49CDE339 /* BMProperty.mm in Sources */,
 				5898A4179EA38C3AC9700FE6 /* BMInternalPropertyFactory.mm in Sources */,
 				5898AAE85D683A61FC4796E1 /* BMInternalProperty.mm in Sources */,
 				5898A218C9410D8867560420 /* BMPropertyKVCHandler.mm in Sources */,
@@ -814,6 +821,7 @@
 				5898A1CBA9606A1BD3D94399 /* BMDerivedModel.mm in Sources */,
 				5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */,
 				5898AE69FBE7838F959AFD3B /* BMLazyInitializerFinder.m in Sources */,
+				6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,7 +840,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -863,7 +871,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

@@ -3,7 +3,6 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <objc/runtime.h>
 #import "BMInternalProperty.h"
 #import "BMClassCollector.h"
 #import "BMHook.h"

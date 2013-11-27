@@ -1,6 +1,8 @@
+#import <objc/runtime.h>
 #import "SpecHelper.h"
 #import "BMProperty.h"
 #import "BMFatModel.h"
+#import "BMProperty_Private.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;

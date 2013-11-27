@@ -3,6 +3,7 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
+#import <objc/runtime.h>
 #import "BMDynamicPropertyInjector.h"
 #import "BMPropertyCollector.h"
 #import "BMProperty.h"

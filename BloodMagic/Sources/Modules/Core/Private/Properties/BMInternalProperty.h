@@ -16,7 +16,7 @@ class BMInternalProperty
     std::string _propertyName;
     std::string _propertyClassName;
     NSSet *_protocols;
-    __weak BMProperty *_property;
+    BMProperty *_property;
 public:
     objc_AssociationPolicy associationPolicy() const;
     void setAssociationPolicy(objc_AssociationPolicy policy);

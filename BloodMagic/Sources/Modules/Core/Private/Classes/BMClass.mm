@@ -9,6 +9,7 @@
 #import <objc/runtime.h>
 #import "BMClass.h"
 #import "BMProperty.h"
+#import "BMProperty_Private.h"
 
 @implementation BMClass {
     Class _objcClass;

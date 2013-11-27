@@ -4,11 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <objc/runtime.h>
 
 @interface BMProperty : NSObject
-
-- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass;
 
 - (NSString *)name;
 - (NSString *)accessor;

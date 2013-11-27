@@ -8,9 +8,11 @@
 
 #import "BMProperty.h"
 #import "BMInternalProperty.h"
+#import <objc/runtime.h>
 
 @interface BMProperty ()
 
+- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass;
 - (BMInternalProperty *)internalProperty;
 
 @end
