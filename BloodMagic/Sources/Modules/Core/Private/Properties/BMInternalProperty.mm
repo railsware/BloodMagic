@@ -24,7 +24,7 @@ void BMInternalProperty::setProperty(BMProperty *property)
 
 void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    BMClassCollector *collector = [BMClassCollector new];
+    BMClassCollector *collector = [BMClassCollector collector];
     NSArray *hooks = [collector collectForProtocol:@protocol(BMHook)];
 
     for (Class<BMHook> hook in hooks) {
@@ -34,7 +34,7 @@ void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *intern
 
 void BMInternalProperty::accessorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    BMClassCollector *collector = [BMClassCollector new];
+    BMClassCollector *collector = [BMClassCollector collector];
     NSArray *hooks = [collector collectForProtocol:@protocol(BMHook)];
 
     for (Class<BMHook> hook in hooks) {

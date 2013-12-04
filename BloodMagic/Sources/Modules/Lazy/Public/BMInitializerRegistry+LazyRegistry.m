@@ -16,7 +16,7 @@
     dispatch_once(&once, ^{
         sharedInstance = [[self alloc] init];
     });
-    return sharedInstance;;
+    return sharedInstance;
 }
 
 @end

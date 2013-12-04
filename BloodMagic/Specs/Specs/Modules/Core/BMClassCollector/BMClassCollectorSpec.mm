@@ -14,7 +14,7 @@ context(@"instance", ^{
     __block BMClassCollector *subject;
 
     beforeEach(^{
-        subject = [BMClassCollector new];
+        subject = [BMClassCollector collector];
     });
 
     afterEach(^{

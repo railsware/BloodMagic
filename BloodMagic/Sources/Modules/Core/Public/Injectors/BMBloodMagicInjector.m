@@ -19,7 +19,7 @@
 {
     self = [super init];
     if (self) {
-        classCollector = [BMClassCollector new];
+        classCollector = [BMClassCollector collector];
         kvcInjector = [BMKVCInjector new];
         propertyInjector = [BMDynamicPropertyInjector new];
     }

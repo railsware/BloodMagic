@@ -7,6 +7,8 @@
 
 @interface BMClassCollector : NSObject
 
++ (instancetype)collector;
+
 - (NSArray *)collectForProtocol:(Protocol *)protocol;
 
 @end
