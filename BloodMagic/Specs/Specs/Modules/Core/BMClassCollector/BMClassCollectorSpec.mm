@@ -17,10 +17,6 @@ context(@"instance", ^{
         subject = [BMClassCollector collector];
     });
 
-    afterEach(^{
-        [subject release];
-    });
-
     describe(@"responds to", ^{
 
         it(@"collectForProtocol:", ^{
