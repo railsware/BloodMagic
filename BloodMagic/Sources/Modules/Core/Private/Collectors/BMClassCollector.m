@@ -49,6 +49,11 @@
         }
         
         Class klass = classes[i];
+        
+        if (class_getName(klass)[0] == '_') {
+            continue;
+        }
+        
         [result addObject:klass];
     }
     _cachedClasses = [NSArray arrayWithArray:result];
