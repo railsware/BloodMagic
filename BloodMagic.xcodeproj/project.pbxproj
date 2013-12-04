@@ -194,7 +194,6 @@
 		5898AF26F9ED8167F06562E9 /* BMInternalProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalProperty.mm; sourceTree = "<group>"; };
 		5898AF33B270563953264AC2 /* BMDerivedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedModel.h; sourceTree = "<group>"; };
 		5898AF609766255D9E734C8C /* BMFatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFatModel.m; sourceTree = "<group>"; };
-		5898AF6B97CC502C5685416B /* BMPrivateCoreDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrivateCoreDefinitions.h; sourceTree = "<group>"; };
 		5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
@@ -309,7 +308,6 @@
 				5898AED98A660C0E042D643B /* Properties */,
 				5898ACDDE74F72748284D1BA /* Collectors */,
 				5898A8B19DB7370E366DA6B7 /* Injectors */,
-				5898AF6B97CC502C5685416B /* BMPrivateCoreDefinitions.h */,
 				5898AAD55AEDF682F4E8A33A /* Finders */,
 				5898A33CD9D0FEA44187C827 /* Parsers */,
 			);

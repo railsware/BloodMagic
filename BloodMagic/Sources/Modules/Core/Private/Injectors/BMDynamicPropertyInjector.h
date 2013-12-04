@@ -5,11 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class BMPropertyCollector;
-
 @interface BMDynamicPropertyInjector : NSObject
-
-@property (nonatomic, strong) BMPropertyCollector *propertyCollector;
 
 - (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol;
 - (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol;

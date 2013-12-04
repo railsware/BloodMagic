@@ -11,9 +11,7 @@ class BMPropertyFinder
 {
 private:
     id _self;
-
-private:
-    NSArray *properties() const;
+    NSArray *_properties;
 
 public:
     BMPropertyFinder(id self);

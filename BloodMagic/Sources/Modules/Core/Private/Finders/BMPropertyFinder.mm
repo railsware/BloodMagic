@@ -5,31 +5,18 @@
 
 #include "BMPropertyFinder.h"
 #include "BMProperty_Private.h"
-#include "BMPrivateCoreDefinitions.h"
+#include "BMPropertyCollector.h"
 
 BMPropertyFinder::BMPropertyFinder(id self) : _self(self)
 {
-}
-
-NSArray *BMPropertyFinder::properties() const
-{
-    NSArray *properties = nil;
-    Class klass = [_self class];
-    while (klass != [NSObject class]) {
-        properties = objc_getAssociatedObject(klass, kCachedPropertiesKey);
-        if (properties.count) {
-            break;
-        }
-        klass = [klass superclass];
-    }
-
-    return properties;
+    BMPropertyCollector *collector = [BMPropertyCollector collector];
+    _properties = [collector collectForClass:[_self class] withProtocol:nil];
 }
 
 BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
 {
     NSString *accessorName = NSStringFromSelector(cmd);
-    for (BMProperty *p in this->properties()) {
+    for (BMProperty *p in _properties) {
         if ([p.accessor isEqualToString:accessorName]) {
             return p.internalProperty;
         }
@@ -40,7 +27,7 @@ BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
 
 BMInternalProperty *BMPropertyFinder::findByName(NSString *name) const
 {
-    for (BMProperty *p in this->properties()) {
+    for (BMProperty *p in _properties) {
         if ([p.name isEqualToString:name]) {
             return p.internalProperty;
         }
@@ -52,7 +39,7 @@ BMInternalProperty *BMPropertyFinder::findByName(NSString *name) const
 BMInternalProperty *BMPropertyFinder::findByMutator(SEL cmd) const
 {
     NSString *mutatorName = NSStringFromSelector(cmd);
-    for (BMProperty *p in this->properties()) {
+    for (BMProperty *p in _properties) {
         if ([p.mutator isEqualToString:mutatorName]) {
             return p.internalProperty;
         }

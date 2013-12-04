@@ -6,19 +6,44 @@
 
 #import <objc/runtime.h>
 #import "BMPropertyCollector.h"
-#import "BMPrivateCoreDefinitions.h"
 #import "BMClass.h"
 
 @implementation BMPropertyCollector
+{
+    NSMutableDictionary *_cachedProperties;
+}
 
-- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol {
++ (instancetype)collector
+{
+    static dispatch_once_t once;
+    static id sharedInstance;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _cachedProperties = [NSMutableDictionary new];
+    }
+    
+    return self;
+}
+
+- (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
+{
     return [self collectForClass:objcClass withProtocol:protocol excludingProtocol:nil];
 }
 
 - (NSArray *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
-    NSArray *cachedProperties = objc_getAssociatedObject(objcClass, kCachedPropertiesKey);
-    if (cachedProperties != nil) {
+    NSString *className = NSStringFromClass(objcClass);
+    NSArray *cachedProperties = _cachedProperties[className];
+    
+    if (cachedProperties) {
         return cachedProperties;
     }
 
@@ -35,8 +60,9 @@
     }
 
     NSArray *result = [properties allObjects];
-    objc_setAssociatedObject(objcClass, kCachedPropertiesKey, result, OBJC_ASSOCIATION_RETAIN);
-
+    
+    _cachedProperties[className] = result;
+    
     return result;
 }
 

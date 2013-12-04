@@ -8,6 +8,8 @@
 
 @interface BMPropertyCollector : NSObject
 
++ (instancetype)collector;
+
 - (NSArray *)collectForClass:(Class)klass withProtocol:(Protocol *)protocol;
 - (NSArray *)collectForClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol;
 

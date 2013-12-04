@@ -13,11 +13,7 @@ context(@"instance", ^{
 
     __block BMPropertyCollector *subject = nil;
     beforeEach(^{
-        subject = [BMPropertyCollector new];
-    });
-
-    afterEach(^{
-        [subject release];
+        subject = [BMPropertyCollector collector];
     });
 
     describe(@"responds to", ^{
