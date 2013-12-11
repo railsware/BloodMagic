@@ -8,6 +8,17 @@
 #import "BMHook.h"
 #import "BMProperty.h"
 
+class_list_t static inline cachedHooks()
+{
+    static class_list_t hooks;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        BMClassCollector *collector = [BMClassCollector collector];
+        hooks = [collector collectForProtocol:@protocol(BMHook)];
+    });
+    return hooks;
+}
+
 BMInternalProperty::~BMInternalProperty()
 {
 }
@@ -24,9 +35,8 @@ void BMInternalProperty::setProperty(BMProperty *property)
 
 void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    BMClassCollector *collector = [BMClassCollector collector];
 
-    class_list_t hooks = [collector collectForProtocol:@protocol(BMHook)];
+    class_list_t hooks = cachedHooks();
 
     for (auto it = hooks.cbegin(); it != hooks.cend(); it++) {
         Class<BMHook> hook = *it;
@@ -40,8 +50,7 @@ void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *intern
 
 void BMInternalProperty::accessorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    BMClassCollector *collector = [BMClassCollector collector];
-    class_list_t hooks = [collector collectForProtocol:@protocol(BMHook)];
+    class_list_t hooks = cachedHooks();
 
     for (auto it = hooks.cbegin(); it != hooks.cend(); it++) {
         Class<BMHook> hook = *it;
