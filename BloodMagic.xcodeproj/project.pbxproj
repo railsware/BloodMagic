@@ -38,12 +38,12 @@
 		5898A65B63ACA3AEBDDB271C /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* BMInitializer.m */; };
 		5898A66BAF0F869845D90CD4 /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5076BD6FE710272339A /* BMPrimitiveShortProperty.mm */; };
 		5898A6C6B784E1E14B5BD973 /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A30E2BBCADC9BCACC4BF /* BMPrimitiveUnsignedIntProperty.mm */; };
-		5898A76EC56F78D669E39538 /* BMClassCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A96D679982C27C309333 /* BMClassCollector.m */; };
+		5898A76EC56F78D669E39538 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A96D679982C27C309333 /* BMClassCollector.mm */; };
 		5898A773D33DA2B9534F964D /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAD4E07E2D7B42B00A68 /* BMPrimitiveUnsignedCharProperty.mm */; };
 		5898A7BA1B185B8009A29A86 /* BMAnotherLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AE68393D2FA383B6E0E3 /* BMAnotherLazyModel.m */; };
-		5898A7D05176A61081F991ED /* BMDynamicPropertyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.m */; };
+		5898A7D05176A61081F991ED /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */; };
 		5898A823498F8761546A0C4A /* BMLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4A1810763453463D20B /* BMLazyModel.m */; };
-		5898A8315483748CCEA9E6E8 /* BMBloodMagicInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A87A2F83073496E12690 /* BMBloodMagicInjector.m */; };
+		5898A8315483748CCEA9E6E8 /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A87A2F83073496E12690 /* BMBloodMagicInjector.mm */; };
 		5898A83570614C55B432D848 /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */; };
 		5898A85C94EC84E38CD0E755 /* BMBloodMagicInjectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A24538965685603A3E94 /* BMBloodMagicInjectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5898A8741F5E6A53D2ED3899 /* BMEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2916C0B285BCC6D8D22 /* BMEntityWithoutProtocols.m */; };
@@ -142,15 +142,15 @@
 		5898A8368CE2E3C020F672B3 /* BMFatDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatDynamicModel.h; sourceTree = "<group>"; };
 		5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+LazyInitializer.h"; sourceTree = "<group>"; };
 		5898A875524120E81360C779 /* BMPrimitiveUnsignedIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedIntProperty.h; sourceTree = "<group>"; };
-		5898A87A2F83073496E12690 /* BMBloodMagicInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBloodMagicInjector.m; sourceTree = "<group>"; };
+		5898A87A2F83073496E12690 /* BMBloodMagicInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBloodMagicInjector.mm; sourceTree = "<group>"; };
 		5898A87ABE5DDCA021D4B972 /* LazySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazySpec.mm; sourceTree = "<group>"; };
 		5898A8AE9D2813476024CC65 /* BMPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveFloatProperty.h; sourceTree = "<group>"; };
 		5898A8BAFFC537024EE4C585 /* BMPropertyValueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyValueService.h; sourceTree = "<group>"; };
 		5898A8D7B73A7128D29ED58B /* BMPrimitiveShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveShortProperty.h; sourceTree = "<group>"; };
-		5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDynamicPropertyInjector.m; sourceTree = "<group>"; };
+		5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDynamicPropertyInjector.mm; sourceTree = "<group>"; };
 		5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyValueService.mm; sourceTree = "<group>"; };
 		5898A966FB03512A9F26B718 /* BMPrimitiveUnsignedShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedShortProperty.h; sourceTree = "<group>"; };
-		5898A96D679982C27C309333 /* BMClassCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMClassCollector.m; sourceTree = "<group>"; };
+		5898A96D679982C27C309333 /* BMClassCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollector.mm; sourceTree = "<group>"; };
 		5898A9919F65F14D0894DE4B /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
 		5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
 		5898AA4D3CDC443AF363BD44 /* BMClassCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollectorSpec.mm; sourceTree = "<group>"; };
@@ -197,6 +197,7 @@
 		5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		6B8768AEF7B39442021A524B /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
 		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
 		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
@@ -251,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				5898A26EA3E33E7FD675D081 /* BMBloodMagicInjector.h */,
-				5898A87A2F83073496E12690 /* BMBloodMagicInjector.m */,
+				5898A87A2F83073496E12690 /* BMBloodMagicInjector.mm */,
 			);
 			path = Injectors;
 			sourceTree = "<group>";
@@ -310,6 +311,7 @@
 				5898A8B19DB7370E366DA6B7 /* Injectors */,
 				5898AAD55AEDF682F4E8A33A /* Finders */,
 				5898A33CD9D0FEA44187C827 /* Parsers */,
+				6B8768AEF7B39442021A524B /* BMInternalTypes.h */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -402,7 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				5898A364FD70B97A294A963A /* BMDynamicPropertyInjector.h */,
-				5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.m */,
+				5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */,
 				5898A137D9E0D2ADD672538E /* BMKVCInjector.h */,
 				5898A4F5295E8136D4D4EB45 /* BMKVCInjector.m */,
 			);
@@ -511,7 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				5898A71B8AF66DF557B67E7F /* BMClassCollector.h */,
-				5898A96D679982C27C309333 /* BMClassCollector.m */,
+				5898A96D679982C27C309333 /* BMClassCollector.mm */,
 				5898ADD2F19F769DC98274B7 /* BMPropertyCollector.h */,
 				5898A5E97EFA8A48AEA991F6 /* BMPropertyCollector.mm */,
 			);
@@ -796,11 +798,11 @@
 				5898A4179EA38C3AC9700FE6 /* BMInternalPropertyFactory.mm in Sources */,
 				5898AAE85D683A61FC4796E1 /* BMInternalProperty.mm in Sources */,
 				5898A218C9410D8867560420 /* BMPropertyKVCHandler.mm in Sources */,
-				5898A76EC56F78D669E39538 /* BMClassCollector.m in Sources */,
+				5898A76EC56F78D669E39538 /* BMClassCollector.mm in Sources */,
 				5898A3F32A113286A329FB13 /* BMPropertyCollector.mm in Sources */,
-				5898A7D05176A61081F991ED /* BMDynamicPropertyInjector.m in Sources */,
+				5898A7D05176A61081F991ED /* BMDynamicPropertyInjector.mm in Sources */,
 				5898AA90B595309AE51C3A7E /* BMKVCInjector.m in Sources */,
-				5898A8315483748CCEA9E6E8 /* BMBloodMagicInjector.m in Sources */,
+				5898A8315483748CCEA9E6E8 /* BMBloodMagicInjector.mm in Sources */,
 				5898A65B63ACA3AEBDDB271C /* BMInitializer.m in Sources */,
 				5898A5B7E6C5E94E2FA6F615 /* BMInitializerRegistry.m in Sources */,
 				5898A83570614C55B432D848 /* BMInitializer+LazyInitializer.m in Sources */,

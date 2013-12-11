@@ -4,11 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BMInternalTypes.h"
 
 @interface BMClassCollector : NSObject
 
 + (instancetype)collector;
 
-- (NSArray *)collectForProtocol:(Protocol *)protocol;
+- (const class_list_t)collectForProtocol:(Protocol *)protocol;
 
 @end
