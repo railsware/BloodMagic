@@ -21,7 +21,7 @@
         return;
     }
 
-    BMLazyInitializerFinder *finder = [BMLazyInitializerFinder new];
+    BMLazyInitializerFinder *finder = [BMLazyInitializerFinder finder];
     magic_initializer_t initializer = [finder initializerForProperty:property];
 
     if (initializer) {
