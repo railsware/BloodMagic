@@ -33,9 +33,9 @@
 
 - (void)injectBloodMagicInto:(Protocol *)protocol excluding:(Protocol *)excludingProtocol
 {
-    class_list_t hooks = [classCollector collectForProtocol:protocol];
+    class_list_t *hooks = [classCollector collectForProtocol:protocol];
 
-    for (auto it = hooks.cbegin(); it != hooks.cend(); it++) {
+    for (auto it = hooks->cbegin(); it != hooks->cend(); it++) {
         Class klass = *it;
 //        Class<BMHook> hook = *it;
 //        [hook mutatorHook:value withProperty:internal->property() sender:sender];

@@ -15,7 +15,7 @@ BMPropertyFinder::BMPropertyFinder(id self) : _self(self)
 
 BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
 {
-    for (auto it = _properties.cbegin(); it != _properties.cend(); it++) {
+    for (auto it = _properties->cbegin(); it != _properties->cend(); it++) {
         BMProperty *p = *it;
         if (p.accessorSelector == cmd) {
             return p.internalProperty;
@@ -27,7 +27,7 @@ BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
 
 BMInternalProperty *BMPropertyFinder::findByName(NSString *name) const
 {
-    for (auto it = _properties.cbegin(); it != _properties.cend(); it++) {
+    for (auto it = _properties->cbegin(); it != _properties->cend(); it++) {
         BMProperty *p = *it;
         if ([p.name isEqualToString:name]) {
             return p.internalProperty;
@@ -39,7 +39,7 @@ BMInternalProperty *BMPropertyFinder::findByName(NSString *name) const
 
 BMInternalProperty *BMPropertyFinder::findByMutator(SEL cmd) const
 {
-    for (auto it = _properties.cbegin(); it != _properties.cend(); it++) {
+    for (auto it = _properties->cbegin(); it != _properties->cend(); it++) {
         BMProperty *p = *it;
         if (p.mutatorSelector == cmd) {
             return p.internalProperty;

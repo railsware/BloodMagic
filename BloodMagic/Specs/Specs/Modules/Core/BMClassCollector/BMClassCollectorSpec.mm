@@ -31,16 +31,16 @@ context(@"instance", ^{
             __block Protocol *protocol = @protocol(BMTestProtocol);
 
             it(@"should pass", ^{
-                class_list_t classes = [subject collectForProtocol:protocol];
+                class_list_t *classes = [subject collectForProtocol:protocol];
                 Class klass = [BMUser class];
-                std::find(classes.begin(), classes.end(), klass) != classes.end() should be_truthy;
+                std::find(classes->begin(), classes->end(), klass) != classes->end() should be_truthy;
 //                [subject collectForProtocol:protocol] should contain([BMUser class]);
             });
 
             it(@"should pass", ^{
-                class_list_t classes = [subject collectForProtocol:protocol];
+                class_list_t *classes = [subject collectForProtocol:protocol];
                 Class klass = [BMEntityWithoutProtocols class];
-                std::find(classes.begin(), classes.end(), klass) != classes.end() should_not be_truthy;
+                std::find(classes->begin(), classes->end(), klass) != classes->end() should_not be_truthy;
 //                [subject collectForProtocol:protocol] should_not contain([BMEntityWithoutProtocols class]);
             });
 

@@ -55,20 +55,21 @@
     }
 }
 
-- (const class_list_t)collectForProtocol:(Protocol *)protocol
+- (class_list_t *)collectForProtocol:(Protocol *)protocol
 {
     NSUInteger protocolKey = (NSUInteger)protocol;
 
-    class_list_t classes = _cachedClassesMap[protocolKey];
+    class_list_t *classes = _cachedClassesMap[protocolKey];
 
-    if (classes.size()) {
+    if (classes && classes->size()) {
         return classes;
     }
+    classes = new class_list_t;
 
     for (auto it = _cachedClasses.cbegin(); it != _cachedClasses.cend(); it++ ) {
         Class klass = *it;
         if ([klass conformsToProtocol:protocol]) {
-            classes.push_back(klass);
+            classes->push_back(klass);
         }
     }
 

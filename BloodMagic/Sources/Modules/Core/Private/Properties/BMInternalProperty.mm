@@ -8,9 +8,9 @@
 #import "BMHook.h"
 #import "BMProperty.h"
 
-class_list_t static inline cachedHooks()
+static inline class_list_t* cachedHooks()
 {
-    static class_list_t hooks;
+    static class_list_t *hooks;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         BMClassCollector *collector = [BMClassCollector collector];
@@ -35,9 +35,9 @@ void BMInternalProperty::setProperty(BMProperty *property)
 
 void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    class_list_t hooks = cachedHooks();
+    class_list_t *hooks = cachedHooks();
 
-    for (auto it = hooks.cbegin(); it != hooks.cend(); it++) {
+    for (auto it = hooks->cbegin(); it != hooks->cend(); it++) {
         Class<BMHook> hook = *it;
         [hook mutatorHook:value withProperty:internal->property() sender:sender];
     }
@@ -45,9 +45,9 @@ void BMInternalProperty::mutatorHook(id *value, const BMInternalProperty *intern
 
 void BMInternalProperty::accessorHook(id *value, const BMInternalProperty *internal, id sender)
 {
-    class_list_t hooks = cachedHooks();
+    class_list_t *hooks = cachedHooks();
 
-    for (auto it = hooks.cbegin(); it != hooks.cend(); it++) {
+    for (auto it = hooks->cbegin(); it != hooks->cend(); it++) {
         Class<BMHook> hook = *it;
         [hook accessorHook:value withProperty:internal->property() sender:sender];
     }

@@ -13,7 +13,7 @@ class BMPropertyFinder
 {
 private:
     id _self;
-    property_list_t _properties;
+    property_list_t *_properties;
 
 public:
     BMPropertyFinder(id self);

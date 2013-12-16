@@ -10,6 +10,6 @@
 
 + (instancetype)collector;
 
-- (const class_list_t)collectForProtocol:(Protocol *)protocol;
+- (class_list_t *)collectForProtocol:(Protocol *)protocol;
 
 @end

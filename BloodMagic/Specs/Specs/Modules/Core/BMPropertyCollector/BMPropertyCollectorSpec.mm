@@ -25,16 +25,16 @@ context(@"instance", ^{
     });
 
     describe(@"collect", ^{
-        __block property_list_t properties;
+        __block property_list_t *properties;
 
         it(@"only dynamic properties", ^{
             properties = [subject collectForClass:[BMUser class] withProtocol:@protocol(BMTestProtocol) excludingProtocol:nil];
-            properties.size() should equal(2);
+            properties->size() should equal(2);
         });
 
         it(@"including base class' properties", ^{
             properties = [subject collectForClass:[BMDerivedExtendedModel class] withProtocol:@protocol(BMLazy) excludingProtocol:nil];
-            properties.size() should equal(2);
+            properties->size() should equal(2);
         });
 
     });

@@ -10,7 +10,7 @@
 
 + (instancetype)collector;
 
-- (property_list_t)collectForClass:(Class)klass withProtocol:(Protocol *)protocol;
-- (property_list_t)collectForClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol;
+- (property_list_t *)collectForClass:(Class)klass withProtocol:(Protocol *)protocol;
+- (property_list_t *)collectForClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol;
 
 @end

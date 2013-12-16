@@ -35,20 +35,22 @@
 //    return self;
 //}
 
-- (property_list_t)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
+- (property_list_t *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
 {
     return [self collectForClass:objcClass withProtocol:protocol excludingProtocol:nil];
 }
 
-- (property_list_t)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
+- (property_list_t *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
     NSUInteger classKey = (NSUInteger)objcClass;
 //    NSString *className = NSStringFromClass(objcClass);
-    property_list_t cachedProperties = _cachedProperties[classKey];
+    property_list_t *cachedProperties = _cachedProperties[classKey];
     
-    if (!cachedProperties.empty()) {
+    if (cachedProperties && !cachedProperties->empty()) {
         return cachedProperties;
     }
+    
+    cachedProperties = new property_list_t;
 
 //    NSMutableSet *properties = [NSMutableSet new];
     Class superClass = objcClass;
@@ -57,7 +59,7 @@
         BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
         if (!isExcludedClass) {
             for (BMProperty *property in [klass dynamicProperties]) {
-                cachedProperties.push_back(property);
+                cachedProperties->push_back(property);
             }
 //            [properties unionSet:[klass dynamicProperties]];
         }
