@@ -13,10 +13,14 @@
     Class _containerClass;
     Class _propertyClass;
     
+    SEL _accessorSelector;
+    SEL _mutatorSelector;
+    
     NSString *_name;
     NSString *_accessor;
     NSString *_mutator;
-
+    NSString *_containerClassName;
+    
     BOOL _isDynamic;
     BOOL _isCopy;
     BOOL _isNonatomic;
@@ -29,6 +33,7 @@
 {
     self = [super init];
     if (self) {
+         _containerClassName = NSStringFromClass(containerClass);
         _containerClass = containerClass;
         _internalProperty = NULL;
 
@@ -76,6 +81,21 @@
 - (NSString *)propertyClassName
 {
     return @(_internalProperty->propertyClassName().c_str());
+}
+
+- (NSString *)containerClassName
+{
+    return _containerClassName;
+}
+
+- (SEL)accessorSelector
+{
+    return _accessorSelector;
+}
+
+- (SEL)mutatorSelector
+{
+    return _mutatorSelector;
 }
 
 - (Class)containerClass
@@ -211,29 +231,33 @@
 - (void)setAccessor:(const char *)accessor
 {
     _accessor = @(accessor);
+    _accessorSelector = sel_getUid(accessor);
 }
 
 - (void)setMutator:(const char *)mutator
 {
     _mutator = @(mutator);
+    _mutatorSelector = sel_getUid(mutator);
 }
 
 - (void)setDefaultAccessor
 {
-    if (_accessor) {
+    if (_accessorSelector) {
         return;
     }
     _accessor = [_name copy];
+    _accessorSelector = NSSelectorFromString(_accessor);
 }
 
 - (void)setDefaultMutator
 {
-    if (_mutator) {
+    if (_mutatorSelector) {
         return;
     }
     NSString *capitalizedProperty = [_name stringByReplacingCharactersInRange:NSMakeRange(0,1)
                                                                    withString:[[_name substringToIndex:1] capitalizedString]];
     _mutator = [NSString stringWithFormat:@"set%@:", capitalizedProperty];
+    _mutatorSelector = NSSelectorFromString(_mutator);
 }
 
 - (BOOL)isEqual:(id)object

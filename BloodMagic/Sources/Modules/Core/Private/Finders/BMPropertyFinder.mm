@@ -15,9 +15,8 @@ BMPropertyFinder::BMPropertyFinder(id self) : _self(self)
 
 BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
 {
-    NSString *accessorName = NSStringFromSelector(cmd);
     for (BMProperty *p in _properties) {
-        if ([p.accessor isEqualToString:accessorName]) {
+        if (p.accessorSelector == cmd) {
             return p.internalProperty;
         }
     }
@@ -38,9 +37,8 @@ BMInternalProperty *BMPropertyFinder::findByName(NSString *name) const
 
 BMInternalProperty *BMPropertyFinder::findByMutator(SEL cmd) const
 {
-    NSString *mutatorName = NSStringFromSelector(cmd);
     for (BMProperty *p in _properties) {
-        if ([p.mutator isEqualToString:mutatorName]) {
+        if (p.mutatorSelector == cmd) {
             return p.internalProperty;
         }
     }

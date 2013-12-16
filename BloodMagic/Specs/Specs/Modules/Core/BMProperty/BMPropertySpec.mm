@@ -73,22 +73,22 @@ context(@"instance", ^{
         
         describe(@"default accessor", ^{
             property = propertyWithName("assignProperty");
-            property.accessor should equal(@"assignProperty");
+            property.accessorSelector should equal(NSSelectorFromString(@"assignProperty"));
         });
 
         describe(@"default mutator", ^{
             property = propertyWithName("assignProperty");
-            property.mutator should equal(@"setAssignProperty:");
+            property.mutatorSelector should equal(NSSelectorFromString(@"setAssignProperty:"));
         });
 
         describe(@"custom accessor", ^{
             property = propertyWithName("name");
-            property.accessor should equal(@"firstName");
+            property.accessorSelector should equal(NSSelectorFromString(@"firstName"));
         });
 
         describe(@"custom mutator", ^{
             property = propertyWithName("name");
-            property.mutator should equal(@"setFirstName:");
+            property.mutatorSelector should equal(NSSelectorFromString(@"setFirstName:"));
         });
 
         describe(@"unkwnown type (id)", ^{

@@ -20,13 +20,13 @@
     NSArray *properties = [collector collectForClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];
     for (BMProperty *property in properties) {
         class_addMethod(klass,
-                NSSelectorFromString(property.accessor),
-                property.accessorImplementation,
-                NULL);
+                        property.accessorSelector,
+                        property.accessorImplementation,
+                        NULL);
         class_addMethod(klass,
-                NSSelectorFromString(property.mutator),
-                property.mutatorImplementation,
-                NULL);
+                        property.mutatorSelector,
+                        property.mutatorImplementation,
+                        NULL);
     }
 }
 

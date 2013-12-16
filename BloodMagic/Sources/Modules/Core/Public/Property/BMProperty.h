@@ -8,8 +8,13 @@
 @interface BMProperty : NSObject
 
 - (NSString *)name;
-- (NSString *)accessor;
-- (NSString *)mutator;
+- (NSString *)accessor DEPRECATED_ATTRIBUTE;
+- (NSString *)mutator DEPRECATED_ATTRIBUTE;
+- (NSString *)propertyClassName DEPRECATED_ATTRIBUTE;
+- (NSString *)containerClassName DEPRECATED_ATTRIBUTE;
+
+- (SEL)accessorSelector;
+- (SEL)mutatorSelector;
 
 - (Class)propertyClass;
 - (Class)containerClass;
