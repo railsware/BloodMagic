@@ -10,6 +10,8 @@
 
 @interface BMLazyInitializerFinder : NSObject
 
++ (instancetype)finder;
+
 - (magic_initializer_t)initializerForProperty:(const BMProperty *)property;
 
 @end

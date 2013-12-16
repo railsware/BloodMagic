@@ -10,7 +10,7 @@
 
 @interface BMClass : NSObject
 
-- (instancetype)initWithClass:(Class)objcClass;
++ (instancetype)classWithObjCClass:(Class)objcClass;
 
 - (NSSet *)protocols;
 - (NSSet *)properties;

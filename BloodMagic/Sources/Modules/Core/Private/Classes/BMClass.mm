@@ -7,16 +7,30 @@
 //
 
 #import <objc/runtime.h>
-#import "BMClass.h"
+#import "BMClass_Private.h"
 #import "BMProperty.h"
 #import "BMProperty_Private.h"
+#import "BMClassCache.h"
 
-@implementation BMClass {
+@implementation BMClass
+{
     Class _objcClass;
 
     NSSet *_protocols;
     NSSet *_properties;
     NSSet *_dynamicProperties;
+}
+
++ (instancetype)classWithObjCClass:(Class)objcClass
+{
+    BMClassCache *cache = [BMClassCache cache];
+    BMClass *internalClass = [cache internalClassForObjCClass:objcClass];
+    if (!internalClass) {
+        internalClass = [[BMClass alloc] initWithClass:objcClass];
+        [cache setInternalClass:internalClass forObjCClass:objcClass];
+    }
+    
+    return internalClass;
 }
 
 - (instancetype)initWithClass:(Class)objcClass {

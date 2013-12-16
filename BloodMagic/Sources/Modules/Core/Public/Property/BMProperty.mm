@@ -40,7 +40,6 @@
             _internalProperty->setAssociationPolicy([self associationPolicy]);
         }
     }
-
     return self;
 }
 

@@ -50,7 +50,7 @@
     NSMutableSet *properties = [NSMutableSet new];
     Class superClass = objcClass;
     while ([superClass conformsToProtocol:protocol]) {
-        BMClass *klass = [[BMClass alloc] initWithClass:superClass];
+        BMClass *klass =  [BMClass classWithObjCClass:superClass];
         BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
         if (!isExcludedClass) {
             [properties unionSet:[klass dynamicProperties]];
