@@ -7,10 +7,12 @@
 #import "BMLazy.h"
 
 @class BMUser;
+@class BMProject;
 
 @interface BMAnotherLazyModel : NSObject
     <BMLazy>
 
 @property (nonatomic, strong) BMUser *user;
+@property (nonatomic, strong) BMProject *project;
 
 @end

@@ -11,5 +11,6 @@
 @implementation BMAnotherLazyModel
 
 @dynamic user;
+@dynamic project;
 
 @end

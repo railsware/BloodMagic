@@ -30,9 +30,9 @@
 {
     NSUInteger propertyKey = (NSUInteger)property;
     magic_initializer_t initializer = _cachedInitializers[propertyKey];
-//    if (initializer) {
-//        return initializer;
-//    }
+    if (initializer) {
+        return initializer;
+    }
     
     BMInitializerRegistry *registry = [BMInitializerRegistry lazyRegistry];
     BMInitializer *lazyInitializer = [registry initializerForProperty:property];

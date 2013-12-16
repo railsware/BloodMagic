@@ -7,6 +7,7 @@
 #import "BMLazy.h"
 
 @class BMUser;
+@class BMProject;
 @protocol BMLazyTestProtocol;
 
 @interface BMLazyModel : NSObject
@@ -15,6 +16,7 @@
 @property (nonatomic, copy) NSString *stringProperty;
 @property (nonatomic, copy) NSString *someTitle;
 @property (nonatomic, strong) BMUser *user;
+@property (nonatomic, strong) BMProject *project;
 @property (nonatomic, strong) id<BMLazyTestProtocol> propertyWithProtocol;
 
 @end

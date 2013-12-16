@@ -10,6 +10,7 @@
 @dynamic stringProperty;
 @dynamic someTitle;
 @dynamic user;
+@dynamic project;
 @dynamic propertyWithProtocol;
 
 @end

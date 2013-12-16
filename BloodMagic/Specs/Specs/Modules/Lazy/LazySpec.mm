@@ -4,6 +4,7 @@
 #import "Lazy_cxx.h"
 #import "BMLazyModel.h"
 #import "BMUser.h"
+#import "BMProject.h"
 #import "BMAnotherLazyModel.h"
 #import "BMTestProtocolModel.h"
 #import "BMBaseModel.h"
@@ -90,23 +91,23 @@ describe(@"LazySpec", ^{
 
         beforeEach(^{
             BMInitializer *initializer = [BMInitializer lazyInitializer];
-            initializer.propertyClass = [BMUser class];
+            initializer.propertyClass = [BMProject class];
             initializer.containerClass = [BMLazyModel class];
             initializer.initializer = ^id(id sender){
-                BMUser *user = [[BMUser new] autorelease];
-                user.name = @"Alex";
-                user.lazyModel = sender;
-                return user;
+                BMProject *project = [[BMProject new] autorelease];
+                project.name = @"BloodMagic";
+                project.lazyModel = sender;
+                return project;
             };
             [initializer registerInitializer];
         });
 
         it(@"should load custom objects", ^{
-            subject.user.name should equal(@"Alex");
+            subject.project.name should equal(@"BloodMagic");
         });
 
         it(@"should have sender", ^{
-            subject.user.lazyModel should equal(subject);
+            subject.project.lazyModel should equal(subject);
         });
 
         it(@"should consider container class", ^{
@@ -115,14 +116,17 @@ describe(@"LazySpec", ^{
         });
 
         it(@"should have NSObject container by default", ^{
-            BMLazyInitializer<BMUser>::registerInitializer(^BMUser *(NSObject *sender) {
-                BMUser *user = [[BMUser new] autorelease];
-                user.name = @"Alex";
-                return user;
-            });
+            BMInitializer *initializer = [BMInitializer lazyInitializer];
+            initializer.propertyClass = [BMProject class];
+            initializer.initializer = ^id(id sender){
+                BMProject *project = [[BMProject new] autorelease];
+                project.name = @"BloodMagic";
+                return project;
+            };
+            [initializer registerInitializer];
 
             BMAnotherLazyModel *anotherLazyModel = [[BMAnotherLazyModel new] autorelease];
-            anotherLazyModel.user.name should equal(@"Alex");
+            anotherLazyModel.project.name should equal(@"BloodMagic");
         });
 
         context(@"protocols", ^{
