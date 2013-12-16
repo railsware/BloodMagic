@@ -11,7 +11,6 @@
 
 @implementation BMPropertyCollector
 {
-//    NSMutableDictionary *_cachedProperties;
     property_list_map_t _cachedProperties;
 }
 
@@ -33,17 +32,6 @@
     }
 }
 
-//
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        _cachedProperties = [NSMutableDictionary new];
-//    }
-//    
-//    return self;
-//}
-
 - (property_list_t *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol
 {
     return [self collectForClass:objcClass withProtocol:protocol excludingProtocol:nil];
@@ -52,7 +40,6 @@
 - (property_list_t *)collectForClass:(Class)objcClass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
 {
     NSUInteger classKey = (NSUInteger)objcClass;
-//    NSString *className = NSStringFromClass(objcClass);
     property_list_t *cachedProperties = _cachedProperties[classKey];
     
     if (cachedProperties && !cachedProperties->empty()) {
@@ -61,7 +48,6 @@
     
     cachedProperties = new property_list_t;
 
-//    NSMutableSet *properties = [NSMutableSet new];
     Class superClass = objcClass;
     while ([superClass conformsToProtocol:protocol]) {
         BMClass *klass =  [BMClass classWithObjCClass:superClass];
@@ -70,14 +56,10 @@
             for (BMProperty *property in [klass dynamicProperties]) {
                 cachedProperties->push_back(property);
             }
-//            [properties unionSet:[klass dynamicProperties]];
         }
 
         superClass = [superClass superclass];
     }
-
-//    NSArray *result = [properties allObjects];
-    
     _cachedProperties[classKey] = cachedProperties;
     
     return cachedProperties;

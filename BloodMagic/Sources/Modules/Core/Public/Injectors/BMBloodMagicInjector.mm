@@ -37,15 +37,9 @@
 
     for (auto it = hooks->cbegin(); it != hooks->cend(); it++) {
         Class klass = *it;
-//        Class<BMHook> hook = *it;
-//        [hook mutatorHook:value withProperty:internal->property() sender:sender];
         [kvcInjector injectKVCHandlersIntoClass:klass];
         [propertyInjector injectDynamicHandlersIntoClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];
     }
-
-//    NSArray *classes = [classCollector collectForProtocol:protocol];
-//    for (Class klass in classes) {
-//    }
 }
 
 @end

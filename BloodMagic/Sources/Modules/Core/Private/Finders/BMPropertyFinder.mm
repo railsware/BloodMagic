@@ -7,10 +7,10 @@
 #include "BMProperty_Private.h"
 #include "BMPropertyCollector.h"
 
-BMPropertyFinder::BMPropertyFinder(id self) : _self(self)
+BMPropertyFinder::BMPropertyFinder(id self)
 {
     BMPropertyCollector *collector = [BMPropertyCollector collector];
-    _properties = [collector collectForClass:[_self class] withProtocol:nil];
+    _properties = [collector collectForClass:[self class] withProtocol:nil];
 }
 
 BMInternalProperty *BMPropertyFinder::findByAccessor(SEL cmd) const
