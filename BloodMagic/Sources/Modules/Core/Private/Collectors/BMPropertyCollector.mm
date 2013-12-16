@@ -24,6 +24,15 @@
     });
     return sharedInstance;
 }
+
+- (void)dealloc
+{
+    for (auto it = _cachedProperties.cbegin(); it != _cachedProperties.cend();) {
+        property_list_map_t::iterator removeIt = _cachedProperties.erase(it++);
+        delete (*removeIt).second;
+    }
+}
+
 //
 //- (instancetype)init
 //{

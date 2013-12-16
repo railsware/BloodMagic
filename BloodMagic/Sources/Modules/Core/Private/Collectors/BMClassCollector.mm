@@ -30,6 +30,14 @@
     return self;
 }
 
+- (void)dealloc
+{
+    for (auto it = _cachedClassesMap.cbegin(); it != _cachedClassesMap.cend();) {
+        class_list_map_t::iterator removeIt = _cachedClassesMap.erase(it++);
+        delete (*removeIt).second;
+    }
+}
+
 - (void)collectClasses
 {
     Class parentClass = [NSObject class];
