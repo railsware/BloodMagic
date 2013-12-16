@@ -10,8 +10,9 @@
 - (NSString *)name;
 - (NSString *)accessor;
 - (NSString *)mutator;
-- (NSString *)propertyClassName;
-- (NSString *)containerClassName;
+
+- (Class)propertyClass;
+- (Class)containerClass;
 
 - (NSSet *)protocols;
 

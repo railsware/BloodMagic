@@ -16,8 +16,7 @@
         return;
     }
 
-    Class containerClass = NSClassFromString(property.containerClassName);
-    if (![containerClass conformsToProtocol:@protocol(BMLazy)]) {
+    if (![property.containerClass conformsToProtocol:@protocol(BMLazy)]) {
         return;
     }
 

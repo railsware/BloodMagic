@@ -8,8 +8,6 @@
 
 @implementation BMClassCollector
 {
-//    NSArray *_cachedClasses;
-//    NSMutableDictionary *_cachedClassesForProtocol;
     class_list_t _cachedClasses;
     class_list_map_t _cachedClassesMap;
 }
@@ -28,18 +26,16 @@
 {
     self = [super init];
     [self collectClasses];
-//    _cachedClassesForProtocol = [NSMutableDictionary new];
     
     return self;
 }
 
 - (void)collectClasses
 {
-    Class parentClass = NSClassFromString(@"NSObject");
+    Class parentClass = [NSObject class];
     int numClasses = objc_getClassList(NULL, 0);
     Class classes[sizeof(Class) * numClasses];
     numClasses = objc_getClassList(classes, numClasses);
-//    NSMutableArray *result = [NSMutableArray array];
     for (NSInteger i = 0; i < numClasses; i++) {
         Class superClass = classes[i];
         do {
@@ -56,9 +52,7 @@
             continue;
         }
         _cachedClasses.push_back(klass);
-//        [result addObject:klass];
     }
-//    _cachedClasses = [NSArray arrayWithArray:result];
 }
 
 - (const class_list_t)collectForProtocol:(Protocol *)protocol
@@ -71,13 +65,6 @@
         return classes;
     }
 
-//    NSString *protocolName = NSStringFromProtocol(protocol);
-//    NSArray *collectedClasses = _cachedClassesForProtocol[protocolName];
-
-//    if (collectedClasses) {
-//        return collectedClasses;
-//    }
-
     for (auto it = _cachedClasses.cbegin(); it != _cachedClasses.cend(); it++ ) {
         Class klass = *it;
         if ([klass conformsToProtocol:protocol]) {
@@ -85,22 +72,8 @@
         }
     }
 
-//    NSMutableArray *result = [NSMutableArray array];
-//    for (Class klass in _cachedClasses) {
-//        if (![klass conformsToProtocol:protocol]) {
-//            continue;
-//        }
-//
-//        classes.push_back(klass);
-//        [result addObject:klass];
-//    }
-
     _cachedClassesMap[protocolKey] = classes;
-
-//    NSArray *immutableResult = [NSArray arrayWithArray:result];
-//    _cachedClassesForProtocol[protocolName] = immutableResult;
     
-//    return immutableResult;
     return classes;
 }
 

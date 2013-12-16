@@ -93,7 +93,7 @@ context(@"instance", ^{
 
         describe(@"unkwnown type (id)", ^{
             property = propertyWithName("unknownType");
-            property.propertyClassName should equal(@"NSObject");
+            property.propertyClass should equal([NSObject class]);
         });
 
         describe(@"protocols", ^{

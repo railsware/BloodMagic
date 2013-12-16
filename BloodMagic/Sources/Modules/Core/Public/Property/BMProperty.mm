@@ -10,10 +10,12 @@
 
 @implementation BMProperty
 {
+    Class _containerClass;
+    Class _propertyClass;
+    
     NSString *_name;
     NSString *_accessor;
     NSString *_mutator;
-    NSString *_containerClassName;
 
     BOOL _isDynamic;
     BOOL _isCopy;
@@ -27,7 +29,7 @@
 {
     self = [super init];
     if (self) {
-        _containerClassName = NSStringFromClass(containerClass);
+        _containerClass = containerClass;
         _internalProperty = NULL;
 
         const char *name = property_getName(property);
@@ -38,6 +40,7 @@
         if (_internalProperty != NULL) {
             _internalProperty->setPropertyName([_name UTF8String]);
             _internalProperty->setAssociationPolicy([self associationPolicy]);
+            _propertyClass = objc_getClass(_internalProperty->propertyClassName().c_str());
         }
     }
     return self;
@@ -75,9 +78,14 @@
     return @(_internalProperty->propertyClassName().c_str());
 }
 
-- (NSString *)containerClassName
+- (Class)containerClass
 {
-    return _containerClassName;
+    return _containerClass;
+}
+
+- (Class)propertyClass
+{
+    return _propertyClass;
 }
 
 - (NSSet *)protocols

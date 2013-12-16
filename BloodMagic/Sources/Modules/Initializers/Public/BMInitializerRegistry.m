@@ -29,7 +29,7 @@
 
 - (BMInitializer *)initializerForProperty:(const BMProperty *)property
 {
-    /// TODO: move to RDInitializerFinder
+    /// TODO: move to BMInitializerFinder
     BMInitializer *initializer = nil;
     for (BMInitializer *init in _initializers) {
 
@@ -41,15 +41,13 @@
         }
 
         if (init.propertyClass != [NSObject class]) {
-            Class propertyClass = NSClassFromString(property.propertyClassName);
-            if (init.propertyClass != propertyClass) {
+            if (init.propertyClass != property.propertyClass) {
                 continue;
             }
         }
 
         if (init.containerClass != [NSObject class]) {
-            Class containerClass = NSClassFromString(property.containerClassName);
-            if (init.containerClass != containerClass) {
+            if (init.containerClass != property.containerClass) {
                 continue;
             }
         }
