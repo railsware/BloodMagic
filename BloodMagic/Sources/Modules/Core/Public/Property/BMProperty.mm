@@ -189,6 +189,7 @@
         objc_property_attribute_t attribute = attributes[attributeIndex];
         [self parsePropertyAttribute:attribute];
     }
+    free(attributes);
 }
 
 /*
