@@ -19,8 +19,6 @@ Objective-C is a powerful language, but sometimes it lacks of custom property at
 
 We can't implement these attributes without hacking on `clang`, but fortunately, we're able to achieve these effects by means of BloodMagic' spells
 
-_Note: At this time only `lazy` attribute is implemented, the rest attributes will come later_
-
 ### Embark on the Dark
 
 Simple installation via [CocoaPods](http://cocoapods.org/):
@@ -31,7 +29,15 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 
 ### Available Spells
 
+[Lazy Initialization](https://github.com/railsware/BloodMagic/edit/master/README.md#lazy-initialization)
+
+[Dependency Injection](https://github.com/railsware/BloodMagic/edit/master/README.md#dependency-injection)
+
+[Partial Views](https://github.com/railsware/BloodMagic/edit/master/README.md#partial-views)
+
 BloodMagic has been designed to be extensible, so few more spells will be available soon.
+
+====
 
 #### Lazy initialization
 
@@ -100,7 +106,7 @@ By default it creates an instance with the `+new` class' method.
 
 In this case `progressViewService` will be deallocated as a usual property.
 
-##### Dependency Injection (kind of)
+#### Dependency Injection
 
 During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
 
@@ -147,9 +153,115 @@ initializer.initializer = ^id (id sender){
 [initializer registerInitializer];
 ```
 
-### Creation of new spells
+#### Partial Views
 
-_TODO_
+Instantiates view from `xib` on demand, similar to `Lazy` module.
+This spell might be heplful if you have reusable views.
+
+For example:
+
+You need to show the same user info in table cells (`UsersListViewController`) and in some header view (`UserProfileViewController`).
+It makes sense to create one `UserView.xib` associated with `UserView` class and use it through the whole app.
+
+So it may looks like this:
+
+```objectivec
+
+// Cell used from UsersListViewController
+// Created manually
+@implementation UserViewCell
+{
+    UserView *_userView;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        NSString *nibName = NSStringFromClass([UserView class]);
+        UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+        _userView = [[nib instantiateWithOwner:nil options:nil] lastObject];
+        [self addSubview:_userView];
+    }
+    return self;
+}
+
+@end
+
+// View used from UserProfileViewController
+// Created from xib
+@implementation UserHeaderView
+{
+    UserView *_userView;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    NSString *nibName = NSStringFromClass([UserView class]);
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    _userView = [[nib instantiateWithOwner:nil options:nil] lastObject];
+    [self addSubview:_userView];
+}
+
+@end
+```
+
+Both cases use the same, similar code.
+So, BloodMagic does nothing special, just hides this boilerplate:
+
+```objectivec
+
+#import <BloodMagic/PartialView.h>
+
+@interface UserViewCell ()
+    <BMPartialView>
+
+@property (nonatomic, strong) UserView *userView;
+
+@end
+
+@implementation UserViewCell
+
+@dynamic userView;
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self addSubview:self.userView];
+    }
+    return self;
+}
+
+@end
+
+// ...
+
+@interface UserHeaderView ()
+    <BMPartialView>
+
+@property (nonatomic, strong) UserView *userView;
+
+@end
+
+@implementation UserHeaderView
+
+@dynamic userView;
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self addSubview:self.userView];
+}
+
+@end
+```
+
+### Contributors
+
+[AlexDenisov](https://github.com/AlexDenisov)
+[Ievgen Solodovnykov](https://github.com/0xc010d)
 
 ### Side effects (aka bugs)
 
@@ -159,4 +271,5 @@ Those actions will help us to protect you from mutilation.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/railsware/bloodmagic/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
