@@ -29,6 +29,13 @@ Pod::Spec.new do |podspec|
     lazy.dependency 'BloodMagic/Initializers'
   end
 
+  podspec.subspec 'PartialView' do |partial_view|
+    partial_view.source_files = 'BloodMagic/Sources/Modules/PartialView/**/*.{h,m,mm}'
+    partial_view.public_header_files = 'BloodMagic/Sources/Modules/PartialView/Public/**/*.h', 'BloodMagic/Sources/Modules/PartialView/PartialView.h'
+    partial_view.dependency 'BloodMagic/Core'
+    partial_view.platform = :ios
+  end
+
   podspec.xcconfig = {
     'OTHER_LDFLAGS' => '-lc++ -ObjC',
     'CLANG_CXX_LIBRARY' => 'libc++'
