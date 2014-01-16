@@ -261,6 +261,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 ### Contributors
 
 [AlexDenisov](https://github.com/AlexDenisov)
+
 [Ievgen Solodovnykov](https://github.com/0xc010d)
 
 ### Side effects (aka bugs)
