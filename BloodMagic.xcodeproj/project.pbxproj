@@ -67,7 +67,13 @@
 		5898AF46023327D4875EE89A /* BMBaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A17D6FCF311A9623421E /* BMBaseModel.mm */; };
 		5898AFDE4DD1390DE717B55F /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* BMPrimitiveCharProperty.mm */; };
 		5898AFFD9D64A3A7C5FE7A2C /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAA1520BC6CEEB4844F5 /* BMPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */; };
+		6B876476984A4DEBF9D875B5 /* BMPartialViewModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialViewModuleLoader.m */; };
+		6B8766E9F0D89354E31E41F0 /* BMTestPartialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */; };
+		6B87673B4FA4120C94BCAA3B /* BMPartialViewHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialViewHook.mm */; };
 		6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
+		6B876EEDF8582A401DED9E9C /* BMPartialsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876D9EE344396A8B4EE51F /* BMPartialsSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B876FB8AA2B123CD27E3B38 /* BMTestPartialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B876F598E75C28B6ECAAC87 /* BMTestPartialView.xib */; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
 		CA0D845E1803BF8B0068D8F9 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
@@ -204,8 +210,20 @@
 		5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialWrapperView.m; sourceTree = "<group>"; };
+		6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestPartialView.m; sourceTree = "<group>"; };
+		6B876111AB860E76E876080F /* BMPartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialView.h; sourceTree = "<group>"; };
+		6B876180729C3B3443E9C7C4 /* BMPartialViewHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialViewHook.mm; sourceTree = "<group>"; };
+		6B8762841AEA753743D57E43 /* BMPartialViewHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialViewHook.h; sourceTree = "<group>"; };
 		6B8768AEF7B39442021A524B /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
 		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
+		6B876C8236ED1A26770478E5 /* BMPartialViewModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialViewModuleLoader.h; sourceTree = "<group>"; };
+		6B876D9EE344396A8B4EE51F /* BMPartialsSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialsSpec.mm; sourceTree = "<group>"; };
+		6B876E01073EDAB9D216804C /* BMTestPartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestPartialView.h; sourceTree = "<group>"; };
+		6B876E7DDAEBFFAC9E3CEF95 /* BMPartialViewModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialViewModuleLoader.m; sourceTree = "<group>"; };
+		6B876EB0A34531ECE6D29C20 /* BMPartialWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialWrapperView.h; sourceTree = "<group>"; };
+		6B876F598E75C28B6ECAAC87 /* BMTestPartialView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMTestPartialView.xib; sourceTree = "<group>"; };
+		6B876FF4279988B33A66FFC3 /* PartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartialView.h; sourceTree = "<group>"; };
 		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
 		CADB6AF1178FFE330060E11D /* BloodMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,6 +403,7 @@
 				5898AC19F85BB236C5A894E5 /* BMFatDynamicModel.m */,
 				5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */,
 				5898A0EE123F78A40C1169BB /* LazySpecs */,
+				6B876CF432409A751234F28A /* PartialView */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -447,6 +466,7 @@
 				5898A2563C9FEF5632AE6DF0 /* Core */,
 				5898A75F173D564956C54831 /* Initializers */,
 				5898A34F4630E953DE73E09D /* Lazy */,
+				6B87650A56F2EB55A859384F /* PartialView */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -586,6 +606,7 @@
 				5898A1419B732DFFA7E72C0B /* Core */,
 				5898AA5EAE9498F9FBAF3974 /* Initializers */,
 				5898A9DAEFD634A5CF3F3445 /* Lazy */,
+				6B87679410FE8AC0EEEF510B /* PartialView */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -628,6 +649,14 @@
 			path = BMBloodMagicInjector;
 			sourceTree = "<group>";
 		};
+		6B87601326E2F4EF04C1727D /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				6B876111AB860E76E876080F /* BMPartialView.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		6B8763ED63991E78BABAD301 /* Property */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +664,47 @@
 				6B876020B111F4C8A68A4059 /* BMProperty.h */,
 			);
 			path = Property;
+			sourceTree = "<group>";
+		};
+		6B87650A56F2EB55A859384F /* PartialView */ = {
+			isa = PBXGroup;
+			children = (
+				6B876D9EE344396A8B4EE51F /* BMPartialsSpec.mm */,
+			);
+			path = PartialView;
+			sourceTree = "<group>";
+		};
+		6B87679410FE8AC0EEEF510B /* PartialView */ = {
+			isa = PBXGroup;
+			children = (
+				6B87601326E2F4EF04C1727D /* Public */,
+				6B8768D67F96926888EDAFEE /* Private */,
+				6B876FF4279988B33A66FFC3 /* PartialView.h */,
+			);
+			path = PartialView;
+			sourceTree = "<group>";
+		};
+		6B8768D67F96926888EDAFEE /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				6B876E7DDAEBFFAC9E3CEF95 /* BMPartialViewModuleLoader.m */,
+				6B876C8236ED1A26770478E5 /* BMPartialViewModuleLoader.h */,
+				6B876180729C3B3443E9C7C4 /* BMPartialViewHook.mm */,
+				6B8762841AEA753743D57E43 /* BMPartialViewHook.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		6B876CF432409A751234F28A /* PartialView */ = {
+			isa = PBXGroup;
+			children = (
+				6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */,
+				6B876E01073EDAB9D216804C /* BMTestPartialView.h */,
+				6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */,
+				6B876EB0A34531ECE6D29C20 /* BMPartialWrapperView.h */,
+				6B876F598E75C28B6ECAAC87 /* BMTestPartialView.xib */,
+			);
+			path = PartialView;
 			sourceTree = "<group>";
 		};
 		CADB6AE8178FFE330060E11D = {
@@ -735,6 +805,7 @@
 				5898A2C8207D7781F57F24EA /* Default@2x.png in Resources */,
 				5898AB9C4CB354AE02C69D96 /* Default.png in Resources */,
 				5898A5D0BC3F831DDE32C388 /* Podfile in Resources */,
+				6B876FB8AA2B123CD27E3B38 /* BMTestPartialView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +907,11 @@
 				5898A0CDBC271D861D86A9D4 /* BMPropertyValueService.mm in Sources */,
 				5898AE69FBE7838F959AFD3B /* BMLazyInitializerFinder.mm in Sources */,
 				6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */,
+				6B876EEDF8582A401DED9E9C /* BMPartialsSpec.mm in Sources */,
+				6B8766E9F0D89354E31E41F0 /* BMTestPartialView.m in Sources */,
+				6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */,
+				6B876476984A4DEBF9D875B5 /* BMPartialViewModuleLoader.m in Sources */,
+				6B87673B4FA4120C94BCAA3B /* BMPartialViewHook.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
