@@ -41,6 +41,10 @@ BloodMagic has been designed to be extensible, so few more spells will be availa
 
 #### Lazy initialization
 
+```ruby
+pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/bloodmagic'
+```
+
 Initializes object on demand.
 
 If you use Objective-C, then you should be familiar with this code:
@@ -108,6 +112,10 @@ In this case `progressViewService` will be deallocated as a usual property.
 
 #### Dependency Injection
 
+```ruby
+pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/bloodmagic'
+```
+
 During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
 
 For example, if you need to initialize `progressViewService` in a special way, a special initializer might be created:
@@ -154,6 +162,10 @@ initializer.initializer = ^id (id sender){
 ```
 
 #### Partial Views
+
+```ruby
+pod 'BloodMagic/PartialView', :git => 'https://github.com/railsware/bloodmagic'
+```
 
 Instantiates view from `xib` on demand, similar to `Lazy` module.
 This spell might be heplful if you have reusable views.
