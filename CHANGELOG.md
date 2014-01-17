@@ -1,3 +1,18 @@
+## 0.5.0
+
+- Added support of partial views: `BMPartial`
+- Added empty macro definitions: `bm_lazy`, `bm_partial`
+
+## 0.4.4
+
+- A lot of performance improvements
+- Almost all collectors and finders use cache to achieve better performance
+- BM uses STL for data caching
+
+## 0.4.0
+
+- Added ability to change default initializer
+
 ## 0.3.0
 
   - Added ability to exclude class from magic hierarchy ([details](https://github.com/railsware/BloodMagic/pull/5)), thanks to [Eugene Solodovnykov](https://github.com/0xc010d)
