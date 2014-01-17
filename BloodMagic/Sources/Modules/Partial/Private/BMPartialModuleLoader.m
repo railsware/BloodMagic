@@ -3,17 +3,17 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMPartialViewModuleLoader.h"
+#import "BMPartialModuleLoader.h"
 #import "BMBloodMagicInjector.h"
-#import "BMPartialView.h"
+#import "BMPartial.h"
 
-@implementation BMPartialViewModuleLoader
+@implementation BMPartialModuleLoader
 
 + (void)load
 {
     @autoreleasepool {
         BMBloodMagicInjector *injector = [BMBloodMagicInjector new];
-        [injector injectBloodMagicInto:@protocol(BMPartialView)];
+        [injector injectBloodMagicInto:@protocol(BMPartial)];
     }
 }
 

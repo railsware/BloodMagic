@@ -3,11 +3,11 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMPartialViewHook.h"
+#import "BMPartialHook.h"
 #import "BMProperty.h"
 #import "BMPropertyValueService.h"
 
-@implementation BMPartialViewHook
+@implementation BMPartialHook
 
 + (void)accessorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender
 {
@@ -15,7 +15,7 @@
         return;
     }
 
-    if (![property.containerClass conformsToProtocol:@protocol(BMPartialView)]) {
+    if (![property.containerClass conformsToProtocol:@protocol(BMPartial)]) {
         return;
     }
 

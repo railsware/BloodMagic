@@ -3,9 +3,8 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BMPartial.h"
 
-@protocol BMPartialView
-    <NSObject>
-
-@end
+#ifndef bm_partial
+#define bm_partial
+#endif

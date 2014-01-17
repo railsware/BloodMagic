@@ -6,9 +6,9 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-SPEC_BEGIN(BMPartialsSpec)
+SPEC_BEGIN(BMPartialSpec)
 
-describe(@"BMPartialViewSpec", ^{
+describe(@"BMPartialSpec", ^{
     __block BMPartialWrapperView *subject = nil;
 
     beforeEach(^{

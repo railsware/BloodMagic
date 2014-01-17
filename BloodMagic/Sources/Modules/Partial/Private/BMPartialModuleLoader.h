@@ -3,4 +3,7 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMPartialView.h"
+#import <Foundation/Foundation.h>
+
+@interface BMPartialModuleLoader : NSObject
+@end

@@ -4,6 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BMPartial.h"
+#import "BMHook.h"
 
-@interface BMPartialViewModuleLoader : NSObject
+@interface BMPartialHook : NSObject
+    <BMHook,
+    BMPartial>
+
 @end

@@ -10,3 +10,7 @@
 #import "BMInitializer+LazyInitializer.h"
 #import "BMInitializerRegistry+LazyRegistry.h"
 #import "BMLazyDefinitions.h"
+
+#ifndef bm_lazy
+#define bm_lazy
+#endif

@@ -7,7 +7,8 @@ More details here: [Dependency Injection in Objective-C with Blood and Magic](ht
 Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
 
 ```objectivec
-@property (nonatomic, strong, lazy) NSMutableArray *resources;
+@property (nonatomic, strong, bm_lazy) ProgressViewService *progressView;
+@property (nonatomic, strong, bm_partial) HeaderView *headerView;
 
 @property (nonatomic, strong, storable) NSString *authToken;
 
@@ -76,7 +77,7 @@ Just add `BMLazy` protocol to your class:
 @interface ViewController : NSObject
   <BMLazy>
 
-@property (nonatomic, strong) ProgressViewService *progressViewService;
+@property (nonatomic, strong, bm_lazy) ProgressViewService *progressViewService;
 
 @end
 ```
@@ -224,12 +225,12 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 
 ```objectivec
 
-#import <BloodMagic/PartialView.h>
+#import <BloodMagic/Partial.h>
 
 @interface UserViewCell ()
-    <BMPartialView>
+    <BMPartial>
 
-@property (nonatomic, strong) UserView *userView;
+@property (nonatomic, strong, bm_partial) UserView *userView;
 
 @end
 
@@ -251,9 +252,9 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 // ...
 
 @interface UserHeaderView ()
-    <BMPartialView>
+    <BMPartial>
 
-@property (nonatomic, strong) UserView *userView;
+@property (nonatomic, strong, bm_partial) UserView *userView;
 
 @end
 

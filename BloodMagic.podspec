@@ -29,11 +29,11 @@ Pod::Spec.new do |podspec|
     lazy.dependency 'BloodMagic/Initializers'
   end
 
-  podspec.subspec 'PartialView' do |partial_view|
-    partial_view.source_files = 'BloodMagic/Sources/Modules/PartialView/**/*.{h,m,mm}'
-    partial_view.public_header_files = 'BloodMagic/Sources/Modules/PartialView/Public/**/*.h', 'BloodMagic/Sources/Modules/PartialView/PartialView.h'
-    partial_view.dependency 'BloodMagic/Core'
-    partial_view.platform = :ios
+  podspec.subspec 'Partial' do |partial|
+    partial.source_files = 'BloodMagic/Sources/Modules/Partial/**/*.{h,m,mm}'
+    partial.public_header_files = 'BloodMagic/Sources/Modules/Partial/Public/**/*.h', 'BloodMagic/Sources/Modules/Partial/Partial.h'
+    partial.dependency 'BloodMagic/Core'
+    partial.platform = :ios
   end
 
   podspec.xcconfig = {

@@ -4,12 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PartialView.h"
+#import "Partial.h"
 
 @class BMTestPartialView;
 
 @interface BMPartialWrapperView : UIView
-    <BMPartialView>
+    <BMPartial>
 
 @property (nonatomic, strong) BMTestPartialView *partialView;
 
