@@ -361,12 +361,12 @@
 		5898A2DD95A47DD6543BD4DE /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				5898A80630FF05327FC75DF8 /* BMLazyHook.mm */,
 				5898A76A19A37C4A1B6A850B /* BMLazyHook.h */,
-				CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */,
+				5898A80630FF05327FC75DF8 /* BMLazyHook.mm */,
 				5898A703E558929782CC712D /* BMLazyModuleLoader.h */,
-				5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */,
+				CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */,
 				5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */,
+				5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -374,8 +374,8 @@
 		5898A33CD9D0FEA44187C827 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				5898ADC9AE557375AFF36A5A /* BMPropertyTypeParser.mm */,
 				5898A22B36B614509CC62C8A /* BMPropertyTypeParser.h */,
+				5898ADC9AE557375AFF36A5A /* BMPropertyTypeParser.mm */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";

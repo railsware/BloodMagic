@@ -26,9 +26,13 @@ void BMPropertyTypeParser::parse(const char *type)
         NSMutableSet *protocolsSet = [NSMutableSet new];
 
         for (; start != end; start++) {
-            std::string protocol = *start;
-            protocol = protocol.substr(1, protocol.length() - 2);
-            [protocolsSet addObject:objc_getProtocol(protocol.c_str())];
+            std::string protocolName = *start;
+            protocolName = protocolName.substr(1, protocolName.length() - 2);
+            Protocol *protocol = objc_getProtocol(protocolName.c_str());
+            
+            assert(protocol); // undefined protocol
+            
+            [protocolsSet addObject:protocol];
         }
         _protocols = [NSSet setWithSet:protocolsSet];
     }
