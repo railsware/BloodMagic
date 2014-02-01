@@ -165,7 +165,7 @@ initializer.initializer = ^id (id sender){
 #### Partial Views
 
 ```ruby
-pod 'BloodMagic/PartialView', :git => 'https://github.com/railsware/bloodmagic'
+pod 'BloodMagic/Partial', :git => 'https://github.com/railsware/bloodmagic'
 ```
 
 Instantiates view from `xib` on demand, similar to `Lazy` module.
