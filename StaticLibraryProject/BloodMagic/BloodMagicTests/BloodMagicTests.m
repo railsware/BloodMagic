@@ -1,12 +1,6 @@
-//
-//  BloodMagicTests.m
-//  BloodMagicTests
-//
-//  Created by Oleksandr Dodatko on 06/02/2014.
-//  Copyright (c) 2014 railsware. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
+
+#import <BloodMagic/BloodMagic.h>
 
 @interface BloodMagicTests : XCTestCase
 

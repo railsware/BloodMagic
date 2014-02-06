@@ -7,6 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E94949A18A444A6001C2B77 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
+		7E94949B18A444A6001C2B77 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942A18A444A6001C2B77 /* BMClassCache.mm */; };
+		7E94949C18A444A6001C2B77 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942D18A444A6001C2B77 /* BMClassCollector.mm */; };
+		7E94949D18A444A6001C2B77 /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942F18A444A6001C2B77 /* BMPropertyCollector.mm */; };
+		7E94949E18A444A6001C2B77 /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943218A444A6001C2B77 /* BMPropertyFinder.mm */; };
+		7E94949F18A444A6001C2B77 /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943518A444A6001C2B77 /* BMDynamicPropertyInjector.mm */; };
+		7E9494A018A444A6001C2B77 /* BMKVCInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943718A444A6001C2B77 /* BMKVCInjector.m */; };
+		7E9494A118A444A6001C2B77 /* BMPropertyTypeParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943A18A444A6001C2B77 /* BMPropertyTypeParser.mm */; };
+		7E9494A218A444A6001C2B77 /* BMInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943D18A444A6001C2B77 /* BMInternalProperty.mm */; };
+		7E9494A318A444A6001C2B77 /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943F18A444A6001C2B77 /* BMInternalPropertyFactory.mm */; };
+		7E9494A418A444A6001C2B77 /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944118A444A6001C2B77 /* BMInternalPropertyTemplate.mm */; };
+		7E9494A518A444A6001C2B77 /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944418A444A6001C2B77 /* BMPropertyKVCHandler.mm */; };
+		7E9494A618A444A6001C2B77 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944618A444A6001C2B77 /* BMPropertyValueService.mm */; };
+		7E9494A718A444A6001C2B77 /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944918A444A6001C2B77 /* BMCompsiteProperty.mm */; };
+		7E9494A818A444A6001C2B77 /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944B18A444A6001C2B77 /* BMPrimitiveCharProperty.mm */; };
+		7E9494A918A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944D18A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm */; };
+		7E9494AA18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944F18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm */; };
+		7E9494AB18A444A6001C2B77 /* BMPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945118A444A6001C2B77 /* BMPrimitiveIntProperty.mm */; };
+		7E9494AC18A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945318A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm */; };
+		7E9494AD18A444A6001C2B77 /* BMPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945518A444A6001C2B77 /* BMPrimitiveLongProperty.mm */; };
+		7E9494AE18A444A6001C2B77 /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945718A444A6001C2B77 /* BMPrimitiveShortProperty.mm */; };
+		7E9494AF18A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945918A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm */; };
+		7E9494B018A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945B18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm */; };
+		7E9494B118A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945D18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
+		7E9494B218A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945F18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm */; };
+		7E9494B318A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946118A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm */; };
+		7E9494B418A444A6001C2B77 /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946718A444A6001C2B77 /* BMBloodMagicInjector.mm */; };
+		7E9494B518A444A6001C2B77 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946A18A444A6001C2B77 /* BMProperty.mm */; };
+		7E9494B618A444A6001C2B77 /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946F18A444A6001C2B77 /* BMFinalHook.mm */; };
+		7E9494B718A444A6001C2B77 /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947118A444A6001C2B77 /* BMFinalModuleLoader.m */; };
+		7E9494B818A444A6001C2B77 /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947818A444A6001C2B77 /* BMInitializer.m */; };
+		7E9494B918A444A6001C2B77 /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947B18A444A6001C2B77 /* BMInitializerRegistry.m */; };
+		7E9494BA18A444A6001C2B77 /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948118A444A6001C2B77 /* BMLazyHook.mm */; };
+		7E9494BB18A444A6001C2B77 /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948318A444A6001C2B77 /* BMLazyInitializerFinder.mm */; };
+		7E9494BC18A444A6001C2B77 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948518A444A6001C2B77 /* BMLazyModuleLoader.m */; };
+		7E9494BD18A444A6001C2B77 /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948818A444A6001C2B77 /* BMInitializer+LazyInitializer.m */; };
+		7E9494BE18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948A18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m */; };
+		7E9494BF18A444A6001C2B77 /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */; };
+		7E9494C018A444A6001C2B77 /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949518A444A6001C2B77 /* BMPartialHook.mm */; };
+		7E9494C118A444A6001C2B77 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */; };
 		7EAAA90918A4376D0075379C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90818A4376D0075379C /* Foundation.framework */; };
 		7EAAA91718A4376D0075379C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA91618A4376D0075379C /* XCTest.framework */; };
 		7EAAA91818A4376D0075379C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90818A4376D0075379C /* Foundation.framework */; };
@@ -14,46 +54,6 @@
 		7EAAA91D18A4376D0075379C /* libBloodMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90518A4376D0075379C /* libBloodMagic.a */; };
 		7EAAA92318A4376D0075379C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EAAA92118A4376D0075379C /* InfoPlist.strings */; };
 		7EAAA92518A4376D0075379C /* BloodMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA92418A4376D0075379C /* BloodMagicTests.m */; };
-		7EAAA9A918A4378C0075379C /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA93618A4378C0075379C /* BMClass.mm */; };
-		7EAAA9AA18A4378C0075379C /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA93918A4378C0075379C /* BMClassCache.mm */; };
-		7EAAA9AB18A4378C0075379C /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA93C18A4378C0075379C /* BMClassCollector.mm */; };
-		7EAAA9AC18A4378C0075379C /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA93E18A4378C0075379C /* BMPropertyCollector.mm */; };
-		7EAAA9AD18A4378C0075379C /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94118A4378C0075379C /* BMPropertyFinder.mm */; };
-		7EAAA9AE18A4378C0075379C /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94418A4378C0075379C /* BMDynamicPropertyInjector.mm */; };
-		7EAAA9AF18A4378C0075379C /* BMKVCInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94618A4378C0075379C /* BMKVCInjector.m */; };
-		7EAAA9B018A4378C0075379C /* BMPropertyTypeParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94918A4378C0075379C /* BMPropertyTypeParser.mm */; };
-		7EAAA9B118A4378C0075379C /* BMInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94C18A4378C0075379C /* BMInternalProperty.mm */; };
-		7EAAA9B218A4378C0075379C /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA94E18A4378C0075379C /* BMInternalPropertyFactory.mm */; };
-		7EAAA9B318A4378C0075379C /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95018A4378C0075379C /* BMInternalPropertyTemplate.mm */; };
-		7EAAA9B418A4378C0075379C /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95318A4378C0075379C /* BMPropertyKVCHandler.mm */; };
-		7EAAA9B518A4378C0075379C /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95518A4378C0075379C /* BMPropertyValueService.mm */; };
-		7EAAA9B618A4378C0075379C /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95818A4378C0075379C /* BMCompsiteProperty.mm */; };
-		7EAAA9B718A4378C0075379C /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95A18A4378C0075379C /* BMPrimitiveCharProperty.mm */; };
-		7EAAA9B818A4378C0075379C /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95C18A4378C0075379C /* BMPrimitiveDoubleProperty.mm */; };
-		7EAAA9B918A4378C0075379C /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA95E18A4378C0075379C /* BMPrimitiveFloatProperty.mm */; };
-		7EAAA9BA18A4378C0075379C /* BMPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96018A4378C0075379C /* BMPrimitiveIntProperty.mm */; };
-		7EAAA9BB18A4378C0075379C /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96218A4378C0075379C /* BMPrimitiveLongLongProperty.mm */; };
-		7EAAA9BC18A4378C0075379C /* BMPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96418A4378C0075379C /* BMPrimitiveLongProperty.mm */; };
-		7EAAA9BD18A4378C0075379C /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96618A4378C0075379C /* BMPrimitiveShortProperty.mm */; };
-		7EAAA9BE18A4378C0075379C /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96818A4378C0075379C /* BMPrimitiveUnsignedCharProperty.mm */; };
-		7EAAA9BF18A4378C0075379C /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96A18A4378C0075379C /* BMPrimitiveUnsignedIntProperty.mm */; };
-		7EAAA9C018A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96C18A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.mm */; };
-		7EAAA9C118A4378C0075379C /* BMPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA96E18A4378C0075379C /* BMPrimitiveUnsignedLongProperty.mm */; };
-		7EAAA9C218A4378C0075379C /* BMPrimitiveUnsignedShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA97018A4378C0075379C /* BMPrimitiveUnsignedShortProperty.mm */; };
-		7EAAA9C318A4378C0075379C /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA97618A4378C0075379C /* BMBloodMagicInjector.mm */; };
-		7EAAA9C418A4378C0075379C /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA97918A4378C0075379C /* BMProperty.mm */; };
-		7EAAA9C518A4378C0075379C /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA97E18A4378C0075379C /* BMFinalHook.mm */; };
-		7EAAA9C618A4378C0075379C /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA98018A4378C0075379C /* BMFinalModuleLoader.m */; };
-		7EAAA9C718A4378C0075379C /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA98718A4378C0075379C /* BMInitializer.m */; };
-		7EAAA9C818A4378C0075379C /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA98A18A4378C0075379C /* BMInitializerRegistry.m */; };
-		7EAAA9C918A4378C0075379C /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99018A4378C0075379C /* BMLazyHook.mm */; };
-		7EAAA9CA18A4378C0075379C /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99218A4378C0075379C /* BMLazyInitializerFinder.mm */; };
-		7EAAA9CB18A4378C0075379C /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99418A4378C0075379C /* BMLazyModuleLoader.m */; };
-		7EAAA9CC18A4378C0075379C /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99718A4378C0075379C /* BMInitializer+LazyInitializer.m */; };
-		7EAAA9CD18A4378C0075379C /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99918A4378C0075379C /* BMInitializerRegistry+LazyRegistry.m */; };
-		7EAAA9CE18A4378C0075379C /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA99F18A4378C0075379C /* BMLazyInitializer.mm */; };
-		7EAAA9CF18A4378C0075379C /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA9A418A4378C0075379C /* BMPartialHook.mm */; };
-		7EAAA9D018A4378C0075379C /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA9A618A4378C0075379C /* BMPartialModuleLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,113 +79,113 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E94941E18A4447B001C2B77 /* BloodMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BloodMagic.h; path = ../../BloodMagic/BloodMagic.h; sourceTree = SOURCE_ROOT; };
+		7E94942218A444A6001C2B77 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		7E94942418A444A6001C2B77 /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
+		7E94942618A444A6001C2B77 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
+		7E94942718A444A6001C2B77 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
+		7E94942818A444A6001C2B77 /* BMClass_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass_Private.h; sourceTree = "<group>"; };
+		7E94942918A444A6001C2B77 /* BMClassCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCache.h; sourceTree = "<group>"; };
+		7E94942A18A444A6001C2B77 /* BMClassCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCache.mm; sourceTree = "<group>"; };
+		7E94942C18A444A6001C2B77 /* BMClassCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCollector.h; sourceTree = "<group>"; };
+		7E94942D18A444A6001C2B77 /* BMClassCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollector.mm; sourceTree = "<group>"; };
+		7E94942E18A444A6001C2B77 /* BMPropertyCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyCollector.h; sourceTree = "<group>"; };
+		7E94942F18A444A6001C2B77 /* BMPropertyCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyCollector.mm; sourceTree = "<group>"; };
+		7E94943118A444A6001C2B77 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
+		7E94943218A444A6001C2B77 /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
+		7E94943418A444A6001C2B77 /* BMDynamicPropertyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDynamicPropertyInjector.h; sourceTree = "<group>"; };
+		7E94943518A444A6001C2B77 /* BMDynamicPropertyInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDynamicPropertyInjector.mm; sourceTree = "<group>"; };
+		7E94943618A444A6001C2B77 /* BMKVCInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVCInjector.h; sourceTree = "<group>"; };
+		7E94943718A444A6001C2B77 /* BMKVCInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKVCInjector.m; sourceTree = "<group>"; };
+		7E94943918A444A6001C2B77 /* BMPropertyTypeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyTypeParser.h; sourceTree = "<group>"; };
+		7E94943A18A444A6001C2B77 /* BMPropertyTypeParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyTypeParser.mm; sourceTree = "<group>"; };
+		7E94943C18A444A6001C2B77 /* BMInternalProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalProperty.h; sourceTree = "<group>"; };
+		7E94943D18A444A6001C2B77 /* BMInternalProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalProperty.mm; sourceTree = "<group>"; };
+		7E94943E18A444A6001C2B77 /* BMInternalPropertyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyFactory.h; sourceTree = "<group>"; };
+		7E94943F18A444A6001C2B77 /* BMInternalPropertyFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyFactory.mm; sourceTree = "<group>"; };
+		7E94944018A444A6001C2B77 /* BMInternalPropertyTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyTemplate.h; sourceTree = "<group>"; };
+		7E94944118A444A6001C2B77 /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
+		7E94944218A444A6001C2B77 /* BMProperty_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty_Private.h; sourceTree = "<group>"; };
+		7E94944318A444A6001C2B77 /* BMPropertyKVCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyKVCHandler.h; sourceTree = "<group>"; };
+		7E94944418A444A6001C2B77 /* BMPropertyKVCHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyKVCHandler.mm; sourceTree = "<group>"; };
+		7E94944518A444A6001C2B77 /* BMPropertyValueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyValueService.h; sourceTree = "<group>"; };
+		7E94944618A444A6001C2B77 /* BMPropertyValueService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyValueService.mm; sourceTree = "<group>"; };
+		7E94944818A444A6001C2B77 /* BMCompsiteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCompsiteProperty.h; sourceTree = "<group>"; };
+		7E94944918A444A6001C2B77 /* BMCompsiteProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMCompsiteProperty.mm; sourceTree = "<group>"; };
+		7E94944A18A444A6001C2B77 /* BMPrimitiveCharProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveCharProperty.h; sourceTree = "<group>"; };
+		7E94944B18A444A6001C2B77 /* BMPrimitiveCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveCharProperty.mm; sourceTree = "<group>"; };
+		7E94944C18A444A6001C2B77 /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
+		7E94944D18A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveDoubleProperty.mm; sourceTree = "<group>"; };
+		7E94944E18A444A6001C2B77 /* BMPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveFloatProperty.h; sourceTree = "<group>"; };
+		7E94944F18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
+		7E94945018A444A6001C2B77 /* BMPrimitiveIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveIntProperty.h; sourceTree = "<group>"; };
+		7E94945118A444A6001C2B77 /* BMPrimitiveIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveIntProperty.mm; sourceTree = "<group>"; };
+		7E94945218A444A6001C2B77 /* BMPrimitiveLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveLongLongProperty.h; sourceTree = "<group>"; };
+		7E94945318A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
+		7E94945418A444A6001C2B77 /* BMPrimitiveLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveLongProperty.h; sourceTree = "<group>"; };
+		7E94945518A444A6001C2B77 /* BMPrimitiveLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongProperty.mm; sourceTree = "<group>"; };
+		7E94945618A444A6001C2B77 /* BMPrimitiveShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveShortProperty.h; sourceTree = "<group>"; };
+		7E94945718A444A6001C2B77 /* BMPrimitiveShortProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveShortProperty.mm; sourceTree = "<group>"; };
+		7E94945818A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedCharProperty.h; sourceTree = "<group>"; };
+		7E94945918A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedCharProperty.mm; sourceTree = "<group>"; };
+		7E94945A18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedIntProperty.h; sourceTree = "<group>"; };
+		7E94945B18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedIntProperty.mm; sourceTree = "<group>"; };
+		7E94945C18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongLongProperty.h; sourceTree = "<group>"; };
+		7E94945D18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedLongLongProperty.mm; sourceTree = "<group>"; };
+		7E94945E18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongProperty.h; sourceTree = "<group>"; };
+		7E94945F18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedLongProperty.mm; sourceTree = "<group>"; };
+		7E94946018A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedShortProperty.h; sourceTree = "<group>"; };
+		7E94946118A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedShortProperty.mm; sourceTree = "<group>"; };
+		7E94946318A444A6001C2B77 /* BMHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHook.h; sourceTree = "<group>"; };
+		7E94946418A444A6001C2B77 /* BMPublicCoreDefnitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPublicCoreDefnitions.h; sourceTree = "<group>"; };
+		7E94946618A444A6001C2B77 /* BMBloodMagicInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBloodMagicInjector.h; sourceTree = "<group>"; };
+		7E94946718A444A6001C2B77 /* BMBloodMagicInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBloodMagicInjector.mm; sourceTree = "<group>"; };
+		7E94946918A444A6001C2B77 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		7E94946A18A444A6001C2B77 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
+		7E94946C18A444A6001C2B77 /* Final.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Final.h; sourceTree = "<group>"; };
+		7E94946E18A444A6001C2B77 /* BMFinalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalHook.h; sourceTree = "<group>"; };
+		7E94946F18A444A6001C2B77 /* BMFinalHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalHook.mm; sourceTree = "<group>"; };
+		7E94947018A444A6001C2B77 /* BMFinalModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModuleLoader.h; sourceTree = "<group>"; };
+		7E94947118A444A6001C2B77 /* BMFinalModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFinalModuleLoader.m; sourceTree = "<group>"; };
+		7E94947318A444A6001C2B77 /* BMFinal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinal.h; sourceTree = "<group>"; };
+		7E94947518A444A6001C2B77 /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
+		7E94947718A444A6001C2B77 /* BMInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializer.h; sourceTree = "<group>"; };
+		7E94947818A444A6001C2B77 /* BMInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializer.m; sourceTree = "<group>"; };
+		7E94947918A444A6001C2B77 /* BMInitializer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializer_Private.h; sourceTree = "<group>"; };
+		7E94947A18A444A6001C2B77 /* BMInitializerRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializerRegistry.h; sourceTree = "<group>"; };
+		7E94947B18A444A6001C2B77 /* BMInitializerRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializerRegistry.m; sourceTree = "<group>"; };
+		7E94947D18A444A6001C2B77 /* Lazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy.h; sourceTree = "<group>"; };
+		7E94947E18A444A6001C2B77 /* Lazy_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy_cxx.h; sourceTree = "<group>"; };
+		7E94948018A444A6001C2B77 /* BMLazyHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyHook.h; sourceTree = "<group>"; };
+		7E94948118A444A6001C2B77 /* BMLazyHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyHook.mm; sourceTree = "<group>"; };
+		7E94948218A444A6001C2B77 /* BMLazyInitializerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializerFinder.h; sourceTree = "<group>"; };
+		7E94948318A444A6001C2B77 /* BMLazyInitializerFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializerFinder.mm; sourceTree = "<group>"; };
+		7E94948418A444A6001C2B77 /* BMLazyModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyModuleLoader.h; sourceTree = "<group>"; };
+		7E94948518A444A6001C2B77 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
+		7E94948718A444A6001C2B77 /* BMInitializer+LazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+LazyInitializer.h"; sourceTree = "<group>"; };
+		7E94948818A444A6001C2B77 /* BMInitializer+LazyInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializer+LazyInitializer.m"; sourceTree = "<group>"; };
+		7E94948918A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
+		7E94948A18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializerRegistry+LazyRegistry.m"; sourceTree = "<group>"; };
+		7E94948B18A444A6001C2B77 /* BMLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazy.h; sourceTree = "<group>"; };
+		7E94948C18A444A6001C2B77 /* BMLazyDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyDefinitions.h; sourceTree = "<group>"; };
+		7E94948D18A444A6001C2B77 /* BMLazyExclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyExclude.h; sourceTree = "<group>"; };
+		7E94948F18A444A6001C2B77 /* BMLazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializer.h; sourceTree = "<group>"; };
+		7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializer.mm; sourceTree = "<group>"; };
+		7E94949218A444A6001C2B77 /* Partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partial.h; sourceTree = "<group>"; };
+		7E94949418A444A6001C2B77 /* BMPartialHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialHook.h; sourceTree = "<group>"; };
+		7E94949518A444A6001C2B77 /* BMPartialHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialHook.mm; sourceTree = "<group>"; };
+		7E94949618A444A6001C2B77 /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
+		7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialModuleLoader.m; sourceTree = "<group>"; };
+		7E94949918A444A6001C2B77 /* BMPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartial.h; sourceTree = "<group>"; };
 		7EAAA90518A4376D0075379C /* libBloodMagic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBloodMagic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAAA90818A4376D0075379C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7EAAA90C18A4376D0075379C /* BloodMagic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-Prefix.pch"; sourceTree = "<group>"; };
 		7EAAA91518A4376D0075379C /* BloodMagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodMagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAAA91618A4376D0075379C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7EAAA91918A4376D0075379C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7EAAA92018A4376D0075379C /* BloodMagicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicTests-Info.plist"; sourceTree = "<group>"; };
 		7EAAA92218A4376D0075379C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7EAAA92418A4376D0075379C /* BloodMagicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodMagicTests.m; sourceTree = "<group>"; };
-		7EAAA93118A4378C0075379C /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		7EAAA93318A4378C0075379C /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
-		7EAAA93518A4378C0075379C /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
-		7EAAA93618A4378C0075379C /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
-		7EAAA93718A4378C0075379C /* BMClass_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass_Private.h; sourceTree = "<group>"; };
-		7EAAA93818A4378C0075379C /* BMClassCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCache.h; sourceTree = "<group>"; };
-		7EAAA93918A4378C0075379C /* BMClassCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCache.mm; sourceTree = "<group>"; };
-		7EAAA93B18A4378C0075379C /* BMClassCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCollector.h; sourceTree = "<group>"; };
-		7EAAA93C18A4378C0075379C /* BMClassCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollector.mm; sourceTree = "<group>"; };
-		7EAAA93D18A4378C0075379C /* BMPropertyCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyCollector.h; sourceTree = "<group>"; };
-		7EAAA93E18A4378C0075379C /* BMPropertyCollector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyCollector.mm; sourceTree = "<group>"; };
-		7EAAA94018A4378C0075379C /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
-		7EAAA94118A4378C0075379C /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
-		7EAAA94318A4378C0075379C /* BMDynamicPropertyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDynamicPropertyInjector.h; sourceTree = "<group>"; };
-		7EAAA94418A4378C0075379C /* BMDynamicPropertyInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDynamicPropertyInjector.mm; sourceTree = "<group>"; };
-		7EAAA94518A4378C0075379C /* BMKVCInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVCInjector.h; sourceTree = "<group>"; };
-		7EAAA94618A4378C0075379C /* BMKVCInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKVCInjector.m; sourceTree = "<group>"; };
-		7EAAA94818A4378C0075379C /* BMPropertyTypeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyTypeParser.h; sourceTree = "<group>"; };
-		7EAAA94918A4378C0075379C /* BMPropertyTypeParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyTypeParser.mm; sourceTree = "<group>"; };
-		7EAAA94B18A4378C0075379C /* BMInternalProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalProperty.h; sourceTree = "<group>"; };
-		7EAAA94C18A4378C0075379C /* BMInternalProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalProperty.mm; sourceTree = "<group>"; };
-		7EAAA94D18A4378C0075379C /* BMInternalPropertyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyFactory.h; sourceTree = "<group>"; };
-		7EAAA94E18A4378C0075379C /* BMInternalPropertyFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyFactory.mm; sourceTree = "<group>"; };
-		7EAAA94F18A4378C0075379C /* BMInternalPropertyTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyTemplate.h; sourceTree = "<group>"; };
-		7EAAA95018A4378C0075379C /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
-		7EAAA95118A4378C0075379C /* BMProperty_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty_Private.h; sourceTree = "<group>"; };
-		7EAAA95218A4378C0075379C /* BMPropertyKVCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyKVCHandler.h; sourceTree = "<group>"; };
-		7EAAA95318A4378C0075379C /* BMPropertyKVCHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyKVCHandler.mm; sourceTree = "<group>"; };
-		7EAAA95418A4378C0075379C /* BMPropertyValueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyValueService.h; sourceTree = "<group>"; };
-		7EAAA95518A4378C0075379C /* BMPropertyValueService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyValueService.mm; sourceTree = "<group>"; };
-		7EAAA95718A4378C0075379C /* BMCompsiteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCompsiteProperty.h; sourceTree = "<group>"; };
-		7EAAA95818A4378C0075379C /* BMCompsiteProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMCompsiteProperty.mm; sourceTree = "<group>"; };
-		7EAAA95918A4378C0075379C /* BMPrimitiveCharProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveCharProperty.h; sourceTree = "<group>"; };
-		7EAAA95A18A4378C0075379C /* BMPrimitiveCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveCharProperty.mm; sourceTree = "<group>"; };
-		7EAAA95B18A4378C0075379C /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
-		7EAAA95C18A4378C0075379C /* BMPrimitiveDoubleProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveDoubleProperty.mm; sourceTree = "<group>"; };
-		7EAAA95D18A4378C0075379C /* BMPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveFloatProperty.h; sourceTree = "<group>"; };
-		7EAAA95E18A4378C0075379C /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
-		7EAAA95F18A4378C0075379C /* BMPrimitiveIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveIntProperty.h; sourceTree = "<group>"; };
-		7EAAA96018A4378C0075379C /* BMPrimitiveIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveIntProperty.mm; sourceTree = "<group>"; };
-		7EAAA96118A4378C0075379C /* BMPrimitiveLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveLongLongProperty.h; sourceTree = "<group>"; };
-		7EAAA96218A4378C0075379C /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
-		7EAAA96318A4378C0075379C /* BMPrimitiveLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveLongProperty.h; sourceTree = "<group>"; };
-		7EAAA96418A4378C0075379C /* BMPrimitiveLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongProperty.mm; sourceTree = "<group>"; };
-		7EAAA96518A4378C0075379C /* BMPrimitiveShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveShortProperty.h; sourceTree = "<group>"; };
-		7EAAA96618A4378C0075379C /* BMPrimitiveShortProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveShortProperty.mm; sourceTree = "<group>"; };
-		7EAAA96718A4378C0075379C /* BMPrimitiveUnsignedCharProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedCharProperty.h; sourceTree = "<group>"; };
-		7EAAA96818A4378C0075379C /* BMPrimitiveUnsignedCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedCharProperty.mm; sourceTree = "<group>"; };
-		7EAAA96918A4378C0075379C /* BMPrimitiveUnsignedIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedIntProperty.h; sourceTree = "<group>"; };
-		7EAAA96A18A4378C0075379C /* BMPrimitiveUnsignedIntProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedIntProperty.mm; sourceTree = "<group>"; };
-		7EAAA96B18A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongLongProperty.h; sourceTree = "<group>"; };
-		7EAAA96C18A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedLongLongProperty.mm; sourceTree = "<group>"; };
-		7EAAA96D18A4378C0075379C /* BMPrimitiveUnsignedLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongProperty.h; sourceTree = "<group>"; };
-		7EAAA96E18A4378C0075379C /* BMPrimitiveUnsignedLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedLongProperty.mm; sourceTree = "<group>"; };
-		7EAAA96F18A4378C0075379C /* BMPrimitiveUnsignedShortProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedShortProperty.h; sourceTree = "<group>"; };
-		7EAAA97018A4378C0075379C /* BMPrimitiveUnsignedShortProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedShortProperty.mm; sourceTree = "<group>"; };
-		7EAAA97218A4378C0075379C /* BMHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHook.h; sourceTree = "<group>"; };
-		7EAAA97318A4378C0075379C /* BMPublicCoreDefnitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPublicCoreDefnitions.h; sourceTree = "<group>"; };
-		7EAAA97518A4378C0075379C /* BMBloodMagicInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBloodMagicInjector.h; sourceTree = "<group>"; };
-		7EAAA97618A4378C0075379C /* BMBloodMagicInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBloodMagicInjector.mm; sourceTree = "<group>"; };
-		7EAAA97818A4378C0075379C /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
-		7EAAA97918A4378C0075379C /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
-		7EAAA97B18A4378C0075379C /* Final.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Final.h; sourceTree = "<group>"; };
-		7EAAA97D18A4378C0075379C /* BMFinalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalHook.h; sourceTree = "<group>"; };
-		7EAAA97E18A4378C0075379C /* BMFinalHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalHook.mm; sourceTree = "<group>"; };
-		7EAAA97F18A4378C0075379C /* BMFinalModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModuleLoader.h; sourceTree = "<group>"; };
-		7EAAA98018A4378C0075379C /* BMFinalModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFinalModuleLoader.m; sourceTree = "<group>"; };
-		7EAAA98218A4378C0075379C /* BMFinal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinal.h; sourceTree = "<group>"; };
-		7EAAA98418A4378C0075379C /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
-		7EAAA98618A4378C0075379C /* BMInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializer.h; sourceTree = "<group>"; };
-		7EAAA98718A4378C0075379C /* BMInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializer.m; sourceTree = "<group>"; };
-		7EAAA98818A4378C0075379C /* BMInitializer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializer_Private.h; sourceTree = "<group>"; };
-		7EAAA98918A4378C0075379C /* BMInitializerRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializerRegistry.h; sourceTree = "<group>"; };
-		7EAAA98A18A4378C0075379C /* BMInitializerRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializerRegistry.m; sourceTree = "<group>"; };
-		7EAAA98C18A4378C0075379C /* Lazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy.h; sourceTree = "<group>"; };
-		7EAAA98D18A4378C0075379C /* Lazy_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy_cxx.h; sourceTree = "<group>"; };
-		7EAAA98F18A4378C0075379C /* BMLazyHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyHook.h; sourceTree = "<group>"; };
-		7EAAA99018A4378C0075379C /* BMLazyHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyHook.mm; sourceTree = "<group>"; };
-		7EAAA99118A4378C0075379C /* BMLazyInitializerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializerFinder.h; sourceTree = "<group>"; };
-		7EAAA99218A4378C0075379C /* BMLazyInitializerFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializerFinder.mm; sourceTree = "<group>"; };
-		7EAAA99318A4378C0075379C /* BMLazyModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyModuleLoader.h; sourceTree = "<group>"; };
-		7EAAA99418A4378C0075379C /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
-		7EAAA99618A4378C0075379C /* BMInitializer+LazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+LazyInitializer.h"; sourceTree = "<group>"; };
-		7EAAA99718A4378C0075379C /* BMInitializer+LazyInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializer+LazyInitializer.m"; sourceTree = "<group>"; };
-		7EAAA99818A4378C0075379C /* BMInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
-		7EAAA99918A4378C0075379C /* BMInitializerRegistry+LazyRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializerRegistry+LazyRegistry.m"; sourceTree = "<group>"; };
-		7EAAA99A18A4378C0075379C /* BMLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazy.h; sourceTree = "<group>"; };
-		7EAAA99B18A4378C0075379C /* BMLazyDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyDefinitions.h; sourceTree = "<group>"; };
-		7EAAA99C18A4378C0075379C /* BMLazyExclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyExclude.h; sourceTree = "<group>"; };
-		7EAAA99E18A4378C0075379C /* BMLazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializer.h; sourceTree = "<group>"; };
-		7EAAA99F18A4378C0075379C /* BMLazyInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializer.mm; sourceTree = "<group>"; };
-		7EAAA9A118A4378C0075379C /* Partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partial.h; sourceTree = "<group>"; };
-		7EAAA9A318A4378C0075379C /* BMPartialHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialHook.h; sourceTree = "<group>"; };
-		7EAAA9A418A4378C0075379C /* BMPartialHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialHook.mm; sourceTree = "<group>"; };
-		7EAAA9A518A4378C0075379C /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
-		7EAAA9A618A4378C0075379C /* BMPartialModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialModuleLoader.m; sourceTree = "<group>"; };
-		7EAAA9A818A4378C0075379C /* BMPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartial.h; sourceTree = "<group>"; };
-		7EAAA9D218A437CA0075379C /* BloodMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BloodMagic.h; path = ../BloodMagic.h; sourceTree = "<group>"; };
+		7EAAA9D318A442A70075379C /* BloodMagic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,9 +211,316 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E94941F18A444A6001C2B77 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942018A444A6001C2B77 /* Modules */,
+			);
+			name = Sources;
+			path = ../../BloodMagic/Sources;
+			sourceTree = "<group>";
+		};
+		7E94942018A444A6001C2B77 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942118A444A6001C2B77 /* Core */,
+				7E94946B18A444A6001C2B77 /* Final */,
+				7E94947418A444A6001C2B77 /* Initializers */,
+				7E94947C18A444A6001C2B77 /* Lazy */,
+				7E94949118A444A6001C2B77 /* Partial */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7E94942118A444A6001C2B77 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942218A444A6001C2B77 /* Core.h */,
+				7E94942318A444A6001C2B77 /* Private */,
+				7E94946218A444A6001C2B77 /* Public */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7E94942318A444A6001C2B77 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942418A444A6001C2B77 /* BMInternalTypes.h */,
+				7E94942518A444A6001C2B77 /* Classes */,
+				7E94942B18A444A6001C2B77 /* Collectors */,
+				7E94943018A444A6001C2B77 /* Finders */,
+				7E94943318A444A6001C2B77 /* Injectors */,
+				7E94943818A444A6001C2B77 /* Parsers */,
+				7E94943B18A444A6001C2B77 /* Properties */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		7E94942518A444A6001C2B77 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942618A444A6001C2B77 /* BMClass.h */,
+				7E94942718A444A6001C2B77 /* BMClass.mm */,
+				7E94942818A444A6001C2B77 /* BMClass_Private.h */,
+				7E94942918A444A6001C2B77 /* BMClassCache.h */,
+				7E94942A18A444A6001C2B77 /* BMClassCache.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7E94942B18A444A6001C2B77 /* Collectors */ = {
+			isa = PBXGroup;
+			children = (
+				7E94942C18A444A6001C2B77 /* BMClassCollector.h */,
+				7E94942D18A444A6001C2B77 /* BMClassCollector.mm */,
+				7E94942E18A444A6001C2B77 /* BMPropertyCollector.h */,
+				7E94942F18A444A6001C2B77 /* BMPropertyCollector.mm */,
+			);
+			path = Collectors;
+			sourceTree = "<group>";
+		};
+		7E94943018A444A6001C2B77 /* Finders */ = {
+			isa = PBXGroup;
+			children = (
+				7E94943118A444A6001C2B77 /* BMPropertyFinder.h */,
+				7E94943218A444A6001C2B77 /* BMPropertyFinder.mm */,
+			);
+			path = Finders;
+			sourceTree = "<group>";
+		};
+		7E94943318A444A6001C2B77 /* Injectors */ = {
+			isa = PBXGroup;
+			children = (
+				7E94943418A444A6001C2B77 /* BMDynamicPropertyInjector.h */,
+				7E94943518A444A6001C2B77 /* BMDynamicPropertyInjector.mm */,
+				7E94943618A444A6001C2B77 /* BMKVCInjector.h */,
+				7E94943718A444A6001C2B77 /* BMKVCInjector.m */,
+			);
+			path = Injectors;
+			sourceTree = "<group>";
+		};
+		7E94943818A444A6001C2B77 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				7E94943918A444A6001C2B77 /* BMPropertyTypeParser.h */,
+				7E94943A18A444A6001C2B77 /* BMPropertyTypeParser.mm */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		7E94943B18A444A6001C2B77 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				7E94943C18A444A6001C2B77 /* BMInternalProperty.h */,
+				7E94943D18A444A6001C2B77 /* BMInternalProperty.mm */,
+				7E94943E18A444A6001C2B77 /* BMInternalPropertyFactory.h */,
+				7E94943F18A444A6001C2B77 /* BMInternalPropertyFactory.mm */,
+				7E94944018A444A6001C2B77 /* BMInternalPropertyTemplate.h */,
+				7E94944118A444A6001C2B77 /* BMInternalPropertyTemplate.mm */,
+				7E94944218A444A6001C2B77 /* BMProperty_Private.h */,
+				7E94944318A444A6001C2B77 /* BMPropertyKVCHandler.h */,
+				7E94944418A444A6001C2B77 /* BMPropertyKVCHandler.mm */,
+				7E94944518A444A6001C2B77 /* BMPropertyValueService.h */,
+				7E94944618A444A6001C2B77 /* BMPropertyValueService.mm */,
+				7E94944718A444A6001C2B77 /* ConcreteProperties */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		7E94944718A444A6001C2B77 /* ConcreteProperties */ = {
+			isa = PBXGroup;
+			children = (
+				7E94944818A444A6001C2B77 /* BMCompsiteProperty.h */,
+				7E94944918A444A6001C2B77 /* BMCompsiteProperty.mm */,
+				7E94944A18A444A6001C2B77 /* BMPrimitiveCharProperty.h */,
+				7E94944B18A444A6001C2B77 /* BMPrimitiveCharProperty.mm */,
+				7E94944C18A444A6001C2B77 /* BMPrimitiveDoubleProperty.h */,
+				7E94944D18A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm */,
+				7E94944E18A444A6001C2B77 /* BMPrimitiveFloatProperty.h */,
+				7E94944F18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm */,
+				7E94945018A444A6001C2B77 /* BMPrimitiveIntProperty.h */,
+				7E94945118A444A6001C2B77 /* BMPrimitiveIntProperty.mm */,
+				7E94945218A444A6001C2B77 /* BMPrimitiveLongLongProperty.h */,
+				7E94945318A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm */,
+				7E94945418A444A6001C2B77 /* BMPrimitiveLongProperty.h */,
+				7E94945518A444A6001C2B77 /* BMPrimitiveLongProperty.mm */,
+				7E94945618A444A6001C2B77 /* BMPrimitiveShortProperty.h */,
+				7E94945718A444A6001C2B77 /* BMPrimitiveShortProperty.mm */,
+				7E94945818A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.h */,
+				7E94945918A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm */,
+				7E94945A18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.h */,
+				7E94945B18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm */,
+				7E94945C18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.h */,
+				7E94945D18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm */,
+				7E94945E18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.h */,
+				7E94945F18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm */,
+				7E94946018A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.h */,
+				7E94946118A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm */,
+			);
+			path = ConcreteProperties;
+			sourceTree = "<group>";
+		};
+		7E94946218A444A6001C2B77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				7E94946318A444A6001C2B77 /* BMHook.h */,
+				7E94946418A444A6001C2B77 /* BMPublicCoreDefnitions.h */,
+				7E94946518A444A6001C2B77 /* Injectors */,
+				7E94946818A444A6001C2B77 /* Property */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		7E94946518A444A6001C2B77 /* Injectors */ = {
+			isa = PBXGroup;
+			children = (
+				7E94946618A444A6001C2B77 /* BMBloodMagicInjector.h */,
+				7E94946718A444A6001C2B77 /* BMBloodMagicInjector.mm */,
+			);
+			path = Injectors;
+			sourceTree = "<group>";
+		};
+		7E94946818A444A6001C2B77 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				7E94946918A444A6001C2B77 /* BMProperty.h */,
+				7E94946A18A444A6001C2B77 /* BMProperty.mm */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		7E94946B18A444A6001C2B77 /* Final */ = {
+			isa = PBXGroup;
+			children = (
+				7E94946C18A444A6001C2B77 /* Final.h */,
+				7E94946D18A444A6001C2B77 /* Private */,
+				7E94947218A444A6001C2B77 /* Public */,
+			);
+			path = Final;
+			sourceTree = "<group>";
+		};
+		7E94946D18A444A6001C2B77 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				7E94946E18A444A6001C2B77 /* BMFinalHook.h */,
+				7E94946F18A444A6001C2B77 /* BMFinalHook.mm */,
+				7E94947018A444A6001C2B77 /* BMFinalModuleLoader.h */,
+				7E94947118A444A6001C2B77 /* BMFinalModuleLoader.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		7E94947218A444A6001C2B77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				7E94947318A444A6001C2B77 /* BMFinal.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		7E94947418A444A6001C2B77 /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				7E94947518A444A6001C2B77 /* Initializers.h */,
+				7E94947618A444A6001C2B77 /* Public */,
+			);
+			path = Initializers;
+			sourceTree = "<group>";
+		};
+		7E94947618A444A6001C2B77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				7E94947718A444A6001C2B77 /* BMInitializer.h */,
+				7E94947818A444A6001C2B77 /* BMInitializer.m */,
+				7E94947918A444A6001C2B77 /* BMInitializer_Private.h */,
+				7E94947A18A444A6001C2B77 /* BMInitializerRegistry.h */,
+				7E94947B18A444A6001C2B77 /* BMInitializerRegistry.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		7E94947C18A444A6001C2B77 /* Lazy */ = {
+			isa = PBXGroup;
+			children = (
+				7E94947D18A444A6001C2B77 /* Lazy.h */,
+				7E94947E18A444A6001C2B77 /* Lazy_cxx.h */,
+				7E94947F18A444A6001C2B77 /* Private */,
+				7E94948618A444A6001C2B77 /* Public */,
+			);
+			path = Lazy;
+			sourceTree = "<group>";
+		};
+		7E94947F18A444A6001C2B77 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				7E94948018A444A6001C2B77 /* BMLazyHook.h */,
+				7E94948118A444A6001C2B77 /* BMLazyHook.mm */,
+				7E94948218A444A6001C2B77 /* BMLazyInitializerFinder.h */,
+				7E94948318A444A6001C2B77 /* BMLazyInitializerFinder.mm */,
+				7E94948418A444A6001C2B77 /* BMLazyModuleLoader.h */,
+				7E94948518A444A6001C2B77 /* BMLazyModuleLoader.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		7E94948618A444A6001C2B77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				7E94948718A444A6001C2B77 /* BMInitializer+LazyInitializer.h */,
+				7E94948818A444A6001C2B77 /* BMInitializer+LazyInitializer.m */,
+				7E94948918A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.h */,
+				7E94948A18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m */,
+				7E94948B18A444A6001C2B77 /* BMLazy.h */,
+				7E94948C18A444A6001C2B77 /* BMLazyDefinitions.h */,
+				7E94948D18A444A6001C2B77 /* BMLazyExclude.h */,
+				7E94948E18A444A6001C2B77 /* cxx */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		7E94948E18A444A6001C2B77 /* cxx */ = {
+			isa = PBXGroup;
+			children = (
+				7E94948F18A444A6001C2B77 /* BMLazyInitializer.h */,
+				7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */,
+			);
+			path = cxx;
+			sourceTree = "<group>";
+		};
+		7E94949118A444A6001C2B77 /* Partial */ = {
+			isa = PBXGroup;
+			children = (
+				7E94949218A444A6001C2B77 /* Partial.h */,
+				7E94949318A444A6001C2B77 /* Private */,
+				7E94949818A444A6001C2B77 /* Public */,
+			);
+			path = Partial;
+			sourceTree = "<group>";
+		};
+		7E94949318A444A6001C2B77 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				7E94949418A444A6001C2B77 /* BMPartialHook.h */,
+				7E94949518A444A6001C2B77 /* BMPartialHook.mm */,
+				7E94949618A444A6001C2B77 /* BMPartialModuleLoader.h */,
+				7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		7E94949818A444A6001C2B77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				7E94949918A444A6001C2B77 /* BMPartial.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		7EAAA8FC18A4376D0075379C = {
 			isa = PBXGroup;
 			children = (
+				7E94941E18A4447B001C2B77 /* BloodMagic.h */,
+				7E94941F18A444A6001C2B77 /* Sources */,
 				7EAAA90A18A4376D0075379C /* BloodMagic */,
 				7EAAA91E18A4376D0075379C /* BloodMagicTests */,
 				7EAAA90718A4376D0075379C /* Frameworks */,
@@ -243,7 +550,6 @@
 		7EAAA90A18A4376D0075379C /* BloodMagic */ = {
 			isa = PBXGroup;
 			children = (
-				7EAAA92E18A4378C0075379C /* Sources */,
 				7EAAA90B18A4376D0075379C /* Supporting Files */,
 			);
 			path = BloodMagic;
@@ -252,7 +558,7 @@
 		7EAAA90B18A4376D0075379C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7EAAA90C18A4376D0075379C /* BloodMagic-Prefix.pch */,
+				7EAAA9D318A442A70075379C /* BloodMagic-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,312 +579,6 @@
 				7EAAA92118A4376D0075379C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7EAAA92E18A4378C0075379C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA9D218A437CA0075379C /* BloodMagic.h */,
-				7EAAA92F18A4378C0075379C /* Modules */,
-			);
-			name = Sources;
-			path = ../../../BloodMagic/Sources;
-			sourceTree = "<group>";
-		};
-		7EAAA92F18A4378C0075379C /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA93018A4378C0075379C /* Core */,
-				7EAAA97A18A4378C0075379C /* Final */,
-				7EAAA98318A4378C0075379C /* Initializers */,
-				7EAAA98B18A4378C0075379C /* Lazy */,
-				7EAAA9A018A4378C0075379C /* Partial */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		7EAAA93018A4378C0075379C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA93118A4378C0075379C /* Core.h */,
-				7EAAA93218A4378C0075379C /* Private */,
-				7EAAA97118A4378C0075379C /* Public */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		7EAAA93218A4378C0075379C /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA93318A4378C0075379C /* BMInternalTypes.h */,
-				7EAAA93418A4378C0075379C /* Classes */,
-				7EAAA93A18A4378C0075379C /* Collectors */,
-				7EAAA93F18A4378C0075379C /* Finders */,
-				7EAAA94218A4378C0075379C /* Injectors */,
-				7EAAA94718A4378C0075379C /* Parsers */,
-				7EAAA94A18A4378C0075379C /* Properties */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		7EAAA93418A4378C0075379C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA93518A4378C0075379C /* BMClass.h */,
-				7EAAA93618A4378C0075379C /* BMClass.mm */,
-				7EAAA93718A4378C0075379C /* BMClass_Private.h */,
-				7EAAA93818A4378C0075379C /* BMClassCache.h */,
-				7EAAA93918A4378C0075379C /* BMClassCache.mm */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7EAAA93A18A4378C0075379C /* Collectors */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA93B18A4378C0075379C /* BMClassCollector.h */,
-				7EAAA93C18A4378C0075379C /* BMClassCollector.mm */,
-				7EAAA93D18A4378C0075379C /* BMPropertyCollector.h */,
-				7EAAA93E18A4378C0075379C /* BMPropertyCollector.mm */,
-			);
-			path = Collectors;
-			sourceTree = "<group>";
-		};
-		7EAAA93F18A4378C0075379C /* Finders */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA94018A4378C0075379C /* BMPropertyFinder.h */,
-				7EAAA94118A4378C0075379C /* BMPropertyFinder.mm */,
-			);
-			path = Finders;
-			sourceTree = "<group>";
-		};
-		7EAAA94218A4378C0075379C /* Injectors */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA94318A4378C0075379C /* BMDynamicPropertyInjector.h */,
-				7EAAA94418A4378C0075379C /* BMDynamicPropertyInjector.mm */,
-				7EAAA94518A4378C0075379C /* BMKVCInjector.h */,
-				7EAAA94618A4378C0075379C /* BMKVCInjector.m */,
-			);
-			path = Injectors;
-			sourceTree = "<group>";
-		};
-		7EAAA94718A4378C0075379C /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA94818A4378C0075379C /* BMPropertyTypeParser.h */,
-				7EAAA94918A4378C0075379C /* BMPropertyTypeParser.mm */,
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
-		7EAAA94A18A4378C0075379C /* Properties */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA94B18A4378C0075379C /* BMInternalProperty.h */,
-				7EAAA94C18A4378C0075379C /* BMInternalProperty.mm */,
-				7EAAA94D18A4378C0075379C /* BMInternalPropertyFactory.h */,
-				7EAAA94E18A4378C0075379C /* BMInternalPropertyFactory.mm */,
-				7EAAA94F18A4378C0075379C /* BMInternalPropertyTemplate.h */,
-				7EAAA95018A4378C0075379C /* BMInternalPropertyTemplate.mm */,
-				7EAAA95118A4378C0075379C /* BMProperty_Private.h */,
-				7EAAA95218A4378C0075379C /* BMPropertyKVCHandler.h */,
-				7EAAA95318A4378C0075379C /* BMPropertyKVCHandler.mm */,
-				7EAAA95418A4378C0075379C /* BMPropertyValueService.h */,
-				7EAAA95518A4378C0075379C /* BMPropertyValueService.mm */,
-				7EAAA95618A4378C0075379C /* ConcreteProperties */,
-			);
-			path = Properties;
-			sourceTree = "<group>";
-		};
-		7EAAA95618A4378C0075379C /* ConcreteProperties */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA95718A4378C0075379C /* BMCompsiteProperty.h */,
-				7EAAA95818A4378C0075379C /* BMCompsiteProperty.mm */,
-				7EAAA95918A4378C0075379C /* BMPrimitiveCharProperty.h */,
-				7EAAA95A18A4378C0075379C /* BMPrimitiveCharProperty.mm */,
-				7EAAA95B18A4378C0075379C /* BMPrimitiveDoubleProperty.h */,
-				7EAAA95C18A4378C0075379C /* BMPrimitiveDoubleProperty.mm */,
-				7EAAA95D18A4378C0075379C /* BMPrimitiveFloatProperty.h */,
-				7EAAA95E18A4378C0075379C /* BMPrimitiveFloatProperty.mm */,
-				7EAAA95F18A4378C0075379C /* BMPrimitiveIntProperty.h */,
-				7EAAA96018A4378C0075379C /* BMPrimitiveIntProperty.mm */,
-				7EAAA96118A4378C0075379C /* BMPrimitiveLongLongProperty.h */,
-				7EAAA96218A4378C0075379C /* BMPrimitiveLongLongProperty.mm */,
-				7EAAA96318A4378C0075379C /* BMPrimitiveLongProperty.h */,
-				7EAAA96418A4378C0075379C /* BMPrimitiveLongProperty.mm */,
-				7EAAA96518A4378C0075379C /* BMPrimitiveShortProperty.h */,
-				7EAAA96618A4378C0075379C /* BMPrimitiveShortProperty.mm */,
-				7EAAA96718A4378C0075379C /* BMPrimitiveUnsignedCharProperty.h */,
-				7EAAA96818A4378C0075379C /* BMPrimitiveUnsignedCharProperty.mm */,
-				7EAAA96918A4378C0075379C /* BMPrimitiveUnsignedIntProperty.h */,
-				7EAAA96A18A4378C0075379C /* BMPrimitiveUnsignedIntProperty.mm */,
-				7EAAA96B18A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.h */,
-				7EAAA96C18A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.mm */,
-				7EAAA96D18A4378C0075379C /* BMPrimitiveUnsignedLongProperty.h */,
-				7EAAA96E18A4378C0075379C /* BMPrimitiveUnsignedLongProperty.mm */,
-				7EAAA96F18A4378C0075379C /* BMPrimitiveUnsignedShortProperty.h */,
-				7EAAA97018A4378C0075379C /* BMPrimitiveUnsignedShortProperty.mm */,
-			);
-			path = ConcreteProperties;
-			sourceTree = "<group>";
-		};
-		7EAAA97118A4378C0075379C /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA97218A4378C0075379C /* BMHook.h */,
-				7EAAA97318A4378C0075379C /* BMPublicCoreDefnitions.h */,
-				7EAAA97418A4378C0075379C /* Injectors */,
-				7EAAA97718A4378C0075379C /* Property */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		7EAAA97418A4378C0075379C /* Injectors */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA97518A4378C0075379C /* BMBloodMagicInjector.h */,
-				7EAAA97618A4378C0075379C /* BMBloodMagicInjector.mm */,
-			);
-			path = Injectors;
-			sourceTree = "<group>";
-		};
-		7EAAA97718A4378C0075379C /* Property */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA97818A4378C0075379C /* BMProperty.h */,
-				7EAAA97918A4378C0075379C /* BMProperty.mm */,
-			);
-			path = Property;
-			sourceTree = "<group>";
-		};
-		7EAAA97A18A4378C0075379C /* Final */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA97B18A4378C0075379C /* Final.h */,
-				7EAAA97C18A4378C0075379C /* Private */,
-				7EAAA98118A4378C0075379C /* Public */,
-			);
-			path = Final;
-			sourceTree = "<group>";
-		};
-		7EAAA97C18A4378C0075379C /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA97D18A4378C0075379C /* BMFinalHook.h */,
-				7EAAA97E18A4378C0075379C /* BMFinalHook.mm */,
-				7EAAA97F18A4378C0075379C /* BMFinalModuleLoader.h */,
-				7EAAA98018A4378C0075379C /* BMFinalModuleLoader.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		7EAAA98118A4378C0075379C /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA98218A4378C0075379C /* BMFinal.h */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		7EAAA98318A4378C0075379C /* Initializers */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA98418A4378C0075379C /* Initializers.h */,
-				7EAAA98518A4378C0075379C /* Public */,
-			);
-			path = Initializers;
-			sourceTree = "<group>";
-		};
-		7EAAA98518A4378C0075379C /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA98618A4378C0075379C /* BMInitializer.h */,
-				7EAAA98718A4378C0075379C /* BMInitializer.m */,
-				7EAAA98818A4378C0075379C /* BMInitializer_Private.h */,
-				7EAAA98918A4378C0075379C /* BMInitializerRegistry.h */,
-				7EAAA98A18A4378C0075379C /* BMInitializerRegistry.m */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		7EAAA98B18A4378C0075379C /* Lazy */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA98C18A4378C0075379C /* Lazy.h */,
-				7EAAA98D18A4378C0075379C /* Lazy_cxx.h */,
-				7EAAA98E18A4378C0075379C /* Private */,
-				7EAAA99518A4378C0075379C /* Public */,
-			);
-			path = Lazy;
-			sourceTree = "<group>";
-		};
-		7EAAA98E18A4378C0075379C /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA98F18A4378C0075379C /* BMLazyHook.h */,
-				7EAAA99018A4378C0075379C /* BMLazyHook.mm */,
-				7EAAA99118A4378C0075379C /* BMLazyInitializerFinder.h */,
-				7EAAA99218A4378C0075379C /* BMLazyInitializerFinder.mm */,
-				7EAAA99318A4378C0075379C /* BMLazyModuleLoader.h */,
-				7EAAA99418A4378C0075379C /* BMLazyModuleLoader.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		7EAAA99518A4378C0075379C /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA99618A4378C0075379C /* BMInitializer+LazyInitializer.h */,
-				7EAAA99718A4378C0075379C /* BMInitializer+LazyInitializer.m */,
-				7EAAA99818A4378C0075379C /* BMInitializerRegistry+LazyRegistry.h */,
-				7EAAA99918A4378C0075379C /* BMInitializerRegistry+LazyRegistry.m */,
-				7EAAA99A18A4378C0075379C /* BMLazy.h */,
-				7EAAA99B18A4378C0075379C /* BMLazyDefinitions.h */,
-				7EAAA99C18A4378C0075379C /* BMLazyExclude.h */,
-				7EAAA99D18A4378C0075379C /* cxx */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		7EAAA99D18A4378C0075379C /* cxx */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA99E18A4378C0075379C /* BMLazyInitializer.h */,
-				7EAAA99F18A4378C0075379C /* BMLazyInitializer.mm */,
-			);
-			path = cxx;
-			sourceTree = "<group>";
-		};
-		7EAAA9A018A4378C0075379C /* Partial */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA9A118A4378C0075379C /* Partial.h */,
-				7EAAA9A218A4378C0075379C /* Private */,
-				7EAAA9A718A4378C0075379C /* Public */,
-			);
-			path = Partial;
-			sourceTree = "<group>";
-		};
-		7EAAA9A218A4378C0075379C /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA9A318A4378C0075379C /* BMPartialHook.h */,
-				7EAAA9A418A4378C0075379C /* BMPartialHook.mm */,
-				7EAAA9A518A4378C0075379C /* BMPartialModuleLoader.h */,
-				7EAAA9A618A4378C0075379C /* BMPartialModuleLoader.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		7EAAA9A718A4378C0075379C /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				7EAAA9A818A4378C0075379C /* BMPartial.h */,
-			);
-			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,46 +662,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAAA9C318A4378C0075379C /* BMBloodMagicInjector.mm in Sources */,
-				7EAAA9CA18A4378C0075379C /* BMLazyInitializerFinder.mm in Sources */,
-				7EAAA9C418A4378C0075379C /* BMProperty.mm in Sources */,
-				7EAAA9CD18A4378C0075379C /* BMInitializerRegistry+LazyRegistry.m in Sources */,
-				7EAAA9C018A4378C0075379C /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
-				7EAAA9B718A4378C0075379C /* BMPrimitiveCharProperty.mm in Sources */,
-				7EAAA9AA18A4378C0075379C /* BMClassCache.mm in Sources */,
-				7EAAA9B218A4378C0075379C /* BMInternalPropertyFactory.mm in Sources */,
-				7EAAA9BA18A4378C0075379C /* BMPrimitiveIntProperty.mm in Sources */,
-				7EAAA9CC18A4378C0075379C /* BMInitializer+LazyInitializer.m in Sources */,
-				7EAAA9BE18A4378C0075379C /* BMPrimitiveUnsignedCharProperty.mm in Sources */,
-				7EAAA9D018A4378C0075379C /* BMPartialModuleLoader.m in Sources */,
-				7EAAA9AC18A4378C0075379C /* BMPropertyCollector.mm in Sources */,
-				7EAAA9B018A4378C0075379C /* BMPropertyTypeParser.mm in Sources */,
-				7EAAA9C718A4378C0075379C /* BMInitializer.m in Sources */,
-				7EAAA9A918A4378C0075379C /* BMClass.mm in Sources */,
-				7EAAA9BC18A4378C0075379C /* BMPrimitiveLongProperty.mm in Sources */,
-				7EAAA9C518A4378C0075379C /* BMFinalHook.mm in Sources */,
-				7EAAA9C918A4378C0075379C /* BMLazyHook.mm in Sources */,
-				7EAAA9B618A4378C0075379C /* BMCompsiteProperty.mm in Sources */,
-				7EAAA9CB18A4378C0075379C /* BMLazyModuleLoader.m in Sources */,
-				7EAAA9C118A4378C0075379C /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
-				7EAAA9B318A4378C0075379C /* BMInternalPropertyTemplate.mm in Sources */,
-				7EAAA9B118A4378C0075379C /* BMInternalProperty.mm in Sources */,
-				7EAAA9AE18A4378C0075379C /* BMDynamicPropertyInjector.mm in Sources */,
-				7EAAA9C618A4378C0075379C /* BMFinalModuleLoader.m in Sources */,
-				7EAAA9B918A4378C0075379C /* BMPrimitiveFloatProperty.mm in Sources */,
-				7EAAA9BB18A4378C0075379C /* BMPrimitiveLongLongProperty.mm in Sources */,
-				7EAAA9AD18A4378C0075379C /* BMPropertyFinder.mm in Sources */,
-				7EAAA9B518A4378C0075379C /* BMPropertyValueService.mm in Sources */,
-				7EAAA9BD18A4378C0075379C /* BMPrimitiveShortProperty.mm in Sources */,
-				7EAAA9B818A4378C0075379C /* BMPrimitiveDoubleProperty.mm in Sources */,
-				7EAAA9C218A4378C0075379C /* BMPrimitiveUnsignedShortProperty.mm in Sources */,
-				7EAAA9B418A4378C0075379C /* BMPropertyKVCHandler.mm in Sources */,
-				7EAAA9CE18A4378C0075379C /* BMLazyInitializer.mm in Sources */,
-				7EAAA9CF18A4378C0075379C /* BMPartialHook.mm in Sources */,
-				7EAAA9BF18A4378C0075379C /* BMPrimitiveUnsignedIntProperty.mm in Sources */,
-				7EAAA9AF18A4378C0075379C /* BMKVCInjector.m in Sources */,
-				7EAAA9C818A4378C0075379C /* BMInitializerRegistry.m in Sources */,
-				7EAAA9AB18A4378C0075379C /* BMClassCollector.mm in Sources */,
+				7E94949A18A444A6001C2B77 /* BMClass.mm in Sources */,
+				7E94949B18A444A6001C2B77 /* BMClassCache.mm in Sources */,
+				7E94949C18A444A6001C2B77 /* BMClassCollector.mm in Sources */,
+				7E94949D18A444A6001C2B77 /* BMPropertyCollector.mm in Sources */,
+				7E94949E18A444A6001C2B77 /* BMPropertyFinder.mm in Sources */,
+				7E94949F18A444A6001C2B77 /* BMDynamicPropertyInjector.mm in Sources */,
+				7E9494A018A444A6001C2B77 /* BMKVCInjector.m in Sources */,
+				7E9494A118A444A6001C2B77 /* BMPropertyTypeParser.mm in Sources */,
+				7E9494A218A444A6001C2B77 /* BMInternalProperty.mm in Sources */,
+				7E9494A318A444A6001C2B77 /* BMInternalPropertyFactory.mm in Sources */,
+				7E9494A418A444A6001C2B77 /* BMInternalPropertyTemplate.mm in Sources */,
+				7E9494A518A444A6001C2B77 /* BMPropertyKVCHandler.mm in Sources */,
+				7E9494A618A444A6001C2B77 /* BMPropertyValueService.mm in Sources */,
+				7E9494A718A444A6001C2B77 /* BMCompsiteProperty.mm in Sources */,
+				7E9494A818A444A6001C2B77 /* BMPrimitiveCharProperty.mm in Sources */,
+				7E9494A918A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm in Sources */,
+				7E9494AA18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm in Sources */,
+				7E9494AB18A444A6001C2B77 /* BMPrimitiveIntProperty.mm in Sources */,
+				7E9494AC18A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm in Sources */,
+				7E9494AD18A444A6001C2B77 /* BMPrimitiveLongProperty.mm in Sources */,
+				7E9494AE18A444A6001C2B77 /* BMPrimitiveShortProperty.mm in Sources */,
+				7E9494AF18A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm in Sources */,
+				7E9494B018A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm in Sources */,
+				7E9494B118A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
+				7E9494B218A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
+				7E9494B318A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm in Sources */,
+				7E9494B418A444A6001C2B77 /* BMBloodMagicInjector.mm in Sources */,
+				7E9494B518A444A6001C2B77 /* BMProperty.mm in Sources */,
+				7E9494B618A444A6001C2B77 /* BMFinalHook.mm in Sources */,
+				7E9494B718A444A6001C2B77 /* BMFinalModuleLoader.m in Sources */,
+				7E9494B818A444A6001C2B77 /* BMInitializer.m in Sources */,
+				7E9494B918A444A6001C2B77 /* BMInitializerRegistry.m in Sources */,
+				7E9494BA18A444A6001C2B77 /* BMLazyHook.mm in Sources */,
+				7E9494BB18A444A6001C2B77 /* BMLazyInitializerFinder.mm in Sources */,
+				7E9494BC18A444A6001C2B77 /* BMLazyModuleLoader.m in Sources */,
+				7E9494BD18A444A6001C2B77 /* BMInitializer+LazyInitializer.m in Sources */,
+				7E9494BE18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				7E9494BF18A444A6001C2B77 /* BMLazyInitializer.mm in Sources */,
+				7E9494C018A444A6001C2B77 /* BMPartialHook.mm in Sources */,
+				7E9494C118A444A6001C2B77 /* BMPartialModuleLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +767,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -799,6 +804,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -810,7 +820,12 @@
 			buildSettings = {
 				DSTROOT = /tmp/BloodMagic.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BloodMagic/BloodMagic-Prefix.pch";
+				GCC_PREFIX_HEADER = "./BloodMagic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -822,7 +837,12 @@
 			buildSettings = {
 				DSTROOT = /tmp/BloodMagic.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BloodMagic/BloodMagic-Prefix.pch";
+				GCC_PREFIX_HEADER = "./BloodMagic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -839,7 +859,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BloodMagic/BloodMagic-Prefix.pch";
+				GCC_PREFIX_HEADER = "./BloodMagic-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -860,7 +880,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BloodMagic/BloodMagic-Prefix.pch";
+				GCC_PREFIX_HEADER = "./BloodMagic-Prefix.pch";
 				INFOPLIST_FILE = "BloodMagicTests/BloodMagicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -886,6 +906,7 @@
 				7EAAA92A18A4376D0075379C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EAAA92B18A4376D0075379C /* Build configuration list for PBXNativeTarget "BloodMagicTests" */ = {
 			isa = XCConfigurationList;
@@ -894,6 +915,7 @@
 				7EAAA92D18A4376D0075379C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
