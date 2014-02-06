@@ -9,6 +9,7 @@ Objective-C is a powerful language, but sometimes it lacks of custom property at
 ```objectivec
 @property (nonatomic, strong, bm_lazy) ProgressViewService *progressView;
 @property (nonatomic, strong, bm_partial) HeaderView *headerView;
+@property (nonatomic, strong, bm_final) NSString *almostImmutable;
 
 @property (nonatomic, strong, storable) NSString *authToken;
 
@@ -35,6 +36,8 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 [Dependency Injection](https://github.com/railsware/BloodMagic/blob/master/README.md#dependency-injection)
 
 [Partial Views](https://github.com/railsware/BloodMagic/blob/master/README.md#partial-views)
+
+[Assign-once properties](https://github.com/railsware/BloodMagic/blob/master/README.md#assign-once-properties)
 
 BloodMagic has been designed to be extensible, so few more spells will be available soon.
 
@@ -269,6 +272,41 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 }
 
 @end
+```
+
+#### Assign-once properties
+
+```ruby
+pod 'BloodMagic/Final', :git => 'https://github.com/railsware/BloodMagic.git'
+```
+
+Java provides [final](http://en.wikipedia.org/wiki/Final_(Java)) keyword, which determines that value can't be changed.
+
+From now this feature available in Objective-C, via BloodMagic.
+
+```objectivec
+
+#import <BloodMagic/Final.h>
+
+@interface FinalizedObject : NSObject
+    <BMFinal>
+
+@property (nonatomic, strong, bm_final) NSString *almostImmutableProperty;
+
+@end
+
+@implementation FinalizedObject
+
+@dynamic almostImmutableProperty;
+
+@end
+
+// ...
+
+FinalizedObject *object = [FinalizedObject new];
+object.almostImmutableProperty = @"Initial value"; // all is OK
+object.almostImmutableProperty = @"Another value"; // exception will be thrown
+
 ```
 
 ### Contributors
