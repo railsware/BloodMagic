@@ -1,7 +1,7 @@
 ## 0.6.0
 
 - Added support of assign-once properties, like `final` in Java: `BMFinal`
-- 
+
 ## 0.5.0
 
 - Added support of partial views: `BMPartial`
