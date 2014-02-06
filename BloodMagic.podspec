@@ -40,7 +40,6 @@ Pod::Spec.new do |podspec|
     partial.source_files = 'BloodMagic/Sources/Modules/Final/**/*.{h,m,mm}'
     partial.public_header_files = 'BloodMagic/Sources/Modules/Final/Public/**/*.h', 'BloodMagic/Sources/Modules/Final/Final.h'
     partial.dependency 'BloodMagic/Core'
-    partial.platform = :ios
   end
 
   podspec.xcconfig = {
