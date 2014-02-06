@@ -1,6 +1,6 @@
 Pod::Spec.new do |podspec|
   podspec.name = 'BloodMagic'
-  podspec.version = '0.5.2'
+  podspec.version = '0.6.0'
   podspec.ios.deployment_target = '5.0'
   podspec.osx.deployment_target = '10.7'
   podspec.license = { :type => 'MIT' }
@@ -32,6 +32,13 @@ Pod::Spec.new do |podspec|
   podspec.subspec 'Partial' do |partial|
     partial.source_files = 'BloodMagic/Sources/Modules/Partial/**/*.{h,m,mm}'
     partial.public_header_files = 'BloodMagic/Sources/Modules/Partial/Public/**/*.h', 'BloodMagic/Sources/Modules/Partial/Partial.h'
+    partial.dependency 'BloodMagic/Core'
+    partial.platform = :ios
+  end
+
+  podspec.subspec 'Final' do |partial|
+    partial.source_files = 'BloodMagic/Sources/Modules/Final/**/*.{h,m,mm}'
+    partial.public_header_files = 'BloodMagic/Sources/Modules/Final/Public/**/*.h', 'BloodMagic/Sources/Modules/Final/Final.h'
     partial.dependency 'BloodMagic/Core'
     partial.platform = :ios
   end
