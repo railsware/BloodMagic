@@ -110,6 +110,7 @@
 		46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalHook.mm; sourceTree = "<group>"; };
 		46DD5B9318A3EFD500DD4830 /* BMFinalModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModuleLoader.h; sourceTree = "<group>"; };
 		46DD5B9418A3EFD500DD4830 /* BMFinalModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFinalModuleLoader.m; sourceTree = "<group>"; };
+		46DD5B9618A3F21700DD4830 /* Final.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Final.h; sourceTree = "<group>"; };
 		5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongLongProperty.mm; sourceTree = "<group>"; };
 		5898A05C65B2C230BF4EEA30 /* BMLazyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyTestProtocol.h; sourceTree = "<group>"; };
 		5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyFinder.h; sourceTree = "<group>"; };
@@ -294,6 +295,7 @@
 			children = (
 				46DD5B8E18A3EE5400DD4830 /* Private */,
 				46DD5B8D18A3EE4500DD4830 /* Public */,
+				46DD5B9618A3F21700DD4830 /* Final.h */,
 			);
 			path = Final;
 			sourceTree = "<group>";
