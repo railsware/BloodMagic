@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMFinalModel.h"
+#import "BMFinalModel_Private.h"
 
 @implementation BMFinalModel
 

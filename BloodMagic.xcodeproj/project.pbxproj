@@ -102,6 +102,7 @@
 		467029D6182D958E003EAFB0 /* BMInheritedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedModel.m; sourceTree = "<group>"; };
 		467029DB182DA49D003EAFB0 /* BMInheritedExcludedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedExcludedModel.h; sourceTree = "<group>"; };
 		467029DC182DA49D003EAFB0 /* BMInheritedExcludedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedExcludedModel.m; sourceTree = "<group>"; };
+		469981CD18A4C91E0027F8FA /* BMFinalModel_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFinalModel_Private.h; sourceTree = "<group>"; };
 		46DD5B8318A26ED500DD4830 /* BMFinalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModel.h; sourceTree = "<group>"; };
 		46DD5B8418A26ED500DD4830 /* BMFinalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFinalModel.m; sourceTree = "<group>"; };
 		46DD5B8718A2711900DD4830 /* BMFinalSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalSpec.mm; sourceTree = "<group>"; };
@@ -276,6 +277,7 @@
 		46DD5B8218A26EAA00DD4830 /* Final */ = {
 			isa = PBXGroup;
 			children = (
+				469981CD18A4C91E0027F8FA /* BMFinalModel_Private.h */,
 				46DD5B8318A26ED500DD4830 /* BMFinalModel.h */,
 				46DD5B8418A26ED500DD4830 /* BMFinalModel.m */,
 			);

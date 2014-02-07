@@ -12,6 +12,6 @@
 @interface BMFinalModel : NSObject
     <BMFinal>
 
-@property (nonatomic, copy) NSString *finalProperty;
+@property (nonatomic, readonly, copy) NSString *finalProperty;
 
 @end

@@ -1,5 +1,5 @@
 #import "SpecHelper.h"
-#import "BMFinalModel.h"
+#import "BMFinalModel_Private.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
