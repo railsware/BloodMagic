@@ -7,6 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0A827918A570ED00264BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90818A4376D0075379C /* Foundation.framework */; };
+		7E0A827F18A570ED00264BC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A827D18A570ED00264BC2 /* InfoPlist.strings */; };
+		7E0A828518A5714F00264BC2 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
+		7E0A828618A5714F00264BC2 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942A18A444A6001C2B77 /* BMClassCache.mm */; };
+		7E0A828718A5714F00264BC2 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942D18A444A6001C2B77 /* BMClassCollector.mm */; };
+		7E0A828818A5714F00264BC2 /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942F18A444A6001C2B77 /* BMPropertyCollector.mm */; };
+		7E0A828918A5714F00264BC2 /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943218A444A6001C2B77 /* BMPropertyFinder.mm */; };
+		7E0A828A18A5714F00264BC2 /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943518A444A6001C2B77 /* BMDynamicPropertyInjector.mm */; };
+		7E0A828B18A5714F00264BC2 /* BMKVCInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943718A444A6001C2B77 /* BMKVCInjector.m */; };
+		7E0A828C18A5714F00264BC2 /* BMPropertyTypeParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943A18A444A6001C2B77 /* BMPropertyTypeParser.mm */; };
+		7E0A828D18A5714F00264BC2 /* BMInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943D18A444A6001C2B77 /* BMInternalProperty.mm */; };
+		7E0A828E18A5714F00264BC2 /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943F18A444A6001C2B77 /* BMInternalPropertyFactory.mm */; };
+		7E0A828F18A5714F00264BC2 /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944118A444A6001C2B77 /* BMInternalPropertyTemplate.mm */; };
+		7E0A829018A5714F00264BC2 /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944418A444A6001C2B77 /* BMPropertyKVCHandler.mm */; };
+		7E0A829118A5714F00264BC2 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944618A444A6001C2B77 /* BMPropertyValueService.mm */; };
+		7E0A829218A5714F00264BC2 /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944918A444A6001C2B77 /* BMCompsiteProperty.mm */; };
+		7E0A829318A5714F00264BC2 /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944B18A444A6001C2B77 /* BMPrimitiveCharProperty.mm */; };
+		7E0A829418A5714F00264BC2 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944D18A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm */; };
+		7E0A829518A5714F00264BC2 /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944F18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm */; };
+		7E0A829618A5714F00264BC2 /* BMPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945118A444A6001C2B77 /* BMPrimitiveIntProperty.mm */; };
+		7E0A829718A5714F00264BC2 /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945318A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm */; };
+		7E0A829818A5714F00264BC2 /* BMPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945518A444A6001C2B77 /* BMPrimitiveLongProperty.mm */; };
+		7E0A829918A5714F00264BC2 /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945718A444A6001C2B77 /* BMPrimitiveShortProperty.mm */; };
+		7E0A829A18A5714F00264BC2 /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945918A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm */; };
+		7E0A829B18A5714F00264BC2 /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945B18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm */; };
+		7E0A829C18A5714F00264BC2 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945D18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
+		7E0A829D18A5714F00264BC2 /* BMPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945F18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm */; };
+		7E0A829E18A5714F00264BC2 /* BMPrimitiveUnsignedShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946118A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm */; };
+		7E0A829F18A5714F00264BC2 /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946718A444A6001C2B77 /* BMBloodMagicInjector.mm */; };
+		7E0A82A018A5714F00264BC2 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946A18A444A6001C2B77 /* BMProperty.mm */; };
+		7E0A82A118A5714F00264BC2 /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946F18A444A6001C2B77 /* BMFinalHook.mm */; };
+		7E0A82A218A5714F00264BC2 /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947118A444A6001C2B77 /* BMFinalModuleLoader.m */; };
+		7E0A82A318A5714F00264BC2 /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947818A444A6001C2B77 /* BMInitializer.m */; };
+		7E0A82A418A5714F00264BC2 /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947B18A444A6001C2B77 /* BMInitializerRegistry.m */; };
+		7E0A82A518A5714F00264BC2 /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948118A444A6001C2B77 /* BMLazyHook.mm */; };
+		7E0A82A618A5714F00264BC2 /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948318A444A6001C2B77 /* BMLazyInitializerFinder.mm */; };
+		7E0A82A718A5714F00264BC2 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948518A444A6001C2B77 /* BMLazyModuleLoader.m */; };
+		7E0A82A818A5714F00264BC2 /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948818A444A6001C2B77 /* BMInitializer+LazyInitializer.m */; };
+		7E0A82A918A5714F00264BC2 /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948A18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m */; };
+		7E0A82AA18A5714F00264BC2 /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */; };
+		7E0A82AB18A5714F00264BC2 /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949518A444A6001C2B77 /* BMPartialHook.mm */; };
+		7E0A82AC18A5714F00264BC2 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */; };
+		7E0A82AD18A5714F00264BC2 /* BloodMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA92418A4376D0075379C /* BloodMagicTests.m */; };
+		7E0A82AE18A571A700264BC2 /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94941E18A4447B001C2B77 /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82AF18A571A700264BC2 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94942218A444A6001C2B77 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B018A571A700264BC2 /* BMHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946318A444A6001C2B77 /* BMHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B118A571A700264BC2 /* BMPublicCoreDefnitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946418A444A6001C2B77 /* BMPublicCoreDefnitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B218A571A700264BC2 /* BMBloodMagicInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946618A444A6001C2B77 /* BMBloodMagicInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B318A571A700264BC2 /* BMProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946918A444A6001C2B77 /* BMProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B418A571A700264BC2 /* Final.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946C18A444A6001C2B77 /* Final.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B518A571A700264BC2 /* BMFinal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947318A444A6001C2B77 /* BMFinal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B618A571A700264BC2 /* Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947518A444A6001C2B77 /* Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B718A571A700264BC2 /* BMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947718A444A6001C2B77 /* BMInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B818A571A700264BC2 /* BMInitializer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947918A444A6001C2B77 /* BMInitializer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82B918A571A700264BC2 /* BMInitializerRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947A18A444A6001C2B77 /* BMInitializerRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BA18A571A700264BC2 /* Lazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947D18A444A6001C2B77 /* Lazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BB18A571A700264BC2 /* Lazy_cxx.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947E18A444A6001C2B77 /* Lazy_cxx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BC18A571A700264BC2 /* BMInitializer+LazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948718A444A6001C2B77 /* BMInitializer+LazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BD18A571A700264BC2 /* BMInitializerRegistry+LazyRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948918A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BE18A571A700264BC2 /* BMLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948B18A444A6001C2B77 /* BMLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82BF18A571A700264BC2 /* BMLazyDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948C18A444A6001C2B77 /* BMLazyDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82C018A571A700264BC2 /* BMLazyExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948D18A444A6001C2B77 /* BMLazyExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82C118A571A700264BC2 /* BMLazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948F18A444A6001C2B77 /* BMLazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82C218A571A700264BC2 /* Partial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949218A444A6001C2B77 /* Partial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0A82C318A571A700264BC2 /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949918A444A6001C2B77 /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E94949A18A444A6001C2B77 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
 		7E94949B18A444A6001C2B77 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942A18A444A6001C2B77 /* BMClassCache.mm */; };
 		7E94949C18A444A6001C2B77 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942D18A444A6001C2B77 /* BMClassCollector.mm */; };
@@ -79,6 +144,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-Info.plist"; sourceTree = "<group>"; };
+		7E0A827E18A570ED00264BC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagicFW-Prefix.pch"; sourceTree = "<group>"; };
 		7E94941E18A4447B001C2B77 /* BloodMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BloodMagic.h; path = ../../BloodMagic/BloodMagic.h; sourceTree = SOURCE_ROOT; };
 		7E94942218A444A6001C2B77 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		7E94942418A444A6001C2B77 /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
@@ -189,6 +257,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E0A827318A570ED00264BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0A827918A570ED00264BC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EAAA90218A4376D0075379C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +287,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E0A827A18A570ED00264BC2 /* BloodMagicFW */ = {
+			isa = PBXGroup;
+			children = (
+				7E0A827B18A570ED00264BC2 /* Supporting Files */,
+			);
+			path = BloodMagicFW;
+			sourceTree = "<group>";
+		};
+		7E0A827B18A570ED00264BC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */,
+				7E0A827D18A570ED00264BC2 /* InfoPlist.strings */,
+				7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7E94941F18A444A6001C2B77 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +617,7 @@
 				7E94941F18A444A6001C2B77 /* Sources */,
 				7EAAA90A18A4376D0075379C /* BloodMagic */,
 				7EAAA91E18A4376D0075379C /* BloodMagicTests */,
+				7E0A827A18A570ED00264BC2 /* BloodMagicFW */,
 				7EAAA90718A4376D0075379C /* Frameworks */,
 				7EAAA90618A4376D0075379C /* Products */,
 			);
@@ -583,7 +678,59 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7E0A827418A570ED00264BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0A82AE18A571A700264BC2 /* BloodMagic.h in Headers */,
+				7E0A82AF18A571A700264BC2 /* Core.h in Headers */,
+				7E0A82B018A571A700264BC2 /* BMHook.h in Headers */,
+				7E0A82B118A571A700264BC2 /* BMPublicCoreDefnitions.h in Headers */,
+				7E0A82B218A571A700264BC2 /* BMBloodMagicInjector.h in Headers */,
+				7E0A82B318A571A700264BC2 /* BMProperty.h in Headers */,
+				7E0A82B418A571A700264BC2 /* Final.h in Headers */,
+				7E0A82B518A571A700264BC2 /* BMFinal.h in Headers */,
+				7E0A82B618A571A700264BC2 /* Initializers.h in Headers */,
+				7E0A82B718A571A700264BC2 /* BMInitializer.h in Headers */,
+				7E0A82B818A571A700264BC2 /* BMInitializer_Private.h in Headers */,
+				7E0A82B918A571A700264BC2 /* BMInitializerRegistry.h in Headers */,
+				7E0A82BA18A571A700264BC2 /* Lazy.h in Headers */,
+				7E0A82BB18A571A700264BC2 /* Lazy_cxx.h in Headers */,
+				7E0A82BC18A571A700264BC2 /* BMInitializer+LazyInitializer.h in Headers */,
+				7E0A82BD18A571A700264BC2 /* BMInitializerRegistry+LazyRegistry.h in Headers */,
+				7E0A82BE18A571A700264BC2 /* BMLazy.h in Headers */,
+				7E0A82BF18A571A700264BC2 /* BMLazyDefinitions.h in Headers */,
+				7E0A82C018A571A700264BC2 /* BMLazyExclude.h in Headers */,
+				7E0A82C118A571A700264BC2 /* BMLazyInitializer.h in Headers */,
+				7E0A82C218A571A700264BC2 /* Partial.h in Headers */,
+				7E0A82C318A571A700264BC2 /* BMPartial.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7E0A827818A570ED00264BC2 /* BloodMagicFW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0A828118A570ED00264BC2 /* Build configuration list for PBXNativeTarget "BloodMagicFW" */;
+			buildPhases = (
+				7E0A827118A570ED00264BC2 /* ShellScript */,
+				7E0A827218A570ED00264BC2 /* Sources */,
+				7E0A827318A570ED00264BC2 /* Frameworks */,
+				7E0A827418A570ED00264BC2 /* Headers */,
+				7E0A827518A570ED00264BC2 /* Resources */,
+				7E0A827618A570ED00264BC2 /* ShellScript */,
+				7E0A827718A570ED00264BC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodMagicFW;
+			productName = BloodMagicFW;
+			productType = "com.apple.product-type.framework.static";
+		};
 		7EAAA90418A4376D0075379C /* BloodMagic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EAAA92818A4376D0075379C /* Build configuration list for PBXNativeTarget "BloodMagic" */;
@@ -642,11 +789,20 @@
 			targets = (
 				7EAAA90418A4376D0075379C /* BloodMagic */,
 				7EAAA91418A4376D0075379C /* BloodMagicTests */,
+				7E0A827818A570ED00264BC2 /* BloodMagicFW */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E0A827518A570ED00264BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0A827F18A570ED00264BC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EAAA91318A4376D0075379C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,7 +813,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E0A827118A570ED00264BC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		7E0A827618A570ED00264BC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INLINED_PYHON_SCRIPT=\"import sys; import os.path; headerPathFromFind = sys.argv[2]; srcRoot = sys.argv[1]; headerPathFromFindWithoutFilename = os.path.dirname( headerPathFromFind ); relatedPathForDirectory = os.path.relpath( headerPathFromFindWithoutFilename, srcRoot ); print( relatedPathForDirectory );\"\n\nHEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$( ls -1 \"$FRAMEWORK_HEADERS_DIR\" )\n\n\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n\n   FIND_RESULT=$( find \"$HEADERS_ROOT\" -name \"$PUBLIC_HEADER\" )\n   RELATIVE_PATH=$( python -c \"$INLINED_PYHON_SCRIPT\" \"$HEADERS_ROOT\" \"$FIND_RESULT\" )\n\n   mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n   mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\ndone\n";
+		};
+		7E0A827718A570ED00264BC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		7E0A827218A570ED00264BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0A828518A5714F00264BC2 /* BMClass.mm in Sources */,
+				7E0A828618A5714F00264BC2 /* BMClassCache.mm in Sources */,
+				7E0A828718A5714F00264BC2 /* BMClassCollector.mm in Sources */,
+				7E0A828818A5714F00264BC2 /* BMPropertyCollector.mm in Sources */,
+				7E0A828918A5714F00264BC2 /* BMPropertyFinder.mm in Sources */,
+				7E0A828A18A5714F00264BC2 /* BMDynamicPropertyInjector.mm in Sources */,
+				7E0A828B18A5714F00264BC2 /* BMKVCInjector.m in Sources */,
+				7E0A828C18A5714F00264BC2 /* BMPropertyTypeParser.mm in Sources */,
+				7E0A828D18A5714F00264BC2 /* BMInternalProperty.mm in Sources */,
+				7E0A828E18A5714F00264BC2 /* BMInternalPropertyFactory.mm in Sources */,
+				7E0A828F18A5714F00264BC2 /* BMInternalPropertyTemplate.mm in Sources */,
+				7E0A829018A5714F00264BC2 /* BMPropertyKVCHandler.mm in Sources */,
+				7E0A829118A5714F00264BC2 /* BMPropertyValueService.mm in Sources */,
+				7E0A829218A5714F00264BC2 /* BMCompsiteProperty.mm in Sources */,
+				7E0A829318A5714F00264BC2 /* BMPrimitiveCharProperty.mm in Sources */,
+				7E0A829418A5714F00264BC2 /* BMPrimitiveDoubleProperty.mm in Sources */,
+				7E0A829518A5714F00264BC2 /* BMPrimitiveFloatProperty.mm in Sources */,
+				7E0A829618A5714F00264BC2 /* BMPrimitiveIntProperty.mm in Sources */,
+				7E0A829718A5714F00264BC2 /* BMPrimitiveLongLongProperty.mm in Sources */,
+				7E0A829818A5714F00264BC2 /* BMPrimitiveLongProperty.mm in Sources */,
+				7E0A829918A5714F00264BC2 /* BMPrimitiveShortProperty.mm in Sources */,
+				7E0A829A18A5714F00264BC2 /* BMPrimitiveUnsignedCharProperty.mm in Sources */,
+				7E0A829B18A5714F00264BC2 /* BMPrimitiveUnsignedIntProperty.mm in Sources */,
+				7E0A829C18A5714F00264BC2 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
+				7E0A829D18A5714F00264BC2 /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
+				7E0A829E18A5714F00264BC2 /* BMPrimitiveUnsignedShortProperty.mm in Sources */,
+				7E0A829F18A5714F00264BC2 /* BMBloodMagicInjector.mm in Sources */,
+				7E0A82A018A5714F00264BC2 /* BMProperty.mm in Sources */,
+				7E0A82A118A5714F00264BC2 /* BMFinalHook.mm in Sources */,
+				7E0A82A218A5714F00264BC2 /* BMFinalModuleLoader.m in Sources */,
+				7E0A82A318A5714F00264BC2 /* BMInitializer.m in Sources */,
+				7E0A82A418A5714F00264BC2 /* BMInitializerRegistry.m in Sources */,
+				7E0A82A518A5714F00264BC2 /* BMLazyHook.mm in Sources */,
+				7E0A82A618A5714F00264BC2 /* BMLazyInitializerFinder.mm in Sources */,
+				7E0A82A718A5714F00264BC2 /* BMLazyModuleLoader.m in Sources */,
+				7E0A82A818A5714F00264BC2 /* BMInitializer+LazyInitializer.m in Sources */,
+				7E0A82A918A5714F00264BC2 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				7E0A82AA18A5714F00264BC2 /* BMLazyInitializer.mm in Sources */,
+				7E0A82AB18A5714F00264BC2 /* BMPartialHook.mm in Sources */,
+				7E0A82AC18A5714F00264BC2 /* BMPartialModuleLoader.m in Sources */,
+				7E0A82AD18A5714F00264BC2 /* BloodMagicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EAAA90118A4376D0075379C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,6 +970,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7E0A827D18A570ED00264BC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0A827E18A570ED00264BC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		7EAAA92118A4376D0075379C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -831,6 +1085,58 @@
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Coverage;
+		};
+		7E0A828218A570ED00264BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW/BloodMagicFW-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7E0A828318A570ED00264BC2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW/BloodMagicFW-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Coverage;
+		};
+		7E0A828418A570ED00264BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW/BloodMagicFW-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
 		};
 		7EAAA92618A4376D0075379C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1015,6 +1321,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E0A828118A570ED00264BC2 /* Build configuration list for PBXNativeTarget "BloodMagicFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0A828218A570ED00264BC2 /* Debug */,
+				7E0A828318A570ED00264BC2 /* Coverage */,
+				7E0A828418A570ED00264BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7EAAA90018A4376D0075379C /* Build configuration list for PBXProject "BloodMagic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
