@@ -45,7 +45,7 @@
         uint protocolsCount = 0;
         protocols = class_copyProtocolList(_objcClass, &protocolsCount);
         NSMutableSet *mutableProtocols = [NSMutableSet setWithCapacity:protocolsCount];
-        for (int protocolIndex = 0; protocolIndex < protocolsCount; protocolIndex++) {
+        for (uint protocolIndex = 0; protocolIndex != protocolsCount; ++protocolIndex) {
             Protocol *protocol = protocols[protocolIndex];
             [mutableProtocols addObject:protocol];
         }
@@ -61,7 +61,7 @@
         uint propertiesCount = 0;
         objcProperties = class_copyPropertyList(_objcClass, &propertiesCount);
         NSMutableSet *mutableProperties = [NSMutableSet setWithCapacity:propertiesCount];
-        for (int propertyIndex = 0; propertyIndex < propertiesCount; propertyIndex++) {
+        for (uint propertyIndex = 0; propertyIndex != propertiesCount; ++propertyIndex) {
             objc_property_t objcProperty = objcProperties[propertyIndex];
             BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:_objcClass];
             [mutableProperties addObject:property];
