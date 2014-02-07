@@ -119,6 +119,7 @@
 		7EAAA91D18A4376D0075379C /* libBloodMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90518A4376D0075379C /* libBloodMagic.a */; };
 		7EAAA92318A4376D0075379C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EAAA92118A4376D0075379C /* InfoPlist.strings */; };
 		7EAAA92518A4376D0075379C /* BloodMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA92418A4376D0075379C /* BloodMagicTests.m */; };
+		7EC2C92718A572E300C25C8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC2C92618A572E300C25C8E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +255,7 @@
 		7EAAA92218A4376D0075379C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7EAAA92418A4376D0075379C /* BloodMagicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodMagicTests.m; sourceTree = "<group>"; };
 		7EAAA9D318A442A70075379C /* BloodMagic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		7EC2C92618A572E300C25C8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC2C92718A572E300C25C8E /* UIKit.framework in Frameworks */,
 				7E0A827918A570ED00264BC2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +638,7 @@
 		7EAAA90718A4376D0075379C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EC2C92618A572E300C25C8E /* UIKit.framework */,
 				7EAAA90818A4376D0075379C /* Foundation.framework */,
 				7EAAA91618A4376D0075379C /* XCTest.framework */,
 				7EAAA91918A4376D0075379C /* UIKit.framework */,
@@ -1329,6 +1333,7 @@
 				7E0A828418A570ED00264BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EAAA90018A4376D0075379C /* Build configuration list for PBXProject "BloodMagic" */ = {
 			isa = XCConfigurationList;
