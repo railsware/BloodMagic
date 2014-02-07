@@ -49,7 +49,6 @@
 		7E0A82AA18A5714F00264BC2 /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */; };
 		7E0A82AB18A5714F00264BC2 /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949518A444A6001C2B77 /* BMPartialHook.mm */; };
 		7E0A82AC18A5714F00264BC2 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */; };
-		7E0A82AD18A5714F00264BC2 /* BloodMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAA92418A4376D0075379C /* BloodMagicTests.m */; };
 		7E0A82AE18A571A700264BC2 /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94941E18A4447B001C2B77 /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E0A82AF18A571A700264BC2 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94942218A444A6001C2B77 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E0A82B018A571A700264BC2 /* BMHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946318A444A6001C2B77 /* BMHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -842,7 +841,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "INLINED_PYHON_SCRIPT=\"import sys; import os.path; headerPathFromFind = sys.argv[2]; srcRoot = sys.argv[1]; headerPathFromFindWithoutFilename = os.path.dirname( headerPathFromFind ); relatedPathForDirectory = os.path.relpath( headerPathFromFindWithoutFilename, srcRoot ); print( relatedPathForDirectory );\"\n\nHEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$( ls -1 \"$FRAMEWORK_HEADERS_DIR\" )\n\n\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n\n   FIND_RESULT=$( find \"$HEADERS_ROOT\" -name \"$PUBLIC_HEADER\" )\n   RELATIVE_PATH=$( python -c \"$INLINED_PYHON_SCRIPT\" \"$HEADERS_ROOT\" \"$FIND_RESULT\" )\n\n   mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n   mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\ndone\n";
+			shellScript = "INLINED_PYHON_SCRIPT=\"import sys; import os.path; headerPathFromFind = sys.argv[2]; srcRoot = sys.argv[1]; headerPathFromFindWithoutFilename = os.path.dirname( headerPathFromFind ); relatedPathForDirectory = os.path.relpath( headerPathFromFindWithoutFilename, srcRoot ); print( relatedPathForDirectory );\"\n\n\nFIXED_SRC_ROOT=$( cd \"$SRCROOT\"; cd ../../ ; pwd )\n\n# echo \"====SRCROOT : $SRCROOT=======\"\n# echo \"====FIXED_SRC_ROOT : $FIXED_SRC_ROOT=======\"\n\nHEADERS_ROOT=$FIXED_SRC_ROOT/BloodMagic\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$( ls -1 \"$FRAMEWORK_HEADERS_DIR\" )\n\n\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n\n   FIND_RESULT=$( find \"$HEADERS_ROOT\" -name \"$PUBLIC_HEADER\" )\n   RELATIVE_PATH=$( python -c \"$INLINED_PYHON_SCRIPT\" \"$HEADERS_ROOT\" \"$FIND_RESULT\" )\n\n   mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n   mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\ndone\n";
 		};
 		7E0A827718A570ED00264BC2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -904,7 +903,6 @@
 				7E0A82AA18A5714F00264BC2 /* BMLazyInitializer.mm in Sources */,
 				7E0A82AB18A5714F00264BC2 /* BMPartialHook.mm in Sources */,
 				7E0A82AC18A5714F00264BC2 /* BMPartialModuleLoader.m in Sources */,
-				7E0A82AD18A5714F00264BC2 /* BloodMagicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
