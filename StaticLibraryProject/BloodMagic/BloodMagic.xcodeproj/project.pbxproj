@@ -75,7 +75,7 @@
 		7E7253D618A79F2300B99314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7253D418A79F2300B99314 /* InfoPlist.strings */; };
 		7E7253E018A79F2300B99314 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA91618A4376D0075379C /* XCTest.framework */; };
 		7E7253E118A79F2300B99314 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CB18A79F2300B99314 /* Cocoa.framework */; };
-		7E7253E418A79F2300B99314 /* BloodMagicFW-osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */; };
+		7E7253E418A79F2300B99314 /* BloodMagic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CA18A79F2300B99314 /* BloodMagic.framework */; };
 		7E7253EA18A79F2300B99314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7253E818A79F2300B99314 /* InfoPlist.strings */; };
 		7E7253EC18A79F2300B99314 /* BloodMagicFW_osxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7253EB18A79F2300B99314 /* BloodMagicFW_osxTests.m */; };
 		7E7253F518A79F8300B99314 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
@@ -222,7 +222,7 @@
 		7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-Info.plist"; sourceTree = "<group>"; };
 		7E0A827E18A570ED00264BC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagicFW-Prefix.pch"; sourceTree = "<group>"; };
-		7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "BloodMagicFW-osx.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7253CA18A79F2300B99314 /* BloodMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BloodMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7253CB18A79F2300B99314 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7E7253CE18A79F2300B99314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E7253CF18A79F2300B99314 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -367,7 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7253E118A79F2300B99314 /* Cocoa.framework in Frameworks */,
-				7E7253E418A79F2300B99314 /* BloodMagicFW-osx.framework in Frameworks */,
+				7E7253E418A79F2300B99314 /* BloodMagic.framework in Frameworks */,
 				7E7253E018A79F2300B99314 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,7 +783,7 @@
 			children = (
 				7EAAA90518A4376D0075379C /* libBloodMagic.a */,
 				7EAAA91518A4376D0075379C /* BloodMagicTests.xctest */,
-				7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */,
+				7E7253CA18A79F2300B99314 /* BloodMagic.framework */,
 				7E7253DF18A79F2300B99314 /* BloodMagicFW-osxTests.xctest */,
 			);
 			name = Products;
@@ -935,7 +935,7 @@
 			);
 			name = "BloodMagicFW-osx";
 			productName = "BloodMagicFW-osx";
-			productReference = 7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */;
+			productReference = 7E7253CA18A79F2300B99314 /* BloodMagic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7E7253DE18A79F2300B99314 /* BloodMagicFW-osxTests */ = {
@@ -1442,7 +1442,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1458,7 +1458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagicFW/BloodMagicFW-Prefix.pch";
 				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1474,7 +1474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagicFW/BloodMagicFW-Prefix.pch";
 				INFOPLIST_FILE = "BloodMagicFW/BloodMagicFW-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1500,7 +1500,7 @@
 				);
 				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1523,7 +1523,7 @@
 				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
 				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1546,7 +1546,7 @@
 				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
 				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
