@@ -71,6 +71,73 @@
 		7E0A82C118A571A700264BC2 /* BMLazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948F18A444A6001C2B77 /* BMLazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E0A82C218A571A700264BC2 /* Partial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949218A444A6001C2B77 /* Partial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E0A82C318A571A700264BC2 /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949918A444A6001C2B77 /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E7253CC18A79F2300B99314 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CB18A79F2300B99314 /* Cocoa.framework */; };
+		7E7253D618A79F2300B99314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7253D418A79F2300B99314 /* InfoPlist.strings */; };
+		7E7253E018A79F2300B99314 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA91618A4376D0075379C /* XCTest.framework */; };
+		7E7253E118A79F2300B99314 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CB18A79F2300B99314 /* Cocoa.framework */; };
+		7E7253E418A79F2300B99314 /* BloodMagicFW-osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */; };
+		7E7253EA18A79F2300B99314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7253E818A79F2300B99314 /* InfoPlist.strings */; };
+		7E7253EC18A79F2300B99314 /* BloodMagicFW_osxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7253EB18A79F2300B99314 /* BloodMagicFW_osxTests.m */; };
+		7E7253F518A79F8300B99314 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
+		7E7253F618A79F8300B99314 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942A18A444A6001C2B77 /* BMClassCache.mm */; };
+		7E7253F718A79F8300B99314 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942D18A444A6001C2B77 /* BMClassCollector.mm */; };
+		7E7253F818A79F8300B99314 /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942F18A444A6001C2B77 /* BMPropertyCollector.mm */; };
+		7E7253F918A79F8300B99314 /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943218A444A6001C2B77 /* BMPropertyFinder.mm */; };
+		7E7253FA18A79F8300B99314 /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943518A444A6001C2B77 /* BMDynamicPropertyInjector.mm */; };
+		7E7253FB18A79F8300B99314 /* BMKVCInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943718A444A6001C2B77 /* BMKVCInjector.m */; };
+		7E7253FC18A79F8300B99314 /* BMPropertyTypeParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943A18A444A6001C2B77 /* BMPropertyTypeParser.mm */; };
+		7E7253FD18A79F8300B99314 /* BMInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943D18A444A6001C2B77 /* BMInternalProperty.mm */; };
+		7E7253FE18A79F8300B99314 /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94943F18A444A6001C2B77 /* BMInternalPropertyFactory.mm */; };
+		7E7253FF18A79F8300B99314 /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944118A444A6001C2B77 /* BMInternalPropertyTemplate.mm */; };
+		7E72540018A79F8300B99314 /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944418A444A6001C2B77 /* BMPropertyKVCHandler.mm */; };
+		7E72540118A79F8300B99314 /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944618A444A6001C2B77 /* BMPropertyValueService.mm */; };
+		7E72540218A79F8300B99314 /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944918A444A6001C2B77 /* BMCompsiteProperty.mm */; };
+		7E72540318A79F8300B99314 /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944B18A444A6001C2B77 /* BMPrimitiveCharProperty.mm */; };
+		7E72540418A79F8300B99314 /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944D18A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm */; };
+		7E72540518A79F8300B99314 /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94944F18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm */; };
+		7E72540618A79F8300B99314 /* BMPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945118A444A6001C2B77 /* BMPrimitiveIntProperty.mm */; };
+		7E72540718A79F8300B99314 /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945318A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm */; };
+		7E72540818A79F8300B99314 /* BMPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945518A444A6001C2B77 /* BMPrimitiveLongProperty.mm */; };
+		7E72540918A79F8300B99314 /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945718A444A6001C2B77 /* BMPrimitiveShortProperty.mm */; };
+		7E72540A18A79F8300B99314 /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945918A444A6001C2B77 /* BMPrimitiveUnsignedCharProperty.mm */; };
+		7E72540B18A79F8300B99314 /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945B18A444A6001C2B77 /* BMPrimitiveUnsignedIntProperty.mm */; };
+		7E72540C18A79F8300B99314 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945D18A444A6001C2B77 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
+		7E72540D18A79F8300B99314 /* BMPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94945F18A444A6001C2B77 /* BMPrimitiveUnsignedLongProperty.mm */; };
+		7E72540E18A79F8300B99314 /* BMPrimitiveUnsignedShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946118A444A6001C2B77 /* BMPrimitiveUnsignedShortProperty.mm */; };
+		7E72540F18A79F8300B99314 /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946718A444A6001C2B77 /* BMBloodMagicInjector.mm */; };
+		7E72541018A79F8300B99314 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946A18A444A6001C2B77 /* BMProperty.mm */; };
+		7E72541118A79F8300B99314 /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94946F18A444A6001C2B77 /* BMFinalHook.mm */; };
+		7E72541218A79F8300B99314 /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947118A444A6001C2B77 /* BMFinalModuleLoader.m */; };
+		7E72541318A79F8300B99314 /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947818A444A6001C2B77 /* BMInitializer.m */; };
+		7E72541418A79F8300B99314 /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94947B18A444A6001C2B77 /* BMInitializerRegistry.m */; };
+		7E72541518A79F8300B99314 /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948118A444A6001C2B77 /* BMLazyHook.mm */; };
+		7E72541618A79F8300B99314 /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948318A444A6001C2B77 /* BMLazyInitializerFinder.mm */; };
+		7E72541718A79F8300B99314 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948518A444A6001C2B77 /* BMLazyModuleLoader.m */; };
+		7E72541818A79F8300B99314 /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948818A444A6001C2B77 /* BMInitializer+LazyInitializer.m */; };
+		7E72541918A79F8300B99314 /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94948A18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m */; };
+		7E72541A18A79F8300B99314 /* BMLazyInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949018A444A6001C2B77 /* BMLazyInitializer.mm */; };
+		7E72541B18A79F8300B99314 /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949518A444A6001C2B77 /* BMPartialHook.mm */; };
+		7E72541C18A79F8300B99314 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E94949718A444A6001C2B77 /* BMPartialModuleLoader.m */; };
+		7E72541D18A79FC900B99314 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94942218A444A6001C2B77 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72541E18A79FC900B99314 /* BMHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946318A444A6001C2B77 /* BMHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72541F18A79FC900B99314 /* BMPublicCoreDefnitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946418A444A6001C2B77 /* BMPublicCoreDefnitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542018A79FC900B99314 /* BMBloodMagicInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946618A444A6001C2B77 /* BMBloodMagicInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542118A79FC900B99314 /* BMProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946918A444A6001C2B77 /* BMProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542218A79FC900B99314 /* Final.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94946C18A444A6001C2B77 /* Final.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542318A79FC900B99314 /* BMFinal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947318A444A6001C2B77 /* BMFinal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542418A79FC900B99314 /* BMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947718A444A6001C2B77 /* BMInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542518A79FC900B99314 /* BMInitializer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947918A444A6001C2B77 /* BMInitializer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542618A79FC900B99314 /* BMInitializerRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947A18A444A6001C2B77 /* BMInitializerRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542718A79FC900B99314 /* Lazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947D18A444A6001C2B77 /* Lazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542818A79FC900B99314 /* Lazy_cxx.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94947E18A444A6001C2B77 /* Lazy_cxx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542918A79FC900B99314 /* BMInitializer+LazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948718A444A6001C2B77 /* BMInitializer+LazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542A18A79FC900B99314 /* BMInitializerRegistry+LazyRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948918A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542B18A79FC900B99314 /* BMLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948B18A444A6001C2B77 /* BMLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542C18A79FC900B99314 /* BMLazyDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948C18A444A6001C2B77 /* BMLazyDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542D18A79FC900B99314 /* BMLazyExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948D18A444A6001C2B77 /* BMLazyExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542E18A79FC900B99314 /* BMLazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94948F18A444A6001C2B77 /* BMLazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72542F18A79FC900B99314 /* Partial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949218A444A6001C2B77 /* Partial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E72543018A79FC900B99314 /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94949918A444A6001C2B77 /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E94949A18A444A6001C2B77 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
 		7E94949B18A444A6001C2B77 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942A18A444A6001C2B77 /* BMClassCache.mm */; };
 		7E94949C18A444A6001C2B77 /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942D18A444A6001C2B77 /* BMClassCollector.mm */; };
@@ -122,6 +189,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E7253E218A79F2300B99314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAAA8FD18A4376D0075379C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E7253C918A79F2300B99314;
+			remoteInfo = "BloodMagicFW-osx";
+		};
 		7EAAA91B18A4376D0075379C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EAAA8FD18A4376D0075379C /* Project object */;
@@ -147,6 +221,18 @@
 		7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-Info.plist"; sourceTree = "<group>"; };
 		7E0A827E18A570ED00264BC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagicFW-Prefix.pch"; sourceTree = "<group>"; };
+		7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "BloodMagicFW-osx.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7253CB18A79F2300B99314 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7E7253CE18A79F2300B99314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E7253CF18A79F2300B99314 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E7253D018A79F2300B99314 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7E7253D318A79F2300B99314 /* BloodMagicFW-osx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-osx-Info.plist"; sourceTree = "<group>"; };
+		7E7253D518A79F2300B99314 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E7253D718A79F2300B99314 /* BloodMagicFW-osx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagicFW-osx-Prefix.pch"; sourceTree = "<group>"; };
+		7E7253DF18A79F2300B99314 /* BloodMagicFW-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BloodMagicFW-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7253E718A79F2300B99314 /* BloodMagicFW-osxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-osxTests-Info.plist"; sourceTree = "<group>"; };
+		7E7253E918A79F2300B99314 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E7253EB18A79F2300B99314 /* BloodMagicFW_osxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodMagicFW_osxTests.m; sourceTree = "<group>"; };
 		7E94941E18A4447B001C2B77 /* BloodMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BloodMagic.h; path = ../../BloodMagic/BloodMagic.h; sourceTree = SOURCE_ROOT; };
 		7E94942218A444A6001C2B77 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		7E94942418A444A6001C2B77 /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
@@ -267,6 +353,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E7253C618A79F2300B99314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253CC18A79F2300B99314 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7253DC18A79F2300B99314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253E118A79F2300B99314 /* Cocoa.framework in Frameworks */,
+				7E7253E418A79F2300B99314 /* BloodMagicFW-osx.framework in Frameworks */,
+				7E7253E018A79F2300B99314 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EAAA90218A4376D0075379C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +407,52 @@
 				7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */,
 				7E0A827D18A570ED00264BC2 /* InfoPlist.strings */,
 				7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E7253CD18A79F2300B99314 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7253CE18A79F2300B99314 /* Foundation.framework */,
+				7E7253CF18A79F2300B99314 /* CoreData.framework */,
+				7E7253D018A79F2300B99314 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7E7253D118A79F2300B99314 /* BloodMagicFW-osx */ = {
+			isa = PBXGroup;
+			children = (
+				7E7253D218A79F2300B99314 /* Supporting Files */,
+			);
+			path = "BloodMagicFW-osx";
+			sourceTree = "<group>";
+		};
+		7E7253D218A79F2300B99314 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E7253D318A79F2300B99314 /* BloodMagicFW-osx-Info.plist */,
+				7E7253D418A79F2300B99314 /* InfoPlist.strings */,
+				7E7253D718A79F2300B99314 /* BloodMagicFW-osx-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E7253E518A79F2300B99314 /* BloodMagicFW-osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7253EB18A79F2300B99314 /* BloodMagicFW_osxTests.m */,
+				7E7253E618A79F2300B99314 /* Supporting Files */,
+			);
+			path = "BloodMagicFW-osxTests";
+			sourceTree = "<group>";
+		};
+		7E7253E618A79F2300B99314 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E7253E718A79F2300B99314 /* BloodMagicFW-osxTests-Info.plist */,
+				7E7253E818A79F2300B99314 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -620,6 +770,8 @@
 				7EAAA90A18A4376D0075379C /* BloodMagic */,
 				7EAAA91E18A4376D0075379C /* BloodMagicTests */,
 				7E0A827A18A570ED00264BC2 /* BloodMagicFW */,
+				7E7253D118A79F2300B99314 /* BloodMagicFW-osx */,
+				7E7253E518A79F2300B99314 /* BloodMagicFW-osxTests */,
 				7EAAA90718A4376D0075379C /* Frameworks */,
 				7EAAA90618A4376D0075379C /* Products */,
 			);
@@ -630,6 +782,8 @@
 			children = (
 				7EAAA90518A4376D0075379C /* libBloodMagic.a */,
 				7EAAA91518A4376D0075379C /* BloodMagicTests.xctest */,
+				7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */,
+				7E7253DF18A79F2300B99314 /* BloodMagicFW-osxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -641,6 +795,8 @@
 				7EAAA90818A4376D0075379C /* Foundation.framework */,
 				7EAAA91618A4376D0075379C /* XCTest.framework */,
 				7EAAA91918A4376D0075379C /* UIKit.framework */,
+				7E7253CB18A79F2300B99314 /* Cocoa.framework */,
+				7E7253CD18A79F2300B99314 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -711,6 +867,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E7253C718A79F2300B99314 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E72541D18A79FC900B99314 /* Core.h in Headers */,
+				7E72541E18A79FC900B99314 /* BMHook.h in Headers */,
+				7E72541F18A79FC900B99314 /* BMPublicCoreDefnitions.h in Headers */,
+				7E72542018A79FC900B99314 /* BMBloodMagicInjector.h in Headers */,
+				7E72542118A79FC900B99314 /* BMProperty.h in Headers */,
+				7E72542218A79FC900B99314 /* Final.h in Headers */,
+				7E72542318A79FC900B99314 /* BMFinal.h in Headers */,
+				7E72542418A79FC900B99314 /* BMInitializer.h in Headers */,
+				7E72542518A79FC900B99314 /* BMInitializer_Private.h in Headers */,
+				7E72542618A79FC900B99314 /* BMInitializerRegistry.h in Headers */,
+				7E72542718A79FC900B99314 /* Lazy.h in Headers */,
+				7E72542818A79FC900B99314 /* Lazy_cxx.h in Headers */,
+				7E72542918A79FC900B99314 /* BMInitializer+LazyInitializer.h in Headers */,
+				7E72542A18A79FC900B99314 /* BMInitializerRegistry+LazyRegistry.h in Headers */,
+				7E72542B18A79FC900B99314 /* BMLazy.h in Headers */,
+				7E72542C18A79FC900B99314 /* BMLazyDefinitions.h in Headers */,
+				7E72542D18A79FC900B99314 /* BMLazyExclude.h in Headers */,
+				7E72542E18A79FC900B99314 /* BMLazyInitializer.h in Headers */,
+				7E72542F18A79FC900B99314 /* Partial.h in Headers */,
+				7E72543018A79FC900B99314 /* BMPartial.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -733,6 +916,42 @@
 			name = BloodMagicFW;
 			productName = BloodMagicFW;
 			productType = "com.apple.product-type.framework.static";
+		};
+		7E7253C918A79F2300B99314 /* BloodMagicFW-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7253F318A79F2300B99314 /* Build configuration list for PBXNativeTarget "BloodMagicFW-osx" */;
+			buildPhases = (
+				7E7253C518A79F2300B99314 /* Sources */,
+				7E7253C618A79F2300B99314 /* Frameworks */,
+				7E7253C718A79F2300B99314 /* Headers */,
+				7E7253C818A79F2300B99314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BloodMagicFW-osx";
+			productName = "BloodMagicFW-osx";
+			productReference = 7E7253CA18A79F2300B99314 /* BloodMagicFW-osx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E7253DE18A79F2300B99314 /* BloodMagicFW-osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7253F418A79F2300B99314 /* Build configuration list for PBXNativeTarget "BloodMagicFW-osxTests" */;
+			buildPhases = (
+				7E7253DB18A79F2300B99314 /* Sources */,
+				7E7253DC18A79F2300B99314 /* Frameworks */,
+				7E7253DD18A79F2300B99314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7253E318A79F2300B99314 /* PBXTargetDependency */,
+			);
+			name = "BloodMagicFW-osxTests";
+			productName = "BloodMagicFW-osxTests";
+			productReference = 7E7253DF18A79F2300B99314 /* BloodMagicFW-osxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7EAAA90418A4376D0075379C /* BloodMagic */ = {
 			isa = PBXNativeTarget;
@@ -777,6 +996,14 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = railsware;
+				TargetAttributes = {
+					7E7253DE18A79F2300B99314 = {
+						TestTargetID = 7E0A827818A570ED00264BC2;
+					};
+					7EAAA91418A4376D0075379C = {
+						TestTargetID = 7E0A827818A570ED00264BC2;
+					};
+				};
 			};
 			buildConfigurationList = 7EAAA90018A4376D0075379C /* Build configuration list for PBXProject "BloodMagic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -793,6 +1020,8 @@
 				7EAAA90418A4376D0075379C /* BloodMagic */,
 				7EAAA91418A4376D0075379C /* BloodMagicTests */,
 				7E0A827818A570ED00264BC2 /* BloodMagicFW */,
+				7E7253C918A79F2300B99314 /* BloodMagicFW-osx */,
+				7E7253DE18A79F2300B99314 /* BloodMagicFW-osxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -803,6 +1032,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0A827F18A570ED00264BC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7253C818A79F2300B99314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253D618A79F2300B99314 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7253DD18A79F2300B99314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253EA18A79F2300B99314 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +1151,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E7253C518A79F2300B99314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253F518A79F8300B99314 /* BMClass.mm in Sources */,
+				7E7253F618A79F8300B99314 /* BMClassCache.mm in Sources */,
+				7E7253F718A79F8300B99314 /* BMClassCollector.mm in Sources */,
+				7E7253F818A79F8300B99314 /* BMPropertyCollector.mm in Sources */,
+				7E7253F918A79F8300B99314 /* BMPropertyFinder.mm in Sources */,
+				7E7253FA18A79F8300B99314 /* BMDynamicPropertyInjector.mm in Sources */,
+				7E7253FB18A79F8300B99314 /* BMKVCInjector.m in Sources */,
+				7E7253FC18A79F8300B99314 /* BMPropertyTypeParser.mm in Sources */,
+				7E7253FD18A79F8300B99314 /* BMInternalProperty.mm in Sources */,
+				7E7253FE18A79F8300B99314 /* BMInternalPropertyFactory.mm in Sources */,
+				7E7253FF18A79F8300B99314 /* BMInternalPropertyTemplate.mm in Sources */,
+				7E72540018A79F8300B99314 /* BMPropertyKVCHandler.mm in Sources */,
+				7E72540118A79F8300B99314 /* BMPropertyValueService.mm in Sources */,
+				7E72540218A79F8300B99314 /* BMCompsiteProperty.mm in Sources */,
+				7E72540318A79F8300B99314 /* BMPrimitiveCharProperty.mm in Sources */,
+				7E72540418A79F8300B99314 /* BMPrimitiveDoubleProperty.mm in Sources */,
+				7E72540518A79F8300B99314 /* BMPrimitiveFloatProperty.mm in Sources */,
+				7E72540618A79F8300B99314 /* BMPrimitiveIntProperty.mm in Sources */,
+				7E72540718A79F8300B99314 /* BMPrimitiveLongLongProperty.mm in Sources */,
+				7E72540818A79F8300B99314 /* BMPrimitiveLongProperty.mm in Sources */,
+				7E72540918A79F8300B99314 /* BMPrimitiveShortProperty.mm in Sources */,
+				7E72540A18A79F8300B99314 /* BMPrimitiveUnsignedCharProperty.mm in Sources */,
+				7E72540B18A79F8300B99314 /* BMPrimitiveUnsignedIntProperty.mm in Sources */,
+				7E72540C18A79F8300B99314 /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
+				7E72540D18A79F8300B99314 /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
+				7E72540E18A79F8300B99314 /* BMPrimitiveUnsignedShortProperty.mm in Sources */,
+				7E72540F18A79F8300B99314 /* BMBloodMagicInjector.mm in Sources */,
+				7E72541018A79F8300B99314 /* BMProperty.mm in Sources */,
+				7E72541118A79F8300B99314 /* BMFinalHook.mm in Sources */,
+				7E72541218A79F8300B99314 /* BMFinalModuleLoader.m in Sources */,
+				7E72541318A79F8300B99314 /* BMInitializer.m in Sources */,
+				7E72541418A79F8300B99314 /* BMInitializerRegistry.m in Sources */,
+				7E72541518A79F8300B99314 /* BMLazyHook.mm in Sources */,
+				7E72541618A79F8300B99314 /* BMLazyInitializerFinder.mm in Sources */,
+				7E72541718A79F8300B99314 /* BMLazyModuleLoader.m in Sources */,
+				7E72541818A79F8300B99314 /* BMInitializer+LazyInitializer.m in Sources */,
+				7E72541918A79F8300B99314 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				7E72541A18A79F8300B99314 /* BMLazyInitializer.mm in Sources */,
+				7E72541B18A79F8300B99314 /* BMPartialHook.mm in Sources */,
+				7E72541C18A79F8300B99314 /* BMPartialModuleLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7253DB18A79F2300B99314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7253EC18A79F2300B99314 /* BloodMagicFW_osxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EAAA90118A4376D0075379C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -964,6 +1264,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E7253E318A79F2300B99314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E7253C918A79F2300B99314 /* BloodMagicFW-osx */;
+			targetProxy = 7E7253E218A79F2300B99314 /* PBXContainerItemProxy */;
+		};
 		7EAAA91C18A4376D0075379C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7EAAA90418A4376D0075379C /* BloodMagic */;
@@ -976,6 +1281,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				7E0A827E18A570ED00264BC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E7253D418A79F2300B99314 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E7253D518A79F2300B99314 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E7253E818A79F2300B99314 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E7253E918A79F2300B99314 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1070,6 +1391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1084,6 +1406,7 @@
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "BloodMagicTests/BloodMagicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Coverage;
@@ -1137,6 +1460,147 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		7E7253ED18A79F2300B99314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7E7253EE18A79F2300B99314 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Coverage;
+		};
+		7E7253EF18A79F2300B99314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW-osx/BloodMagicFW-osx-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		7E7253F018A79F2300B99314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BloodMagicFW-osxTests/BloodMagicFW-osxTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7E7253F118A79F2300B99314 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW-osxTests/BloodMagicFW-osxTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Coverage;
+		};
+		7E7253F218A79F2300B99314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagicFW-osx/BloodMagicFW-osx-Prefix.pch";
+				INFOPLIST_FILE = "BloodMagicFW-osxTests/BloodMagicFW-osxTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1284,6 +1748,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1298,6 +1763,7 @@
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "BloodMagicTests/BloodMagicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -1306,6 +1772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1316,6 +1783,7 @@
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "BloodMagicTests/BloodMagicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -1332,6 +1800,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7E7253F318A79F2300B99314 /* Build configuration list for PBXNativeTarget "BloodMagicFW-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7253ED18A79F2300B99314 /* Debug */,
+				7E7253EE18A79F2300B99314 /* Coverage */,
+				7E7253EF18A79F2300B99314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E7253F418A79F2300B99314 /* Build configuration list for PBXNativeTarget "BloodMagicFW-osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7253F018A79F2300B99314 /* Debug */,
+				7E7253F118A79F2300B99314 /* Coverage */,
+				7E7253F218A79F2300B99314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		7EAAA90018A4376D0075379C /* Build configuration list for PBXProject "BloodMagic" */ = {
 			isa = XCConfigurationList;
