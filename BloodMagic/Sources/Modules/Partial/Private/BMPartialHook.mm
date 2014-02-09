@@ -29,23 +29,28 @@
 
     NSString *nibName = NSStringFromClass(property.propertyClass);
    
-#if TARGET_OS_MAC
-   NSNib *nib = [ [ NSNib alloc ] initWithNibNamed: nibName
-                                            bundle: nil ];
    
-   NSArray* topLevelObjects = nil;
-   BOOL isNibInstantiated = [ nib instantiateWithOwner: nil
-                                       topLevelObjects: &topLevelObjects ];
-   NSParameterAssert( isNibInstantiated );
-//   if ( !isNibInstantiated )
-//   {
-//      return;
-//   }
-   
-   *value = [ topLevelObjects lastObject ];
-#else
-    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-     *value = [[nib instantiateWithOwner:nil options:nil] lastObject];
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+   {
+      UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+      *value = [[nib instantiateWithOwner:nil options:nil] lastObject];
+   }
+#elif TARGET_OS_MAC
+   {
+      NSNib *nib = [ [ NSNib alloc ] initWithNibNamed: nibName
+                                               bundle: nil ];
+      
+      NSArray* topLevelObjects = nil;
+      BOOL isNibInstantiated = [ nib instantiateWithOwner: nil
+                                          topLevelObjects: &topLevelObjects ];
+      NSParameterAssert( isNibInstantiated );
+      //   if ( !isNibInstantiated )
+      //   {
+      //      return;
+      //   }
+      
+      *value = [ topLevelObjects lastObject ];
+   }
 #endif
 
 
