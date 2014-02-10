@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMFinal.h"
+#import <BloodMagic/Sources/Modules/Final/Public/BMFinal.h>
 
 #ifndef bm_final
 #define bm_final

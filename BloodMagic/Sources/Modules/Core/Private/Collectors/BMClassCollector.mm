@@ -52,7 +52,12 @@
 #else
     Class parentClass = [NSObject class];
     int numClasses = objc_getClassList(NULL, 0);
+   
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wvla-extension"
     Class classes[sizeof(Class) * numClasses];
+#pragma clang diagnostic pop   
+   
     numClasses = objc_getClassList(classes, numClasses);
     for (NSInteger i = 0; i < numClasses; i++) {
         Class superClass = classes[i];

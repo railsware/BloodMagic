@@ -24,13 +24,21 @@
     
     id currentValue = getValueForProperty(sender, property);
     if (currentValue) {
-        [[NSException exceptionWithName:NSInternalInconsistencyException
+       
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu"
+       NSDictionary* userInfo =
+       @{
+         @"sender" : sender,
+         @"value" : (*value) ?: @"nil",
+         @"property" : property.name
+       };
+#pragma clang diagnostic pop
+
+       [[NSException exceptionWithName:NSInternalInconsistencyException
                                 reason:@"Attempt to change final property"
-                               userInfo:@{
-                                          @"sender" : sender,
-                                          @"value" : (*value) ?: @"nil",
-                                          @"property" : property.name
-                                          }] raise];
+                              userInfo:userInfo] raise];
+
     }
     setValueForProperty(sender, property, *value);
 }

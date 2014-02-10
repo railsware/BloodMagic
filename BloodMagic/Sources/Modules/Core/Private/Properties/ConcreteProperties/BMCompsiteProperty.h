@@ -10,6 +10,12 @@
 class BMCompositeProperty : public BMInternalPropertyTemplate<id>
 {
 public:
+   
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wignored-qualifiers"
     __strong id unbox(id value) override;
+#pragma clang diagnostic pop
+   
+   
     id box(id value) override;
 };

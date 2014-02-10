@@ -3,7 +3,7 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import "BMPartial.h"
+#import <BloodMagic/Sources/Modules/Partial/Public/BMPartial.h>
 
 #ifndef bm_partial
 #define bm_partial

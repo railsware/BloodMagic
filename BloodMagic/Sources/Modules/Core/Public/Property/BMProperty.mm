@@ -185,7 +185,7 @@
 {
     uint attributesCount = 0;
     objc_property_attribute_t *attributes = property_copyAttributeList(property, &attributesCount);
-    for (int attributeIndex = 0; attributeIndex < attributesCount; attributeIndex++) {
+    for (uint attributeIndex = 0; attributeIndex != attributesCount; ++attributeIndex) {
         objc_property_attribute_t attribute = attributes[attributeIndex];
         [self parsePropertyAttribute:attribute];
     }
