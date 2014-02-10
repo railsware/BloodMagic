@@ -6,4 +6,4 @@
 #pragma once
 
 #import <BloodMagic/Sources/Modules/Lazy/Lazy.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMLazyInitializer.h>
+#import <BloodMagic/Sources/Modules/Lazy/Public/cxx/BMLazyInitializer.h>

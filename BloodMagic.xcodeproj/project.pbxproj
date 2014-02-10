@@ -1040,6 +1040,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagic/Supporting Files/BloodMagic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/**",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Cedar\"",
+					"\"${PODS_ROOT}/Headers/Cedar/Cedar-iOS\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BloodMagic/Supporting Files/BloodMagic-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1056,6 +1062,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagic/Supporting Files/BloodMagic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/**",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Cedar\"",
+					"\"${PODS_ROOT}/Headers/Cedar/Cedar-iOS\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BloodMagic/Supporting Files/BloodMagic-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
