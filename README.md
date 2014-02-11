@@ -26,7 +26,7 @@ We can't implement these attributes without hacking on `clang`, but fortunately,
 Simple installation via [CocoaPods](http://cocoapods.org/):
 
 ```ruby
-  pod 'BloodMagic', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic', :git => 'https://github.com/railsware/BloodMagic.git', :branch => 'stable'
 ```
 
 ### Available Spells
@@ -46,7 +46,7 @@ BloodMagic has been designed to be extensible, so few more spells will be availa
 #### Lazy initialization
 
 ```ruby
-pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/BloodMagic.git', :branch => 'stable'
 ```
 
 Initializes object on demand.
@@ -117,7 +117,7 @@ In this case `progressViewService` will be deallocated as a usual property.
 #### Dependency Injection
 
 ```ruby
-pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/BloodMagic.git', :branch => 'stable'
 ```
 
 During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
@@ -168,7 +168,7 @@ initializer.initializer = ^id (id sender){
 #### Partial Views
 
 ```ruby
-pod 'BloodMagic/Partial', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic/Partial', :git => 'https://github.com/railsware/BloodMagic.git', :branch => 'stable'
 ```
 
 Instantiates view from `xib` on demand, similar to `Lazy` module.
@@ -277,7 +277,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 #### Assign-once properties
 
 ```ruby
-pod 'BloodMagic/Final', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic/Final', :git => 'https://github.com/railsware/BloodMagic.git', :branch => 'stable'
 ```
 
 Java provides [final](http://en.wikipedia.org/wiki/Final_(Java)) keyword, which determines that value can't be changed.
