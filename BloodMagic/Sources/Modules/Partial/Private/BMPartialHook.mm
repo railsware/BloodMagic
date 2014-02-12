@@ -7,8 +7,6 @@
 #import "BMProperty.h"
 #import "BMPropertyValueService.h"
 
-
-
 @implementation BMPartialHook
 
 + (void)accessorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender
@@ -52,7 +50,6 @@
       *value = [ topLevelObjects lastObject ];
    }
 #endif
-
 
     setValueForProperty(sender, property, *value);
 }

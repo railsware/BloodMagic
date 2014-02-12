@@ -13,7 +13,7 @@ struct BMLazyInitializer
 {
     typedef PropertyClass *(^lazy_initializer_t)(ContainerClass *sender);
 
-    static void registerInitializer(lazy_initializer_t initializer)
+    static void registerInitializer(lazy_initializer_t initializer) DEPRECATED_MSG_ATTRIBUTE("Will be removed")
     {
         BMInitializer *lazyInitializer = [BMInitializer lazyInitializer];
         lazyInitializer.propertyClass = [PropertyClass class];
