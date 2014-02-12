@@ -36,10 +36,10 @@ Pod::Spec.new do |podspec|
     partial.dependency 'BloodMagic/Core'
   end
 
-  podspec.subspec 'Final' do |partial|
-    partial.source_files = 'BloodMagic/Sources/Modules/Final/**/*.{h,m,mm}'
-    partial.public_header_files = 'BloodMagic/Sources/Modules/Final/Public/**/*.h', 'BloodMagic/Final.h'
-    partial.dependency 'BloodMagic/Core'
+  podspec.subspec 'Final' do |final|
+    final.source_files = 'BloodMagic/Sources/Modules/Final/**/*.{h,m,mm}'
+    final.public_header_files = 'BloodMagic/Sources/Modules/Final/Public/**/*.h', 'BloodMagic/Final.h'
+    final.dependency 'BloodMagic/Core'
   end
 
   podspec.xcconfig = {
