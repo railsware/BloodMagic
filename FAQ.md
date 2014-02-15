@@ -1,9 +1,9 @@
 BloodMagic FAQ
 =====
 
- - How to start?
- - Can I use BM with class' extension?
- - Can I use multiple attributes with one class?
+ - [How to start?](https://github.com/railsware/BloodMagic/blob/master/FAQ.md#how-to-start)
+ - [Can I use BM with class' extension?](https://github.com/railsware/BloodMagic/blob/master/FAQ.md#can-i-use-bm-with-class-extension)
+ - [Can I use multiple attributes with one class?](https://github.com/railsware/BloodMagic/blob/master/FAQ.md#can-i-use-multiple-attributes-with-one-class)
 
 =====
 
