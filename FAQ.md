@@ -16,7 +16,7 @@ To start using BM you just need to add protocol to your class:
 #import <BloodMagic/Lazy.h>
 
 @interface ViewController : UIViewController
-  <BMLazy>
+    <BMLazy>
 
 @property (nonatomic, strong) ProgressViewService *progressViewService;
 
@@ -63,7 +63,7 @@ Also, using of BM in such way will keep your interface clean.
 #import <BloodMagic/Lazy.h>
 
 @interface ViewController ()
-  <BMLazy>
+    <BMLazy>
 
 @end
 
@@ -85,8 +85,8 @@ Yes. Each module provides macro definition which helps BM to determine which att
 #import <BloodMagic/Partial.h>
 
 @interface ViewController : UIViewController
- <BMLazy,
- BMPartial>
+    <BMLazy,
+    BMPartial>
 
 @property (nonatomic, strong) ProgressViewService *progressViewService;
 @property (nonatomic, strong) HeaderView *headerView;
