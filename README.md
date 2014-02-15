@@ -1,8 +1,6 @@
-## BloodMagic ![License MIT](https://go-shields.herokuapp.com/license-MIT-red.png)
-
+## BloodMagic 
+![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png) &nbsp;
 ![Build status](https://api.travis-ci.org/railsware/BloodMagic.png) &nbsp; ![Version](https://cocoapod-badges.herokuapp.com/v/BloodMagic/badge.png) &nbsp; ![Platform](https://cocoapod-badges.herokuapp.com/p/BloodMagic/badge.png)
-
-More details here: [Dependency Injection in Objective-C with Blood and Magic](http://l.rw.rw/dibm)
 
 Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
 
@@ -20,6 +18,10 @@ Objective-C is a powerful language, but sometimes it lacks of custom property at
 ```
 
 We can't implement these attributes without hacking on `clang`, but fortunately, we're able to achieve these effects by means of BloodMagic' spells
+
+[FAQ](https://github.com/railsware/BloodMagic/blob/master/FAQ.md)
+
+[Blog-post](http://l.rw.rw/dibm)
 
 ### Embark on the Dark
 
@@ -323,5 +325,4 @@ Those actions will help us to protect you from mutilation.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/railsware/bloodmagic/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
 
