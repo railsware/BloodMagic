@@ -4,7 +4,9 @@
 //
 
 #import <objc/runtime.h>
-#import "BMProperty.h"
+
+#import "BMClass.h"
+#import "BMProperty_Private.h"
 #import "BMInternalProperty.h"
 #import "BMInternalPropertyFactory.h"
 
@@ -27,14 +29,17 @@
     BOOL _isRetain;
 
     BMInternalProperty *_internalProperty;
+    
+    id _probableHook;
+    id _hook;
 }
 
-- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass
+- (instancetype)initWithProperty:(objc_property_t)property ofClass:(BMClass *)containerClass
 {
     self = [super init];
     if (self) {
-         _containerClassName = NSStringFromClass(containerClass);
-        _containerClass = containerClass;
+         _containerClassName = NSStringFromClass(containerClass.objcClass);
+        _containerClass = containerClass.objcClass;
         _internalProperty = NULL;
 
         const char *name = property_getName(property);
@@ -274,6 +279,27 @@
 {
     // initial implementation, should be replaced with something more intelligent
     return [self.name isEqualToString:property.name];
+}
+
+#pragma mark - Hooks
+
+- (id<BMHook>)hook
+{
+    if (_hook) {
+        return _hook;
+    }
+    
+    return _probableHook;
+}
+
+- (void)setHook:(id<BMHook>)hook
+{
+    _hook = hook;
+}
+
+- (void)setProbableHook:(id<BMHook>)hook
+{
+    _probableHook = hook;
 }
 
 @end

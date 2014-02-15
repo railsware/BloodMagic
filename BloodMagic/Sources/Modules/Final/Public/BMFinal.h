@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @protocol BMFinal
     <NSObject>
 

@@ -12,6 +12,7 @@
 
 + (instancetype)classWithObjCClass:(Class)objcClass;
 
+- (Class)objcClass;
 - (NSSet *)protocols;
 - (NSSet *)properties;
 - (NSSet *)dynamicProperties;

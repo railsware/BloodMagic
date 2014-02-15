@@ -8,6 +8,8 @@
 #import "BMInternalProperty.h"
 #import "BMPropertyFinder.h"
 #import "BMPropertyValueService.h"
+#import "BMProperty_Private.h"
+#import "BMHook.h"
 
 template <class Type>
 class BMInternalPropertyTemplate : public BMInternalProperty
@@ -20,9 +22,10 @@ class BMInternalPropertyTemplate : public BMInternalProperty
         BMInternalPropertyTemplate<Type> *property = NULL;
 
         property = dynamic_cast<BMInternalPropertyTemplate<Type> *>(finder.findByAccessor(_cmd));
-
+        
         id value = getValueForProperty(self, property->property());
-        BMInternalProperty::accessorHook(&value, property, self);
+        id<BMHook> hook = property->property().hook;
+        [hook accessorHook:&value withProperty:property->property() sender:self];
         return property->unbox(value);
     }
 
@@ -35,7 +38,9 @@ class BMInternalPropertyTemplate : public BMInternalProperty
         property = dynamic_cast<BMInternalPropertyTemplate<Type> *>(finder.findByMutator(_cmd));
 
         id boxedValue = property->box(value);
-        BMInternalProperty::mutatorHook(&boxedValue, property, self);
+        
+        id<BMHook> hook = property->property().hook;
+        [hook mutatorHook:&boxedValue withProperty:property->property() sender:self];
         setValueForProperty(self, property->property(), boxedValue);
     }
 

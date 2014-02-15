@@ -6,6 +6,7 @@
 #import <objc/runtime.h>
 #import "BMPropertyValueService.h"
 #import "BMProperty_Private.h"
+#import "BMInternalProperty.h"
 
 void setValueForProperty(id self, BMProperty const *property, id value)
 {

@@ -5,6 +5,7 @@
 
 #pragma once
 
+#import <BloodMagic/Sources/Modules/Core/Public/BMPublicCoreDefnitions.h>
 #import <BloodMagic/Sources/Modules/Lazy/Public/BMLazy.h>
 #import <BloodMagic/Sources/Modules/Lazy/Public/BMLazyExclude.h>
 #import <BloodMagic/Sources/Modules/Lazy/Public/BMInitializer+LazyInitializer.h>
@@ -13,4 +14,8 @@
 
 #ifndef bm_lazy
 #define bm_lazy
+#endif
+
+#ifndef lazy
+#define lazy(property_name) register_module(BMLazy, property_name)
 #endif

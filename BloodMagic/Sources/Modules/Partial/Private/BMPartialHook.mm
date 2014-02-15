@@ -11,23 +11,14 @@
 
 + (void)accessorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender
 {
-   NSParameterAssert( NULL != value );
-//   if ( NULL == value )
-//   {
-//      return;
-//   }
+    NSParameterAssert( NULL != value );
    
     if (*value != nil) {
         return;
     }
 
-    if (![property.containerClass conformsToProtocol:@protocol(BMPartial)]) {
-        return;
-    }
-
     NSString *nibName = NSStringFromClass(property.propertyClass);
-   
-   
+    
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
    {
       UINib *nib = [UINib nibWithNibName:nibName bundle:nil];

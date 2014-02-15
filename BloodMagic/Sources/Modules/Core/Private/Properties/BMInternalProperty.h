@@ -36,8 +36,4 @@ public:
 
     NSSet *protocols() const;
     void setProtocols(NSSet *protocols);
-
-    static void mutatorHook(id *value, const BMInternalProperty *internal, id sender);
-    static void accessorHook(id *value, const BMInternalProperty *internal, id sender);
-
 };

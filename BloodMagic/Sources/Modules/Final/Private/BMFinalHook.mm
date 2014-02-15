@@ -18,10 +18,6 @@
 
 + (void)mutatorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender
 {
-    if (![property.containerClass conformsToProtocol:@protocol(BMFinal)]) {
-        return;
-    }
-    
     id currentValue = getValueForProperty(sender, property);
     if (currentValue) {
        

@@ -7,12 +7,19 @@
 //
 
 #import "BMProperty.h"
-#import "BMInternalProperty.h"
 #import <objc/runtime.h>
+
+class BMInternalProperty;
+@class BMClass;
+@protocol BMHook;
 
 @interface BMProperty ()
 
-- (instancetype)initWithProperty:(objc_property_t)property ofClass:(Class)containerClass;
+- (instancetype)initWithProperty:(objc_property_t)property ofClass:(BMClass *)containerClass;
 - (BMInternalProperty *)internalProperty;
+- (id<BMHook>)hook;
+
+- (void)setHook:(id<BMHook>)hook;
+- (void)setProbableHook:(id<BMHook>)hook;
 
 @end

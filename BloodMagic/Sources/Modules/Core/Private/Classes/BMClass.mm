@@ -39,6 +39,11 @@
     return self;
 }
 
+- (Class)objcClass
+{
+    return _objcClass;
+}
+
 - (NSSet *)protocols {
     if (!_protocols) {
         Protocol *__unsafe_unretained *protocols;
@@ -63,7 +68,7 @@
         NSMutableSet *mutableProperties = [NSMutableSet setWithCapacity:propertiesCount];
         for (uint propertyIndex = 0; propertyIndex != propertiesCount; ++propertyIndex) {
             objc_property_t objcProperty = objcProperties[propertyIndex];
-            BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:_objcClass];
+            BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:self];
             [mutableProperties addObject:property];
         }
         free(objcProperties);

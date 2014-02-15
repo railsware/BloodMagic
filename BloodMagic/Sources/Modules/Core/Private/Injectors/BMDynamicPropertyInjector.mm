@@ -10,11 +10,15 @@
 
 @implementation BMDynamicPropertyInjector
 
-- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol {
+- (void)injectDynamicHandlersIntoClass:(Class)klass
+                          withProtocol:(Protocol *)protocol
+{
     return [self injectDynamicHandlersIntoClass:klass withProtocol:protocol excludingProtocol:nil];
 }
 
-- (void)injectDynamicHandlersIntoClass:(Class)klass withProtocol:(Protocol *)protocol excludingProtocol:(Protocol *)excludingProtocol
+- (void)injectDynamicHandlersIntoClass:(Class)klass
+                          withProtocol:(Protocol *)protocol
+                     excludingProtocol:(Protocol *)excludingProtocol
 {
     BMPropertyCollector *collector = [BMPropertyCollector collector];
     

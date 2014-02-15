@@ -33,9 +33,9 @@
 
 - (void)injectBloodMagicInto:(Protocol *)protocol excluding:(Protocol *)excludingProtocol
 {
-    class_list_t *hooks = [classCollector collectForProtocol:protocol];
+    class_list_t *classes = [classCollector collectForProtocol:protocol];
 
-    for (auto it = hooks->cbegin(); it != hooks->cend(); it++) {
+    for (auto it = classes->cbegin(); it != classes->cend(); it++) {
         Class klass = *it;
         [kvcInjector injectKVCHandlersIntoClass:klass];
         [propertyInjector injectDynamicHandlersIntoClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];

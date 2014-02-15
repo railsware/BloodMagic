@@ -3,10 +3,12 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <objc/runtime.h>
 #import "BMPropertyKVCHandler.h"
 #import "BMPropertyFinder.h"
 #import "BMInternalProperty.h"
+#import "BMPropertyValueService.h"
+#import "BMHook.h"
+#import "BMProperty_Private.h"
 
 @implementation BMPropertyKVCHandler
 
@@ -19,8 +21,9 @@
         [self setDynamicsValue:value forUndefinedKey:key];
     }
 
-    BMInternalProperty::mutatorHook(&value, property, self);
-    objc_setAssociatedObject(self, property->propertyName().c_str(), value, property->associationPolicy());
+    id<BMHook> hook = property->property().hook;
+    [hook mutatorHook:&value withProperty:property->property() sender:self];
+    setValueForProperty(self, property->property(), value);
 }
 
 - (id)dynamicsValueForUndefinedKey:(NSString *)key
@@ -31,9 +34,10 @@
     if (property == NULL) {
         return [self dynamicsValueForUndefinedKey:key];
     }
-
-    id value = objc_getAssociatedObject(self, property->propertyName().c_str());
-    BMInternalProperty::accessorHook(&value, property, self);
+    
+    id value = getValueForProperty(self, property->property());
+    id<BMHook> hook = property->property().hook;
+    [hook accessorHook:&value withProperty:property->property() sender:self];
     return value;
 }
 
