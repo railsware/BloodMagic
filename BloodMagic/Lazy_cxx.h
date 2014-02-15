@@ -5,5 +5,5 @@
 
 #pragma once
 
-#import "Lazy.h"
+#import <BloodMagic/Lazy.h>
 #import <BloodMagic/Sources/Modules/Lazy/Public/cxx/BMLazyInitializer.h>

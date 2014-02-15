@@ -821,7 +821,7 @@
 			dependencies = (
 			);
 			name = BloodMagic;
-			productName = Dynamics;
+			productName = BloodMagic;
 			productReference = CADB6AF1178FFE330060E11D /* BloodMagic.app */;
 			productType = "com.apple.product-type.application";
 		};
