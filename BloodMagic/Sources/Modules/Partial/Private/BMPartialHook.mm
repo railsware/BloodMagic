@@ -33,10 +33,6 @@
       BOOL isNibInstantiated = [ nib instantiateWithOwner: nil
                                           topLevelObjects: &topLevelObjects ];
       NSParameterAssert( isNibInstantiated );
-      //   if ( !isNibInstantiated )
-      //   {
-      //      return;
-      //   }
       
       *value = [ topLevelObjects lastObject ];
    }
