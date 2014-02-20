@@ -23,6 +23,8 @@ We can't implement these attributes without hacking on `clang`, but fortunately,
 
 [Blog-post](http://l.rw.rw/dibm)
 
+[Presentation](https://speakerdeck.com/0xc010d/dependency-injection-ftw) by [Ievgen Solodovnykov](https://github.com/0xc010d)
+
 ### Embark on the Dark
 
 Simple installation via [CocoaPods](http://cocoapods.org/):
