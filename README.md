@@ -325,6 +325,3 @@ BloodMagic may have side effects, if you find one, please, open issue or send us
 
 Those actions will help us to protect you from mutilation.
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/railsware/bloodmagic/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
