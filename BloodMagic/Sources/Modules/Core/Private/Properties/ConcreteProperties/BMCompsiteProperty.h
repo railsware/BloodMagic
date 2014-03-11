@@ -16,6 +16,5 @@ public:
     __strong id unbox(id value) override;
 #pragma clang diagnostic pop
    
-   
     id box(id value) override;
 };

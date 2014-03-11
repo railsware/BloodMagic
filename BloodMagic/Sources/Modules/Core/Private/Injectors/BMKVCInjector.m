@@ -23,8 +23,16 @@
     Method original = class_getInstanceMethod(klass, originalAccessorSelector);
     Method dynamics = class_getInstanceMethod([BMPropertyKVCHandler class], dynamicsAccessorSelector);
     
-    if (class_addMethod(klass, originalAccessorSelector, method_getImplementation(dynamics), method_getTypeEncoding(dynamics))) {
-        class_replaceMethod(klass, dynamicsAccessorSelector, method_getImplementation(original), method_getTypeEncoding(original));
+    BOOL isMethodAdded = class_addMethod(klass,
+                                         originalAccessorSelector,
+                                         method_getImplementation(dynamics),
+                                         method_getTypeEncoding(dynamics));
+    
+    if (isMethodAdded) {
+        class_replaceMethod(klass,
+                            dynamicsAccessorSelector,
+                            method_getImplementation(original),
+                            method_getTypeEncoding(original));
     } else {
         method_exchangeImplementations(original, dynamics);
     }
@@ -38,8 +46,16 @@
     Method original = class_getInstanceMethod(klass, originalMutatorSelector);
     Method dynamics = class_getInstanceMethod([BMPropertyKVCHandler class], dynamicsMutatorSelector);
 
-    if (class_addMethod(klass, originalMutatorSelector, method_getImplementation(dynamics), method_getTypeEncoding(dynamics))) {
-        class_replaceMethod(klass, dynamicsMutatorSelector, method_getImplementation(original), method_getTypeEncoding(original));
+    BOOL isMethodAdded = class_addMethod(klass,
+                                         originalMutatorSelector,
+                                         method_getImplementation(dynamics),
+                                         method_getTypeEncoding(dynamics));
+    
+    if (isMethodAdded) {
+        class_replaceMethod(klass,
+                            dynamicsMutatorSelector,
+                            method_getImplementation(original),
+                            method_getTypeEncoding(original));
     } else {
         method_exchangeImplementations(original, dynamics);
     }

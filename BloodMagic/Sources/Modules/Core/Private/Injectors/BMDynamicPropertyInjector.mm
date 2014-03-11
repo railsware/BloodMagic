@@ -22,9 +22,11 @@
 {
     BMPropertyCollector *collector = [BMPropertyCollector collector];
     
-    property_list_t *properties = [collector collectForClass:klass withProtocol:protocol excludingProtocol:excludingProtocol];
-    for (auto it = properties->cbegin(); it != properties->cend(); it++) {
-        BMProperty *property = *it;
+    property_list_t *properties = [collector collectForClass:klass
+                                                withProtocol:protocol
+                                           excludingProtocol:excludingProtocol];
+    
+    for (BMProperty *property : *properties) {
         class_addMethod(klass,
                         property.accessorSelector,
                         property.accessorImplementation,

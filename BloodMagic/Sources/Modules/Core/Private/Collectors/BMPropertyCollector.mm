@@ -34,8 +34,7 @@ static inline void updateProperties(property_list_t *properties, Protocol *proto
     id hook = hookForProtocol(protocol);
     NSString *protocolName = NSStringFromProtocol(protocol);
     
-    for (id p : *properties) {
-        BMProperty *property = p;
+    for (BMProperty *property : *properties) {
         NSString *propertySelectorName = [NSString stringWithFormat:@"%@__%@",
                                           protocolName,
                                           property.name];
