@@ -313,12 +313,6 @@ object.almostImmutableProperty = @"Another value"; // exception will be thrown
 
 ```
 
-### Contributors
-
-[AlexDenisov](https://github.com/AlexDenisov)
-
-[Ievgen Solodovnykov](https://github.com/0xc010d)
-
 ### Side effects (aka bugs)
 
 BloodMagic may have side effects, if you find one, please, open issue or send us a pull request.
