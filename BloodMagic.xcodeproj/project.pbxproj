@@ -75,9 +75,11 @@
 		5898AFFD9D64A3A7C5FE7A2C /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAA1520BC6CEEB4844F5 /* BMPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */; };
 		6B876476984A4DEBF9D875B5 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
+		6B8764CAE53CAE3A13BBD06F /* BMInheritedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762AB53AF36D327BDDE2C /* BMInheritedProtocol.m */; };
 		6B8766E9F0D89354E31E41F0 /* BMTestPartialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */; };
 		6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
 		6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
+		6B876E7DD795CD09E74BFE16 /* LazyProtocolsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F22748D58CCE8D43895 /* LazyProtocolsSpec.mm */; };
 		6B876EEDF8582A401DED9E9C /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876D9EE344396A8B4EE51F /* BMPartialSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B876FB8AA2B123CD27E3B38 /* BMTestPartialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B876F598E75C28B6ECAAC87 /* BMTestPartialView.xib */; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
@@ -230,11 +232,13 @@
 		6B87617F9B1578554B3F26E5 /* Lazy_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy_cxx.h; sourceTree = "<group>"; };
 		6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialHook.mm; sourceTree = "<group>"; };
 		6B8762841AEA753743D57E43 /* BMPartialHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialHook.h; sourceTree = "<group>"; };
+		6B8762AB53AF36D327BDDE2C /* BMInheritedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedProtocol.m; sourceTree = "<group>"; };
 		6B8763A7E32B983A1A8E88D8 /* Final.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Final.h; sourceTree = "<group>"; };
 		6B876688EF1E1722917B305E /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
 		6B8766D74A276049A5B243AB /* Partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partial.h; sourceTree = "<group>"; };
 		6B876744FFA157EE330D0A2A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		6B8768AEF7B39442021A524B /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
+		6B876989598903CB20ADE4FF /* BMInheritedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedProtocol.h; sourceTree = "<group>"; };
 		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
 		6B876C366CB4050E12956584 /* Lazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy.h; sourceTree = "<group>"; };
 		6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 		6B876E01073EDAB9D216804C /* BMTestPartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestPartialView.h; sourceTree = "<group>"; };
 		6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialModuleLoader.m; sourceTree = "<group>"; };
 		6B876EB0A34531ECE6D29C20 /* BMPartialWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialWrapperView.h; sourceTree = "<group>"; };
+		6B876F22748D58CCE8D43895 /* LazyProtocolsSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazyProtocolsSpec.mm; sourceTree = "<group>"; };
 		6B876F598E75C28B6ECAAC87 /* BMTestPartialView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMTestPartialView.xib; sourceTree = "<group>"; };
 		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
@@ -382,6 +387,8 @@
 				467029DC182DA49D003EAFB0 /* BMInheritedExcludedModel.m */,
 				46435A8F185F8A1F003FE5E7 /* BMProject.h */,
 				46435A90185F8A1F003FE5E7 /* BMProject.m */,
+				6B8762AB53AF36D327BDDE2C /* BMInheritedProtocol.m */,
+				6B876989598903CB20ADE4FF /* BMInheritedProtocol.h */,
 			);
 			path = LazySpecs;
 			sourceTree = "<group>";
@@ -457,6 +464,7 @@
 			children = (
 				5898A5CD525AC6AE9B392FC4 /* BMInitializerSpec.mm */,
 				5898A87ABE5DDCA021D4B972 /* LazySpec.mm */,
+				6B876F22748D58CCE8D43895 /* LazyProtocolsSpec.mm */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -990,6 +998,8 @@
 				6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */,
 				6B876476984A4DEBF9D875B5 /* BMPartialModuleLoader.m in Sources */,
 				6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */,
+				6B876E7DD795CD09E74BFE16 /* LazyProtocolsSpec.mm in Sources */,
+				6B8764CAE53CAE3A13BBD06F /* BMInheritedProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
