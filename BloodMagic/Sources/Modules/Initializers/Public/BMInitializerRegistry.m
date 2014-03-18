@@ -32,11 +32,13 @@
     /// TODO: move to BMInitializerFinder
     BMInitializer *initializer = nil;
     for (BMInitializer *init in _initializers) {
-        if (property.protocols != nil) {
+        if (property.protocols) {
             NSSet *protocols = [init protocolsSet];
             if (![property.protocols isEqualToSet:protocols]) {
                 continue;
             }
+        } else if (init.protocols) {
+            continue;
         }
         
         if (init.propertyClass != [NSObject class]) {
