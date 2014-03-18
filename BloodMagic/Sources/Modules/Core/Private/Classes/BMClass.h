@@ -10,7 +10,9 @@
 
 @interface BMClass : NSObject
 
-+ (instancetype)classWithObjCClass:(Class)objcClass andProtocol:(Protocol *)protocol;
++ (instancetype)classWithObjCClass:(Class)objcClass
+                       andProtocol:(Protocol *)protocol
+                 excludingProtocol:(Protocol *)excluding;
 
 - (Class)objcClass;
 - (NSSet *)protocols;

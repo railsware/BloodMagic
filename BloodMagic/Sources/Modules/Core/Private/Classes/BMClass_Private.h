@@ -10,6 +10,8 @@
 
 @interface BMClass ()
 
-- (instancetype)initWithClass:(Class)objcClass andProtocol:(Protocol *)protocol;
+- (instancetype)initWithClass:(Class)objcClass
+                  andProtocol:(Protocol *)protocol
+            excludingProtocol:(Protocol *)excluding;
 
 @end

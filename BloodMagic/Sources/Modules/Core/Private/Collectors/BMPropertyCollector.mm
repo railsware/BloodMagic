@@ -90,12 +90,9 @@ static inline void updateProperties(property_list_t *properties, Protocol *proto
 
     cachedProperties = new property_list_t;
 
-    BMClass *klass =  [BMClass classWithObjCClass:objcClass andProtocol:protocol];
-    BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
-    if (!isExcludedClass) {
-        for (BMProperty *property in [klass dynamicProperties]) {
-            cachedProperties->push_back(property);
-        }
+    BMClass *klass =  [BMClass classWithObjCClass:objcClass andProtocol:protocol excludingProtocol:excludingProtocol];
+    for (BMProperty *property in [klass dynamicProperties]) {
+        cachedProperties->push_back(property);
     }
 
     _cachedProperties[classKey] = cachedProperties;

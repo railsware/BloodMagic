@@ -3,35 +3,9 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <objc/runtime.h>
 #import "BMInitializerRegistry.h"
 #import "BMInitializer_Private.h"
 #import "BMProperty.h"
-
-static BOOL class_isEqualOrSubclass(Class base, Class child)
-{
-    if (base == child) {
-        return YES;
-    }
-
-    Class superClass = child;
-    BOOL result = NO;
-
-    while (true) {
-        superClass = class_getSuperclass(superClass);
-
-        if (!superClass || superClass == [NSObject class]) {
-            break;
-        }
-
-        if (superClass == base) {
-            result = YES;
-            break;
-        }
-    }
-
-    return result;
-}
 
 @implementation BMInitializerRegistry
 {
@@ -65,13 +39,14 @@ static BOOL class_isEqualOrSubclass(Class base, Class child)
             }
         }
         
-        if (init.propertyClass != property.propertyClass) {
-            continue;
+        if (init.propertyClass != [NSObject class]) {
+            if (init.propertyClass != property.propertyClass) {
+                continue;
+            }
         }
 
         if (init.containerClass != [NSObject class]) {
-            BOOL isEqualOrSubclass = class_isEqualOrSubclass(property.containerClass, init.containerClass);
-            if (!isEqualOrSubclass) {
+            if (init.containerClass != property.containerClass) {
                 continue;
             }
         }

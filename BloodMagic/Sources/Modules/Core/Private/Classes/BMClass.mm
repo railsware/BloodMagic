@@ -16,29 +16,35 @@
 {
     Class _objcClass;
     Protocol *_protocol;
+    Protocol *_excludingProtocol;
 
     NSSet *_protocols;
     NSSet *_properties;
     NSSet *_dynamicProperties;
 }
 
-+ (instancetype)classWithObjCClass:(Class)objcClass andProtocol:(Protocol *)protocol
++ (instancetype)classWithObjCClass:(Class)objcClass
+                       andProtocol:(Protocol *)protocol
+                 excludingProtocol:(Protocol *)excluding
 {
     BMClassCache *cache = [BMClassCache cache];
     BMClass *internalClass = [cache internalClassForObjCClass:objcClass];
     if (!internalClass) {
-        internalClass = [[BMClass alloc] initWithClass:objcClass andProtocol:protocol];
+        internalClass = [[BMClass alloc] initWithClass:objcClass andProtocol:protocol excludingProtocol:excluding];
         [cache setInternalClass:internalClass forObjCClass:objcClass];
     }
     
     return internalClass;
 }
 
-- (instancetype)initWithClass:(Class)objcClass andProtocol:(Protocol *)protocol
+- (instancetype)initWithClass:(Class)objcClass
+                  andProtocol:(Protocol *)protocol
+            excludingProtocol:(Protocol *)excluding
 {
     self = [super init];
     _protocol = protocol;
     _objcClass = objcClass;
+    _excludingProtocol = excluding;
     return self;
 }
 
@@ -70,6 +76,11 @@
         while (true) {
             if (![_class conformsToProtocol:_protocol]) {
                 break;
+            }
+            
+            if (class_conformsToProtocol(_class, _excludingProtocol)) {
+                _class = class_getSuperclass(_class);
+                continue;
             }
 
             objc_property_t *objcProperties;
