@@ -33,7 +33,9 @@ context(@"instance", ^{
         });
 
         it(@"including base class' properties", ^{
-            properties = [subject collectForClass:[BMDerivedExtendedModel class] withProtocol:@protocol(BMLazy) excludingProtocol:nil];
+            properties = [subject collectForClass:[BMDerivedExtendedModel class]
+                                     withProtocol:@protocol(BMLazy)
+                                excludingProtocol:nil];
             properties->size() should equal(2);
         });
 

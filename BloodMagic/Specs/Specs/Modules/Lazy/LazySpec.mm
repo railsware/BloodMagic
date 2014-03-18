@@ -195,6 +195,7 @@ describe(@"LazySpec", ^{
                 it(@"super's property is not nil", ^{
                     excludedModel.user should_not be_nil;
                 });
+                
                 it(@"doesn't instntiate exluded property", ^{
                     ^{[excludedModel admin];} should raise_exception([NSException class]);
                 });

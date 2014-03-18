@@ -87,21 +87,17 @@ static inline void updateProperties(property_list_t *properties, Protocol *proto
         updateProperties(cachedProperties, protocol, objcClass);
         return cachedProperties;
     }
-    
+
     cachedProperties = new property_list_t;
 
-    Class superClass = objcClass;
-    while ([superClass conformsToProtocol:protocol]) {
-        BMClass *klass =  [BMClass classWithObjCClass:superClass];
-        BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
-        if (!isExcludedClass) {
-            for (BMProperty *property in [klass dynamicProperties]) {
-                cachedProperties->push_back(property);
-            }
+    BMClass *klass =  [BMClass classWithObjCClass:objcClass andProtocol:protocol];
+    BOOL isExcludedClass = [[klass protocols] containsObject:excludingProtocol];
+    if (!isExcludedClass) {
+        for (BMProperty *property in [klass dynamicProperties]) {
+            cachedProperties->push_back(property);
         }
-
-        superClass = [superClass superclass];
     }
+
     _cachedProperties[classKey] = cachedProperties;
     
     updateProperties(cachedProperties, protocol, objcClass);

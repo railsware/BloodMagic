@@ -15,26 +15,29 @@
 @implementation BMClass
 {
     Class _objcClass;
+    Protocol *_protocol;
 
     NSSet *_protocols;
     NSSet *_properties;
     NSSet *_dynamicProperties;
 }
 
-+ (instancetype)classWithObjCClass:(Class)objcClass
++ (instancetype)classWithObjCClass:(Class)objcClass andProtocol:(Protocol *)protocol
 {
     BMClassCache *cache = [BMClassCache cache];
     BMClass *internalClass = [cache internalClassForObjCClass:objcClass];
     if (!internalClass) {
-        internalClass = [[BMClass alloc] initWithClass:objcClass];
+        internalClass = [[BMClass alloc] initWithClass:objcClass andProtocol:protocol];
         [cache setInternalClass:internalClass forObjCClass:objcClass];
     }
     
     return internalClass;
 }
 
-- (instancetype)initWithClass:(Class)objcClass {
+- (instancetype)initWithClass:(Class)objcClass andProtocol:(Protocol *)protocol
+{
     self = [super init];
+    _protocol = protocol;
     _objcClass = objcClass;
     return self;
 }
@@ -62,16 +65,24 @@
 
 - (NSSet *)properties {
     if (!_properties) {
-        objc_property_t *objcProperties;
-        uint propertiesCount = 0;
-        objcProperties = class_copyPropertyList(_objcClass, &propertiesCount);
-        NSMutableSet *mutableProperties = [NSMutableSet setWithCapacity:propertiesCount];
-        for (uint propertyIndex = 0; propertyIndex != propertiesCount; ++propertyIndex) {
-            objc_property_t objcProperty = objcProperties[propertyIndex];
-            BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:self];
-            [mutableProperties addObject:property];
+        Class _class = _objcClass;
+        NSMutableSet *mutableProperties = [NSMutableSet set];
+        while (true) {
+            if (![_class conformsToProtocol:_protocol]) {
+                break;
+            }
+
+            objc_property_t *objcProperties;
+            uint propertiesCount = 0;
+            objcProperties = class_copyPropertyList(_class, &propertiesCount);
+            for (uint propertyIndex = 0; propertyIndex != propertiesCount; ++propertyIndex) {
+                objc_property_t objcProperty = objcProperties[propertyIndex];
+                BMProperty *property = [[BMProperty alloc] initWithProperty:objcProperty ofClass:self];
+                [mutableProperties addObject:property];
+            }
+            free(objcProperties);
+            _class = class_getSuperclass(_class);
         }
-        free(objcProperties);
         _properties = [NSSet setWithSet:mutableProperties];
     }
     return _properties;
