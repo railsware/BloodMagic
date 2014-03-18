@@ -64,12 +64,9 @@ static BOOL class_isEqualOrSubclass(Class base, Class child)
                 continue;
             }
         }
-
-        if (init.propertyClass != [NSObject class]) {
-
-            if (init.propertyClass != property.propertyClass) {
-                continue;
-            }
+        
+        if (init.propertyClass != property.propertyClass) {
+            continue;
         }
 
         if (init.containerClass != [NSObject class]) {
