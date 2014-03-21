@@ -138,6 +138,8 @@ initializer.initializer = ^id (id sender){
 [initializer registerInitializer];
 ```
 
+_Note:_ `containerClass` doesn't apply on derived classes, to achieve such behavior you should specify `containerClass` explicitly.
+
 This spell is very useful when dealing with the singleton
 
 ```objectivec
