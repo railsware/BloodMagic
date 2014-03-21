@@ -29,28 +29,41 @@
 
 - (BMInitializer *)initializerForProperty:(const BMProperty *)property
 {
+    Class rootClass = [NSObject class];
+    BOOL propertyHasClass = (property.propertyClass != rootClass);
+    BOOL propertyHasProtocols = (property.protocols != nil);
+    
     /// TODO: move to BMInitializerFinder
     BMInitializer *initializer = nil;
     for (BMInitializer *init in _initializers) {
-        if (property.protocols) {
-            NSSet *protocols = [init protocolsSet];
-            if (![property.protocols isEqualToSet:protocols]) {
-                continue;
-            }
+        BOOL protocolsEqual = YES;
+        BOOL propertyClassEqual = YES;
+        BOOL containerClassEqual = YES;
+        
+        if (propertyHasProtocols) {
+            protocolsEqual = [property.protocols isEqualToSet:init.protocolsSet];
         } else if (init.protocols) {
+            protocolsEqual = NO;
+        }
+        
+        if (!protocolsEqual) {
             continue;
         }
         
-        if (init.propertyClass != [NSObject class]) {
-            if (init.propertyClass != property.propertyClass) {
-                continue;
-            }
+        if (propertyHasClass && init.propertyClass != rootClass) {
+            propertyClassEqual = property.propertyClass == init.propertyClass;
         }
-
-        if (init.containerClass != [NSObject class]) {
-            if (init.containerClass != property.containerClass) {
-                continue;
-            }
+        
+        if (!propertyClassEqual) {
+            continue;
+        }
+        
+        if (init.containerClass != rootClass) {
+            containerClassEqual = property.containerClass == init.containerClass;
+        }
+        
+        if (!containerClassEqual) {
+            continue;
         }
 
         initializer = init;
