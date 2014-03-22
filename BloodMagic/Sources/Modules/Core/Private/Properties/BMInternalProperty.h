@@ -34,6 +34,9 @@ public:
     virtual IMP mutatorImplementation() = 0;
     virtual IMP accessorImplementation() = 0;
 
+    virtual const char *accessorTypes() = 0;
+    virtual const char *mutatorTypes() = 0;
+    
     NSSet *protocols() const;
     void setProtocols(NSSet *protocols);
 };

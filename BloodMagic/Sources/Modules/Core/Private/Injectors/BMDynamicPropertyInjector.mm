@@ -30,11 +30,11 @@
         class_addMethod(klass,
                         property.accessorSelector,
                         property.accessorImplementation,
-                        NULL);
+                        property.accessorTypes);
         class_addMethod(klass,
                         property.mutatorSelector,
                         property.mutatorImplementation,
-                        NULL);
+                        property.mutatorTypes);
     }
 }
 

@@ -10,6 +10,8 @@
 		46435A8E185F60F6003FE5E7 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46435A8D185F60F6003FE5E7 /* BMClassCache.mm */; };
 		46435A91185F8A1F003FE5E7 /* BMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 46435A90185F8A1F003FE5E7 /* BMProject.m */; };
 		46535A1518207993004A9DA4 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
+		4663AFE618DD797C0073ADA4 /* BMHookedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663AFE518DD797C0073ADA4 /* BMHookedModel.m */; };
+		4663AFE818DD798A0073ADA4 /* BMLazyHooksSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4663AFE718DD798A0073ADA4 /* BMLazyHooksSpec.mm */; };
 		4665B8FE181DE41600E56A01 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */; };
 		4665B901181F167100E56A01 /* BMDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665B900181F167100E56A01 /* BMDerivedExtendedModel.m */; };
 		467029D7182D958E003EAFB0 /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 467029D6182D958E003EAFB0 /* BMInheritedModel.m */; };
@@ -99,6 +101,9 @@
 		46435A90185F8A1F003FE5E7 /* BMProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMProject.m; sourceTree = "<group>"; };
 		46535A1318207993004A9DA4 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
 		46535A1418207993004A9DA4 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
+		4663AFE418DD797C0073ADA4 /* BMHookedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHookedModel.h; sourceTree = "<group>"; };
+		4663AFE518DD797C0073ADA4 /* BMHookedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHookedModel.m; sourceTree = "<group>"; };
+		4663AFE718DD798A0073ADA4 /* BMLazyHooksSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyHooksSpec.mm; sourceTree = "<group>"; };
 		4665B8FC181DE41600E56A01 /* BMDerivedLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedLazyModel.h; sourceTree = "<group>"; };
 		4665B8FD181DE41600E56A01 /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
 		4665B8FF181F167100E56A01 /* BMDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedExtendedModel.h; sourceTree = "<group>"; };
@@ -371,6 +376,8 @@
 		5898A0EE123F78A40C1169BB /* LazySpecs */ = {
 			isa = PBXGroup;
 			children = (
+				4663AFE418DD797C0073ADA4 /* BMHookedModel.h */,
+				4663AFE518DD797C0073ADA4 /* BMHookedModel.m */,
 				5898AA637DFC1677DFC4475C /* BMLazyModel.h */,
 				5898A4A1810763453463D20B /* BMLazyModel.m */,
 				5898AE68393D2FA383B6E0E3 /* BMAnotherLazyModel.m */,
@@ -469,6 +476,7 @@
 		5898A34F4630E953DE73E09D /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
+				4663AFE718DD798A0073ADA4 /* BMLazyHooksSpec.mm */,
 				5898A5CD525AC6AE9B392FC4 /* BMInitializerSpec.mm */,
 				5898A87ABE5DDCA021D4B972 /* LazySpec.mm */,
 				6B876F22748D58CCE8D43895 /* LazyProtocolsSpec.mm */,
@@ -939,6 +947,7 @@
 			files = (
 				5898A27BCE0B33AD1E8E4C66 /* main.m in Sources */,
 				46535A1518207993004A9DA4 /* BMClass.mm in Sources */,
+				4663AFE618DD797C0073ADA4 /* BMHookedModel.m in Sources */,
 				46DD5B8818A2711900DD4830 /* BMFinalSpec.mm in Sources */,
 				5898A45B2A4DCE1A9AA65DCB /* BMUser.m in Sources */,
 				5898A8741F5E6A53D2ED3899 /* BMEntityWithoutProtocols.m in Sources */,
@@ -1004,6 +1013,7 @@
 				6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */,
 				46DD5B9518A3EFD500DD4830 /* BMFinalModuleLoader.m in Sources */,
 				6B876EEDF8582A401DED9E9C /* BMPartialSpec.mm in Sources */,
+				4663AFE818DD798A0073ADA4 /* BMLazyHooksSpec.mm in Sources */,
 				6B8766E9F0D89354E31E41F0 /* BMTestPartialView.m in Sources */,
 				6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */,
 				6B876476984A4DEBF9D875B5 /* BMPartialModuleLoader.m in Sources */,

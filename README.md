@@ -171,6 +171,25 @@ initializer.initializer = ^id (id sender){
 [initializer registerInitializer];
 ```
 
+##### Lazy loading hooks
+
+`BMLazy` module provides a hook system to catch the object creation.
+To enable these hooks just create instance method named `propertyNameInjected:`.
+
+For example:
+```objectivec
+@implementation ViewController
+
+@lazy(progressViewService)
+
+- (void)progressViewServiceInjected:(ProgressViewService *service)
+{
+    service.title = self.title;
+}
+
+@end
+```
+
 #### Partial Views
 
 ```ruby

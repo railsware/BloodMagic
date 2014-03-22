@@ -22,6 +22,13 @@
     if (initializer) {
         __weak id weakSender = sender;
         *value = initializer(weakSender);
+        SEL injectedHook = NSSelectorFromString([NSString stringWithFormat:@"%@Injected:", property.name]);
+        if ([sender respondsToSelector:injectedHook]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            [sender performSelector:injectedHook withObject:*value];
+#pragma clang diagnostic pop
+        }
     }
 
     setValueForProperty(sender, property, *value);

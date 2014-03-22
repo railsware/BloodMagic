@@ -14,7 +14,12 @@
 template <class Type>
 class BMInternalPropertyTemplate : public BMInternalProperty
 {
-
+    static const int _accessorTypesLength;
+    static const int _mutatorTypesLength;
+    
+    char _accessorTypes[_accessorTypesLength];
+    char _mutatorTypes[_mutatorTypesLength];
+    
     static Type accessorIMP(id self, SEL _cmd)
     {
         BMPropertyFinder finder(self);
@@ -45,6 +50,17 @@ class BMInternalPropertyTemplate : public BMInternalProperty
     }
 
 public:
+    BMInternalPropertyTemplate()
+    {
+        strcpy(_accessorTypes, @encode(Type));
+        strcat(_accessorTypes, "@:");
+        _accessorTypes[_accessorTypesLength - 1] = '\0';
+
+        strcpy(_mutatorTypes, "v@:");
+        strcpy(_mutatorTypes, @encode(Type));
+        _mutatorTypes[_mutatorTypesLength - 1] = '\0';
+    }
+    
     IMP accessorImplementation()
     {
         return reinterpret_cast<IMP>(&accessorIMP);
@@ -54,6 +70,28 @@ public:
         return reinterpret_cast<IMP>(&mutatorIMP);
     }
 
+    const char *accessorTypes()
+    {
+        return _accessorTypes;
+    }
+    
+    const char *mutatorTypes()
+    {
+        return _mutatorTypes;
+    }
+    
     virtual Type unbox(id value) = 0;
     virtual id box(Type value) = 0;
 };
+
+/*
+ https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html
+ 
+ t = Type
+ */
+template<class Type>
+const int BMInternalPropertyTemplate<Type>::_accessorTypesLength = sizeof("t@:") + 1;
+
+template<class Type>
+const int BMInternalPropertyTemplate<Type>::_mutatorTypesLength = sizeof("v@:t") + 1;
+

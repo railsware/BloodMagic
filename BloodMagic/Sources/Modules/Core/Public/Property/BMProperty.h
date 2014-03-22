@@ -14,6 +14,9 @@
 - (SEL)accessorSelector;
 - (SEL)mutatorSelector;
 
+- (const char *)accessorTypes;
+- (const char *)mutatorTypes;
+
 - (Class)propertyClass;
 - (Class)containerClass;
 

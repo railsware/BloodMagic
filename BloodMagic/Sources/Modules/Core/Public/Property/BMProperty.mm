@@ -103,6 +103,24 @@
     return _mutatorSelector;
 }
 
+- (const char *)accessorTypes
+{
+    if (_internalProperty) {
+        return _internalProperty->accessorTypes();
+    }
+    
+    return NULL;
+}
+
+- (const char *)mutatorTypes
+{
+    if (_internalProperty) {
+        return _internalProperty->mutatorTypes();
+    }
+    
+    return NULL;
+}
+
 - (Class)containerClass
 {
     return _containerClass;
