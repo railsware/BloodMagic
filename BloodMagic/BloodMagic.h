@@ -6,5 +6,6 @@
 #import <BloodMagic/Initializers.h>
 #import <BloodMagic/Lazy.h>
 #import <BloodMagic/Partial.h>
+#import <BloodMagic/Preference.h>
 
 #endif

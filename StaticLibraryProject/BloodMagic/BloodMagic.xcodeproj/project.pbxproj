@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467F6F8918F6E6DC00205D29 /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8318F6E6DC00205D29 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		467F6F8A18F6E6DC00205D29 /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8318F6E6DC00205D29 /* BMPreferenceHook.h */; };
+		467F6F8B18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8418F6E6DC00205D29 /* BMPreferenceHook.m */; };
+		467F6F8C18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8418F6E6DC00205D29 /* BMPreferenceHook.m */; };
+		467F6F8D18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8418F6E6DC00205D29 /* BMPreferenceHook.m */; };
+		467F6F8E18F6E6DC00205D29 /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8518F6E6DC00205D29 /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		467F6F8F18F6E6DC00205D29 /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8518F6E6DC00205D29 /* BMPreferenceModuleLoader.h */; };
+		467F6F9018F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8618F6E6DC00205D29 /* BMPreferenceModuleLoader.m */; };
+		467F6F9118F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8618F6E6DC00205D29 /* BMPreferenceModuleLoader.m */; };
+		467F6F9218F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F6F8618F6E6DC00205D29 /* BMPreferenceModuleLoader.m */; };
+		467F6F9318F6E6DC00205D29 /* BMPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8818F6E6DC00205D29 /* BMPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		467F6F9418F6E6DC00205D29 /* BMPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 467F6F8818F6E6DC00205D29 /* BMPreference.h */; };
 		7E0A827918A570ED00264BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAAA90818A4376D0075379C /* Foundation.framework */; };
 		7E0A827F18A570ED00264BC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A827D18A570ED00264BC2 /* InfoPlist.strings */; };
 		7E0A828518A5714F00264BC2 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E94942718A444A6001C2B77 /* BMClass.mm */; };
@@ -219,6 +231,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		467F6F8318F6E6DC00205D29 /* BMPreferenceHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceHook.h; sourceTree = "<group>"; };
+		467F6F8418F6E6DC00205D29 /* BMPreferenceHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceHook.m; sourceTree = "<group>"; };
+		467F6F8518F6E6DC00205D29 /* BMPreferenceModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceModuleLoader.h; sourceTree = "<group>"; };
+		467F6F8618F6E6DC00205D29 /* BMPreferenceModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceModuleLoader.m; sourceTree = "<group>"; };
+		467F6F8818F6E6DC00205D29 /* BMPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreference.h; sourceTree = "<group>"; };
 		7E0A827C18A570ED00264BC2 /* BloodMagicFW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagicFW-Info.plist"; sourceTree = "<group>"; };
 		7E0A827E18A570ED00264BC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E0A828018A570ED00264BC2 /* BloodMagicFW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagicFW-Prefix.pch"; sourceTree = "<group>"; };
@@ -394,6 +411,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467F6F8118F6E6DC00205D29 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				467F6F8218F6E6DC00205D29 /* Private */,
+				467F6F8718F6E6DC00205D29 /* Public */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		467F6F8218F6E6DC00205D29 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				467F6F8318F6E6DC00205D29 /* BMPreferenceHook.h */,
+				467F6F8418F6E6DC00205D29 /* BMPreferenceHook.m */,
+				467F6F8518F6E6DC00205D29 /* BMPreferenceModuleLoader.h */,
+				467F6F8618F6E6DC00205D29 /* BMPreferenceModuleLoader.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		467F6F8718F6E6DC00205D29 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				467F6F8818F6E6DC00205D29 /* BMPreference.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		7E0A827A18A570ED00264BC2 /* BloodMagicFW */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +515,7 @@
 		7E94942018A444A6001C2B77 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				467F6F8118F6E6DC00205D29 /* Preference */,
 				7E94942118A444A6001C2B77 /* Core */,
 				7E94946B18A444A6001C2B77 /* Final */,
 				7E94947418A444A6001C2B77 /* Initializers */,
@@ -862,7 +908,10 @@
 				7E0A82BE18A571A700264BC2 /* BMLazy.h in Headers */,
 				7E0A82BF18A571A700264BC2 /* BMLazyDefinitions.h in Headers */,
 				7E0A82C018A571A700264BC2 /* BMLazyExclude.h in Headers */,
+				467F6F8E18F6E6DC00205D29 /* BMPreferenceModuleLoader.h in Headers */,
 				7E0A82C118A571A700264BC2 /* BMLazyInitializer.h in Headers */,
+				467F6F9318F6E6DC00205D29 /* BMPreference.h in Headers */,
+				467F6F8918F6E6DC00205D29 /* BMPreferenceHook.h in Headers */,
 				7E0A82C218A571A700264BC2 /* Partial.h in Headers */,
 				7E0A82C318A571A700264BC2 /* BMPartial.h in Headers */,
 			);
@@ -875,6 +924,7 @@
 				7E93A5E618A7A74000CF8FA1 /* BloodMagic.h in Headers */,
 				7E72541D18A79FC900B99314 /* Core.h in Headers */,
 				7E72541E18A79FC900B99314 /* BMHook.h in Headers */,
+				467F6F8A18F6E6DC00205D29 /* BMPreferenceHook.h in Headers */,
 				7E72541F18A79FC900B99314 /* BMPublicCoreDefnitions.h in Headers */,
 				7E72542018A79FC900B99314 /* BMBloodMagicInjector.h in Headers */,
 				7E72542118A79FC900B99314 /* BMProperty.h in Headers */,
@@ -889,6 +939,8 @@
 				7E72542A18A79FC900B99314 /* BMInitializerRegistry+LazyRegistry.h in Headers */,
 				7E72542B18A79FC900B99314 /* BMLazy.h in Headers */,
 				7E72542C18A79FC900B99314 /* BMLazyDefinitions.h in Headers */,
+				467F6F9418F6E6DC00205D29 /* BMPreference.h in Headers */,
+				467F6F8F18F6E6DC00205D29 /* BMPreferenceModuleLoader.h in Headers */,
 				7E72542D18A79FC900B99314 /* BMLazyExclude.h in Headers */,
 				7E72542E18A79FC900B99314 /* BMLazyInitializer.h in Headers */,
 				7E72542F18A79FC900B99314 /* Partial.h in Headers */,
@@ -997,7 +1049,7 @@
 		7EAAA8FD18A4376D0075379C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = railsware;
 				TargetAttributes = {
 					7E7253DE18A79F2300B99314 = {
@@ -1143,6 +1195,7 @@
 				7E0A829418A5714F00264BC2 /* BMPrimitiveDoubleProperty.mm in Sources */,
 				7E0A829518A5714F00264BC2 /* BMPrimitiveFloatProperty.mm in Sources */,
 				7E0A829618A5714F00264BC2 /* BMPrimitiveIntProperty.mm in Sources */,
+				467F6F8C18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */,
 				7E0A829718A5714F00264BC2 /* BMPrimitiveLongLongProperty.mm in Sources */,
 				7E0A829818A5714F00264BC2 /* BMPrimitiveLongProperty.mm in Sources */,
 				7E0A829918A5714F00264BC2 /* BMPrimitiveShortProperty.mm in Sources */,
@@ -1162,6 +1215,7 @@
 				7E0A82A718A5714F00264BC2 /* BMLazyModuleLoader.m in Sources */,
 				7E0A82A818A5714F00264BC2 /* BMInitializer+LazyInitializer.m in Sources */,
 				7E0A82A918A5714F00264BC2 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				467F6F9118F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */,
 				7E0A82AA18A5714F00264BC2 /* BMLazyInitializer.mm in Sources */,
 				7E0A82AB18A5714F00264BC2 /* BMPartialHook.mm in Sources */,
 				7E0A82AC18A5714F00264BC2 /* BMPartialModuleLoader.m in Sources */,
@@ -1190,6 +1244,7 @@
 				7E72540418A79F8300B99314 /* BMPrimitiveDoubleProperty.mm in Sources */,
 				7E72540518A79F8300B99314 /* BMPrimitiveFloatProperty.mm in Sources */,
 				7E72540618A79F8300B99314 /* BMPrimitiveIntProperty.mm in Sources */,
+				467F6F8D18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */,
 				7E72540718A79F8300B99314 /* BMPrimitiveLongLongProperty.mm in Sources */,
 				7E72540818A79F8300B99314 /* BMPrimitiveLongProperty.mm in Sources */,
 				7E72540918A79F8300B99314 /* BMPrimitiveShortProperty.mm in Sources */,
@@ -1209,6 +1264,7 @@
 				7E72541718A79F8300B99314 /* BMLazyModuleLoader.m in Sources */,
 				7E72541818A79F8300B99314 /* BMInitializer+LazyInitializer.m in Sources */,
 				7E72541918A79F8300B99314 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				467F6F9218F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */,
 				7E72541A18A79F8300B99314 /* BMLazyInitializer.mm in Sources */,
 				7E72541B18A79F8300B99314 /* BMPartialHook.mm in Sources */,
 				7E72541C18A79F8300B99314 /* BMPartialModuleLoader.m in Sources */,
@@ -1245,6 +1301,7 @@
 				7E9494A918A444A6001C2B77 /* BMPrimitiveDoubleProperty.mm in Sources */,
 				7E9494AA18A444A6001C2B77 /* BMPrimitiveFloatProperty.mm in Sources */,
 				7E9494AB18A444A6001C2B77 /* BMPrimitiveIntProperty.mm in Sources */,
+				467F6F8B18F6E6DC00205D29 /* BMPreferenceHook.m in Sources */,
 				7E9494AC18A444A6001C2B77 /* BMPrimitiveLongLongProperty.mm in Sources */,
 				7E9494AD18A444A6001C2B77 /* BMPrimitiveLongProperty.mm in Sources */,
 				7E9494AE18A444A6001C2B77 /* BMPrimitiveShortProperty.mm in Sources */,
@@ -1264,6 +1321,7 @@
 				7E9494BC18A444A6001C2B77 /* BMLazyModuleLoader.m in Sources */,
 				7E9494BD18A444A6001C2B77 /* BMInitializer+LazyInitializer.m in Sources */,
 				7E9494BE18A444A6001C2B77 /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				467F6F9018F6E6DC00205D29 /* BMPreferenceModuleLoader.m in Sources */,
 				7E9494BF18A444A6001C2B77 /* BMLazyInitializer.mm in Sources */,
 				7E9494C018A444A6001C2B77 /* BMPartialHook.mm in Sources */,
 				7E9494C118A444A6001C2B77 /* BMPartialModuleLoader.m in Sources */,
@@ -1333,7 +1391,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1407,7 +1464,6 @@
 		7E0A827018A56D9600264BC2 /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1431,7 +1487,6 @@
 		7E0A828218A570ED00264BC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1451,7 +1506,6 @@
 		7E0A828318A570ED00264BC2 /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1467,7 +1521,6 @@
 		7E0A828418A570ED00264BC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1625,7 +1678,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1681,7 +1733,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1764,7 +1815,6 @@
 		7EAAA92C18A4376D0075379C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1788,7 +1838,6 @@
 		7EAAA92D18A4376D0075379C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodMagicFW.framework/Versions/A/BloodMagicFW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
