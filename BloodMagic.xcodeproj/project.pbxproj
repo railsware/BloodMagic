@@ -246,6 +246,7 @@
 		5898AFE76C9AAEDBB60AC0A4 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		6B87604B1955D186CB63DC9D /* Preference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preference.h; sourceTree = "<group>"; };
 		6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialWrapperView.m; sourceTree = "<group>"; };
 		6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestPartialView.m; sourceTree = "<group>"; };
 		6B876111AB860E76E876080F /* BMPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartial.h; sourceTree = "<group>"; };
@@ -904,6 +905,7 @@
 				6B876C366CB4050E12956584 /* Lazy.h */,
 				6B8766D74A276049A5B243AB /* Partial.h */,
 				6B87617F9B1578554B3F26E5 /* Lazy_cxx.h */,
+				6B87604B1955D186CB63DC9D /* Preference.h */,
 			);
 			path = BloodMagic;
 			sourceTree = "<group>";
