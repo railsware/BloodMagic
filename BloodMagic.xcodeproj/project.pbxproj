@@ -83,8 +83,10 @@
 		6B8761CDAA8CBF29EBA4B7DE /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876085169B80F1F3E90826 /* BMPartialWrapperView.m */; };
 		6B876476984A4DEBF9D875B5 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
 		6B8764CAE53CAE3A13BBD06F /* BMInheritedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762AB53AF36D327BDDE2C /* BMInheritedProtocol.m */; };
+		6B8764D5DCF794CEFDC703C9 /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C54AD78847F441FC47F /* BMPreferenceHook.m */; };
 		6B8766E9F0D89354E31E41F0 /* BMTestPartialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761081E781EA7D14A4DEB /* BMTestPartialView.m */; };
 		6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
+		6B87674CBAD58DEEF5A2DD18 /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
 		6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
 		6B876E7DD795CD09E74BFE16 /* LazyProtocolsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F22748D58CCE8D43895 /* LazyProtocolsSpec.mm */; };
 		6B876EEDF8582A401DED9E9C /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876D9EE344396A8B4EE51F /* BMPartialSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -249,6 +251,7 @@
 		6B876111AB860E76E876080F /* BMPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartial.h; sourceTree = "<group>"; };
 		6B87617F9B1578554B3F26E5 /* Lazy_cxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy_cxx.h; sourceTree = "<group>"; };
 		6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialHook.mm; sourceTree = "<group>"; };
+		6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceHook.h; sourceTree = "<group>"; };
 		6B8762841AEA753743D57E43 /* BMPartialHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialHook.h; sourceTree = "<group>"; };
 		6B876287C8AC1D5F5A2B5942 /* BMPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreference.h; sourceTree = "<group>"; };
 		6B8762AB53AF36D327BDDE2C /* BMInheritedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedProtocol.m; sourceTree = "<group>"; };
@@ -256,10 +259,13 @@
 		6B876688EF1E1722917B305E /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
 		6B8766D74A276049A5B243AB /* Partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partial.h; sourceTree = "<group>"; };
 		6B876744FFA157EE330D0A2A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceModuleLoader.m; sourceTree = "<group>"; };
 		6B8768AEF7B39442021A524B /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
 		6B876989598903CB20ADE4FF /* BMInheritedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedProtocol.h; sourceTree = "<group>"; };
 		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
+		6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceModuleLoader.h; sourceTree = "<group>"; };
 		6B876C366CB4050E12956584 /* Lazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy.h; sourceTree = "<group>"; };
+		6B876C54AD78847F441FC47F /* BMPreferenceHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceHook.m; sourceTree = "<group>"; };
 		6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
 		6B876D9EE344396A8B4EE51F /* BMPartialSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialSpec.mm; sourceTree = "<group>"; };
 		6B876E01073EDAB9D216804C /* BMTestPartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestPartialView.h; sourceTree = "<group>"; };
@@ -817,6 +823,10 @@
 		6B87683AD58C675D39CF941E /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */,
+				6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */,
+				6B876C54AD78847F441FC47F /* BMPreferenceHook.m */,
+				6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -1078,6 +1088,8 @@
 				6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */,
 				6B876E7DD795CD09E74BFE16 /* LazyProtocolsSpec.mm in Sources */,
 				6B8764CAE53CAE3A13BBD06F /* BMInheritedProtocol.m in Sources */,
+				6B87674CBAD58DEEF5A2DD18 /* BMPreferenceModuleLoader.m in Sources */,
+				6B8764D5DCF794CEFDC703C9 /* BMPreferenceHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
