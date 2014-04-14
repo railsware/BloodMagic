@@ -37,13 +37,13 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 
 ### Available Spells
 
-[Lazy Initialization](https://github.com/railsware/BloodMagic/blob/master/README.md#lazy-initialization)
+[Lazy Initialization](https://github.com/railsware/BloodMagic#lazy-initialization)
 
-[Dependency Injection](https://github.com/railsware/BloodMagic/blob/master/README.md#dependency-injection)
+[Dependency Injection](https://github.com/railsware/BloodMagic#dependency-injection)
 
-[Partial Views](https://github.com/railsware/BloodMagic/blob/master/README.md#partial-views)
+[Partial Views](https://github.com/railsware/BloodMagic#partial-views)
 
-[Assign-once properties](https://github.com/railsware/BloodMagic/blob/master/README.md#assign-once-properties)
+[Assign-once properties](https://github.com/railsware/BloodMagic#assign-once-properties)
 
 BloodMagic has been designed to be extensible, so few more spells will be available soon.
 
