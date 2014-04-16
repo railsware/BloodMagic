@@ -12,5 +12,6 @@
 @dynamic user;
 @dynamic project;
 @dynamic propertyWithProtocol;
+@dynamic nilObject;
 
 @end

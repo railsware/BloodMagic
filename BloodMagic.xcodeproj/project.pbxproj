@@ -13,7 +13,6 @@
 		4624663218FF157D00DC8E4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4624663018FF157D00DC8E4E /* InfoPlist.strings */; };
 		4624663418FF157D00DC8E4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624663318FF157D00DC8E4E /* main.m */; };
 		4624663818FF157E00DC8E4E /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624663718FF157E00DC8E4E /* Cedar-iOS.framework */; };
-		4624663A18FF157E00DC8E4E /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4624663918FF157E00DC8E4E /* ExampleSpec.mm */; };
 		4624663E18FF15DF00DC8E4E /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */; };
 		4624663F18FF15DF00DC8E4E /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9418A3EFD500DD4830 /* BMFinalModuleLoader.m */; };
 		4624664018FF15DF00DC8E4E /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
@@ -63,7 +62,7 @@
 		4624666C18FF15DF00DC8E4E /* BMPropertyTypeParserSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876341864AC146125EFDD4 /* BMPropertyTypeParserSpec.mm */; };
 		4624666D18FF15DF00DC8E4E /* BMLazyHooksSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F4B83F0D943876D1FFE /* BMLazyHooksSpec.mm */; };
 		4624666E18FF15DF00DC8E4E /* BMInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764B856EC6D658A830174 /* BMInitializerSpec.mm */; };
-		4624666F18FF15DF00DC8E4E /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876960639B139CCACB133E /* LazySpec.mm */; };
+		4624666F18FF15DF00DC8E4E /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876960639B139CCACB133E /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4624667018FF15DF00DC8E4E /* LazyProtocolsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87648E807487635D9049EE /* LazyProtocolsSpec.mm */; };
 		4624667118FF15DF00DC8E4E /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */; };
 		4624667218FF15DF00DC8E4E /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AEE77514A080C6C2469 /* BMPartialSpec.mm */; };
@@ -138,46 +137,32 @@
 		6B876047076BD61D7869CF79 /* BMDerivedModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876D48E0FB11A752098556 /* BMDerivedModel.mm */; };
 		6B876062A8823A572EDD99DE /* BMInitializerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761D1369EBB030065C8F5 /* BMInitializerModel.m */; };
 		6B8760A2868C833A9EB6F231 /* BMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764151227B1F772F3AD1B /* BMUser.m */; };
-		6B87615AB26BD05EAEF898C4 /* BMInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764B856EC6D658A830174 /* BMInitializerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B876196FBF2B5F40B196851 /* BMCustomStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876DDDA0B77488AB40951C /* BMCustomStorage.m */; };
-		6B8761FEC5DFB725B8E817A8 /* BMFinalSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8768B628DDFC4093283A82 /* BMFinalSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B876209D3B32B5DA6942EB3 /* BMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87695A05461A5FF63DA676 /* BMProject.m */; };
 		6B87622969651D864D74EF9E /* BMFinalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766D8A2FF466952F828DE /* BMFinalModel.m */; };
 		6B8762D9B2C93BC0D93E1F3E /* BMMultiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762E91156ECD58B8BF3A6 /* BMMultiple.m */; };
-		6B876331C72BF910816CDCF6 /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AEE77514A080C6C2469 /* BMPartialSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B876476984A4DEBF9D875B5 /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
 		6B8764A5FC9507D6D9547CE2 /* BMDerivedLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87664D0F386244D11B7C1E /* BMDerivedLazyModel.m */; };
 		6B8764D5DCF794CEFDC703C9 /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C54AD78847F441FC47F /* BMPreferenceHook.m */; };
 		6B8764DC45916F78C60153DD /* BMInheritedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876B71392126A38C100BFF /* BMInheritedProtocol.m */; };
 		6B87656E2560000D27831C77 /* BMAnotherLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876812B823FA4245CC27FC /* BMAnotherLazyModel.m */; };
-		6B8765BF0E1A37E48347E32C /* LazyProtocolsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87648E807487635D9049EE /* LazyProtocolsSpec.mm */; };
 		6B87660B99B5BDF91642A118 /* BMInheritedExcludedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F927612B2CF7210CF5B /* BMInheritedExcludedModel.m */; };
-		6B8766A0F3663B0FF5A0DE9B /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876960639B139CCACB133E /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6B8766C9D02152B79881FA12 /* BMPreferenceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876FE571B204644DBC744A /* BMPreferenceSpec.mm */; };
 		6B8766FBA5C9CBB73124D011 /* BMTestPartialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AA466894B38B70BDCFD /* BMTestPartialView.m */; };
 		6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
 		6B87674CBAD58DEEF5A2DD18 /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
 		6B87679012645DFA04445AE7 /* BMFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876B24F1F533749C06DBE3 /* BMFatDynamicModel.m */; };
 		6B876792435023B6A6AE87FA /* BMTestProtocolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760BC9A962C81AC64F0CB /* BMTestProtocolModel.m */; };
 		6B87680F2234624D11738147 /* BMDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761C83314A61AB95D29FF /* BMDerivedExtendedModel.m */; };
-		6B876838C0C262D1EEF1831B /* BMBloodMagicInjectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876ABACC0F25D39882E102 /* BMBloodMagicInjectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6B87689294CAF6B4E87AD822 /* BMPropertyCollectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766B5B7BDB916B9D7B358 /* BMPropertyCollectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6B8768BE74D02D1DEDAC151A /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8765FE1B361D761CCAE171 /* BMPropertySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B87690D16274EFAC2003EF1 /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
-		6B87697B269060E3247AB984 /* BMLazyHooksSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F4B83F0D943876D1FFE /* BMLazyHooksSpec.mm */; };
 		6B876B308E34B2D16C67B870 /* BMTestPartialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B876805586706D29837BB7A /* BMTestPartialView.xib */; };
 		6B876BB2EE25C19492B1E3A4 /* BMEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8768767D04BBCBD0D2BDFC /* BMEntityWithoutProtocols.m */; };
-		6B876C4AEB9DCE8D83B5E7E9 /* BMPropertyTypeParserSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876341864AC146125EFDD4 /* BMPropertyTypeParserSpec.mm */; };
-		6B876C76529D9063AB839D9F /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */; };
 		6B876D3F750FA553CC56D141 /* BMBaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87696E4D0B24C383292AA5 /* BMBaseModel.mm */; };
 		6B876DD90722C5BB74DC60A6 /* BMLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E61CB6BC297D2A0960E /* BMLazyModel.m */; };
 		6B876E0A76CAB0CE2C2C41BF /* BMFatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766C52E3E2D731E1A90D5 /* BMFatModel.m */; };
 		6B876E0EF44D45019AEFF65B /* BMHookedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762ED1A200739CC9C57C2 /* BMHookedModel.m */; };
-		6B876EB2B8854EEF381CE270 /* MultiplePropertiesSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764D36C0AE5054053FA66 /* MultiplePropertiesSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6B876EDA8CD5B6DEEEA80758 /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E171290F9E3D98CC588 /* BMPartialWrapperView.m */; };
 		6B876FA9A13515C317A1B14E /* BMStandardStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876FED47E193C40C9500FE /* BMStandardStorage.m */; };
 		6B876FBFD3E80098D1FD16D2 /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C509C622B152DA8F7F1 /* BMInheritedModel.m */; };
-		6B876FDCE7124BB123EAD095 /* BMClassCollectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876245DA39F07FA9DA673E /* BMClassCollectorSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
 		CA0D845E1803BF8B0068D8F9 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
@@ -193,7 +178,6 @@
 		4624663518FF157D00DC8E4E /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		4624663618FF157D00DC8E4E /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		4624663718FF157E00DC8E4E /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Specs/Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
-		4624663918FF157E00DC8E4E /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		4624668D18FF18D600DC8E4E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		46435A87185F5E4F003FE5E7 /* BMClass_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMClass_Private.h; sourceTree = "<group>"; };
 		46435A8C185F60F6003FE5E7 /* BMClassCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCache.h; sourceTree = "<group>"; };
@@ -376,7 +360,6 @@
 		CADB6AF4178FFE330060E11D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CADB6AF6178FFE330060E11D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CADB6AF8178FFE330060E11D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E0923875F301408CA184BE42 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				4624663618FF157D00DC8E4E /* Rakefile */,
-				4624663918FF157E00DC8E4E /* ExampleSpec.mm */,
 				4624662E18FF157D00DC8E4E /* Supporting Files */,
 				6B876FDDDC75D7C7A1BBBB2F /* Support */,
 				6B87684D526F159052C5A25B /* Specs */,
@@ -999,7 +981,6 @@
 				4624662D18FF157D00DC8E4E /* Specs */,
 				CADB6AF3178FFE330060E11D /* Frameworks */,
 				CADB6AF2178FFE330060E11D /* Products */,
-				E0923875F301408CA184BE42 /* Pods.xcconfig */,
 				5898AC10B28C12F4824ED56E /* Podfile */,
 			);
 			sourceTree = "<group>";
@@ -1251,7 +1232,6 @@
 				4624668818FF15DF00DC8E4E /* BMPartialWrapperView.m in Sources */,
 				4624668918FF15DF00DC8E4E /* BMMultiple.m in Sources */,
 				4624663418FF157D00DC8E4E /* main.m in Sources */,
-				4624663A18FF157E00DC8E4E /* ExampleSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,20 +1282,6 @@
 				6B87673B4FA4120C94BCAA3B /* BMPartialHook.mm in Sources */,
 				6B87674CBAD58DEEF5A2DD18 /* BMPreferenceModuleLoader.m in Sources */,
 				6B8764D5DCF794CEFDC703C9 /* BMPreferenceHook.m in Sources */,
-				6B8766C9D02152B79881FA12 /* BMPreferenceSpec.mm in Sources */,
-				6B876EB2B8854EEF381CE270 /* MultiplePropertiesSpec.mm in Sources */,
-				6B8761FEC5DFB725B8E817A8 /* BMFinalSpec.mm in Sources */,
-				6B876FDCE7124BB123EAD095 /* BMClassCollectorSpec.mm in Sources */,
-				6B87689294CAF6B4E87AD822 /* BMPropertyCollectorSpec.mm in Sources */,
-				6B8768BE74D02D1DEDAC151A /* BMPropertySpec.mm in Sources */,
-				6B876838C0C262D1EEF1831B /* BMBloodMagicInjectorSpec.mm in Sources */,
-				6B876C4AEB9DCE8D83B5E7E9 /* BMPropertyTypeParserSpec.mm in Sources */,
-				6B87697B269060E3247AB984 /* BMLazyHooksSpec.mm in Sources */,
-				6B87615AB26BD05EAEF898C4 /* BMInitializerSpec.mm in Sources */,
-				6B8766A0F3663B0FF5A0DE9B /* LazySpec.mm in Sources */,
-				6B8765BF0E1A37E48347E32C /* LazyProtocolsSpec.mm in Sources */,
-				6B876C76529D9063AB839D9F /* BMInitializerFinderSpec.mm in Sources */,
-				6B876331C72BF910816CDCF6 /* BMPartialSpec.mm in Sources */,
 				6B876FA9A13515C317A1B14E /* BMStandardStorage.m in Sources */,
 				6B876196FBF2B5F40B196851 /* BMCustomStorage.m in Sources */,
 				6B87622969651D864D74EF9E /* BMFinalModel.m in Sources */,
@@ -1494,7 +1460,6 @@
 		};
 		CADB6B15178FFE340060E11D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0923875F301408CA184BE42 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagic/Supporting Files/BloodMagic-Prefix.pch";
@@ -1516,7 +1481,6 @@
 		};
 		CADB6B16178FFE340060E11D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0923875F301408CA184BE42 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BloodMagic/Supporting Files/BloodMagic-Prefix.pch";

@@ -20,80 +20,84 @@ context(@"instance", ^{
 
     __block BMProperty *property = nil;
 
-    context(@"should parse", ^{
+    describe(@"should parse", ^{
 
-        describe(@"nonatomic", ^{
-            property = propertyWithName("nonatomicProperty");
-            property.isNonatomic should be_truthy;
-        });
-
-        describe(@"atomic", ^{
-            property = propertyWithName("atomicProperty");
-            property.isNonatomic should_not be_truthy;
-        });
-
-        describe(@"copy", ^{
-            property = propertyWithName("attrCopyProperty");
-            property.isCopy should be_truthy;
-            property.isRetain should_not be_truthy;
-        });
-
-        describe(@"dynamic", ^{
-            property = propertyWithName("dynamicProperty");
-            property.isDynamic should be_truthy;
-        });
-
-        describe(@"retain", ^{
-            property = propertyWithName("retainProperty");
-            property.isRetain should be_truthy;
-            property.isCopy should_not be_truthy;
-            property.isAssign should_not be_truthy;
-        });
-
-        describe(@"strong", ^{
-            property = propertyWithName("strongProperty");
-            property.isRetain should be_truthy;
-            property.isCopy should_not be_truthy;
-            property.isAssign should_not be_truthy;
-        });
-
-        describe(@"assign", ^{
-            property = propertyWithName("assignProperty");
-            property.isRetain should_not be_truthy;
-            property.isCopy should_not be_truthy;
-            property.isAssign should be_truthy;
-        });
-
-        describe(@"weak attributes", ^{
-            property = propertyWithName("weakProperty");
-            property.isRetain should_not be_truthy;
-            property.isCopy should_not be_truthy;
-            property.isAssign should be_truthy;
-        });
-        
-        describe(@"default accessor", ^{
-            property = propertyWithName("assignProperty");
-            property.accessorSelector should equal(NSSelectorFromString(@"assignProperty"));
-        });
-
-        describe(@"default mutator", ^{
-            property = propertyWithName("assignProperty");
-            property.mutatorSelector should equal(NSSelectorFromString(@"setAssignProperty:"));
-        });
-
-        describe(@"custom accessor", ^{
-            property = propertyWithName("name");
-            property.accessorSelector should equal(NSSelectorFromString(@"firstName"));
-        });
-
-        describe(@"custom mutator", ^{
-            property = propertyWithName("name");
-            property.mutatorSelector should equal(NSSelectorFromString(@"setFirstName:"));
-        });
-
-        describe(@"unkwnown type (id)", ^{
-            property = propertyWithName("unknownType");
-            property.propertyClass should equal([NSObject class]);
+        describe(@"properties", ^{
+            
+            it(@"nonatomic", ^{
+                property = propertyWithName("nonatomicProperty");
+                property.isNonatomic should be_truthy;
+            });
+            
+            it(@"atomic", ^{
+                property = propertyWithName("atomicProperty");
+                property.isNonatomic should_not be_truthy;
+            });
+            
+            it(@"copy", ^{
+                property = propertyWithName("attrCopyProperty");
+                property.isCopy should be_truthy;
+                property.isRetain should_not be_truthy;
+            });
+            
+            it(@"dynamic", ^{
+                property = propertyWithName("dynamicProperty");
+                property.isDynamic should be_truthy;
+            });
+            
+            it(@"retain", ^{
+                property = propertyWithName("retainProperty");
+                property.isRetain should be_truthy;
+                property.isCopy should_not be_truthy;
+                property.isAssign should_not be_truthy;
+            });
+            
+            it(@"strong", ^{
+                property = propertyWithName("strongProperty");
+                property.isRetain should be_truthy;
+                property.isCopy should_not be_truthy;
+                property.isAssign should_not be_truthy;
+            });
+            
+            it(@"assign", ^{
+                property = propertyWithName("assignProperty");
+                property.isRetain should_not be_truthy;
+                property.isCopy should_not be_truthy;
+                property.isAssign should be_truthy;
+            });
+            
+            it(@"weak attributes", ^{
+                property = propertyWithName("weakProperty");
+                property.isRetain should_not be_truthy;
+                property.isCopy should_not be_truthy;
+                property.isAssign should be_truthy;
+            });
+            
+            it(@"default accessor", ^{
+                property = propertyWithName("assignProperty");
+                property.accessorSelector should equal(NSSelectorFromString(@"assignProperty"));
+            });
+            
+            it(@"default mutator", ^{
+                property = propertyWithName("assignProperty");
+                property.mutatorSelector should equal(NSSelectorFromString(@"setAssignProperty:"));
+            });
+            
+            it(@"custom accessor", ^{
+                property = propertyWithName("name");
+                property.accessorSelector should equal(NSSelectorFromString(@"firstName"));
+            });
+            
+            it(@"custom mutator", ^{
+                property = propertyWithName("name");
+                property.mutatorSelector should equal(NSSelectorFromString(@"setFirstName:"));
+            });
+            
+            it(@"unkwnown type (id)", ^{
+                property = propertyWithName("unknownType");
+                property.propertyClass should equal([NSObject class]);
+            });
+            
         });
 
         describe(@"protocols", ^{
