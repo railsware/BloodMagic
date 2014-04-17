@@ -159,7 +159,6 @@
 		6B876EDA8CD5B6DEEEA80758 /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E171290F9E3D98CC588 /* BMPartialWrapperView.m */; };
 		6B876FA9A13515C317A1B14E /* BMStandardStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876FED47E193C40C9500FE /* BMStandardStorage.m */; };
 		6B876FBFD3E80098D1FD16D2 /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C509C622B152DA8F7F1 /* BMInheritedModel.m */; };
-		BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4C2C66C0F4B13850586E3 /* libPods.a */; };
 		CA0D845E1803BF8B0068D8F9 /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
 		CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF4178FFE330060E11D /* UIKit.framework */; };
 		CADB6AF7178FFE330060E11D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF6178FFE330060E11D /* Foundation.framework */; };
@@ -344,7 +343,6 @@
 		6B876F927612B2CF7210CF5B /* BMInheritedExcludedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedExcludedModel.m; sourceTree = "<group>"; };
 		6B876FE571B204644DBC744A /* BMPreferenceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPreferenceSpec.mm; sourceTree = "<group>"; };
 		6B876FED47E193C40C9500FE /* BMStandardStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMStandardStorage.m; sourceTree = "<group>"; };
-		ABE4C2C66C0F4B13850586E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
 		CADB6AF1178FFE330060E11D /* BloodMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADB6AF4178FFE330060E11D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -371,7 +369,6 @@
 				CADB6AF5178FFE330060E11D /* UIKit.framework in Frameworks */,
 				CADB6AF7178FFE330060E11D /* Foundation.framework in Frameworks */,
 				CADB6AF9178FFE330060E11D /* CoreGraphics.framework in Frameworks */,
-				BBEC1366FC85407F9C9DE034 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,7 +968,6 @@
 				CADB6AF4178FFE330060E11D /* UIKit.framework */,
 				CADB6AF6178FFE330060E11D /* Foundation.framework */,
 				CADB6AF8178FFE330060E11D /* CoreGraphics.framework */,
-				ABE4C2C66C0F4B13850586E3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
