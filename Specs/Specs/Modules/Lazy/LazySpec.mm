@@ -212,8 +212,7 @@ describe(@"LazySpec", ^{
 
         describe(@"should not", ^{
             
-#warning FIX
-            xit(@"instantiate objects", ^{
+            it(@"instantiate objects", ^{
                 subject.nilObject should be_nil;
             });
             

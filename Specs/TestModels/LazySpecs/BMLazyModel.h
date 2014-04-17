@@ -19,6 +19,6 @@
 @property (nonatomic, strong) BMProject *project;
 @property (nonatomic, strong) id<BMLazyTestProtocol> propertyWithProtocol;
 
-@property (nonatomic, strong) NSObject *nilObject;
+@property (nonatomic, copy) NSString *nilObject;
 
 @end
