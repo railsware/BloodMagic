@@ -19,3 +19,7 @@
 #ifndef lazy
 #define lazy(property_name) register_module(BMLazy, property_name)
 #endif
+
+#ifndef BMLazyProperty
+#define BMLazyProperty register_property(BMLazy)
+#endif

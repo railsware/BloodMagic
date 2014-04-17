@@ -13,3 +13,7 @@
 #ifndef partial
 #define partial(property_name) register_module(BMPartial, property_name)
 #endif
+
+#ifndef BMPartialProperty
+#define BMPartialProperty register_property(BMPartial)
+#endif

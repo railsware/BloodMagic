@@ -13,3 +13,7 @@
 #ifndef preference
 #define preference(property_name) register_module(BMPreference, property_name)
 #endif
+
+#ifndef BMPPreference
+#define BMPPreference register_property(BMPreference)
+#endif

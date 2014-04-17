@@ -16,3 +16,7 @@
 #ifndef final
 #define final(property_name) register_module(BMFinal, property_name) 
 #endif
+
+#ifndef BMFinalProperty
+#define BMFinalProperty register_property(BMFinal)
+#endif

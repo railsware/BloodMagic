@@ -26,3 +26,7 @@ dynamic name; \
 + (void)protocol ## __ ## name BM_UNAVAILABLE("BloodMagic's empty method") {}
 
 #endif
+
+#ifndef register_property
+#define register_property(protocol)
+#endif
