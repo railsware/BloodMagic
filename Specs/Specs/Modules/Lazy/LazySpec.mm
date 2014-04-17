@@ -1,7 +1,6 @@
 #import "SpecHelper.h"
 
 #import "Lazy.h"
-#import "Lazy_cxx.h"
 #import "BMLazyModel.h"
 #import "BMUser.h"
 #import "BMProject.h"
