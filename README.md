@@ -45,6 +45,8 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 
 [Assign-once properties](https://github.com/railsware/BloodMagic#assign-once-properties)
 
+[Preferences (NSUserDefaults wrapper)](https://github.com/railsware/BloodMagic#preferences)
+
 BloodMagic has been designed to be extensible, so few more spells will be available soon.
 
 ====
@@ -334,6 +336,37 @@ FinalizedObject *object = [FinalizedObject new];
 object.almostImmutableProperty = @"Initial value"; // all is OK
 object.almostImmutableProperty = @"Another value"; // exception will be thrown
 
+```
+
+#### Preferences
+
+```ruby
+pod 'BloodMagic/Preference', :git => 'https://github.com/railsware/BloodMagic.git'
+```
+
+Enjoy the simplest way to deal with `NSUserDefaults`
+
+```objectivec
+#import <BloodMagic/Preference.h>
+
+@interface Settings : NSObject
+    <BMPreference>
+
+@property (nonatomic, strong, bm_preference) NSString *nickname;
+
+@end
+
+@implementation Settings
+
+@dynamic nickname;
+
+@end
+
+// ...
+
+Settings *settings = [Settings new];
+settings.nickname = @"AlexDenisov"; // @"AlexDenisov" goes to [NSUserDefaults standardUserDefaults] with key "nickname"
+NSLog(@"My name is: %@", settings.nickname); // reads object for key "nickname" from [NSUserDefaults standardUserDefaults]
 ```
 
 ### Side effects (aka bugs)
