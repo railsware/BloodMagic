@@ -42,6 +42,12 @@ Pod::Spec.new do |podspec|
     final.dependency 'BloodMagic/Core'
   end
 
+  podspec.subspec 'Preference' do |preference|
+    preference.source_files = 'BloodMagic/Sources/Modules/Preference/**/*.{h,m,mm}', 'BloodMagic/Preference.h'
+    preference.public_header_files = 'BloodMagic/Sources/Modules/Preference/Public/**/*.h', 'BloodMagic/Preference.h'
+    preference.dependency 'BloodMagic/Core'
+  end
+
   podspec.xcconfig = {
     'OTHER_LDFLAGS' => '-lc++ -ObjC',
     'CLANG_CXX_LIBRARY' => 'libc++'
