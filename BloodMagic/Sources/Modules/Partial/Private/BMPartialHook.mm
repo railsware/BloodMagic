@@ -30,8 +30,8 @@
                                                bundle: nil ];
       
       NSArray* topLevelObjects = nil;
-      BOOL isNibInstantiated = [ nib instantiateWithOwner: nil
-                                          topLevelObjects: &topLevelObjects ];
+      __unused BOOL isNibInstantiated = [ nib instantiateWithOwner: nil
+                                                   topLevelObjects: &topLevelObjects ];
       NSParameterAssert( isNibInstantiated );
       
       *value = [ topLevelObjects lastObject ];
