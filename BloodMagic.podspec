@@ -25,8 +25,8 @@ Pod::Spec.new do |podspec|
   end
 
   podspec.subspec 'Lazy' do |lazy|
-    lazy.source_files = 'BloodMagic/Sources/Modules/Lazy/**/*.{h,m,mm}', 'BloodMagic/Lazy*.h'
-    lazy.public_header_files = 'BloodMagic/Sources/Modules/Lazy/Public/**/*.h', 'BloodMagic/Lazy*.h'
+    lazy.source_files = 'BloodMagic/Sources/Modules/Lazy/**/*.{h,m,mm}', 'BloodMagic/Lazy.h'
+    lazy.public_header_files = 'BloodMagic/Sources/Modules/Lazy/Public/**/*.h', 'BloodMagic/Lazy.h'
     lazy.dependency 'BloodMagic/Initializers'
   end
 
