@@ -6,10 +6,4 @@
 @protocol BMPreference
     <NSObject>
 
-@optional
-
-// uses [NSUserDefaults standardUserDefaults] by default
-- (NSUserDefaults *)userDefaults;
-- (void)setUserDefaults:(NSUserDefaults *)userDefaults;
-
 @end

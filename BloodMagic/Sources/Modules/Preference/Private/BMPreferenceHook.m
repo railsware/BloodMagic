@@ -10,15 +10,7 @@
 
 static inline NSUserDefaults *bm_preference_user_defaults(id sender)
 {
-    NSUserDefaults *defaults = nil;
-    if ([sender respondsToSelector:@selector(userDefaults)]) {
-        id<BMPreference> preferenceHolder = sender;
-        defaults = preferenceHolder.userDefaults;
-    } else {
-        defaults = [NSUserDefaults standardUserDefaults];
-    }
-
-    return defaults;
+    return [NSUserDefaults standardUserDefaults];
 }
 
 + (void)accessorHook:(id *)value withProperty:(const BMProperty *)property sender:(id)sender

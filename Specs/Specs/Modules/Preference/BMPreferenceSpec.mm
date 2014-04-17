@@ -1,6 +1,5 @@
 #import "SpecHelper.h"
 #import "BMStandardStorage.h"
-#import "BMCustomStorage.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -34,34 +33,6 @@ describe(@"BMPreference", ^{
             });
 
         });
-    });
-
-    context(@"Custom storage", ^{
-        __block BMCustomStorage *storage = nil;
-
-        beforeEach(^{
-            userDefaults = [[NSUserDefaults alloc] initWithUser:@"AlexDenisov"];
-            storage = [BMCustomStorage new];
-            storage.userDefaults = userDefaults;
-        });
-
-        afterEach(^{
-            storage = nil;
-            userDefaults = nil;
-        });
-
-        describe(@"should store value", ^{
-            NSString *preference = @"SomeCustomPreference";
-
-            it(@"in standardUserDefaults", ^{
-                storage.preference = preference;
-                storage.preference should equal(preference);
-
-                [userDefaults objectForKey:@"preference"] should equal(preference);
-            });
-
-        });
-
     });
     
 });

@@ -67,7 +67,6 @@
 		4624667118FF15DF00DC8E4E /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */; };
 		4624667218FF15DF00DC8E4E /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AEE77514A080C6C2469 /* BMPartialSpec.mm */; };
 		4624667318FF15DF00DC8E4E /* BMStandardStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876FED47E193C40C9500FE /* BMStandardStorage.m */; };
-		4624667418FF15DF00DC8E4E /* BMCustomStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876DDDA0B77488AB40951C /* BMCustomStorage.m */; };
 		4624667518FF15DF00DC8E4E /* BMFinalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766D8A2FF466952F828DE /* BMFinalModel.m */; };
 		4624667618FF15DF00DC8E4E /* BMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764151227B1F772F3AD1B /* BMUser.m */; };
 		4624667718FF15DF00DC8E4E /* BMEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8768767D04BBCBD0D2BDFC /* BMEntityWithoutProtocols.m */; };
@@ -136,7 +135,6 @@
 		6B876047076BD61D7869CF79 /* BMDerivedModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876D48E0FB11A752098556 /* BMDerivedModel.mm */; };
 		6B876062A8823A572EDD99DE /* BMInitializerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761D1369EBB030065C8F5 /* BMInitializerModel.m */; };
 		6B8760A2868C833A9EB6F231 /* BMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764151227B1F772F3AD1B /* BMUser.m */; };
-		6B876196FBF2B5F40B196851 /* BMCustomStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876DDDA0B77488AB40951C /* BMCustomStorage.m */; };
 		6B876209D3B32B5DA6942EB3 /* BMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87695A05461A5FF63DA676 /* BMProject.m */; };
 		6B87622969651D864D74EF9E /* BMFinalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766D8A2FF466952F828DE /* BMFinalModel.m */; };
 		6B8762D9B2C93BC0D93E1F3E /* BMMultiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762E91156ECD58B8BF3A6 /* BMMultiple.m */; };
@@ -340,8 +338,6 @@
 		6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
 		6B876CE2FDB5F043D4F5B084 /* BMLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyModel.h; sourceTree = "<group>"; };
 		6B876D48E0FB11A752098556 /* BMDerivedModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDerivedModel.mm; sourceTree = "<group>"; };
-		6B876DC347FE19AAE92F5CB8 /* BMCustomStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCustomStorage.h; sourceTree = "<group>"; };
-		6B876DDDA0B77488AB40951C /* BMCustomStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCustomStorage.m; sourceTree = "<group>"; };
 		6B876E0545ECB544DDFBCE05 /* BMEntityWithoutProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMEntityWithoutProtocols.h; sourceTree = "<group>"; };
 		6B876E171290F9E3D98CC588 /* BMPartialWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialWrapperView.m; sourceTree = "<group>"; };
 		6B876E61CB6BC297D2A0960E /* BMLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModel.m; sourceTree = "<group>"; };
@@ -753,8 +749,6 @@
 			children = (
 				6B87610158AA8ADB9CE25F64 /* BMStandardStorage.h */,
 				6B876FED47E193C40C9500FE /* BMStandardStorage.m */,
-				6B876DC347FE19AAE92F5CB8 /* BMCustomStorage.h */,
-				6B876DDDA0B77488AB40951C /* BMCustomStorage.m */,
 			);
 			path = Preference;
 			sourceTree = "<group>";
@@ -1205,7 +1199,6 @@
 				4624667118FF15DF00DC8E4E /* BMInitializerFinderSpec.mm in Sources */,
 				4624667218FF15DF00DC8E4E /* BMPartialSpec.mm in Sources */,
 				4624667318FF15DF00DC8E4E /* BMStandardStorage.m in Sources */,
-				4624667418FF15DF00DC8E4E /* BMCustomStorage.m in Sources */,
 				4624667518FF15DF00DC8E4E /* BMFinalModel.m in Sources */,
 				4624667618FF15DF00DC8E4E /* BMUser.m in Sources */,
 				4624667718FF15DF00DC8E4E /* BMEntityWithoutProtocols.m in Sources */,
@@ -1279,7 +1272,6 @@
 				6B87674CBAD58DEEF5A2DD18 /* BMPreferenceModuleLoader.m in Sources */,
 				6B8764D5DCF794CEFDC703C9 /* BMPreferenceHook.m in Sources */,
 				6B876FA9A13515C317A1B14E /* BMStandardStorage.m in Sources */,
-				6B876196FBF2B5F40B196851 /* BMCustomStorage.m in Sources */,
 				6B87622969651D864D74EF9E /* BMFinalModel.m in Sources */,
 				6B8760A2868C833A9EB6F231 /* BMUser.m in Sources */,
 				6B876BB2EE25C19492B1E3A4 /* BMEntityWithoutProtocols.m in Sources */,
