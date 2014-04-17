@@ -1,6 +1,6 @@
 language: objective-c
 
-script: cd $TRAVIS_BUILD_DIR/Specs && rake Specs
+script: rake -f Specs/Rakefile
 
 notifications:
   email:

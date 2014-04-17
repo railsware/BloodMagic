@@ -1,6 +1,8 @@
 require 'pathname'
 require 'tmpdir'
 
+task :default => [:Specs]
+
 module CedarTargetSpecs
   UI_SPECS_TARGET_NAME = "Specs"
   CONFIGURATION = "Release"
@@ -26,7 +28,7 @@ module CedarTargetSpecs
     end
 
     def deployment_target_sdk_dir
-      @sdk_dir ||= "#{xcode_developer_dir}/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator#{deployment_target_sdk_version}.sdk"
+      @sdk_dir ||= %x[ xcrun -sdk iphonesimulator#{deployment_target_sdk_version} -show-sdk-path ].strip
     end
 
     # Xcode 4.3 stores its /Developer inside /Applications/Xcode.app, Xcode 4.2 stored it in /Developer
