@@ -195,6 +195,110 @@
 		463D25071901166A0001A76E /* BMPartialHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8762841AEA753743D57E43 /* BMPartialHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D25091901166A0001A76E /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D250B1901166B0001A76E /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D251319012B230001A76E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463D251219012B220001A76E /* Cocoa.framework */; };
+		463D251D19012B230001A76E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 463D251B19012B230001A76E /* InfoPlist.strings */; };
+		463D253D19012BA50001A76E /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */; };
+		463D253F19012BA50001A76E /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9418A3EFD500DD4830 /* BMFinalModuleLoader.m */; };
+		463D254319012BA50001A76E /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
+		463D254519012BA50001A76E /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46435A8D185F60F6003FE5E7 /* BMClassCache.mm */; };
+		463D254719012BA50001A76E /* BMInternalPropertyTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */; };
+		463D254819012BA50001A76E /* BMCompsiteProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A6834D58538F8D843245 /* BMCompsiteProperty.mm */; };
+		463D254A19012BA50001A76E /* BMPrimitiveCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A7002E604DF850319996 /* BMPrimitiveCharProperty.mm */; };
+		463D254C19012BA50001A76E /* BMPrimitiveUnsignedCharProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AAD4E07E2D7B42B00A68 /* BMPrimitiveUnsignedCharProperty.mm */; };
+		463D254E19012BA50001A76E /* BMPrimitiveShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5076BD6FE710272339A /* BMPrimitiveShortProperty.mm */; };
+		463D255019012BA50001A76E /* BMPrimitiveUnsignedShortProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4A554737916846C3AC3 /* BMPrimitiveUnsignedShortProperty.mm */; };
+		463D255219012BA50001A76E /* BMPrimitiveIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A465F93827E7DBF72E82 /* BMPrimitiveIntProperty.mm */; };
+		463D255419012BA50001A76E /* BMPrimitiveUnsignedIntProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A30E2BBCADC9BCACC4BF /* BMPrimitiveUnsignedIntProperty.mm */; };
+		463D255619012BA50001A76E /* BMPrimitiveLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898ACA257539D36AC542B5C /* BMPrimitiveLongProperty.mm */; };
+		463D255819012BA50001A76E /* BMPrimitiveUnsignedLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AE86E34292B96D05DAA4 /* BMPrimitiveUnsignedLongProperty.mm */; };
+		463D255A19012BA50001A76E /* BMPrimitiveLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A00A6BF6E6793CD7D67F /* BMPrimitiveLongLongProperty.mm */; };
+		463D255C19012BA50001A76E /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD76894E8A32BAD57705 /* BMPrimitiveUnsignedLongLongProperty.mm */; };
+		463D255E19012BA50001A76E /* BMPrimitiveFloatProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */; };
+		463D256019012BA50001A76E /* BMPrimitiveDoubleProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A44ADC6CBCAB1D7450AF /* BMPrimitiveDoubleProperty.mm */; };
+		463D256319012BA50001A76E /* BMInternalPropertyFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */; };
+		463D256519012BA50001A76E /* BMInternalProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AF26F9ED8167F06562E9 /* BMInternalProperty.mm */; };
+		463D256819012BA50001A76E /* BMPropertyKVCHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A28663DDF3F3BA7AFDD9 /* BMPropertyKVCHandler.mm */; };
+		463D256919012BA50001A76E /* BMPropertyValueService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A964B7BE16D059B05D2B /* BMPropertyValueService.mm */; };
+		463D256C19012BA50001A76E /* BMClassCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A96D679982C27C309333 /* BMClassCollector.mm */; };
+		463D256E19012BA50001A76E /* BMPropertyCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A5E97EFA8A48AEA991F6 /* BMPropertyCollector.mm */; };
+		463D257019012BA50001A76E /* BMDynamicPropertyInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A8DAF052929211F88752 /* BMDynamicPropertyInjector.mm */; };
+		463D257219012BA50001A76E /* BMKVCInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A4F5295E8136D4D4EB45 /* BMKVCInjector.m */; };
+		463D257419012BA50001A76E /* BMPropertyFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */; };
+		463D257619012BA50001A76E /* BMPropertyTypeParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898ADC9AE557375AFF36A5A /* BMPropertyTypeParser.mm */; };
+		463D257919012BA50001A76E /* BMBloodMagicInjector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A87A2F83073496E12690 /* BMBloodMagicInjector.mm */; };
+		463D257C19012BA50001A76E /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
+		463D257E19012BA50001A76E /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* BMInitializer.m */; };
+		463D258119012BA50001A76E /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.m */; };
+		463D258419012BA50001A76E /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */; };
+		463D258619012BA50001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */; };
+		463D258B19012BA50001A76E /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A80630FF05327FC75DF8 /* BMLazyHook.mm */; };
+		463D258D19012BA50001A76E /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
+		463D258F19012BA50001A76E /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */; };
+		463D259119012BA50001A76E /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
+		463D259319012BA50001A76E /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
+		463D259519012BA50001A76E /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
+		463D259719012BA50001A76E /* BMPreferenceHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C54AD78847F441FC47F /* BMPreferenceHook.m */; };
+		463D25A119012BEF0001A76E /* BMFinal.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DD5B8F18A3EE7600DD4830 /* BMFinal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25A219012BEF0001A76E /* BMBloodMagicInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A26EA3E33E7FD675D081 /* BMBloodMagicInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25A419012BEF0001A76E /* BMPublicCoreDefnitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AD69F9108807AD109048 /* BMPublicCoreDefnitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25A519012BEF0001A76E /* BMHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A149D312FC06A9484573 /* BMHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25A719012BEF0001A76E /* BMProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876020B111F4C8A68A4059 /* BMProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25A919012BF00001A76E /* BMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ADB350603FE30D34CF8A /* BMInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25AA19012BF00001A76E /* BMInitializerRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A7DA60BD450A0CDFA120 /* BMInitializerRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25AC19012BF00001A76E /* BMInitializer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A1D35AEBE8E36E906CCA /* BMInitializer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25AD19012BF00001A76E /* BMInitializer+LazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25AF19012BF00001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B119012BF00001A76E /* BMLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B219012BF00001A76E /* BMLazyExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 467029D4182D94CC003EAFB0 /* BMLazyExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B319012BF00001A76E /* BMLazyDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B419012BF00001A76E /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876111AB860E76E876080F /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B519012BF10001A76E /* BMPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876287C8AC1D5F5A2B5942 /* BMPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B619012BF10001A76E /* Final.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763A7E32B983A1A8E88D8 /* Final.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B719012BF10001A76E /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876744FFA157EE330D0A2A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B819012BF10001A76E /* Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876688EF1E1722917B305E /* Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25B919012BF10001A76E /* Lazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C366CB4050E12956584 /* Lazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25BA19012BF10001A76E /* Partial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8766D74A276049A5B243AB /* Partial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25BB19012BF10001A76E /* Preference.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87604B1955D186CB63DC9D /* Preference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D25BD19012C210001A76E /* BMFinalHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DD5B9018A3EE9000DD4830 /* BMFinalHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25BF19012C210001A76E /* BMFinalModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DD5B9318A3EFD500DD4830 /* BMFinalModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25C119012C220001A76E /* BMClass_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 46435A87185F5E4F003FE5E7 /* BMClass_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25C219012C220001A76E /* BMClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 46535A1318207993004A9DA4 /* BMClass.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25C419012C220001A76E /* BMClassCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 46435A8C185F60F6003FE5E7 /* BMClassCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25C619012C220001A76E /* BMInternalPropertyTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AE28D8A20B0F07093014 /* BMInternalPropertyTemplate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25C919012C230001A76E /* BMCompsiteProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A13A7F388FAEFCFB1FA3 /* BMCompsiteProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25CB19012C230001A76E /* BMPrimitiveCharProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AE53E7AB7DADC55FE83A /* BMPrimitiveCharProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25CD19012C230001A76E /* BMPrimitiveUnsignedCharProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AE04162FB7A76DD2FA43 /* BMPrimitiveUnsignedCharProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25CF19012C230001A76E /* BMPrimitiveShortProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A8D7B73A7128D29ED58B /* BMPrimitiveShortProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25D119012C240001A76E /* BMPrimitiveUnsignedShortProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A966FB03512A9F26B718 /* BMPrimitiveUnsignedShortProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25D319012C240001A76E /* BMPrimitiveIntProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AD6EF217FC8183F0DFB5 /* BMPrimitiveIntProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25D519012C240001A76E /* BMPrimitiveUnsignedIntProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A875524120E81360C779 /* BMPrimitiveUnsignedIntProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25D719012C240001A76E /* BMPrimitiveLongProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ADF87BC8A526E3AC9656 /* BMPrimitiveLongProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25D919012C250001A76E /* BMPrimitiveUnsignedLongProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ACE40181D8DAEBC54212 /* BMPrimitiveUnsignedLongProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25DB19012C250001A76E /* BMPrimitiveLongLongProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A2EF09380095DD200671 /* BMPrimitiveLongLongProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25DD19012C250001A76E /* BMPrimitiveUnsignedLongLongProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A3D04BB40BA7B8B877B1 /* BMPrimitiveUnsignedLongLongProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25DF19012C260001A76E /* BMPrimitiveFloatProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A8AE9D2813476024CC65 /* BMPrimitiveFloatProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25E119012C260001A76E /* BMPrimitiveDoubleProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A9919F65F14D0894DE4B /* BMPrimitiveDoubleProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25E219012C260001A76E /* BMInternalPropertyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A31B2260B06ADEA89C9B /* BMInternalPropertyFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25E419012C260001A76E /* BMInternalProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A58C0F3DA7769B0D19E9 /* BMInternalProperty.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25E619012C270001A76E /* BMProperty_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A1FB0B40C6C457870EE7 /* BMProperty_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25E719012C270001A76E /* BMPropertyKVCHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AF0FA6CF74B0A05389D4 /* BMPropertyKVCHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25EA19012C270001A76E /* BMPropertyValueService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A8BAFFC537024EE4C585 /* BMPropertyValueService.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25EB19012C280001A76E /* BMClassCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A71B8AF66DF557B67E7F /* BMClassCollector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25ED19012C280001A76E /* BMPropertyCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ADD2F19F769DC98274B7 /* BMPropertyCollector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25EF19012C280001A76E /* BMDynamicPropertyInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A364FD70B97A294A963A /* BMDynamicPropertyInjector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25F119012C290001A76E /* BMKVCInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A137D9E0D2ADD672538E /* BMKVCInjector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25F319012C290001A76E /* BMPropertyFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A0F6CC0832C2AAC67AE6 /* BMPropertyFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25F519012C290001A76E /* BMPropertyTypeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A22B36B614509CC62C8A /* BMPropertyTypeParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25F719012C2A0001A76E /* BMInternalTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8768AEF7B39442021A524B /* BMInternalTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D25FE19012C2B0001A76E /* BMLazyHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A76A19A37C4A1B6A850B /* BMLazyHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260019012C2C0001A76E /* BMLazyModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A703E558929782CC712D /* BMLazyModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260219012C2C0001A76E /* BMLazyInitializerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260519012C2D0001A76E /* BMPartialModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260719012C2D0001A76E /* BMPartialHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8762841AEA753743D57E43 /* BMPartialHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260919012C2E0001A76E /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		463D265319012F040001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463D265419012F160001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46435A8E185F60F6003FE5E7 /* BMClassCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46435A8D185F60F6003FE5E7 /* BMClassCache.mm */; };
 		46535A1518207993004A9DA4 /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
 		46DD5B9218A3EE9000DD4830 /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */; };
@@ -277,10 +381,20 @@
 		4624663618FF157D00DC8E4E /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		4624663718FF157E00DC8E4E /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Specs/Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		4624668D18FF18D600DC8E4E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		463D2431190114E20001A76E /* BloodMagic-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BloodMagic-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		463D2431190114E20001A76E /* BloodMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463D2434190114E20001A76E /* BloodMagic-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagic-iOS-Info.plist"; sourceTree = "<group>"; };
 		463D2436190114E20001A76E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		463D2438190114E20001A76E /* BloodMagic-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		463D251119012B220001A76E /* BloodMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BloodMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463D251219012B220001A76E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		463D251519012B230001A76E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		463D251619012B230001A76E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		463D251719012B230001A76E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		463D251A19012B230001A76E /* BloodMagic-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagic-OSX-Info.plist"; sourceTree = "<group>"; };
+		463D251C19012B230001A76E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		463D251E19012B230001A76E /* BloodMagic-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		463D252719012B230001A76E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		463D265219012EF00001A76E /* BloodMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodMagic.h; sourceTree = "<group>"; };
 		46435A87185F5E4F003FE5E7 /* BMClass_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMClass_Private.h; sourceTree = "<group>"; };
 		46435A8C185F60F6003FE5E7 /* BMClassCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCache.h; sourceTree = "<group>"; };
 		46435A8D185F60F6003FE5E7 /* BMClassCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCache.mm; sourceTree = "<group>"; };
@@ -478,6 +592,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		463D250D19012B220001A76E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463D251319012B230001A76E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADB6AEE178FFE330060E11D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +650,34 @@
 				463D2434190114E20001A76E /* BloodMagic-iOS-Info.plist */,
 				463D2435190114E20001A76E /* InfoPlist.strings */,
 				463D2438190114E20001A76E /* BloodMagic-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		463D251419012B230001A76E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				463D251519012B230001A76E /* Foundation.framework */,
+				463D251619012B230001A76E /* CoreData.framework */,
+				463D251719012B230001A76E /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		463D251819012B230001A76E /* BloodMagic-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				463D251919012B230001A76E /* Supporting Files */,
+			);
+			path = "BloodMagic-OSX";
+			sourceTree = "<group>";
+		};
+		463D251919012B230001A76E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				463D251A19012B230001A76E /* BloodMagic-OSX-Info.plist */,
+				463D251B19012B230001A76E /* InfoPlist.strings */,
+				463D251E19012B230001A76E /* BloodMagic-OSX-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1082,6 +1232,7 @@
 				CADB6AFA178FFE330060E11D /* BloodMagic */,
 				4624662D18FF157D00DC8E4E /* Specs */,
 				463D2432190114E20001A76E /* BloodMagic-iOS */,
+				463D251819012B230001A76E /* BloodMagic-OSX */,
 				CADB6AF3178FFE330060E11D /* Frameworks */,
 				CADB6AF2178FFE330060E11D /* Products */,
 			);
@@ -1092,7 +1243,8 @@
 			children = (
 				CADB6AF1178FFE330060E11D /* BloodMagicSouces.app */,
 				4624662918FF157D00DC8E4E /* Specs.app */,
-				463D2431190114E20001A76E /* BloodMagic-iOS.framework */,
+				463D2431190114E20001A76E /* BloodMagic.framework */,
+				463D251119012B220001A76E /* BloodMagic.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1104,6 +1256,9 @@
 				CADB6AF4178FFE330060E11D /* UIKit.framework */,
 				CADB6AF6178FFE330060E11D /* Foundation.framework */,
 				CADB6AF8178FFE330060E11D /* CoreGraphics.framework */,
+				463D251219012B220001A76E /* Cocoa.framework */,
+				463D252719012B230001A76E /* XCTest.framework */,
+				463D251419012B230001A76E /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1119,6 +1274,7 @@
 				6B876C366CB4050E12956584 /* Lazy.h */,
 				6B8766D74A276049A5B243AB /* Partial.h */,
 				6B87604B1955D186CB63DC9D /* Preference.h */,
+				463D265219012EF00001A76E /* BloodMagic.h */,
 			);
 			path = BloodMagic;
 			sourceTree = "<group>";
@@ -1149,6 +1305,7 @@
 				463D24BF1901160C0001A76E /* BMLazyDefinitions.h in Headers */,
 				463D24C01901160C0001A76E /* BMPartial.h in Headers */,
 				463D24C11901160C0001A76E /* BMPreference.h in Headers */,
+				463D265419012F160001A76E /* BloodMagic.h in Headers */,
 				463D24AA190115660001A76E /* Partial.h in Headers */,
 				463D24AB190115660001A76E /* Preference.h in Headers */,
 				463D24C31901165F0001A76E /* BMFinalHook.h in Headers */,
@@ -1192,6 +1349,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		463D250E19012B220001A76E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463D25A119012BEF0001A76E /* BMFinal.h in Headers */,
+				463D25A219012BEF0001A76E /* BMBloodMagicInjector.h in Headers */,
+				463D25A419012BEF0001A76E /* BMPublicCoreDefnitions.h in Headers */,
+				463D25A519012BEF0001A76E /* BMHook.h in Headers */,
+				463D25A719012BEF0001A76E /* BMProperty.h in Headers */,
+				463D25A919012BF00001A76E /* BMInitializer.h in Headers */,
+				463D25AA19012BF00001A76E /* BMInitializerRegistry.h in Headers */,
+				463D25AC19012BF00001A76E /* BMInitializer_Private.h in Headers */,
+				463D25AD19012BF00001A76E /* BMInitializer+LazyInitializer.h in Headers */,
+				463D25AF19012BF00001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */,
+				463D25B119012BF00001A76E /* BMLazy.h in Headers */,
+				463D25B219012BF00001A76E /* BMLazyExclude.h in Headers */,
+				463D25B319012BF00001A76E /* BMLazyDefinitions.h in Headers */,
+				463D25B419012BF00001A76E /* BMPartial.h in Headers */,
+				463D25B519012BF10001A76E /* BMPreference.h in Headers */,
+				463D25B619012BF10001A76E /* Final.h in Headers */,
+				463D25B719012BF10001A76E /* Core.h in Headers */,
+				463D25B819012BF10001A76E /* Initializers.h in Headers */,
+				463D265319012F040001A76E /* BloodMagic.h in Headers */,
+				463D25B919012BF10001A76E /* Lazy.h in Headers */,
+				463D25BA19012BF10001A76E /* Partial.h in Headers */,
+				463D25BB19012BF10001A76E /* Preference.h in Headers */,
+				463D25C619012C220001A76E /* BMInternalPropertyTemplate.h in Headers */,
+				463D25C919012C230001A76E /* BMCompsiteProperty.h in Headers */,
+				463D25CB19012C230001A76E /* BMPrimitiveCharProperty.h in Headers */,
+				463D25CD19012C230001A76E /* BMPrimitiveUnsignedCharProperty.h in Headers */,
+				463D25CF19012C230001A76E /* BMPrimitiveShortProperty.h in Headers */,
+				463D25D119012C240001A76E /* BMPrimitiveUnsignedShortProperty.h in Headers */,
+				463D25D319012C240001A76E /* BMPrimitiveIntProperty.h in Headers */,
+				463D25D519012C240001A76E /* BMPrimitiveUnsignedIntProperty.h in Headers */,
+				463D25D719012C240001A76E /* BMPrimitiveLongProperty.h in Headers */,
+				463D25D919012C250001A76E /* BMPrimitiveUnsignedLongProperty.h in Headers */,
+				463D25DB19012C250001A76E /* BMPrimitiveLongLongProperty.h in Headers */,
+				463D25DD19012C250001A76E /* BMPrimitiveUnsignedLongLongProperty.h in Headers */,
+				463D25DF19012C260001A76E /* BMPrimitiveFloatProperty.h in Headers */,
+				463D25E119012C260001A76E /* BMPrimitiveDoubleProperty.h in Headers */,
+				463D25E219012C260001A76E /* BMInternalPropertyFactory.h in Headers */,
+				463D25E419012C260001A76E /* BMInternalProperty.h in Headers */,
+				463D25E619012C270001A76E /* BMProperty_Private.h in Headers */,
+				463D25E719012C270001A76E /* BMPropertyKVCHandler.h in Headers */,
+				463D25EA19012C270001A76E /* BMPropertyValueService.h in Headers */,
+				463D25EB19012C280001A76E /* BMClassCollector.h in Headers */,
+				463D25BD19012C210001A76E /* BMFinalHook.h in Headers */,
+				463D25BF19012C210001A76E /* BMFinalModuleLoader.h in Headers */,
+				463D25C119012C220001A76E /* BMClass_Private.h in Headers */,
+				463D25C219012C220001A76E /* BMClass.h in Headers */,
+				463D25C419012C220001A76E /* BMClassCache.h in Headers */,
+				463D25ED19012C280001A76E /* BMPropertyCollector.h in Headers */,
+				463D25EF19012C280001A76E /* BMDynamicPropertyInjector.h in Headers */,
+				463D25F119012C290001A76E /* BMKVCInjector.h in Headers */,
+				463D25F319012C290001A76E /* BMPropertyFinder.h in Headers */,
+				463D25F519012C290001A76E /* BMPropertyTypeParser.h in Headers */,
+				463D25F719012C2A0001A76E /* BMInternalTypes.h in Headers */,
+				463D25FE19012C2B0001A76E /* BMLazyHook.h in Headers */,
+				463D260019012C2C0001A76E /* BMLazyModuleLoader.h in Headers */,
+				463D260219012C2C0001A76E /* BMLazyInitializerFinder.h in Headers */,
+				463D260519012C2D0001A76E /* BMPartialModuleLoader.h in Headers */,
+				463D260719012C2D0001A76E /* BMPartialHook.h in Headers */,
+				463D260919012C2E0001A76E /* BMPreferenceModuleLoader.h in Headers */,
+				463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1228,8 +1452,26 @@
 			);
 			name = "BloodMagic-iOS";
 			productName = "BloodMagic-iOS";
-			productReference = 463D2431190114E20001A76E /* BloodMagic-iOS.framework */;
+			productReference = 463D2431190114E20001A76E /* BloodMagic.framework */;
 			productType = "com.apple.product-type.bundle";
+		};
+		463D251019012B220001A76E /* BloodMagic-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463D253519012B230001A76E /* Build configuration list for PBXNativeTarget "BloodMagic-OSX" */;
+			buildPhases = (
+				463D250C19012B220001A76E /* Sources */,
+				463D250D19012B220001A76E /* Frameworks */,
+				463D250E19012B220001A76E /* Headers */,
+				463D250F19012B220001A76E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BloodMagic-OSX";
+			productName = "BloodMagic-OSX";
+			productReference = 463D251119012B220001A76E /* BloodMagic.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		CADB6AF0178FFE330060E11D /* BloodMagic */ = {
 			isa = PBXNativeTarget;
@@ -1275,6 +1517,7 @@
 				CADB6AF0178FFE330060E11D /* BloodMagic */,
 				4624662818FF157D00DC8E4E /* Specs */,
 				463D2430190114E20001A76E /* BloodMagic-iOS */,
+				463D251019012B220001A76E /* BloodMagic-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -1295,6 +1538,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				463D2437190114E20001A76E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463D250F19012B220001A76E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463D251D19012B230001A76E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1492,6 +1743,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		463D250C19012B220001A76E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463D253D19012BA50001A76E /* BMFinalHook.mm in Sources */,
+				463D253F19012BA50001A76E /* BMFinalModuleLoader.m in Sources */,
+				463D254319012BA50001A76E /* BMClass.mm in Sources */,
+				463D254519012BA50001A76E /* BMClassCache.mm in Sources */,
+				463D254719012BA50001A76E /* BMInternalPropertyTemplate.mm in Sources */,
+				463D254819012BA50001A76E /* BMCompsiteProperty.mm in Sources */,
+				463D254A19012BA50001A76E /* BMPrimitiveCharProperty.mm in Sources */,
+				463D254C19012BA50001A76E /* BMPrimitiveUnsignedCharProperty.mm in Sources */,
+				463D254E19012BA50001A76E /* BMPrimitiveShortProperty.mm in Sources */,
+				463D255019012BA50001A76E /* BMPrimitiveUnsignedShortProperty.mm in Sources */,
+				463D255219012BA50001A76E /* BMPrimitiveIntProperty.mm in Sources */,
+				463D255419012BA50001A76E /* BMPrimitiveUnsignedIntProperty.mm in Sources */,
+				463D255619012BA50001A76E /* BMPrimitiveLongProperty.mm in Sources */,
+				463D255819012BA50001A76E /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
+				463D255A19012BA50001A76E /* BMPrimitiveLongLongProperty.mm in Sources */,
+				463D255C19012BA50001A76E /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
+				463D255E19012BA50001A76E /* BMPrimitiveFloatProperty.mm in Sources */,
+				463D256019012BA50001A76E /* BMPrimitiveDoubleProperty.mm in Sources */,
+				463D256319012BA50001A76E /* BMInternalPropertyFactory.mm in Sources */,
+				463D256519012BA50001A76E /* BMInternalProperty.mm in Sources */,
+				463D256819012BA50001A76E /* BMPropertyKVCHandler.mm in Sources */,
+				463D256919012BA50001A76E /* BMPropertyValueService.mm in Sources */,
+				463D256C19012BA50001A76E /* BMClassCollector.mm in Sources */,
+				463D256E19012BA50001A76E /* BMPropertyCollector.mm in Sources */,
+				463D257019012BA50001A76E /* BMDynamicPropertyInjector.mm in Sources */,
+				463D257219012BA50001A76E /* BMKVCInjector.m in Sources */,
+				463D257419012BA50001A76E /* BMPropertyFinder.mm in Sources */,
+				463D257619012BA50001A76E /* BMPropertyTypeParser.mm in Sources */,
+				463D257919012BA50001A76E /* BMBloodMagicInjector.mm in Sources */,
+				463D257C19012BA50001A76E /* BMProperty.mm in Sources */,
+				463D257E19012BA50001A76E /* BMInitializer.m in Sources */,
+				463D258119012BA50001A76E /* BMInitializerRegistry.m in Sources */,
+				463D258419012BA50001A76E /* BMInitializer+LazyInitializer.m in Sources */,
+				463D258619012BA50001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */,
+				463D258B19012BA50001A76E /* BMLazyHook.mm in Sources */,
+				463D258D19012BA50001A76E /* BMLazyModuleLoader.m in Sources */,
+				463D258F19012BA50001A76E /* BMLazyInitializerFinder.mm in Sources */,
+				463D259119012BA50001A76E /* BMPartialModuleLoader.m in Sources */,
+				463D259319012BA50001A76E /* BMPartialHook.mm in Sources */,
+				463D259519012BA50001A76E /* BMPreferenceModuleLoader.m in Sources */,
+				463D259719012BA50001A76E /* BMPreferenceHook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADB6AED178FFE330060E11D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1578,6 +1877,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				463D2436190114E20001A76E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		463D251B19012B230001A76E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463D251C19012B230001A76E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1700,8 +2007,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1739,9 +2048,93 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BloodMagic;
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		463D253619012B230001A76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 0.9.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagic-OSX/BloodMagic-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SOURCE_ROOT)",
+				);
+				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = BloodMagic;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		463D253719012B230001A76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 0.9.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodMagic-OSX/BloodMagic-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SOURCE_ROOT)",
+				);
+				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = BloodMagic;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -1861,6 +2254,15 @@
 			buildConfigurations = (
 				463D243D190114E20001A76E /* Debug */,
 				463D243E190114E20001A76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463D253519012B230001A76E /* Build configuration list for PBXNativeTarget "BloodMagic-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463D253619012B230001A76E /* Debug */,
+				463D253719012B230001A76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
