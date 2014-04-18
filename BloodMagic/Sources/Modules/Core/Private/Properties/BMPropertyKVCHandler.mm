@@ -19,6 +19,7 @@
     BMInternalProperty *property = finder.findByName(key);
     if (property == NULL) {
         [self setDynamicsValue:value forUndefinedKey:key];
+        return;
     }
 
     id<BMHook> hook = property->property().hook;

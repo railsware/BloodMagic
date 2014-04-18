@@ -1917,8 +1917,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SOURCE_ROOT)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SOURCE_ROOT)/**",
 				);
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -1955,8 +1955,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SOURCE_ROOT)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SOURCE_ROOT)/**",
 				);
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -2091,10 +2091,13 @@
 					"$(SOURCE_ROOT)",
 				);
 				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = BloodMagic;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -2131,10 +2134,13 @@
 					"$(SOURCE_ROOT)",
 				);
 				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = BloodMagic;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;

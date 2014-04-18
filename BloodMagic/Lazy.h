@@ -5,12 +5,12 @@
 
 #pragma once
 
-#import <BloodMagic/Sources/Modules/Core/Public/BMPublicCoreDefnitions.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMLazy.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMLazyExclude.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMInitializer+LazyInitializer.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMInitializerRegistry+LazyRegistry.h>
-#import <BloodMagic/Sources/Modules/Lazy/Public/BMLazyDefinitions.h>
+#import <BloodMagic/BMPublicCoreDefnitions.h>
+#import <BloodMagic/BMLazy.h>
+#import <BloodMagic/BMLazyExclude.h>
+#import <BloodMagic/BMInitializer+LazyInitializer.h>
+#import <BloodMagic/BMInitializerRegistry+LazyRegistry.h>
+#import <BloodMagic/BMLazyDefinitions.h>
 
 #ifndef bm_lazy
 #define bm_lazy

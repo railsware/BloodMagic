@@ -3,8 +3,8 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import <BloodMagic/Sources/Modules/Core/Public/BMPublicCoreDefnitions.h>
-#import <BloodMagic/Sources/Modules/Preference/Public/BMPreference.h>
+#import <BloodMagic/BMPublicCoreDefnitions.h>
+#import <BloodMagic/BMPreference.h>
 
 #ifndef bm_preference
 #define bm_preference

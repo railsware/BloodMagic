@@ -5,5 +5,5 @@
 
 #pragma once
 
-#import <BloodMagic/Sources/Modules/Initializers/Public/BMInitializer.h>
-#import <BloodMagic/Sources/Modules/Initializers/Public/BMInitializerRegistry.h>
+#import <BloodMagic/BMInitializer.h>
+#import <BloodMagic/BMInitializerRegistry.h>

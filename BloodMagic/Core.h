@@ -5,5 +5,5 @@
 
 #pragma once
 
-#import <BloodMagic/Sources/Modules/Core/Public/BMPublicCoreDefnitions.h>
-#import <BloodMagic/Sources/Modules/Core/Public/Injectors/BMBloodMagicInjector.h>
+#import <BloodMagic/BMPublicCoreDefnitions.h>
+#import <BloodMagic/BMBloodMagicInjector.h>

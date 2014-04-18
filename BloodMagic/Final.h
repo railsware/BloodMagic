@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import <BloodMagic/Sources/Modules/Core/Public/BMPublicCoreDefnitions.h>
-#import <BloodMagic/Sources/Modules/Final/Public/BMFinal.h>
+#import <BloodMagic/BMPublicCoreDefnitions.h>
+#import <BloodMagic/BMFinal.h>
 
 #ifndef bm_final
 #define bm_final
