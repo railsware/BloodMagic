@@ -3,6 +3,12 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+#import <UIKit/UIKit.h>
+#elif TARGET_OS_MAC
+
+#endif
+
 #import "BMPartialHook.h"
 #import "BMProperty.h"
 #import "BMPropertyValueService.h"
