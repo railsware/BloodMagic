@@ -565,7 +565,7 @@
 		6B876FE571B204644DBC744A /* BMPreferenceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPreferenceSpec.mm; sourceTree = "<group>"; };
 		6B876FED47E193C40C9500FE /* BMStandardStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMStandardStorage.m; sourceTree = "<group>"; };
 		CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModuleLoader.m; sourceTree = "<group>"; };
-		CADB6AF1178FFE330060E11D /* BloodMagicSouces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BloodMagicSouces.app; path = BloodMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADB6AF1178FFE330060E11D /* BloodMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADB6AF4178FFE330060E11D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CADB6AF6178FFE330060E11D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CADB6AF8178FFE330060E11D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1241,7 +1241,7 @@
 		CADB6AF2178FFE330060E11D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CADB6AF1178FFE330060E11D /* BloodMagicSouces.app */,
+				CADB6AF1178FFE330060E11D /* BloodMagic.app */,
 				4624662918FF157D00DC8E4E /* Specs.app */,
 				463D2431190114E20001A76E /* BloodMagic.framework */,
 				463D251119012B220001A76E /* BloodMagic.framework */,
@@ -1489,7 +1489,7 @@
 			);
 			name = BloodMagic;
 			productName = BloodMagic;
-			productReference = CADB6AF1178FFE330060E11D /* BloodMagicSouces.app */;
+			productReference = CADB6AF1178FFE330060E11D /* BloodMagic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2092,6 +2092,7 @@
 				);
 				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
 				LD_DYLIB_INSTALL_NAME = "";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = BloodMagic;
@@ -2135,6 +2136,7 @@
 				);
 				INFOPLIST_FILE = "BloodMagic-OSX/BloodMagic-OSX-Info.plist";
 				LD_DYLIB_INSTALL_NAME = "";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = BloodMagic;
