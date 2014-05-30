@@ -35,7 +35,7 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
   pod 'BloodMagic', :git => 'https://github.com/railsware/BloodMagic.git'
 ```
 
-Alternatively you can use built frameworks for [iOS](https://github.com/railsware/BloodMagic/releases/download/0.9.0/BloodMagic-iOS-0.9.0.zip) and [OSX](https://github.com/railsware/BloodMagic/releases/download/0.9.0/BloodMagic-OSX-0.9.0.zip).
+Alternatively you can use built frameworks for [iOS](https://github.com/railsware/BloodMagic/releases/download/0.9.1/BloodMagic-iOS-0.9.1.zip) and [OSX](https://github.com/railsware/BloodMagic/releases/download/0.9.1/BloodMagic-OSX-0.9.1.zip).
 
 Just drag&drop framework into your project and don't forget to add `-all_load` and `-ObjC` to `OTHER_LINKER_FLAGS`
 
