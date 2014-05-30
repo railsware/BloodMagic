@@ -30,7 +30,9 @@ void BMPropertyTypeParser::parse(const char *type)
             protocolName = protocolName.substr(1, protocolName.length() - 2);
             Protocol *protocol = objc_getProtocol(protocolName.c_str());
             
-            assert(protocol); // undefined protocol
+            if (!protocol) {
+                NSLog(@"BloodMagic: undefined protocol: <%@>", @(protocolName.c_str()));
+            }
             
             [protocolsSet addObject:protocol];
         }
