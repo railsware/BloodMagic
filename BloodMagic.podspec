@@ -9,8 +9,7 @@ Pod::Spec.new do |podspec|
   podspec.author   = { 'Alex Denisov' => '1101.debian@gmail.com' }
   podspec.source = { :git => 'https://github.com/railsware/BloodMagic.git', :tag => "#{podspec.version}" }
   podspec.requires_arc = true
-
-  podspec.header_mappings_dir =  '.'
+  podspec.social_media_url = 'https://twitter.com/railsware'
 
   podspec.subspec 'Core' do |core|
     core.source_files = 'BloodMagic/Sources/Modules/Core/**/*.{h,m,mm}', 'BloodMagic/Core.h'
