@@ -22,7 +22,7 @@ describe(@"BMLazyHooks", ^{
         it(@"doesn't fire if undefined", ^{
             spy_on(sut);
             __unused NSArray *a = sut.lazyArray;
-            sut should_not have_received(@selector(lazyArrayInjected:));
+            sut should_not have_received(NSSelectorFromString(@"lazyArrayInjected:"));
         });
     });
 });

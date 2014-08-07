@@ -20,9 +20,11 @@ describe(@"BMInitializerFinder", ^{
     });
     
     describe(@"a lot of tests", ^{
-        it(@"just should work", ^{            
-            base.withProtocol should equal(@"base");
-            derived.withProtocol should equal(@"derived");
+        it(@"just should work", ^{
+            id baseExpected = @"base";
+            id derivedExpected = @"derived";
+            base.withProtocol should equal(baseExpected);
+            derived.withProtocol should equal(derivedExpected);
             
             base.customDictionary should equal( @{ @"base" : @"value" } );
             derived.customDictionary should equal( @{ @"base" : @"value" } );
