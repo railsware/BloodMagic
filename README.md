@@ -5,16 +5,13 @@
 Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
 
 ```objectivec
-@property (nonatomic, strong, bm_lazy) ProgressViewService *progressView;
-@property (nonatomic, strong, bm_partial) HeaderView *headerView;
-@property (nonatomic, strong, bm_final) NSString *almostImmutable;
+@property (nonatomic, strong) bm_lazy ProgressViewService *progressView;
+@property (nonatomic, strong) bm_partial HeaderView *headerView;
+@property (nonatomic, strong) bm_final NSString *almostImmutable;
+@property (nonatomic, strong) bm_preference NSString *authToken;
+@property (nonatomic, strong) bm_injectable id<NetworkClient> client;
 
-@property (nonatomic, strong, storable) NSString *authToken;
-
-@property (nonatomic, strong, copyable) NSString *username;
-@property (nonatomic, strong, copyable) NSString *email;
-
-@property (nonatomic, strong, anything_you_want) AwesomeView *someAwesomeView;
+@property (nonatomic, strong) anything_you_want AwesomeView *someAwesomeView;
 ```
 
 We can't implement these attributes without hacking on `clang`, but fortunately, we're able to achieve these effects by means of BloodMagic' spells
@@ -129,7 +126,7 @@ In this case `progressViewService` will be deallocated as a usual property.
 #### Dependency Injection
 
 ```ruby
-  pod 'BloodMagic/Lazy', :git => 'https://github.com/railsware/BloodMagic.git'
+  pod 'BloodMagic/Injectable', :git => 'https://github.com/railsware/BloodMagic.git'
 ```
 
 During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
@@ -137,7 +134,7 @@ During the creation of `Lazy Initialization` spell an interesting side effect wa
 For example, if you need to initialize `progressViewService` in a special way, a special initializer might be created:
 
 ```objectivec
-BMInitializer *initializer = [BMInitializer lazyInitializer];
+BMInitializer *initializer = [BMInitializer injectableInitializer];
 initializer.propertyClass = [ProgressViewService class]; // optional, uses NSObject by default
 initializer.containerClass = [ViewController class]; // optional, uses NSObject by default
 initializer.initializer = ^id (id sender){
@@ -151,7 +148,7 @@ _Note:_ `containerClass` doesn't apply on derived classes, to achieve such behav
 This spell is very useful when dealing with the singleton
 
 ```objectivec
-BMInitializer *initializer = [BMInitializer lazyInitializer];
+BMInitializer *initializer = [BMInitializer injectableInitializer];
 initializer.propertyClass = [RequestManager class];
 initializer.initializer = ^id (id sender){
     static id singleInstance = nil;
@@ -171,7 +168,7 @@ Adepts of [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) sc
 Also, you're able to use `@protocol`s as well
 
 ```objectivec
-BMInitializer *initializer = [BMInitializer lazyInitializer];
+BMInitializer *initializer = [BMInitializer injectableInitializer];
 initializer.protocols = @[ @protocol(ProgressViewServiceProtocol) ];
 initializer.initializer = ^id (id sender){
     return [[ProgressViewService alloc] initWithViewController:sender];
