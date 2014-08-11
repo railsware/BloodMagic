@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-#import <BloodMagic/Lazy.h>
+#import <BloodMagic/Injectable.h>
 
 @interface BMHookedModel : NSObject
-    <BMLazy>
+    <BMInjectable>
 
 @property (nonatomic, strong) NSMutableArray *lazyArray;
 @property (nonatomic, strong) NSString *propertyWithHook;

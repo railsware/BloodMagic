@@ -5,8 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import "BMLazyTestProtocol.h"
+#import "BMInjectableTestProtocol.h"
 
 @interface BMTestProtocolModel : NSObject
-    <BMLazyTestProtocol>
+    <BMLazyTestProtocol,
+    BMInjectableTestProtocol>
 
 @end

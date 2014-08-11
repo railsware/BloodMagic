@@ -43,11 +43,8 @@
 		4624665918FF15DF00DC8E4E /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
 		4624665A18FF15DF00DC8E4E /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* BMInitializer.m */; };
 		4624665B18FF15DF00DC8E4E /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.m */; };
-		4624665C18FF15DF00DC8E4E /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */; };
-		4624665D18FF15DF00DC8E4E /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */; };
 		4624665E18FF15DF00DC8E4E /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A80630FF05327FC75DF8 /* BMLazyHook.mm */; };
 		4624665F18FF15DF00DC8E4E /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
-		4624666018FF15DF00DC8E4E /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */; };
 		4624666118FF15DF00DC8E4E /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
 		4624666218FF15DF00DC8E4E /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
 		4624666318FF15DF00DC8E4E /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
@@ -60,11 +57,8 @@
 		4624666A18FF15DF00DC8E4E /* BMPropertySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8765FE1B361D761CCAE171 /* BMPropertySpec.mm */; };
 		4624666B18FF15DF00DC8E4E /* BMBloodMagicInjectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876ABACC0F25D39882E102 /* BMBloodMagicInjectorSpec.mm */; };
 		4624666C18FF15DF00DC8E4E /* BMPropertyTypeParserSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876341864AC146125EFDD4 /* BMPropertyTypeParserSpec.mm */; };
-		4624666D18FF15DF00DC8E4E /* BMLazyHooksSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F4B83F0D943876D1FFE /* BMLazyHooksSpec.mm */; };
-		4624666E18FF15DF00DC8E4E /* BMInitializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8764B856EC6D658A830174 /* BMInitializerSpec.mm */; };
 		4624666F18FF15DF00DC8E4E /* LazySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876960639B139CCACB133E /* LazySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4624667018FF15DF00DC8E4E /* LazyProtocolsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87648E807487635D9049EE /* LazyProtocolsSpec.mm */; };
-		4624667118FF15DF00DC8E4E /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */; };
 		4624667218FF15DF00DC8E4E /* BMPartialSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AEE77514A080C6C2469 /* BMPartialSpec.mm */; };
 		4624667318FF15DF00DC8E4E /* BMStandardStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876FED47E193C40C9500FE /* BMStandardStorage.m */; };
 		4624667518FF15DF00DC8E4E /* BMFinalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766D8A2FF466952F828DE /* BMFinalModel.m */; };
@@ -72,7 +66,6 @@
 		4624667718FF15DF00DC8E4E /* BMEntityWithoutProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8768767D04BBCBD0D2BDFC /* BMEntityWithoutProtocols.m */; };
 		4624667818FF15DF00DC8E4E /* BMFatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766C52E3E2D731E1A90D5 /* BMFatModel.m */; };
 		4624667918FF15DF00DC8E4E /* BMFatDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876B24F1F533749C06DBE3 /* BMFatDynamicModel.m */; };
-		4624667A18FF15DF00DC8E4E /* BMHookedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762ED1A200739CC9C57C2 /* BMHookedModel.m */; };
 		4624667B18FF15DF00DC8E4E /* BMLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E61CB6BC297D2A0960E /* BMLazyModel.m */; };
 		4624667C18FF15DF00DC8E4E /* BMAnotherLazyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876812B823FA4245CC27FC /* BMAnotherLazyModel.m */; };
 		4624667D18FF15DF00DC8E4E /* BMTestProtocolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760BC9A962C81AC64F0CB /* BMTestProtocolModel.m */; };
@@ -83,8 +76,6 @@
 		4624668218FF15DF00DC8E4E /* BMInheritedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C509C622B152DA8F7F1 /* BMInheritedModel.m */; };
 		4624668318FF15DF00DC8E4E /* BMInheritedExcludedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F927612B2CF7210CF5B /* BMInheritedExcludedModel.m */; };
 		4624668418FF15DF00DC8E4E /* BMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87695A05461A5FF63DA676 /* BMProject.m */; };
-		4624668518FF15DF00DC8E4E /* BMInheritedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876B71392126A38C100BFF /* BMInheritedProtocol.m */; };
-		4624668618FF15DF00DC8E4E /* BMInitializerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8761D1369EBB030065C8F5 /* BMInitializerModel.m */; };
 		4624668718FF15DF00DC8E4E /* BMTestPartialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AA466894B38B70BDCFD /* BMTestPartialView.m */; };
 		4624668818FF15DF00DC8E4E /* BMPartialWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E171290F9E3D98CC588 /* BMPartialWrapperView.m */; };
 		4624668918FF15DF00DC8E4E /* BMMultiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8762E91156ECD58B8BF3A6 /* BMMultiple.m */; };
@@ -125,11 +116,8 @@
 		463D24801901152C0001A76E /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
 		463D24821901152C0001A76E /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* BMInitializer.m */; };
 		463D24851901152C0001A76E /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.m */; };
-		463D24881901152C0001A76E /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */; };
-		463D248A1901152C0001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */; };
 		463D248F1901152C0001A76E /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A80630FF05327FC75DF8 /* BMLazyHook.mm */; };
 		463D24911901152C0001A76E /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
-		463D24931901152C0001A76E /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */; };
 		463D24951901152C0001A76E /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
 		463D24971901152C0001A76E /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
 		463D24991901152C0001A76E /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
@@ -150,11 +138,8 @@
 		463D24B51901160B0001A76E /* BMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ADB350603FE30D34CF8A /* BMInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24B61901160B0001A76E /* BMInitializerRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A7DA60BD450A0CDFA120 /* BMInitializerRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24B81901160B0001A76E /* BMInitializer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A1D35AEBE8E36E906CCA /* BMInitializer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D24B91901160B0001A76E /* BMInitializer+LazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D24BB1901160B0001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24BD1901160B0001A76E /* BMLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24BE1901160B0001A76E /* BMLazyExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 467029D4182D94CC003EAFB0 /* BMLazyExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D24BF1901160C0001A76E /* BMLazyDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24C01901160C0001A76E /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876111AB860E76E876080F /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24C11901160C0001A76E /* BMPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876287C8AC1D5F5A2B5942 /* BMPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D24C31901165F0001A76E /* BMFinalHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DD5B9018A3EE9000DD4830 /* BMFinalHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -190,7 +175,6 @@
 		463D24FD190116680001A76E /* BMInternalTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8768AEF7B39442021A524B /* BMInternalTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D24FE190116680001A76E /* BMLazyHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A76A19A37C4A1B6A850B /* BMLazyHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D2500190116680001A76E /* BMLazyModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A703E558929782CC712D /* BMLazyModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		463D2502190116690001A76E /* BMLazyInitializerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D2505190116690001A76E /* BMPartialModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D25071901166A0001A76E /* BMPartialHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8762841AEA753743D57E43 /* BMPartialHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D25091901166A0001A76E /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -229,11 +213,8 @@
 		463D257C19012BA50001A76E /* BMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876AFD1AAA3C414487B226 /* BMProperty.mm */; };
 		463D257E19012BA50001A76E /* BMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A2B6AE9F0D991ED04E36 /* BMInitializer.m */; };
 		463D258119012BA50001A76E /* BMInitializerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898A34FD5C35BD598B1A11E /* BMInitializerRegistry.m */; };
-		463D258419012BA50001A76E /* BMInitializer+LazyInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */; };
-		463D258619012BA50001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */; };
 		463D258B19012BA50001A76E /* BMLazyHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898A80630FF05327FC75DF8 /* BMLazyHook.mm */; };
 		463D258D19012BA50001A76E /* BMLazyModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */; };
-		463D258F19012BA50001A76E /* BMLazyInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */; };
 		463D259119012BA50001A76E /* BMPartialModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */; };
 		463D259319012BA50001A76E /* BMPartialHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */; };
 		463D259519012BA50001A76E /* BMPreferenceModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */; };
@@ -246,11 +227,8 @@
 		463D25A919012BF00001A76E /* BMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898ADB350603FE30D34CF8A /* BMInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25AA19012BF00001A76E /* BMInitializerRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A7DA60BD450A0CDFA120 /* BMInitializerRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25AC19012BF00001A76E /* BMInitializer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A1D35AEBE8E36E906CCA /* BMInitializer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D25AD19012BF00001A76E /* BMInitializer+LazyInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D25AF19012BF00001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25B119012BF00001A76E /* BMLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25B219012BF00001A76E /* BMLazyExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 467029D4182D94CC003EAFB0 /* BMLazyExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		463D25B319012BF00001A76E /* BMLazyDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25B419012BF00001A76E /* BMPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876111AB860E76E876080F /* BMPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25B519012BF10001A76E /* BMPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876287C8AC1D5F5A2B5942 /* BMPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D25B619012BF10001A76E /* Final.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763A7E32B983A1A8E88D8 /* Final.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -292,13 +270,58 @@
 		463D25F719012C2A0001A76E /* BMInternalTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8768AEF7B39442021A524B /* BMInternalTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D25FE19012C2B0001A76E /* BMLazyHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A76A19A37C4A1B6A850B /* BMLazyHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D260019012C2C0001A76E /* BMLazyModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898A703E558929782CC712D /* BMLazyModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		463D260219012C2C0001A76E /* BMLazyInitializerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D260519012C2D0001A76E /* BMPartialModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D260719012C2D0001A76E /* BMPartialHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8762841AEA753743D57E43 /* BMPartialHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D260919012C2E0001A76E /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D265319012F040001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D265419012F160001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7ACA19935E2500D6EC66 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AC919935E2500D6EC66 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7ACB19935E2500D6EC66 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AC919935E2500D6EC66 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7ACE19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7ACD19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm */; };
+		469D7AE1199360AE00D6EC66 /* BMInitializer+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7ADF199360AE00D6EC66 /* BMInitializer+Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AE2199360AE00D6EC66 /* BMInitializer+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7ADF199360AE00D6EC66 /* BMInitializer+Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AE3199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */; };
+		469D7AE4199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */; };
+		469D7AE5199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */; };
+		469D7AE919938FC800D6EC66 /* BMInjectableExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AEA19938FC800D6EC66 /* BMInjectableExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; };
+		469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; };
+		469D7AEF199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
+		469D7AF0199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
+		469D7AF1199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
+		469D7AF31993948900D6EC66 /* BMInjectableDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AF21993948900D6EC66 /* BMInjectableDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AF41993948900D6EC66 /* BMInjectableDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AF21993948900D6EC66 /* BMInjectableDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AF819939B9600D6EC66 /* BMFinalDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AF719939B9600D6EC66 /* BMFinalDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469D7AF919939B9600D6EC66 /* BMFinalDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AF719939B9600D6EC66 /* BMFinalDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B87600B7F2261AD5B84D0EF /* BMInitializerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876350F3E427D4632BF973 /* BMInitializerModel.m */; };
+		6B87608AF9162E91DB6B6228 /* BMInjectableModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */; };
+		6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; };
+		6B87621F9CCFDD363F4BD514 /* BMInitializerRegistry+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */; };
+		6B8763E655456456A446CCC9 /* BMInjectableModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */; };
+		6B8764F797409BA9C3BF746C /* BMInjectableSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760B52FCA2C108FD9C831 /* BMInjectableSpec.mm */; };
+		6B8764F7E4984E6563AEA399 /* BMInjectableBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876CA3172C4E32587A8AF8 /* BMInjectableBaseModel.m */; };
+		6B87653EE68CA9C1FA085DB4 /* BMInitializerRegistry+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */; };
+		6B87659E62B865A58B1C2EE2 /* BMInjectableHooksSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760215CB3DDAE5BDF2A3F /* BMInjectableHooksSpec.mm */; };
+		6B87662FE0F52E5ACAE29F2C /* BMInjectableModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */; };
+		6B8767476ECC2CC56309BCE0 /* BMInjectableInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876086E83B7B7473CA0069 /* BMInjectableInitializerFinder.mm */; };
+		6B876780DD64810A69EF5CCC /* BMInjectableInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876086E83B7B7473CA0069 /* BMInjectableInitializerFinder.mm */; };
+		6B8767BEFD511FB89FAD8B4C /* BMInitializerRegistry+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */; };
+		6B8767CDA6F6DF17C6A9CF3B /* BMInjectableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760F005E488B7957A6B75 /* BMInjectableModel.m */; };
+		6B8768618638718EE7BB6DDD /* BMInheritedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F6A7C4CA897F34E5782 /* BMInheritedProtocol.m */; };
+		6B8768E5E61EB10780B7F07C /* BMInjectableInitializerFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876086E83B7B7473CA0069 /* BMInjectableInitializerFinder.mm */; };
+		6B876957028C6FEB22638C4B /* BMInjectableInitializerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8765313FCFF83D84300CAC /* BMInjectableInitializerFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6B876B0BDBA3EE3E39A85B4D /* BMInjectableInitializerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8765313FCFF83D84300CAC /* BMInjectableInitializerFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6B876B3213684A4F481B0AE1 /* BMInjectableDerivedExtendedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876E0956D98A9306C03930 /* BMInjectableDerivedExtendedModel.m */; };
+		6B876C048D08ADBFA0F51E58 /* BMInjectableDerivedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8767009F874E56837C0D66 /* BMInjectableDerivedModel.m */; };
+		6B876C494A4986516212A774 /* BMInjectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763672EE1C91B61660631 /* BMInjectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B876D25D59FBE4D17CC8722 /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766859C981F1FDBEC3A9A /* BMInitializerFinderSpec.mm */; };
+		6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; };
+		6B876EDBC3963AE309578E28 /* BMHookedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F3434AE23D3362C1AF3 /* BMHookedModel.m */; };
+		6B876F33211674C2795C2FBD /* BMInjectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763672EE1C91B61660631 /* BMInjectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; };
+		6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -330,6 +353,15 @@
 		46535A1318207993004A9DA4 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
 		46535A1418207993004A9DA4 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
 		467029D4182D94CC003EAFB0 /* BMLazyExclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLazyExclude.h; sourceTree = "<group>"; };
+		469D7AC919935E2500D6EC66 /* Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
+		469D7ACD19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableInitializerSpecSpec.mm; sourceTree = "<group>"; };
+		469D7ADF199360AE00D6EC66 /* BMInitializer+Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+Injectable.h"; sourceTree = "<group>"; };
+		469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializer+Injectable.m"; sourceTree = "<group>"; };
+		469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableExclude.h; sourceTree = "<group>"; };
+		469D7AEB199390B900D6EC66 /* BMInjectableHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableHook.h; sourceTree = "<group>"; };
+		469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableHook.mm; sourceTree = "<group>"; };
+		469D7AF21993948900D6EC66 /* BMInjectableDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableDefinitions.h; sourceTree = "<group>"; };
+		469D7AF719939B9600D6EC66 /* BMFinalDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalDefinitions.h; sourceTree = "<group>"; };
 		46DD5B8F18A3EE7600DD4830 /* BMFinal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFinal.h; sourceTree = "<group>"; };
 		46DD5B9018A3EE9000DD4830 /* BMFinalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalHook.h; sourceTree = "<group>"; };
 		46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalHook.mm; sourceTree = "<group>"; };
@@ -372,7 +404,6 @@
 		5898A80630FF05327FC75DF8 /* BMLazyHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyHook.mm; sourceTree = "<group>"; };
 		5898A814D657DD9212874C36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5898A82CFD1F53CD71F7941B /* BloodMagic-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-Prefix.pch"; sourceTree = "<group>"; };
-		5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+LazyInitializer.h"; sourceTree = "<group>"; };
 		5898A875524120E81360C779 /* BMPrimitiveUnsignedIntProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedIntProperty.h; sourceTree = "<group>"; };
 		5898A87A2F83073496E12690 /* BMBloodMagicInjector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBloodMagicInjector.mm; sourceTree = "<group>"; };
 		5898A8AE9D2813476024CC65 /* BMPrimitiveFloatProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveFloatProperty.h; sourceTree = "<group>"; };
@@ -385,12 +416,7 @@
 		5898A9919F65F14D0894DE4B /* BMPrimitiveDoubleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveDoubleProperty.h; sourceTree = "<group>"; };
 		5898AA03DB938ADD52A695FB /* BMPropertyFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyFinder.mm; sourceTree = "<group>"; };
 		5898AAD4E07E2D7B42B00A68 /* BMPrimitiveUnsignedCharProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedCharProperty.mm; sourceTree = "<group>"; };
-		5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializer+LazyInitializer.m"; sourceTree = "<group>"; };
 		5898AB36EF21FFE02F7E95A3 /* BMPrimitiveFloatProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveFloatProperty.mm; sourceTree = "<group>"; };
-		5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyInitializerFinder.mm; sourceTree = "<group>"; };
-		5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+LazyRegistry.h"; sourceTree = "<group>"; };
-		5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyInitializerFinder.h; sourceTree = "<group>"; };
-		5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializerRegistry+LazyRegistry.m"; sourceTree = "<group>"; };
 		5898ACA257539D36AC542B5C /* BMPrimitiveLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveLongProperty.mm; sourceTree = "<group>"; };
 		5898ACE40181D8DAEBC54212 /* BMPrimitiveUnsignedLongProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveUnsignedLongProperty.h; sourceTree = "<group>"; };
 		5898AD28A392EAA3FAE516A6 /* BMInternalPropertyFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyFactory.mm; sourceTree = "<group>"; };
@@ -405,50 +431,61 @@
 		5898AE28D8A20B0F07093014 /* BMInternalPropertyTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalPropertyTemplate.h; sourceTree = "<group>"; };
 		5898AE53E7AB7DADC55FE83A /* BMPrimitiveCharProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPrimitiveCharProperty.h; sourceTree = "<group>"; };
 		5898AE86E34292B96D05DAA4 /* BMPrimitiveUnsignedLongProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPrimitiveUnsignedLongProperty.mm; sourceTree = "<group>"; };
-		5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyDefinitions.h; sourceTree = "<group>"; };
 		5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazy.h; sourceTree = "<group>"; };
 		5898AF0FA6CF74B0A05389D4 /* BMPropertyKVCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPropertyKVCHandler.h; sourceTree = "<group>"; };
 		5898AF26F9ED8167F06562E9 /* BMInternalProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalProperty.mm; sourceTree = "<group>"; };
 		5898AFEDFC0917CBBD32A3FF /* BMInternalPropertyTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInternalPropertyTemplate.mm; sourceTree = "<group>"; };
 		6B876007C28E9C6761F5F8F3 /* BMFatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatModel.h; sourceTree = "<group>"; };
 		6B876020B111F4C8A68A4059 /* BMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProperty.h; sourceTree = "<group>"; };
+		6B8760215CB3DDAE5BDF2A3F /* BMInjectableHooksSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableHooksSpec.mm; sourceTree = "<group>"; };
 		6B87604B1955D186CB63DC9D /* Preference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preference.h; sourceTree = "<group>"; };
+		6B876086E83B7B7473CA0069 /* BMInjectableInitializerFinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableInitializerFinder.mm; sourceTree = "<group>"; };
+		6B8760B52FCA2C108FD9C831 /* BMInjectableSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableSpec.mm; sourceTree = "<group>"; };
 		6B8760BC9A962C81AC64F0CB /* BMTestProtocolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestProtocolModel.m; sourceTree = "<group>"; };
+		6B8760F005E488B7957A6B75 /* BMInjectableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInjectableModel.m; sourceTree = "<group>"; };
 		6B87610158AA8ADB9CE25F64 /* BMStandardStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMStandardStorage.h; sourceTree = "<group>"; };
 		6B876111AB860E76E876080F /* BMPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartial.h; sourceTree = "<group>"; };
 		6B87616EF01C067652840D03 /* BMProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMProject.h; sourceTree = "<group>"; };
 		6B876180729C3B3443E9C7C4 /* BMPartialHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialHook.mm; sourceTree = "<group>"; };
 		6B8761C83314A61AB95D29FF /* BMDerivedExtendedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedExtendedModel.m; sourceTree = "<group>"; };
-		6B8761D1369EBB030065C8F5 /* BMInitializerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializerModel.m; sourceTree = "<group>"; };
 		6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceHook.h; sourceTree = "<group>"; };
-		6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInitializerFinderSpec.mm; sourceTree = "<group>"; };
+		6B876240205B42C4BF30789C /* BMInheritedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedProtocol.h; sourceTree = "<group>"; };
 		6B876245DA39F07FA9DA673E /* BMClassCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClassCollectorSpec.mm; sourceTree = "<group>"; };
 		6B87625A078E979A648F34F5 /* BMTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestProtocol.h; sourceTree = "<group>"; };
+		6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMInitializerRegistry+Injectable.m"; sourceTree = "<group>"; };
 		6B8762841AEA753743D57E43 /* BMPartialHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialHook.h; sourceTree = "<group>"; };
 		6B876287C8AC1D5F5A2B5942 /* BMPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreference.h; sourceTree = "<group>"; };
 		6B8762B7AC949D43659D2489 /* BMLazyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyTestProtocol.h; sourceTree = "<group>"; };
 		6B8762E91156ECD58B8BF3A6 /* BMMultiple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMultiple.m; sourceTree = "<group>"; };
-		6B8762ED1A200739CC9C57C2 /* BMHookedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHookedModel.m; sourceTree = "<group>"; };
 		6B876341864AC146125EFDD4 /* BMPropertyTypeParserSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyTypeParserSpec.mm; sourceTree = "<group>"; };
+		6B876350F3E427D4632BF973 /* BMInitializerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitializerModel.m; sourceTree = "<group>"; };
+		6B8763672EE1C91B61660631 /* BMInjectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectable.h; sourceTree = "<group>"; };
 		6B87636B2AB33067B7EF53A2 /* BMPartialWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialWrapperView.h; sourceTree = "<group>"; };
 		6B8763A7E32B983A1A8E88D8 /* Final.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Final.h; sourceTree = "<group>"; };
 		6B8764151227B1F772F3AD1B /* BMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMUser.m; sourceTree = "<group>"; };
+		6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableModuleLoader.h; sourceTree = "<group>"; };
 		6B87648E807487635D9049EE /* LazyProtocolsSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazyProtocolsSpec.mm; sourceTree = "<group>"; };
-		6B8764B856EC6D658A830174 /* BMInitializerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInitializerSpec.mm; sourceTree = "<group>"; };
+		6B8764ADC41C393AF8B1F077 /* BMInjectableDerivedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableDerivedModel.h; sourceTree = "<group>"; };
 		6B8764D36C0AE5054053FA66 /* MultiplePropertiesSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MultiplePropertiesSpec.mm; sourceTree = "<group>"; };
 		6B87650604276BA9A18435AA /* BMAnotherLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAnotherLazyModel.h; sourceTree = "<group>"; };
+		6B8765313FCFF83D84300CAC /* BMInjectableInitializerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableInitializerFinder.h; sourceTree = "<group>"; };
 		6B8765940781D107255A23A2 /* BMFinalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModel.h; sourceTree = "<group>"; };
 		6B8765DAC5F8019A962765EE /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		6B8765FE1B361D761CCAE171 /* BMPropertySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertySpec.mm; sourceTree = "<group>"; };
 		6B87664D0F386244D11B7C1E /* BMDerivedLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDerivedLazyModel.m; sourceTree = "<group>"; };
+		6B8766859C981F1FDBEC3A9A /* BMInitializerFinderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInitializerFinderSpec.mm; sourceTree = "<group>"; };
 		6B876688EF1E1722917B305E /* Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Initializers.h; sourceTree = "<group>"; };
 		6B8766B5B7BDB916B9D7B358 /* BMPropertyCollectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPropertyCollectorSpec.mm; sourceTree = "<group>"; };
 		6B8766C52E3E2D731E1A90D5 /* BMFatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFatModel.m; sourceTree = "<group>"; };
+		6B8766D14BEBF939D060BBB2 /* BMInjectableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableModel.h; sourceTree = "<group>"; };
 		6B8766D74A276049A5B243AB /* Partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partial.h; sourceTree = "<group>"; };
 		6B8766D8A2FF466952F828DE /* BMFinalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFinalModel.m; sourceTree = "<group>"; };
+		6B8766E64E993B3724F148F9 /* BMInitializerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializerModel.h; sourceTree = "<group>"; };
+		6B8767009F874E56837C0D66 /* BMInjectableDerivedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInjectableDerivedModel.m; sourceTree = "<group>"; };
 		6B8767292F9B62A5727E3993 /* BMFinalModel_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFinalModel_Private.h; sourceTree = "<group>"; };
 		6B876744FFA157EE330D0A2A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		6B876765D3EAAC22F947CDC5 /* BMPreferenceModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceModuleLoader.m; sourceTree = "<group>"; };
+		6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInjectableModuleLoader.m; sourceTree = "<group>"; };
 		6B87679C1AD00571E4EC1425 /* BMFatDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatDynamicModel.h; sourceTree = "<group>"; };
 		6B8767BD9E2528A35277E2E7 /* BMMultiple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMultiple.h; sourceTree = "<group>"; };
 		6B8767D6A29AF1BBBD033BD8 /* BMDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedExtendedModel.h; sourceTree = "<group>"; };
@@ -459,36 +496,40 @@
 		6B8768AEF7B39442021A524B /* BMInternalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInternalTypes.h; sourceTree = "<group>"; };
 		6B8768B628DDFC4093283A82 /* BMFinalSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMFinalSpec.mm; sourceTree = "<group>"; };
 		6B8768F30924C33E873D5FA9 /* BMTestProtocolModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestProtocolModel.h; sourceTree = "<group>"; };
+		6B87690375F4CF94B998BEF4 /* BMInjectableTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableTestProtocol.h; sourceTree = "<group>"; };
 		6B87695A05461A5FF63DA676 /* BMProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMProject.m; sourceTree = "<group>"; };
 		6B876960639B139CCACB133E /* LazySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LazySpec.mm; sourceTree = "<group>"; };
 		6B87696E4D0B24C383292AA5 /* BMBaseModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBaseModel.mm; sourceTree = "<group>"; };
-		6B8769989EFBBA2BED86DBC1 /* BMInitializerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitializerModel.h; sourceTree = "<group>"; };
 		6B8769DE5849CE2B2146AD53 /* BMDerivedLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedLazyModel.h; sourceTree = "<group>"; };
 		6B876AA466894B38B70BDCFD /* BMTestPartialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestPartialView.m; sourceTree = "<group>"; };
 		6B876AAA6DEDC6EBD23B7260 /* BMBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBaseModel.h; sourceTree = "<group>"; };
 		6B876ABACC0F25D39882E102 /* BMBloodMagicInjectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMBloodMagicInjectorSpec.mm; sourceTree = "<group>"; };
 		6B876ABD5E5D323A53CC565F /* BMDerivedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDerivedModel.h; sourceTree = "<group>"; };
+		6B876AED6D018D8FD7CD0996 /* BMInjectableDerivedExtendedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableDerivedExtendedModel.h; sourceTree = "<group>"; };
 		6B876AEE77514A080C6C2469 /* BMPartialSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPartialSpec.mm; sourceTree = "<group>"; };
 		6B876AF87AABC3F9C666AC45 /* BMTestPartialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestPartialView.h; sourceTree = "<group>"; };
 		6B876AFD1AAA3C414487B226 /* BMProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMProperty.mm; sourceTree = "<group>"; };
 		6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPreferenceModuleLoader.h; sourceTree = "<group>"; };
 		6B876B24F1F533749C06DBE3 /* BMFatDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFatDynamicModel.m; sourceTree = "<group>"; };
-		6B876B71392126A38C100BFF /* BMInheritedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedProtocol.m; sourceTree = "<group>"; };
 		6B876BE8BA03A0D1741BCAA0 /* BMInheritedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedModel.h; sourceTree = "<group>"; };
-		6B876C110737CFCAF593F632 /* BMInheritedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInheritedProtocol.h; sourceTree = "<group>"; };
+		6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializerRegistry+Injectable.h"; sourceTree = "<group>"; };
 		6B876C366CB4050E12956584 /* Lazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lazy.h; sourceTree = "<group>"; };
 		6B876C509C622B152DA8F7F1 /* BMInheritedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedModel.m; sourceTree = "<group>"; };
 		6B876C54AD78847F441FC47F /* BMPreferenceHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPreferenceHook.m; sourceTree = "<group>"; };
 		6B876C709244E060463F3943 /* BMFatTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFatTestProtocol.h; sourceTree = "<group>"; };
 		6B876C8236ED1A26770478E5 /* BMPartialModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPartialModuleLoader.h; sourceTree = "<group>"; };
+		6B876CA3172C4E32587A8AF8 /* BMInjectableBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInjectableBaseModel.m; sourceTree = "<group>"; };
 		6B876CE2FDB5F043D4F5B084 /* BMLazyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLazyModel.h; sourceTree = "<group>"; };
 		6B876D48E0FB11A752098556 /* BMDerivedModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMDerivedModel.mm; sourceTree = "<group>"; };
 		6B876E0545ECB544DDFBCE05 /* BMEntityWithoutProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMEntityWithoutProtocols.h; sourceTree = "<group>"; };
+		6B876E0956D98A9306C03930 /* BMInjectableDerivedExtendedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInjectableDerivedExtendedModel.m; sourceTree = "<group>"; };
 		6B876E171290F9E3D98CC588 /* BMPartialWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialWrapperView.m; sourceTree = "<group>"; };
+		6B876E2600BC7EEA1B2CABFF /* BMInjectableBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInjectableBaseModel.h; sourceTree = "<group>"; };
 		6B876E61CB6BC297D2A0960E /* BMLazyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLazyModel.m; sourceTree = "<group>"; };
 		6B876E7DDAEBFFAC9E3CEF95 /* BMPartialModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPartialModuleLoader.m; sourceTree = "<group>"; };
-		6B876E7E4E2EFEF35136A148 /* BMHookedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHookedModel.h; sourceTree = "<group>"; };
-		6B876F4B83F0D943876D1FFE /* BMLazyHooksSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMLazyHooksSpec.mm; sourceTree = "<group>"; };
+		6B876EA1736DF610AA0236C7 /* BMHookedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHookedModel.h; sourceTree = "<group>"; };
+		6B876F3434AE23D3362C1AF3 /* BMHookedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHookedModel.m; sourceTree = "<group>"; };
+		6B876F6A7C4CA897F34E5782 /* BMInheritedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedProtocol.m; sourceTree = "<group>"; };
 		6B876F74B083B1BB71D41C3A /* BMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUser.h; sourceTree = "<group>"; };
 		6B876F927612B2CF7210CF5B /* BMInheritedExcludedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInheritedExcludedModel.m; sourceTree = "<group>"; };
 		6B876FE571B204644DBC744A /* BMPreferenceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMPreferenceSpec.mm; sourceTree = "<group>"; };
@@ -615,8 +656,48 @@
 		469D7AC819935BA400D6EC66 /* Injectable */ = {
 			isa = PBXGroup;
 			children = (
+				469D7AD719935FA500D6EC66 /* Public */,
+				469D7ACF19935F5300D6EC66 /* Private */,
 			);
-			name = Injectable;
+			path = Injectable;
+			sourceTree = "<group>";
+		};
+		469D7ACC19935E5D00D6EC66 /* Injectable */ = {
+			isa = PBXGroup;
+			children = (
+				469D7ACD19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm */,
+				6B8766859C981F1FDBEC3A9A /* BMInitializerFinderSpec.mm */,
+				6B8760B52FCA2C108FD9C831 /* BMInjectableSpec.mm */,
+				6B8760215CB3DDAE5BDF2A3F /* BMInjectableHooksSpec.mm */,
+			);
+			path = Injectable;
+			sourceTree = "<group>";
+		};
+		469D7ACF19935F5300D6EC66 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				6B8765313FCFF83D84300CAC /* BMInjectableInitializerFinder.h */,
+				6B876086E83B7B7473CA0069 /* BMInjectableInitializerFinder.mm */,
+				6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */,
+				6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */,
+				6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */,
+				6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */,
+				469D7AEB199390B900D6EC66 /* BMInjectableHook.h */,
+				469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		469D7AD719935FA500D6EC66 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				469D7ADF199360AE00D6EC66 /* BMInitializer+Injectable.h */,
+				469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */,
+				6B8763672EE1C91B61660631 /* BMInjectable.h */,
+				469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */,
+				469D7AF21993948900D6EC66 /* BMInjectableDefinitions.h */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		46DD5B8918A3EE1600DD4830 /* Final */ = {
@@ -632,6 +713,7 @@
 			isa = PBXGroup;
 			children = (
 				46DD5B8F18A3EE7600DD4830 /* BMFinal.h */,
+				469D7AF719939B9600D6EC66 /* BMFinalDefinitions.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -686,8 +768,6 @@
 				5898A80630FF05327FC75DF8 /* BMLazyHook.mm */,
 				5898A703E558929782CC712D /* BMLazyModuleLoader.h */,
 				CA0D845D1803BF8B0068D8F9 /* BMLazyModuleLoader.m */,
-				5898AC1CD2B2C4D3D48600CC /* BMLazyInitializerFinder.h */,
-				5898AB726253851E30D7ABED /* BMLazyInitializerFinder.mm */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -785,13 +865,8 @@
 		5898AD94A5549C01FBB6DC12 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				5898A83C183F57B2C0937ABD /* BMInitializer+LazyInitializer.h */,
-				5898AB1F52BFF48E4C3DE65C /* BMInitializer+LazyInitializer.m */,
-				5898AB9F4613E1ECA2E75711 /* BMInitializerRegistry+LazyRegistry.h */,
-				5898AC5D06D970807E136F41 /* BMInitializerRegistry+LazyRegistry.m */,
 				5898AEF8CAA0DB0BBB750EA0 /* BMLazy.h */,
 				467029D4182D94CC003EAFB0 /* BMLazyExclude.h */,
-				5898AEB1DF36EF33AFE5A21B /* BMLazyDefinitions.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -900,6 +975,7 @@
 				6B876240BE478AF1A24A20E0 /* Partial */,
 				6B8767BD9E2528A35277E2E7 /* BMMultiple.h */,
 				6B8762E91156ECD58B8BF3A6 /* BMMultiple.m */,
+				6B87674685FC7C1B846C66CE /* Injectable */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -996,8 +1072,6 @@
 		6B876468BF9A2CEFE979A523 /* LazySpecs */ = {
 			isa = PBXGroup;
 			children = (
-				6B876E7E4E2EFEF35136A148 /* BMHookedModel.h */,
-				6B8762ED1A200739CC9C57C2 /* BMHookedModel.m */,
 				6B876CE2FDB5F043D4F5B084 /* BMLazyModel.h */,
 				6B876E61CB6BC297D2A0960E /* BMLazyModel.m */,
 				6B876812B823FA4245CC27FC /* BMAnotherLazyModel.m */,
@@ -1019,10 +1093,6 @@
 				6B876F927612B2CF7210CF5B /* BMInheritedExcludedModel.m */,
 				6B87616EF01C067652840D03 /* BMProject.h */,
 				6B87695A05461A5FF63DA676 /* BMProject.m */,
-				6B876B71392126A38C100BFF /* BMInheritedProtocol.m */,
-				6B876C110737CFCAF593F632 /* BMInheritedProtocol.h */,
-				6B8769989EFBBA2BED86DBC1 /* BMInitializerModel.h */,
-				6B8761D1369EBB030065C8F5 /* BMInitializerModel.m */,
 			);
 			path = LazySpecs;
 			sourceTree = "<group>";
@@ -1033,6 +1103,28 @@
 				6B8764D36C0AE5054053FA66 /* MultiplePropertiesSpec.mm */,
 			);
 			path = MultipleProperties;
+			sourceTree = "<group>";
+		};
+		6B87674685FC7C1B846C66CE /* Injectable */ = {
+			isa = PBXGroup;
+			children = (
+				6B876F3434AE23D3362C1AF3 /* BMHookedModel.m */,
+				6B876EA1736DF610AA0236C7 /* BMHookedModel.h */,
+				6B876F6A7C4CA897F34E5782 /* BMInheritedProtocol.m */,
+				6B876240205B42C4BF30789C /* BMInheritedProtocol.h */,
+				6B876350F3E427D4632BF973 /* BMInitializerModel.m */,
+				6B8766E64E993B3724F148F9 /* BMInitializerModel.h */,
+				6B8760F005E488B7957A6B75 /* BMInjectableModel.m */,
+				6B8766D14BEBF939D060BBB2 /* BMInjectableModel.h */,
+				6B87690375F4CF94B998BEF4 /* BMInjectableTestProtocol.h */,
+				6B876CA3172C4E32587A8AF8 /* BMInjectableBaseModel.m */,
+				6B876E2600BC7EEA1B2CABFF /* BMInjectableBaseModel.h */,
+				6B8767009F874E56837C0D66 /* BMInjectableDerivedModel.m */,
+				6B8764ADC41C393AF8B1F077 /* BMInjectableDerivedModel.h */,
+				6B876E0956D98A9306C03930 /* BMInjectableDerivedExtendedModel.m */,
+				6B876AED6D018D8FD7CD0996 /* BMInjectableDerivedExtendedModel.h */,
+			);
+			path = Injectable;
 			sourceTree = "<group>";
 		};
 		6B87679410FE8AC0EEEF510B /* Partial */ = {
@@ -1085,11 +1177,8 @@
 		6B8769C520813BC1D15D0B59 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
-				6B876F4B83F0D943876D1FFE /* BMLazyHooksSpec.mm */,
-				6B8764B856EC6D658A830174 /* BMInitializerSpec.mm */,
 				6B876960639B139CCACB133E /* LazySpec.mm */,
 				6B87648E807487635D9049EE /* LazyProtocolsSpec.mm */,
-				6B87622CD67F186FB213F897 /* BMInitializerFinderSpec.mm */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -1097,6 +1186,7 @@
 		6B876A7847DF03467E93A1D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				469D7ACC19935E5D00D6EC66 /* Injectable */,
 				6B876D4B2380944E8B881035 /* Preference */,
 				6B8766E99AB3600E779697EC /* MultipleProperties */,
 				6B876F007001BF87746BDC46 /* Final */,
@@ -1200,6 +1290,7 @@
 				6B8766D74A276049A5B243AB /* Partial.h */,
 				6B87604B1955D186CB63DC9D /* Preference.h */,
 				463D265219012EF00001A76E /* BloodMagic.h */,
+				469D7AC919935E2500D6EC66 /* Injectable.h */,
 			);
 			path = BloodMagic;
 			sourceTree = "<group>";
@@ -1212,6 +1303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463D24A6190115660001A76E /* Final.h in Headers */,
+				469D7AF819939B9600D6EC66 /* BMFinalDefinitions.h in Headers */,
 				463D24A7190115660001A76E /* Core.h in Headers */,
 				463D24A8190115660001A76E /* Initializers.h in Headers */,
 				463D24A9190115660001A76E /* Lazy.h in Headers */,
@@ -1223,11 +1315,8 @@
 				463D24B51901160B0001A76E /* BMInitializer.h in Headers */,
 				463D24B61901160B0001A76E /* BMInitializerRegistry.h in Headers */,
 				463D24B81901160B0001A76E /* BMInitializer_Private.h in Headers */,
-				463D24B91901160B0001A76E /* BMInitializer+LazyInitializer.h in Headers */,
-				463D24BB1901160B0001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */,
 				463D24BD1901160B0001A76E /* BMLazy.h in Headers */,
 				463D24BE1901160B0001A76E /* BMLazyExclude.h in Headers */,
-				463D24BF1901160C0001A76E /* BMLazyDefinitions.h in Headers */,
 				463D24C01901160C0001A76E /* BMPartial.h in Headers */,
 				463D24C11901160C0001A76E /* BMPreference.h in Headers */,
 				463D265419012F160001A76E /* BloodMagic.h in Headers */,
@@ -1238,11 +1327,13 @@
 				463D24C7190116600001A76E /* BMClass_Private.h in Headers */,
 				463D24C8190116600001A76E /* BMClass.h in Headers */,
 				463D24CA190116600001A76E /* BMClassCache.h in Headers */,
+				469D7AE1199360AE00D6EC66 /* BMInitializer+Injectable.h in Headers */,
 				463D24CC190116600001A76E /* BMInternalPropertyTemplate.h in Headers */,
 				463D24CF190116610001A76E /* BMCompsiteProperty.h in Headers */,
 				463D24D1190116610001A76E /* BMPrimitiveCharProperty.h in Headers */,
 				463D24D3190116610001A76E /* BMPrimitiveUnsignedCharProperty.h in Headers */,
 				463D24D5190116610001A76E /* BMPrimitiveShortProperty.h in Headers */,
+				469D7ACA19935E2500D6EC66 /* Injectable.h in Headers */,
 				463D24D7190116620001A76E /* BMPrimitiveUnsignedShortProperty.h in Headers */,
 				463D24D9190116620001A76E /* BMPrimitiveIntProperty.h in Headers */,
 				463D24DB190116620001A76E /* BMPrimitiveUnsignedIntProperty.h in Headers */,
@@ -1253,10 +1344,12 @@
 				463D24E5190116640001A76E /* BMPrimitiveFloatProperty.h in Headers */,
 				463D24E7190116640001A76E /* BMPrimitiveDoubleProperty.h in Headers */,
 				463D24E8190116640001A76E /* BMInternalPropertyFactory.h in Headers */,
+				469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */,
 				463D24EA190116640001A76E /* BMInternalProperty.h in Headers */,
 				463D24EC190116650001A76E /* BMProperty_Private.h in Headers */,
 				463D24ED190116650001A76E /* BMPropertyKVCHandler.h in Headers */,
 				463D24F0190116650001A76E /* BMPropertyValueService.h in Headers */,
+				469D7AF31993948900D6EC66 /* BMInjectableDefinitions.h in Headers */,
 				463D24F1190116660001A76E /* BMClassCollector.h in Headers */,
 				463D24F3190116660001A76E /* BMPropertyCollector.h in Headers */,
 				463D24F5190116660001A76E /* BMDynamicPropertyInjector.h in Headers */,
@@ -1264,13 +1357,17 @@
 				463D24F9190116670001A76E /* BMPropertyFinder.h in Headers */,
 				463D24FB190116670001A76E /* BMPropertyTypeParser.h in Headers */,
 				463D24FD190116680001A76E /* BMInternalTypes.h in Headers */,
+				469D7AE919938FC800D6EC66 /* BMInjectableExclude.h in Headers */,
 				463D24FE190116680001A76E /* BMLazyHook.h in Headers */,
 				463D2500190116680001A76E /* BMLazyModuleLoader.h in Headers */,
-				463D2502190116690001A76E /* BMLazyInitializerFinder.h in Headers */,
 				463D2505190116690001A76E /* BMPartialModuleLoader.h in Headers */,
 				463D25071901166A0001A76E /* BMPartialHook.h in Headers */,
 				463D25091901166A0001A76E /* BMPreferenceModuleLoader.h in Headers */,
 				463D250B1901166B0001A76E /* BMPreferenceHook.h in Headers */,
+				6B876B0BDBA3EE3E39A85B4D /* BMInjectableInitializerFinder.h in Headers */,
+				6B876F33211674C2795C2FBD /* BMInjectable.h in Headers */,
+				6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */,
+				6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1278,6 +1375,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469D7AF919939B9600D6EC66 /* BMFinalDefinitions.h in Headers */,
 				463D25A119012BEF0001A76E /* BMFinal.h in Headers */,
 				463D25A219012BEF0001A76E /* BMBloodMagicInjector.h in Headers */,
 				463D25A419012BEF0001A76E /* BMPublicCoreDefnitions.h in Headers */,
@@ -1286,11 +1384,8 @@
 				463D25A919012BF00001A76E /* BMInitializer.h in Headers */,
 				463D25AA19012BF00001A76E /* BMInitializerRegistry.h in Headers */,
 				463D25AC19012BF00001A76E /* BMInitializer_Private.h in Headers */,
-				463D25AD19012BF00001A76E /* BMInitializer+LazyInitializer.h in Headers */,
-				463D25AF19012BF00001A76E /* BMInitializerRegistry+LazyRegistry.h in Headers */,
 				463D25B119012BF00001A76E /* BMLazy.h in Headers */,
 				463D25B219012BF00001A76E /* BMLazyExclude.h in Headers */,
-				463D25B319012BF00001A76E /* BMLazyDefinitions.h in Headers */,
 				463D25B419012BF00001A76E /* BMPartial.h in Headers */,
 				463D25B519012BF10001A76E /* BMPreference.h in Headers */,
 				463D25B619012BF10001A76E /* Final.h in Headers */,
@@ -1305,11 +1400,13 @@
 				463D25CB19012C230001A76E /* BMPrimitiveCharProperty.h in Headers */,
 				463D25CD19012C230001A76E /* BMPrimitiveUnsignedCharProperty.h in Headers */,
 				463D25CF19012C230001A76E /* BMPrimitiveShortProperty.h in Headers */,
+				469D7AE2199360AE00D6EC66 /* BMInitializer+Injectable.h in Headers */,
 				463D25D119012C240001A76E /* BMPrimitiveUnsignedShortProperty.h in Headers */,
 				463D25D319012C240001A76E /* BMPrimitiveIntProperty.h in Headers */,
 				463D25D519012C240001A76E /* BMPrimitiveUnsignedIntProperty.h in Headers */,
 				463D25D719012C240001A76E /* BMPrimitiveLongProperty.h in Headers */,
 				463D25D919012C250001A76E /* BMPrimitiveUnsignedLongProperty.h in Headers */,
+				469D7ACB19935E2500D6EC66 /* Injectable.h in Headers */,
 				463D25DB19012C250001A76E /* BMPrimitiveLongLongProperty.h in Headers */,
 				463D25DD19012C250001A76E /* BMPrimitiveUnsignedLongLongProperty.h in Headers */,
 				463D25DF19012C260001A76E /* BMPrimitiveFloatProperty.h in Headers */,
@@ -1320,10 +1417,12 @@
 				463D25E719012C270001A76E /* BMPropertyKVCHandler.h in Headers */,
 				463D25EA19012C270001A76E /* BMPropertyValueService.h in Headers */,
 				463D25EB19012C280001A76E /* BMClassCollector.h in Headers */,
+				469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */,
 				463D25BD19012C210001A76E /* BMFinalHook.h in Headers */,
 				463D25BF19012C210001A76E /* BMFinalModuleLoader.h in Headers */,
 				463D25C119012C220001A76E /* BMClass_Private.h in Headers */,
 				463D25C219012C220001A76E /* BMClass.h in Headers */,
+				469D7AF41993948900D6EC66 /* BMInjectableDefinitions.h in Headers */,
 				463D25C419012C220001A76E /* BMClassCache.h in Headers */,
 				463D25ED19012C280001A76E /* BMPropertyCollector.h in Headers */,
 				463D25EF19012C280001A76E /* BMDynamicPropertyInjector.h in Headers */,
@@ -1331,13 +1430,17 @@
 				463D25F319012C290001A76E /* BMPropertyFinder.h in Headers */,
 				463D25F519012C290001A76E /* BMPropertyTypeParser.h in Headers */,
 				463D25F719012C2A0001A76E /* BMInternalTypes.h in Headers */,
+				469D7AEA19938FC800D6EC66 /* BMInjectableExclude.h in Headers */,
 				463D25FE19012C2B0001A76E /* BMLazyHook.h in Headers */,
 				463D260019012C2C0001A76E /* BMLazyModuleLoader.h in Headers */,
-				463D260219012C2C0001A76E /* BMLazyInitializerFinder.h in Headers */,
 				463D260519012C2D0001A76E /* BMPartialModuleLoader.h in Headers */,
 				463D260719012C2D0001A76E /* BMPartialHook.h in Headers */,
 				463D260919012C2E0001A76E /* BMPreferenceModuleLoader.h in Headers */,
 				463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */,
+				6B876957028C6FEB22638C4B /* BMInjectableInitializerFinder.h in Headers */,
+				6B876C494A4986516212A774 /* BMInjectable.h in Headers */,
+				6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */,
+				6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1494,6 +1597,7 @@
 				4624664A18FF15DF00DC8E4E /* BMPrimitiveLongProperty.mm in Sources */,
 				4624664B18FF15DF00DC8E4E /* BMPrimitiveUnsignedLongProperty.mm in Sources */,
 				4624664C18FF15DF00DC8E4E /* BMPrimitiveLongLongProperty.mm in Sources */,
+				469D7AE3199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */,
 				4624664D18FF15DF00DC8E4E /* BMPrimitiveUnsignedLongLongProperty.mm in Sources */,
 				4624668A18FF171900DC8E4E /* BMDynamicPropertyInjector.mm in Sources */,
 				4624664E18FF15DF00DC8E4E /* BMPrimitiveFloatProperty.mm in Sources */,
@@ -1510,11 +1614,8 @@
 				4624665918FF15DF00DC8E4E /* BMProperty.mm in Sources */,
 				4624665A18FF15DF00DC8E4E /* BMInitializer.m in Sources */,
 				4624665B18FF15DF00DC8E4E /* BMInitializerRegistry.m in Sources */,
-				4624665C18FF15DF00DC8E4E /* BMInitializer+LazyInitializer.m in Sources */,
-				4624665D18FF15DF00DC8E4E /* BMInitializerRegistry+LazyRegistry.m in Sources */,
 				4624665E18FF15DF00DC8E4E /* BMLazyHook.mm in Sources */,
 				4624665F18FF15DF00DC8E4E /* BMLazyModuleLoader.m in Sources */,
-				4624666018FF15DF00DC8E4E /* BMLazyInitializerFinder.mm in Sources */,
 				4624666118FF15DF00DC8E4E /* BMPartialModuleLoader.m in Sources */,
 				4624666218FF15DF00DC8E4E /* BMPartialHook.mm in Sources */,
 				4624666318FF15DF00DC8E4E /* BMPreferenceModuleLoader.m in Sources */,
@@ -1527,11 +1628,9 @@
 				4624666A18FF15DF00DC8E4E /* BMPropertySpec.mm in Sources */,
 				4624666B18FF15DF00DC8E4E /* BMBloodMagicInjectorSpec.mm in Sources */,
 				4624666C18FF15DF00DC8E4E /* BMPropertyTypeParserSpec.mm in Sources */,
-				4624666D18FF15DF00DC8E4E /* BMLazyHooksSpec.mm in Sources */,
-				4624666E18FF15DF00DC8E4E /* BMInitializerSpec.mm in Sources */,
+				469D7AEF199390B900D6EC66 /* BMInjectableHook.mm in Sources */,
 				4624666F18FF15DF00DC8E4E /* LazySpec.mm in Sources */,
 				4624667018FF15DF00DC8E4E /* LazyProtocolsSpec.mm in Sources */,
-				4624667118FF15DF00DC8E4E /* BMInitializerFinderSpec.mm in Sources */,
 				4624667218FF15DF00DC8E4E /* BMPartialSpec.mm in Sources */,
 				4624667318FF15DF00DC8E4E /* BMStandardStorage.m in Sources */,
 				4624667518FF15DF00DC8E4E /* BMFinalModel.m in Sources */,
@@ -1539,7 +1638,6 @@
 				4624667718FF15DF00DC8E4E /* BMEntityWithoutProtocols.m in Sources */,
 				4624667818FF15DF00DC8E4E /* BMFatModel.m in Sources */,
 				4624667918FF15DF00DC8E4E /* BMFatDynamicModel.m in Sources */,
-				4624667A18FF15DF00DC8E4E /* BMHookedModel.m in Sources */,
 				4624667B18FF15DF00DC8E4E /* BMLazyModel.m in Sources */,
 				4624667C18FF15DF00DC8E4E /* BMAnotherLazyModel.m in Sources */,
 				4624667D18FF15DF00DC8E4E /* BMTestProtocolModel.m in Sources */,
@@ -1550,12 +1648,24 @@
 				4624668218FF15DF00DC8E4E /* BMInheritedModel.m in Sources */,
 				4624668318FF15DF00DC8E4E /* BMInheritedExcludedModel.m in Sources */,
 				4624668418FF15DF00DC8E4E /* BMProject.m in Sources */,
-				4624668518FF15DF00DC8E4E /* BMInheritedProtocol.m in Sources */,
-				4624668618FF15DF00DC8E4E /* BMInitializerModel.m in Sources */,
 				4624668718FF15DF00DC8E4E /* BMTestPartialView.m in Sources */,
 				4624668818FF15DF00DC8E4E /* BMPartialWrapperView.m in Sources */,
+				469D7ACE19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm in Sources */,
 				4624668918FF15DF00DC8E4E /* BMMultiple.m in Sources */,
 				4624663418FF157D00DC8E4E /* main.m in Sources */,
+				6B8768E5E61EB10780B7F07C /* BMInjectableInitializerFinder.mm in Sources */,
+				6B876D25D59FBE4D17CC8722 /* BMInitializerFinderSpec.mm in Sources */,
+				6B876EDBC3963AE309578E28 /* BMHookedModel.m in Sources */,
+				6B8768618638718EE7BB6DDD /* BMInheritedProtocol.m in Sources */,
+				6B87600B7F2261AD5B84D0EF /* BMInitializerModel.m in Sources */,
+				6B8764F797409BA9C3BF746C /* BMInjectableSpec.mm in Sources */,
+				6B8767CDA6F6DF17C6A9CF3B /* BMInjectableModel.m in Sources */,
+				6B8763E655456456A446CCC9 /* BMInjectableModuleLoader.m in Sources */,
+				6B8764F7E4984E6563AEA399 /* BMInjectableBaseModel.m in Sources */,
+				6B876C048D08ADBFA0F51E58 /* BMInjectableDerivedModel.m in Sources */,
+				6B876B3213684A4F481B0AE1 /* BMInjectableDerivedExtendedModel.m in Sources */,
+				6B87621F9CCFDD363F4BD514 /* BMInitializerRegistry+Injectable.m in Sources */,
+				6B87659E62B865A58B1C2EE2 /* BMInjectableHooksSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1564,6 +1674,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463D24411901152C0001A76E /* BMFinalHook.mm in Sources */,
+				469D7AF0199390B900D6EC66 /* BMInjectableHook.mm in Sources */,
 				463D24431901152C0001A76E /* BMFinalModuleLoader.m in Sources */,
 				463D24471901152C0001A76E /* BMClass.mm in Sources */,
 				463D24491901152C0001A76E /* BMClassCache.mm in Sources */,
@@ -1585,6 +1696,7 @@
 				463D24691901152C0001A76E /* BMInternalProperty.mm in Sources */,
 				463D246C1901152C0001A76E /* BMPropertyKVCHandler.mm in Sources */,
 				463D246D1901152C0001A76E /* BMPropertyValueService.mm in Sources */,
+				469D7AE4199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */,
 				463D24701901152C0001A76E /* BMClassCollector.mm in Sources */,
 				463D24721901152C0001A76E /* BMPropertyCollector.mm in Sources */,
 				463D24741901152C0001A76E /* BMDynamicPropertyInjector.mm in Sources */,
@@ -1595,15 +1707,15 @@
 				463D24801901152C0001A76E /* BMProperty.mm in Sources */,
 				463D24821901152C0001A76E /* BMInitializer.m in Sources */,
 				463D24851901152C0001A76E /* BMInitializerRegistry.m in Sources */,
-				463D24881901152C0001A76E /* BMInitializer+LazyInitializer.m in Sources */,
-				463D248A1901152C0001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */,
 				463D248F1901152C0001A76E /* BMLazyHook.mm in Sources */,
 				463D24911901152C0001A76E /* BMLazyModuleLoader.m in Sources */,
-				463D24931901152C0001A76E /* BMLazyInitializerFinder.mm in Sources */,
 				463D24951901152C0001A76E /* BMPartialModuleLoader.m in Sources */,
 				463D24971901152C0001A76E /* BMPartialHook.mm in Sources */,
 				463D24991901152C0001A76E /* BMPreferenceModuleLoader.m in Sources */,
 				463D249B1901152C0001A76E /* BMPreferenceHook.m in Sources */,
+				6B8767476ECC2CC56309BCE0 /* BMInjectableInitializerFinder.mm in Sources */,
+				6B87608AF9162E91DB6B6228 /* BMInjectableModuleLoader.m in Sources */,
+				6B87653EE68CA9C1FA085DB4 /* BMInitializerRegistry+Injectable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1612,6 +1724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463D253D19012BA50001A76E /* BMFinalHook.mm in Sources */,
+				469D7AF1199390B900D6EC66 /* BMInjectableHook.mm in Sources */,
 				463D253F19012BA50001A76E /* BMFinalModuleLoader.m in Sources */,
 				463D254319012BA50001A76E /* BMClass.mm in Sources */,
 				463D254519012BA50001A76E /* BMClassCache.mm in Sources */,
@@ -1633,6 +1746,7 @@
 				463D256519012BA50001A76E /* BMInternalProperty.mm in Sources */,
 				463D256819012BA50001A76E /* BMPropertyKVCHandler.mm in Sources */,
 				463D256919012BA50001A76E /* BMPropertyValueService.mm in Sources */,
+				469D7AE5199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */,
 				463D256C19012BA50001A76E /* BMClassCollector.mm in Sources */,
 				463D256E19012BA50001A76E /* BMPropertyCollector.mm in Sources */,
 				463D257019012BA50001A76E /* BMDynamicPropertyInjector.mm in Sources */,
@@ -1643,15 +1757,15 @@
 				463D257C19012BA50001A76E /* BMProperty.mm in Sources */,
 				463D257E19012BA50001A76E /* BMInitializer.m in Sources */,
 				463D258119012BA50001A76E /* BMInitializerRegistry.m in Sources */,
-				463D258419012BA50001A76E /* BMInitializer+LazyInitializer.m in Sources */,
-				463D258619012BA50001A76E /* BMInitializerRegistry+LazyRegistry.m in Sources */,
 				463D258B19012BA50001A76E /* BMLazyHook.mm in Sources */,
 				463D258D19012BA50001A76E /* BMLazyModuleLoader.m in Sources */,
-				463D258F19012BA50001A76E /* BMLazyInitializerFinder.mm in Sources */,
 				463D259119012BA50001A76E /* BMPartialModuleLoader.m in Sources */,
 				463D259319012BA50001A76E /* BMPartialHook.mm in Sources */,
 				463D259519012BA50001A76E /* BMPreferenceModuleLoader.m in Sources */,
 				463D259719012BA50001A76E /* BMPreferenceHook.m in Sources */,
+				6B876780DD64810A69EF5CCC /* BMInjectableInitializerFinder.mm in Sources */,
+				6B87662FE0F52E5ACAE29F2C /* BMInjectableModuleLoader.m in Sources */,
+				6B8767BEFD511FB89FAD8B4C /* BMInitializerRegistry+Injectable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,14 +7,16 @@
 //
 
 #import <BloodMagic/Lazy.h>
+#import "BMInitializer+Injectable.h"
+#import "BMInjectableDefinitions.h"
 
 #import "BMInitializerModel.h"
 
-lazy_initializer registerInitializers()
+injectable_initializer registerInitializers()
 {
     BMInitializer *initializer;
     
-    initializer = [BMInitializer lazyInitializer];
+    initializer = [BMInitializer injectableInitializer];
     initializer.containerClass = [BMDerivedInitializerModel class];
     initializer.propertyClass = [NSString class];
     initializer.initializer = ^id(id sender) {
@@ -22,7 +24,7 @@ lazy_initializer registerInitializers()
     };
     [initializer registerInitializer];
     
-    initializer = [BMInitializer lazyInitializer];
+    initializer = [BMInitializer injectableInitializer];
     initializer.containerClass = [BMDerivedInitializerModel class];
     initializer.protocols = @[ @protocol(BMInitializerSpecProtocol) ];
     initializer.initializer = ^id(id sender) {
@@ -30,7 +32,7 @@ lazy_initializer registerInitializers()
     };
     [initializer registerInitializer];
     
-    initializer = [BMInitializer lazyInitializer];
+    initializer = [BMInitializer injectableInitializer];
     initializer.containerClass = [BMInitializerModel class];
     initializer.protocols = @[ @protocol(BMInitializerSpecProtocol) ];
     initializer.initializer = ^id(id sender) {
@@ -38,14 +40,14 @@ lazy_initializer registerInitializers()
     };
     [initializer registerInitializer];
     
-    initializer = [BMInitializer lazyInitializer];
+    initializer = [BMInitializer injectableInitializer];
     initializer.propertyClass = [NSDictionary class];
     initializer.initializer = ^id(id sender) {
         return @{ @"base" : @"value" };
     };
     [initializer registerInitializer];
     
-    initializer = [BMInitializer lazyInitializer];
+    initializer = [BMInitializer injectableInitializer];
     initializer.containerClass = [BMInitializerModel class];
     initializer.propertyClass = [BMMember class];
     initializer.initializer = ^id(id sender) {

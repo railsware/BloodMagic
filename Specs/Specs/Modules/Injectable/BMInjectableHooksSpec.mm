@@ -4,9 +4,9 @@
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-SPEC_BEGIN(BMLazyHooksSpec)
+SPEC_BEGIN(BMInjectableHooksSpec)
 
-describe(@"BMLazyHooks", ^{
+describe(@"BMInjectableHooks", ^{
     __block BMHookedModel *sut;
 
     beforeEach(^{

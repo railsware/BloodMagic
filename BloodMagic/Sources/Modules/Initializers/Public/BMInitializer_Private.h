@@ -12,8 +12,4 @@
 
 - (NSSet *)protocolsSet;
 
-+ (magic_initializer_t)defaultInitializer;
-+ (BOOL)hasDefaultInitializer;
-+ (void)restoreDefaultInitializer;
-
 @end

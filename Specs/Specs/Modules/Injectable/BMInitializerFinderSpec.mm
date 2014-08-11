@@ -29,7 +29,7 @@ describe(@"BMInitializerFinder", ^{
             base.customDictionary should equal( @{ @"base" : @"value" } );
             derived.customDictionary should equal( @{ @"base" : @"value" } );
             
-            derived.justLazy should_not be_nil;
+            derived.justLazy should be_nil;
             derived.customInitializer should equal(@"red green blue");
             
             base.member.name should equal(@"member");

@@ -3,14 +3,11 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BMPublicCoreDefnitions.h"
+#import <BloodMagic/Core.h>
 
 @class BMInitializerRegistry;
 
 @interface BMInitializer : NSObject
-
-+ (void)setDefaultInitializer:(magic_initializer_t)initializer;
 
 @property (nonatomic, strong) BMInitializerRegistry *registry;
 @property (nonatomic, strong) Class propertyClass;

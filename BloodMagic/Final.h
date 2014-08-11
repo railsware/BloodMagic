@@ -8,15 +8,4 @@
 
 #import <BloodMagic/BMPublicCoreDefnitions.h>
 #import <BloodMagic/BMFinal.h>
-
-#ifndef bm_final
-#define bm_final
-#endif
-
-#ifndef final
-#define final(property_name) register_module(BMFinal, property_name) 
-#endif
-
-#ifndef BMFinalProperty
-#define BMFinalProperty register_property(BMFinal)
-#endif
+#import <BloodMagic/BMFinalDefinitions.h>

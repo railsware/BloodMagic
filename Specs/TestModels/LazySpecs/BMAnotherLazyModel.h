@@ -3,14 +3,13 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BMLazy.h"
+#import "BMInjectable.h"
 
 @class BMUser;
 @class BMProject;
 
 @interface BMAnotherLazyModel : NSObject
-    <BMLazy>
+    <BMInjectable>
 
 @property (nonatomic, strong) BMUser *user;
 @property (nonatomic, strong) BMProject *project;

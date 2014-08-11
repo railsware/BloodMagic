@@ -3,7 +3,6 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
 
 @protocol BMLazy

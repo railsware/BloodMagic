@@ -4,10 +4,12 @@
 //
 
 #import "BMInheritedProtocol.h"
+#import "BMInitializer+Injectable.h"
+#import "BMInjectableDefinitions.h"
 
-lazy_initializer lazyInitialization()
+injectable_initializer lazyInitialization()
 {
-    BMInitializer *initalizer = [BMInitializer lazyInitializer];
+    BMInitializer *initalizer = [BMInitializer injectableInitializer];
     initalizer.protocols = @[@protocol(NSCopying) ];
     initalizer.containerClass = [ChildClass class];
     initalizer.initializer = ^id(id sender) {
@@ -18,7 +20,7 @@ lazy_initializer lazyInitialization()
 
 @implementation BaseClass
 
-@lazy(lazyProperty)
+@injectable(lazyProperty)
 
 @end
 

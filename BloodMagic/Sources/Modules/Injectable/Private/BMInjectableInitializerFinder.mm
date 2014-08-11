@@ -3,15 +3,15 @@
 // Copyright (c) 2013 Railsware. All rights reserved.
 //
 
-#import "BMLazyInitializerFinder.h"
+#import "BMInjectableInitializerFinder.h"
 #import "BMProperty.h"
 #import "BMInitializerRegistry.h"
-#import "BMInitializerRegistry+LazyRegistry.h"
+#import "BMInitializerRegistry+Injectable.h"
 #import "BMInitializer_Private.h"
 
 #include <map>
 
-@implementation BMLazyInitializerFinder
+@implementation BMInjectableInitializerFinder
 {
     std::map<NSUInteger, id> _cachedInitializers;
 }
@@ -34,7 +34,7 @@
         return initializer;
     }
     
-    BMInitializerRegistry *registry = [BMInitializerRegistry lazyRegistry];
+    BMInitializerRegistry *registry = [BMInitializerRegistry injectableRegistry];
     BMInitializer *lazyInitializer = [registry initializerForProperty:property];
     initializer = lazyInitializer.initializer;
 
@@ -43,14 +43,8 @@
         return initializer;
     }
 
-    if ([BMInitializer hasDefaultInitializer]) {
-        initializer = [BMInitializer defaultInitializer];
-        _cachedInitializers[propertyKey] = initializer;
-        return initializer;
-    }
-
     initializer = ^id(__unused id sender) {
-        return [property.propertyClass new];
+        return nil;
     };
     _cachedInitializers[propertyKey] = initializer;
     

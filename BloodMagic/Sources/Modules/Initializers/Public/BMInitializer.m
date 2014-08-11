@@ -41,31 +41,4 @@
     return _protocols;
 }
 
-#pragma mark - Default initializer
-
-static magic_initializer_t defaultInitializer = nil;
-static BOOL hasDefaultInitializer = NO;
-
-+ (void)setDefaultInitializer:(magic_initializer_t)initializer
-{
-    defaultInitializer = initializer;
-    hasDefaultInitializer = YES;
-}
-
-+ (magic_initializer_t)defaultInitializer
-{
-    return defaultInitializer;
-}
-
-+ (BOOL)hasDefaultInitializer
-{
-    return hasDefaultInitializer;
-}
-
-+ (void)restoreDefaultInitializer
-{
-    defaultInitializer = nil;
-    hasDefaultInitializer = NO;
-}
-
 @end

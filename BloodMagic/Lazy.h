@@ -8,9 +8,6 @@
 #import <BloodMagic/BMPublicCoreDefnitions.h>
 #import <BloodMagic/BMLazy.h>
 #import <BloodMagic/BMLazyExclude.h>
-#import <BloodMagic/BMInitializer+LazyInitializer.h>
-#import <BloodMagic/BMInitializerRegistry+LazyRegistry.h>
-#import <BloodMagic/BMLazyDefinitions.h>
 
 #ifndef bm_lazy
 #define bm_lazy

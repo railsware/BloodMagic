@@ -3,10 +3,7 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-
 #import "BMAnotherLazyModel.h"
-#import "BMUser.h"
-
 
 @implementation BMAnotherLazyModel
 

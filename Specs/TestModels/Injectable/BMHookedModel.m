@@ -7,10 +7,12 @@
 //
 
 #import "BMHookedModel.h"
+#import "BMInitializer+Injectable.h"
+#import "BMInjectableDefinitions.h"
 
-lazy_initializer propertyWithHookInitializer()
+injectable_initializer propertyWithHookInitializer()
 {
-    BMInitializer *initializer = [BMInitializer lazyInitializer];
+    BMInitializer *initializer = [BMInitializer injectableInitializer];
     initializer.containerClass = [BMHookedModel class];
     initializer.propertyClass = [NSString class];
     initializer.initializer = ^id (id sender) {

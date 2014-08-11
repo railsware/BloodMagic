@@ -8,7 +8,7 @@
 
 @class BMProperty;
 
-@interface BMLazyInitializerFinder : NSObject
+@interface BMInjectableInitializerFinder : NSObject
 
 + (instancetype)finder;
 

@@ -3,11 +3,10 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
-
-#import "Lazy.h"
+#import "BMinjectable.h"
 
 @interface BaseClass : NSObject
-    <BMLazy>
+    <BMInjectable>
 
 @property (nonatomic, strong) id<NSCopying> lazyProperty;
 
