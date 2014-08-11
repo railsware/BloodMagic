@@ -286,8 +286,8 @@
 		469D7AE5199360AE00D6EC66 /* BMInitializer+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AE0199360AE00D6EC66 /* BMInitializer+Injectable.m */; };
 		469D7AE919938FC800D6EC66 /* BMInjectableExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469D7AEA19938FC800D6EC66 /* BMInjectableExclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AE819938FC800D6EC66 /* BMInjectableExclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; };
-		469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; };
+		469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AEB199390B900D6EC66 /* BMInjectableHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		469D7AEF199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
 		469D7AF0199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
 		469D7AF1199390B900D6EC66 /* BMInjectableHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7AEC199390B900D6EC66 /* BMInjectableHook.mm */; };
@@ -297,7 +297,7 @@
 		469D7AF919939B9600D6EC66 /* BMFinalDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AF719939B9600D6EC66 /* BMFinalDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B87600B7F2261AD5B84D0EF /* BMInitializerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876350F3E427D4632BF973 /* BMInitializerModel.m */; };
 		6B87608AF9162E91DB6B6228 /* BMInjectableModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */; };
-		6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; };
+		6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6B87621F9CCFDD363F4BD514 /* BMInitializerRegistry+Injectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876265805E35120270A01E /* BMInitializerRegistry+Injectable.m */; };
 		6B8763E655456456A446CCC9 /* BMInjectableModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876784E3B80AF9D2898C0D /* BMInjectableModuleLoader.m */; };
 		6B8764F797409BA9C3BF746C /* BMInjectableSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8760B52FCA2C108FD9C831 /* BMInjectableSpec.mm */; };
@@ -317,11 +317,11 @@
 		6B876C048D08ADBFA0F51E58 /* BMInjectableDerivedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8767009F874E56837C0D66 /* BMInjectableDerivedModel.m */; };
 		6B876C494A4986516212A774 /* BMInjectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763672EE1C91B61660631 /* BMInjectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B876D25D59FBE4D17CC8722 /* BMInitializerFinderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766859C981F1FDBEC3A9A /* BMInitializerFinderSpec.mm */; };
-		6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; };
+		6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876C261A6CA4965D69F358 /* BMInitializerRegistry+Injectable.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6B876EDBC3963AE309578E28 /* BMHookedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F3434AE23D3362C1AF3 /* BMHookedModel.m */; };
 		6B876F33211674C2795C2FBD /* BMInjectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8763672EE1C91B61660631 /* BMInjectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; };
-		6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; };
+		6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87642D2FC4B240048ED047 /* BMInjectableModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1344,7 +1344,6 @@
 				463D24E5190116640001A76E /* BMPrimitiveFloatProperty.h in Headers */,
 				463D24E7190116640001A76E /* BMPrimitiveDoubleProperty.h in Headers */,
 				463D24E8190116640001A76E /* BMInternalPropertyFactory.h in Headers */,
-				469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */,
 				463D24EA190116640001A76E /* BMInternalProperty.h in Headers */,
 				463D24EC190116650001A76E /* BMProperty_Private.h in Headers */,
 				463D24ED190116650001A76E /* BMPropertyKVCHandler.h in Headers */,
@@ -1363,11 +1362,12 @@
 				463D2505190116690001A76E /* BMPartialModuleLoader.h in Headers */,
 				463D25071901166A0001A76E /* BMPartialHook.h in Headers */,
 				463D25091901166A0001A76E /* BMPreferenceModuleLoader.h in Headers */,
+				469D7AED199390B900D6EC66 /* BMInjectableHook.h in Headers */,
+				6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */,
 				463D250B1901166B0001A76E /* BMPreferenceHook.h in Headers */,
+				6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */,
 				6B876B0BDBA3EE3E39A85B4D /* BMInjectableInitializerFinder.h in Headers */,
 				6B876F33211674C2795C2FBD /* BMInjectable.h in Headers */,
-				6B876F82D25033577B17CC77 /* BMInjectableModuleLoader.h in Headers */,
-				6B876DE65A49CC777B0C30B0 /* BMInitializerRegistry+Injectable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1417,7 +1417,6 @@
 				463D25E719012C270001A76E /* BMPropertyKVCHandler.h in Headers */,
 				463D25EA19012C270001A76E /* BMPropertyValueService.h in Headers */,
 				463D25EB19012C280001A76E /* BMClassCollector.h in Headers */,
-				469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */,
 				463D25BD19012C210001A76E /* BMFinalHook.h in Headers */,
 				463D25BF19012C210001A76E /* BMFinalModuleLoader.h in Headers */,
 				463D25C119012C220001A76E /* BMClass_Private.h in Headers */,
@@ -1433,14 +1432,15 @@
 				469D7AEA19938FC800D6EC66 /* BMInjectableExclude.h in Headers */,
 				463D25FE19012C2B0001A76E /* BMLazyHook.h in Headers */,
 				463D260019012C2C0001A76E /* BMLazyModuleLoader.h in Headers */,
+				469D7AEE199390B900D6EC66 /* BMInjectableHook.h in Headers */,
+				6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */,
+				6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */,
 				463D260519012C2D0001A76E /* BMPartialModuleLoader.h in Headers */,
 				463D260719012C2D0001A76E /* BMPartialHook.h in Headers */,
 				463D260919012C2E0001A76E /* BMPreferenceModuleLoader.h in Headers */,
 				463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */,
 				6B876957028C6FEB22638C4B /* BMInjectableInitializerFinder.h in Headers */,
 				6B876C494A4986516212A774 /* BMInjectable.h in Headers */,
-				6B876F78667C34D494E020C3 /* BMInjectableModuleLoader.h in Headers */,
-				6B876177927AD5D43AC9E3E3 /* BMInitializerRegistry+Injectable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

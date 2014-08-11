@@ -26,7 +26,12 @@ Pod::Spec.new do |podspec|
   podspec.subspec 'Lazy' do |lazy|
     lazy.source_files = 'BloodMagic/Sources/Modules/Lazy/**/*.{h,m,mm}', 'BloodMagic/Lazy.h'
     lazy.public_header_files = 'BloodMagic/Sources/Modules/Lazy/Public/**/*.h', 'BloodMagic/Lazy.h'
-    lazy.dependency 'BloodMagic/Initializers'
+  end
+
+  podspec.subspec 'Injectable' do |injectable|
+    injectable.source_files = 'BloodMagic/Sources/Modules/Injectable/**/*.{h,m,mm}', 'BloodMagic/Injectable.h'
+    injectable.public_header_files = 'BloodMagic/Sources/Modules/Injectable/Public/**/*.h', 'BloodMagic/Injectable.h'
+    injectable.dependency 'BloodMagic/Initializers'
   end
 
   podspec.subspec 'Partial' do |partial|
