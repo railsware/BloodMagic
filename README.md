@@ -5,13 +5,13 @@
 Objective-C is a powerful language, but sometimes it lacks of custom property attributes, like these:
 
 ```objectivec
-@property (nonatomic, strong) bm_lazy ProgressViewService *progressView;
-@property (nonatomic, strong) bm_partial HeaderView *headerView;
-@property (nonatomic, strong) bm_final NSString *almostImmutable;
-@property (nonatomic, strong) bm_preference NSString *authToken;
-@property (nonatomic, strong) bm_injectable id<NetworkClient> client;
+@property (nonatomic, strong, lazy) ProgressViewService *progressView;
+@property (nonatomic, strong, partial) HeaderView *headerView;
+@property (nonatomic, strong, final) NSString *almostImmutable;
+@property (nonatomic, strong, preference) NSString *authToken;
+@property (nonatomic, strong, injectable) id<NetworkClient> client;
 
-@property (nonatomic, strong) anything_you_want AwesomeView *someAwesomeView;
+@property (nonatomic, strong, anything_you_want) AwesomeView *someAwesomeView;
 ```
 
 We can't implement these attributes without hacking on `clang`, but fortunately, we're able to achieve these effects by means of BloodMagic' spells
@@ -89,7 +89,7 @@ Just add `BMLazy` protocol to your class:
 @interface ViewController : NSObject
   <BMLazy>
 
-@property (nonatomic, strong) bm_lazy ProgressViewService *progressViewService;
+@property (nonatomic, strong, bm_lazy) ProgressViewService *progressViewService;
 
 @end
 ```
@@ -265,7 +265,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 @interface UserViewCell ()
     <BMPartial>
 
-@property (nonatomic, strong) bm_partial UserView *userView;
+@property (nonatomic, strong, bm_partial) UserView *userView;
 
 @end
 
@@ -289,7 +289,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 @interface UserHeaderView ()
     <BMPartial>
 
-@property (nonatomic, strong) bm_partial UserView *userView;
+@property (nonatomic, strong, bm_partial) UserView *userView;
 
 @end
 
@@ -323,7 +323,7 @@ From now this feature available in Objective-C, via BloodMagic.
 @interface FinalizedObject : NSObject
     <BMFinal>
 
-@property (nonatomic, strong) bm_final NSString *almostImmutableProperty;
+@property (nonatomic, strong, bm_final) NSString *almostImmutableProperty;
 
 @end
 
@@ -355,7 +355,7 @@ Enjoy the simplest way to deal with `NSUserDefaults`
 @interface Settings : NSObject
     <BMPreference>
 
-@property (nonatomic, strong) bm_preference NSString *nickname;
+@property (nonatomic, strong, bm_preference) NSString *nickname;
 
 @end
 
