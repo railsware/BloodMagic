@@ -34,7 +34,7 @@ Simple installation via [CocoaPods](http://cocoapods.org/):
 
 Alternatively you can use built frameworks for [iOS](https://github.com/railsware/BloodMagic/releases/download/1.0.0/BloodMagic-iOS-1.0.0.zip) and [OSX](https://github.com/railsware/BloodMagic/releases/download/1.0.0/BloodMagic-OSX-1.0.0.zip).
 
-Just drag&drop framework into your project and don't forget to add `-all_load` and `-ObjC` to `OTHER_LINKER_FLAGS`
+Just drag&drop framework into your project and don't forget to add `-all_load`, `-ObjC` and `-lc++` or `-lstdc++` to `OTHER_LINKER_FLAGS`
 
 ### Available Spells
 
@@ -89,7 +89,7 @@ Just add `BMLazy` protocol to your class:
 @interface ViewController : NSObject
   <BMLazy>
 
-@property (nonatomic, strong, bm_lazy) ProgressViewService *progressViewService;
+@property (nonatomic, strong) bm_lazy ProgressViewService *progressViewService;
 
 @end
 ```
@@ -129,9 +129,11 @@ In this case `progressViewService` will be deallocated as a usual property.
   pod 'BloodMagic/Injectable', :git => 'https://github.com/railsware/BloodMagic.git'
 ```
 
-During the creation of `Lazy Initialization` spell an interesting side effect was found - kind of dependency injection.
+During the creation of `Lazy Initialization` spell an interesting side effect was found - Dependency Injection.
 
-For example, if you need to initialize `progressViewService` in a special way, a special initializer might be created:
+It behaves the same way as `BMLazy`, but uses another approach to instantiate object.
+
+For example, if you need to initialize `progressViewService` in a special way, you should provide initializer:
 
 ```objectivec
 BMInitializer *initializer = [BMInitializer injectableInitializer];
@@ -263,7 +265,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 @interface UserViewCell ()
     <BMPartial>
 
-@property (nonatomic, strong, bm_partial) UserView *userView;
+@property (nonatomic, strong) bm_partial UserView *userView;
 
 @end
 
@@ -287,7 +289,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
 @interface UserHeaderView ()
     <BMPartial>
 
-@property (nonatomic, strong, bm_partial) UserView *userView;
+@property (nonatomic, strong) bm_partial UserView *userView;
 
 @end
 
@@ -310,7 +312,7 @@ So, BloodMagic does nothing special, just hides this boilerplate:
   pod 'BloodMagic/Final', :git => 'https://github.com/railsware/BloodMagic.git'
 ```
 
-Java provides [final](http://en.wikipedia.org/wiki/Final_(Java)) keyword, which determines that value can't be changed.
+Java provides [final](http://en.wikipedia.org/wiki/Final_(Java)) keyword, which determines (at least) that value can't be changed after initialization.
 
 From now this feature available in Objective-C, via BloodMagic.
 
@@ -321,7 +323,7 @@ From now this feature available in Objective-C, via BloodMagic.
 @interface FinalizedObject : NSObject
     <BMFinal>
 
-@property (nonatomic, strong, bm_final) NSString *almostImmutableProperty;
+@property (nonatomic, strong) bm_final NSString *almostImmutableProperty;
 
 @end
 
@@ -334,7 +336,7 @@ From now this feature available in Objective-C, via BloodMagic.
 // ...
 
 FinalizedObject *object = [FinalizedObject new];
-object.almostImmutableProperty = @"Initial value"; // all is OK
+object.almostImmutableProperty = @"Initial value"; // everything is fine
 object.almostImmutableProperty = @"Another value"; // exception will be thrown
 
 ```
@@ -353,7 +355,7 @@ Enjoy the simplest way to deal with `NSUserDefaults`
 @interface Settings : NSObject
     <BMPreference>
 
-@property (nonatomic, strong, bm_preference) NSString *nickname;
+@property (nonatomic, strong) bm_preference NSString *nickname;
 
 @end
 
