@@ -47,7 +47,8 @@
 {
     BMInternalProperty *property = NULL;
     switch (type[0]) {
-        case _C_CHR:{
+        case _C_CHR:
+        case _C_BOOL:{
             property = new BMPrimitiveCharProperty;
         } break;
         case _C_UCHR:{
