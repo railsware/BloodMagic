@@ -204,7 +204,7 @@ For example:
 ```
 
 Instantiates view from `xib` on demand, similar to `Lazy` module.
-This spell might be heplful if you have reusable views.
+This spell might be helpful if you have reusable views.
 
 For example:
 
