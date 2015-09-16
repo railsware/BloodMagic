@@ -27,6 +27,16 @@
     [_initializers addObject:initializer];
 }
 
+- (void)removeInitializer:(BMInitializer *)initializer
+{
+	[_initializers removeObject:initializer];
+}
+
+- (void)removeAllInitializers
+{
+	[_initializers removeAllObjects];
+}
+
 - (BMInitializer *)initializerForProperty:(const BMProperty *)property
 {
     Class rootClass = [NSObject class];
