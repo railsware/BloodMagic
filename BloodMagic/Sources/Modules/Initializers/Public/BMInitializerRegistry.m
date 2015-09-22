@@ -5,6 +5,7 @@
 
 #import "BMInitializerRegistry.h"
 #import "BMInitializer_Private.h"
+#import "BMInjectableInitializerFinder.h"
 #import "BMProperty.h"
 
 @implementation BMInitializerRegistry
@@ -30,11 +31,13 @@
 - (void)removeInitializer:(BMInitializer *)initializer
 {
 	[_initializers removeObject:initializer];
+	[[BMInjectableInitializerFinder finder] invalidate];
 }
 
 - (void)removeAllInitializers
 {
 	[_initializers removeAllObjects];
+	[[BMInjectableInitializerFinder finder] invalidate];
 }
 
 - (BMInitializer *)initializerForProperty:(const BMProperty *)property
