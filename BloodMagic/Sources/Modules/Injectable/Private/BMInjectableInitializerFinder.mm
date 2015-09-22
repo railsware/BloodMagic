@@ -51,4 +51,9 @@
     return initializer;
 }
 
+- (void)invalidate
+{
+	_cachedInitializers.clear();
+}
+
 @end
