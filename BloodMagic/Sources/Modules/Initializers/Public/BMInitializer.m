@@ -26,6 +26,11 @@
     [self.registry addInitializer:self];
 }
 
+- (void)unregisterInitializer
+{
+	[self.registry removeInitializer:self];
+}
+
 - (NSArray *)protocols
 {
     return [_protocols allObjects];
