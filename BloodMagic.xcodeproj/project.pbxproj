@@ -12,7 +12,6 @@
 		4624662C18FF157D00DC8E4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB6AF8178FFE330060E11D /* CoreGraphics.framework */; };
 		4624663218FF157D00DC8E4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4624663018FF157D00DC8E4E /* InfoPlist.strings */; };
 		4624663418FF157D00DC8E4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624663318FF157D00DC8E4E /* main.m */; };
-		4624663818FF157E00DC8E4E /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624663718FF157E00DC8E4E /* Cedar-iOS.framework */; };
 		4624663E18FF15DF00DC8E4E /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */; };
 		4624663F18FF15DF00DC8E4E /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9418A3EFD500DD4830 /* BMFinalModuleLoader.m */; };
 		4624664018FF15DF00DC8E4E /* BMClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46535A1418207993004A9DA4 /* BMClass.mm */; };
@@ -179,7 +178,6 @@
 		463D25071901166A0001A76E /* BMPartialHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8762841AEA753743D57E43 /* BMPartialHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D25091901166A0001A76E /* BMPreferenceModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B876B1B9240F9C64CC89BBB /* BMPreferenceModuleLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D250B1901166B0001A76E /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		463D251319012B230001A76E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463D251219012B220001A76E /* Cocoa.framework */; };
 		463D251D19012B230001A76E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 463D251B19012B230001A76E /* InfoPlist.strings */; };
 		463D253D19012BA50001A76E /* BMFinalHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9118A3EE9000DD4830 /* BMFinalHook.mm */; };
 		463D253F19012BA50001A76E /* BMFinalModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DD5B9418A3EFD500DD4830 /* BMFinalModuleLoader.m */; };
@@ -276,6 +274,7 @@
 		463D260B19012C2E0001A76E /* BMPreferenceHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B87622831C2EDB044B772E8 /* BMPreferenceHook.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		463D265319012F040001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		463D265419012F160001A76E /* BloodMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 463D265219012EF00001A76E /* BloodMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4688F5661BE64B100041877D /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4688F5651BE64B100041877D /* Cedar-iOS.framework */; };
 		469D7ACA19935E2500D6EC66 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AC919935E2500D6EC66 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469D7ACB19935E2500D6EC66 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469D7AC919935E2500D6EC66 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469D7ACE19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 469D7ACD19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm */; };
@@ -331,21 +330,15 @@
 		4624663318FF157D00DC8E4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4624663518FF157D00DC8E4E /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		4624663618FF157D00DC8E4E /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
-		4624663718FF157E00DC8E4E /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Specs/Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		4624668D18FF18D600DC8E4E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		463D2431190114E20001A76E /* BloodMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463D2434190114E20001A76E /* BloodMagic-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagic-iOS-Info.plist"; sourceTree = "<group>"; };
 		463D2436190114E20001A76E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		463D2438190114E20001A76E /* BloodMagic-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		463D251119012B220001A76E /* BloodMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BloodMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		463D251219012B220001A76E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		463D251519012B230001A76E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		463D251619012B230001A76E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		463D251719012B230001A76E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		463D251A19012B230001A76E /* BloodMagic-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodMagic-OSX-Info.plist"; sourceTree = "<group>"; };
 		463D251C19012B230001A76E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		463D251E19012B230001A76E /* BloodMagic-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodMagic-OSX-Prefix.pch"; sourceTree = "<group>"; };
-		463D252719012B230001A76E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		463D265219012EF00001A76E /* BloodMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodMagic.h; sourceTree = "<group>"; };
 		46435A87185F5E4F003FE5E7 /* BMClass_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMClass_Private.h; sourceTree = "<group>"; };
 		46435A8C185F60F6003FE5E7 /* BMClassCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClassCache.h; sourceTree = "<group>"; };
@@ -353,6 +346,7 @@
 		46535A1318207993004A9DA4 /* BMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMClass.h; sourceTree = "<group>"; };
 		46535A1418207993004A9DA4 /* BMClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMClass.mm; sourceTree = "<group>"; };
 		467029D4182D94CC003EAFB0 /* BMLazyExclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLazyExclude.h; sourceTree = "<group>"; };
+		4688F5651BE64B100041877D /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iOS.framework"; sourceTree = "<group>"; };
 		469D7AC919935E2500D6EC66 /* Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
 		469D7ACD19935EE700D6EC66 /* BMInjectableInitializerSpecSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMInjectableInitializerSpecSpec.mm; sourceTree = "<group>"; };
 		469D7ADF199360AE00D6EC66 /* BMInitializer+Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMInitializer+Injectable.h"; sourceTree = "<group>"; };
@@ -547,7 +541,7 @@
 			files = (
 				4624662C18FF157D00DC8E4E /* CoreGraphics.framework in Frameworks */,
 				4624662A18FF157D00DC8E4E /* UIKit.framework in Frameworks */,
-				4624663818FF157E00DC8E4E /* Cedar-iOS.framework in Frameworks */,
+				4688F5661BE64B100041877D /* Cedar-iOS.framework in Frameworks */,
 				4624662B18FF157D00DC8E4E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,7 +559,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				463D251319012B230001A76E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,16 +606,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		463D251419012B230001A76E /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				463D251519012B230001A76E /* Foundation.framework */,
-				463D251619012B230001A76E /* CoreData.framework */,
-				463D251719012B230001A76E /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		463D251819012B230001A76E /* BloodMagic-OSX */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +634,15 @@
 				46435A8D185F60F6003FE5E7 /* BMClassCache.mm */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4688F5641BE64B100041877D /* Cedar-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4688F5651BE64B100041877D /* Cedar-iOS.framework */,
+			);
+			name = "Cedar-iOS";
+			path = "Vendor/Cedar-iOS";
 			sourceTree = "<group>";
 		};
 		469D7AC819935BA400D6EC66 /* Injectable */ = {
@@ -1267,13 +1259,10 @@
 		CADB6AF3178FFE330060E11D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4624663718FF157E00DC8E4E /* Cedar-iOS.framework */,
+				4688F5641BE64B100041877D /* Cedar-iOS */,
 				CADB6AF4178FFE330060E11D /* UIKit.framework */,
 				CADB6AF6178FFE330060E11D /* Foundation.framework */,
 				CADB6AF8178FFE330060E11D /* CoreGraphics.framework */,
-				463D251219012B220001A76E /* Cocoa.framework */,
-				463D252719012B230001A76E /* XCTest.framework */,
-				463D251419012B230001A76E /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1810,6 +1799,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Specs/Frameworks",
+					"$(PROJECT_DIR)/Vendor/Cedar-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
@@ -1852,6 +1842,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Specs/Frameworks",
+					"$(PROJECT_DIR)/Vendor/Cedar-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
