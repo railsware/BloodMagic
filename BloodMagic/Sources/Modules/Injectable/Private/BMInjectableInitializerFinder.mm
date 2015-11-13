@@ -51,6 +51,12 @@
     return initializer;
 }
 
+- (magic_initializer_t)cachedInitializerForProperty:(const BMProperty *)property
+{
+	NSUInteger propertyKey = (NSUInteger)property;
+	return _cachedInitializers[propertyKey];
+}
+
 - (void)invalidate
 {
 	_cachedInitializers.clear();
