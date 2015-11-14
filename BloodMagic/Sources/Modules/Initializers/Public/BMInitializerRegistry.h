@@ -11,6 +11,8 @@
 @interface BMInitializerRegistry : NSObject
 
 - (void)addInitializer:(BMInitializer *)initializer;
+- (void)removeInitializer:(BMInitializer *)initializer;
+- (void)removeAllInitializers;
 - (BMInitializer *)initializerForProperty:(const BMProperty *)property;
 
 @end

@@ -17,5 +17,6 @@
 @property (nonatomic, copy) magic_initializer_t initializer;
 
 - (void)registerInitializer;
+- (void)unregisterInitializer;
 
 @end

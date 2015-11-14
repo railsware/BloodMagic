@@ -13,5 +13,7 @@
 + (instancetype)finder;
 
 - (magic_initializer_t)initializerForProperty:(const BMProperty *)property;
+- (magic_initializer_t)cachedInitializerForProperty:(const BMProperty *)property;
+- (void)invalidate;
 
 @end
