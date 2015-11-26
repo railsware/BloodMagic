@@ -26,11 +26,23 @@ We can't implement these attributes without hacking on `clang`, but fortunately,
 
 ### Embark on the Dark
 
-Simple installation via [CocoaPods](http://cocoapods.org/):
+#### [CocoaPods](http://cocoapods.org/):
 
 ```ruby
   pod 'BloodMagic', :git => 'https://github.com/railsware/BloodMagic.git'
 ```
+
+#### [Components](https://github.com/AlexDenisov/Components)
+
+```bash
+$ mkdir -p ./Components.make
+# iOS
+wget https://raw.githubusercontent.com/AlexDenisov/Components/master/Components.make/BloodMagic/1.0.0/BloodMagic-iOS.make -O ./Components.make/BloodMagic-iOS.make
+# OSX
+wget https://raw.githubusercontent.com/AlexDenisov/Components/master/Components.make/BloodMagic/1.0.0/BloodMagic-OSX.make -O ./Components.make/BloodMagic-OSX.make
+```
+
+#### Manually
 
 Alternatively you can use built frameworks for [iOS](https://github.com/railsware/BloodMagic/releases/download/1.0.0/BloodMagic-iOS-1.0.0.zip) and [OSX](https://github.com/railsware/BloodMagic/releases/download/1.0.0/BloodMagic-OSX-1.0.0.zip).
 
