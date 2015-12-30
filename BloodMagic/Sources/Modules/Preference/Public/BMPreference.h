@@ -3,6 +3,8 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
+#import <Foundation/NSObject.h>
+
 @protocol BMPreference
     <NSObject>
 
