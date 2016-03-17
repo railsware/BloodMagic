@@ -32,6 +32,10 @@
             [sender performSelector:injectedHook withObject:*value];
 #pragma clang diagnostic pop
         }
+        
+        if ([sender respondsToSelector:@selector(bm_propertyInjected:value:)]) {
+            [sender bm_propertyInjected:property.name value:*value];
+        }
     }
     
     setValueForProperty(sender, property, *value);
