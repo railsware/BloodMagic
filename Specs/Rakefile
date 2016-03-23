@@ -1,8 +1,6 @@
 require 'pathname'
 require 'tmpdir'
 
-task :default => [:Specs]
-
 module CedarTargetSpecs
   UI_SPECS_TARGET_NAME = "Specs"
   CONFIGURATION = "Release"
@@ -94,17 +92,19 @@ end
 
 desc "Run Specs"
 task :Specs => :build_Specs do
+  system "which ios-sim" or raise <<EOF
+
+
+[Error] No ios-sim found. Use 'brew install ios-sim'.
+
+
+EOF
+
   env_vars = {
-    "DYLD_ROOT_PATH" => CedarTargetSpecs.deployment_target_sdk_dir,
-    "IPHONE_SIMULATOR_ROOT" => CedarTargetSpecs.deployment_target_sdk_dir,
-    "CFFIXED_USER_HOME" => Dir.tmpdir,
-    "CEDAR_HEADLESS_SPECS" => "1",
     "CEDAR_REPORTER_CLASS" => "CDRColorizedReporter"
   }
 
-  app_path = File.join(CedarTargetSpecs.build_dir("-iphonesimulator"), "#{CedarTargetSpecs::UI_SPECS_TARGET_NAME}.app")
-
   CedarTargetSpecs.with_env_vars(env_vars) do
-    CedarTargetSpecs.system_or_exit "#{File.join(CedarTargetSpecs.build_dir("-iphonesimulator"), "#{CedarTargetSpecs::UI_SPECS_TARGET_NAME}.app", CedarTargetSpecs::UI_SPECS_TARGET_NAME)} -RegisterForSystemEvents";
+    CedarTargetSpecs.system_or_exit "ios-sim launch #{File.join(CedarTargetSpecs.build_dir("-iphonesimulator"), "#{CedarTargetSpecs::UI_SPECS_TARGET_NAME}.app")} --devicetypeid 'com.apple.CoreSimulator.SimDeviceType.iPhone-5s' | tee /dev/stderr | grep -q ', 0 failures'";
   end
 end

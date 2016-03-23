@@ -3,5 +3,4 @@
 // Copyright (c) 2013 railsware. All rights reserved.
 //
 
-#import <Cedar-iOS/SpecHelper.h>
-
+#import <Cedar-iOS/Cedar.h>
