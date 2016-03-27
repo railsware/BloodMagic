@@ -23,8 +23,7 @@
     magic_initializer_t initializer = [finder initializerForProperty:property];
     
     if (initializer) {
-        __weak id weakSender = sender;
-        *value = initializer(weakSender);
+        *value = initializer(sender);
         SEL injectedHook = NSSelectorFromString([NSString stringWithFormat:@"%@Injected:", property.name]);
         if ([sender respondsToSelector:injectedHook]) {
 #pragma clang diagnostic push
