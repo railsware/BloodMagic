@@ -42,13 +42,14 @@
 {
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
     uint classesCount;
-    const char *imageName = class_getImageName(object_getClass(self));
-    const char **classNames = objc_copyClassNamesForImage(imageName, &classesCount);
+    Class *classes = objc_copyClassList(&classesCount);
     for (uint index = 0; index < classesCount; index++) {
-        Class nextClass = objc_getClass(classNames[index]);
-        _cachedClasses.push_back(nextClass);
+        Class nextClass = classes[index];
+        if (class_conformsToProtocol(nextClass, @protocol(NSObject))) {
+            _cachedClasses.push_back(nextClass);
+        }
     }
-    free(classNames);
+    free(classes);
 #else
     Class parentClass = [NSObject class];
     int numClasses = objc_getClassList(NULL, 0);
