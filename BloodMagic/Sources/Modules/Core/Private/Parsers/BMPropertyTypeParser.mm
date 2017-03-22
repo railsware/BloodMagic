@@ -15,7 +15,7 @@ void BMPropertyTypeParser::parse(const char *type)
 
     size_t leftBracket = propertyTypeName.find("<");
     if (leftBracket != std::string::npos) {
-        size_t rightBracket = propertyTypeName.rfind(">") + 1;
+        size_t rightBracket = propertyTypeName.rfind(">");
         std::string protocols = propertyTypeName.substr(leftBracket, rightBracket - leftBracket);
         propertyTypeName = propertyTypeName.replace(leftBracket, propertyTypeName.length(), "");
 
